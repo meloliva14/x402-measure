@@ -37,6 +37,7 @@ python preflight.py --openapi https://api.example.com/openapi.json
 # Measure the whole network
 python harvest_bazaar.py     # pull the CDP Bazaar          -> bazaar_all.json, paytos.json
 python live_402_sweep.py     # one live request per host    -> sweep_results.json
+python manifest_probe.py     # who also self-publishes?     -> manifest_probe.json
 python demand_sweep.py 7     # on-chain revenue, 7 days     -> demand_results.json
 
 # One wallet, on its own
@@ -54,6 +55,7 @@ python rpc.py 0xYourPayToAddress 30
 | `preflight.py` | Given the 402 you serve, could a stock `@x402/evm` 2.x buyer construct a payment? |
 | `harvest_bazaar.py` | What does the CDP Bazaar claim exists? |
 | `live_402_sweep.py` | What do those hosts actually serve right now? |
+| `manifest_probe.py` | Do registry-listed sellers also publish their own `/.well-known/x402`? |
 | `demand_sweep.py` | Which advertised payTo wallets actually received USDC, from how many payers? |
 | `rpc.py` | Shared JSON-RPC + USDC log helpers. Also runnable for a single address. |
 

@@ -42,6 +42,53 @@ not a pattern — worth stating because I had it backwards before measuring.
 
 ---
 
+## Discovery — are the two approaches competing, or complementary?
+
+x402 discovery is currently argued as standalone `/.well-known/x402` manifest **vs**
+extending an existing OpenAPI document. Mostly on design merits. So: for all 1,120 Bazaar
+hosts, does each one *also* serve its own manifest?
+
+| | hosts | share |
+|---|---:|---:|
+| in the Bazaar **and** self-publishing a manifest | 654 | 58.4% |
+| registry-only, no manifest of their own | 414 | 37.0% |
+| 200 but not JSON (SPA catch-all, not a manifest) | 27 | 2.4% |
+| unreachable | 25 | 2.2% |
+
+**Most sellers do both.** The framing as a choice is largely false in practice — 58% hedge
+and publish either way. That's an argument for making the two describe the same thing well,
+rather than for picking a winner.
+
+### But the manifests can't be relied on for version negotiation
+
+Of those 654 live manifests:
+
+| `x402Version` | count |
+|---|---:|
+| **absent entirely** | **407 (62.2%)** |
+| `2` (int) | 226 |
+| `1` (int) | 20 |
+| `"1"` (**string**) | 1 |
+
+Nearly two thirds declare no version at all, and among those that do, the field isn't even
+consistently typed — one seller emits a string where twenty emit an integer. A consumer
+cannot use this field to decide how to talk to a seller.
+
+That matters more than it looks, because v1 and v2 do not degrade into each other: v1 puts
+the challenge in the response body, v2 in the `PAYMENT-REQUIRED` header. A client that
+guesses wrong doesn't get a downgrade, it gets nothing. Any discovery schema that ships
+should make version **explicit, required, and typed** — and rejections should name the
+offending field, which is a separate failure mode entirely.
+
+### The reverse direction
+
+Spot-checking sellers active in the x402 Foundation Domain Discovery working group, several
+who publish their own manifest are **not in the Bazaar at all**. So the gap runs both ways,
+and no single registry is a census. Any adoption number sourced from one registry should say
+which one.
+
+---
+
 ## Demand — who actually got paid?
 
 Every USDC transfer into all 695 wallets on Base, 7 days, full block coverage
