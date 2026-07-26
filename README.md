@@ -122,7 +122,16 @@ reproducible sample, which is a different and more defensible claim.
 
 ## Findings
 
-A run from 2026-07-25 is written up in [FINDINGS.md](FINDINGS.md) — aggregate only.
+The latest run is written up in [FINDINGS.md](FINDINGS.md) — aggregate only, and stamped with
+the date it was taken.
+
+Treat every figure as a **timestamped snapshot rather than a constant**. The registry is live,
+and two correct sweeps taken a day apart return slightly different slices of it — that's a
+property of paging a moving collection, not an error. `harvest_bazaar.py` writes
+`harvest_meta.json` recording when a run was taken, what the registry reported as its total,
+how much was actually collected, and whether the sweep was complete. Quote that alongside any
+number you publish. The [Method and its limits](FINDINGS.md#method-and-its-limits) section
+documents both sampling hazards in detail.
 
 Per-wallet revenue is deliberately **not** published. Every figure is derivable from public
 chain data in a few minutes with these scripts, which is the point of open-sourcing them;
