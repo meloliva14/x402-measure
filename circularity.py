@@ -35,6 +35,7 @@ USAGE
 """
 import json
 import sys
+import time
 from pathlib import Path
 
 from rpc import MAX_RANGE, TRANSFER, USDC, blocks_for_days, rpc, topic_addr
@@ -48,13 +49,35 @@ OUT = HERE / "circularity.json"
 FUNDING_LOOKBACK_DAYS = 120
 
 
-def _logs(params, chain="base"):
-    """eth_getLogs across a block range the public RPCs will actually accept."""
+def _logs(params, chain="base", on_progress=None):
+    """eth_getLogs across a block range the public RPCs will actually accept.
+
+    Retries here rather than in rpc.py. A public endpoint answering 408 or 429 under a long
+    sweep is expected load-shedding, not a broken call, and it is this module that generates
+    the load. rpc.py stays a thin transport that reports failure honestly; the backoff policy
+    belongs with the caller that needs one. A range that still fails after the retries RAISES
+    rather than returning short: a silently dropped range would understate both receipts and
+    funding edges, and understating a funding edge turns a circular seller into an
+    "independent" one, which is the single worst direction this can be wrong in.
+    """
     frm, head = params.pop("_from"), params.pop("_to")
+    total = max(1, head - frm)
     out = []
     while frm <= head:
         to = min(frm + MAX_RANGE - 1, head)
-        out.extend(rpc("eth_getLogs", [dict(params, fromBlock=hex(frm), toBlock=hex(to))], chain))
+        delay = 2.0
+        for attempt in range(5):
+            try:
+                out.extend(rpc("eth_getLogs",
+                               [dict(params, fromBlock=hex(frm), toBlock=hex(to))], chain))
+                break
+            except Exception:  # noqa: BLE001 - retry transient RPC load-shedding, then give up
+                if attempt == 4:
+                    raise
+                time.sleep(delay)
+                delay *= 2
+        if on_progress:
+            on_progress(min(1.0, (to - (head - total)) / total))
         frm = to + 1
     return out
 
@@ -156,28 +179,66 @@ def main(argv):
     d = json.loads(DEMAND.read_text(encoding="utf-8"))
     ranked = sorted(d["per_wallet"].items(), key=lambda kv: -kv[1]["n"])[:top_n]
 
+    # RESUMABLE. A seller takes minutes, so a fifteen-seller sweep is a long-running job against
+    # rate-limited public endpoints. Losing an hour of completed work to one late failure would
+    # make the whole thing not worth starting, so every seller is flushed to disk as it lands
+    # and an existing file is treated as work already done.
+    done = {}
+    if OUT.exists():
+        try:
+            prev = json.loads(OUT.read_text(encoding="utf-8"))
+            if prev.get("window_days") == days:
+                done = {s["seller"]: s for s in prev.get("sellers", []) if "error" not in s}
+        except (json.JSONDecodeError, KeyError, TypeError):
+            done = {}          # an unreadable cache is not a reason to refuse to run
+
     print(f"  top {len(ranked)} sellers by payment count, {days}d receipts, "
-          f"{FUNDING_LOOKBACK_DAYS}d funding lookback\n")
+          f"{FUNDING_LOOKBACK_DAYS}d funding lookback")
+    if done:
+        print(f"  resuming: {len(done)} seller(s) already complete in {OUT.name}")
+    print()
+
+    def flush(rows):
+        OUT.write_text(json.dumps({"window_days": days,
+                                   "funding_lookback_days": FUNDING_LOOKBACK_DAYS,
+                                   "sellers": rows}, indent=1), encoding="utf-8")
+
     results = []
     for i, (seller, agg) in enumerate(ranked, 1):
+        key = seller.lower()
+        if key in done:
+            results.append(done[key])
+            print(f"  {i:>3}. {seller}  (cached)")
+            continue
+        t0 = time.time()
         try:
             r = analyze(seller, days)
         except Exception as e:  # noqa: BLE001 - one seller failing must not lose the run
             print(f"  {i:>3}. {seller}  FAILED {type(e).__name__}: {str(e)[:70]}")
-            results.append({"seller": seller, "error": f"{type(e).__name__}: {e}"})
+            results.append({"seller": key, "error": f"{type(e).__name__}: {e}"})
+            flush(results)
             continue
         results.append(r)
-        print(f"  {i:>3}. {seller}")
+        flush(results)
+        print(f"  {i:>3}. {seller}   ({time.time()-t0:.0f}s)")
         print(f"       ${r['receipts_usd']:>12,.2f}  {r['receipts_n']:>7} payments  "
               f"{r['payers']:>3} payers")
         print(f"       at least {r['at_least_circular_share_usd']*100:5.1f}% of value and "
               f"{r['at_least_circular_share_n']*100:5.1f}% of count from wallets it funded "
               f"or itself")
 
-    OUT.write_text(json.dumps({"window_days": days,
-                               "funding_lookback_days": FUNDING_LOOKBACK_DAYS,
-                               "sellers": results}, indent=1), encoding="utf-8")
-    print(f"\n  wrote {OUT.name}")
+    ok = [r for r in results if "error" not in r]
+    failed = len(results) - len(ok)
+    tot = sum(r["receipts_usd"] for r in ok)
+    circ = sum(r["at_least_circular_usd"] for r in ok)
+    print(f"\n  {len(ok)} analysed, {failed} failed")
+    if tot:
+        print(f"  across them: ${tot:,.2f} received, at least ${circ:,.2f} "
+              f"({circ/tot*100:.1f}%) from wallets the seller funded or itself")
+    # Never let a partial sweep read as a complete one.
+    if failed:
+        print(f"  NOTE: {failed} seller(s) failed and are excluded from that share.")
+    print(f"  wrote {OUT.name}")
     return 0
 
 
