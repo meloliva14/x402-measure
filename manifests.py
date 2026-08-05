@@ -1,8 +1,9 @@
 """Can an agent learn how to pay you by reading your manifest?
 
-`/.well-known/x402.json` is a de facto convention with no agreed schema. This fetches every
-host's manifest and asks one question of each: does it carry enough, in a machine-readable
-shape, for a buyer to CONSTRUCT a payment without a human reading the page first?
+The x402 well-known manifest is a de facto convention with no agreed schema. This fetches every
+host's manifest, at BOTH the bare `/.well-known/x402` and the `.json` variant, and asks one
+question of each: does it carry enough, in a machine-readable shape, for a buyer to CONSTRUCT a
+payment without a human reading the page first?
 
 WHY THIS AND NOT preflight.py. preflight reads the 402 challenge, which is the wire truth, and
 never looks at the manifest. So a host can publish a manifest that says something completely
@@ -31,7 +32,7 @@ should always be stated as: discovery-by-manifest does not work on this network,
 or a buyer that wants to survey before spending has nothing to read. Anyone quoting this as
 "N hosts are broken" is misreading it.
 
-Read-only, keyless, free. One GET per host.
+Read-only, keyless, free. At most two GETs per host.
 
 USAGE
     python manifests.py            # every host in sweep_results.json
@@ -65,20 +66,35 @@ _CTX.verify_mode = ssl.CERT_NONE
 _TICKERS = {"usdc", "usdt", "dai", "eth", "weth", "usd", "usdbc"}
 
 
+# BOTH paths, and the bare one FIRST. The first version of this file fetched only
+# `/.well-known/x402.json` and therefore undercounted: on a 200-host sample, 101 hosts answered
+# the bare `/.well-known/x402` and only 61 answered `.json`, so a .json-only sweep missed 48
+# hosts outright. The bare path is what RFC 8615 implies, what PR #2979 standardises, and what
+# IANA registration was filed for -- and it is already the deployed majority at 93% of
+# manifest-serving hosts. Trying one path and reporting the result as "hosts that serve a
+# manifest" was measuring our own assumption.
+_PATHS = ("/.well-known/x402", "/.well-known/x402.json")
+
+
 def fetch_manifest(host):
-    url = f"https://{host}/.well-known/x402.json"
-    try:
-        req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=TIMEOUT, context=_CTX) as r:
-            raw = r.read(400_000)
-    except urllib.error.HTTPError as e:
-        return None, f"HTTP {e.code}"
-    except Exception as e:  # noqa: BLE001 - unreachable is a result, not a crash
-        return None, type(e).__name__
-    try:
-        return json.loads(raw), None
-    except (json.JSONDecodeError, UnicodeDecodeError) as e:
-        return None, f"unparseable JSON ({type(e).__name__})"
+    """Returns (manifest, error, path_that_worked). A 200 of HTML is not a manifest."""
+    last_err = None
+    for path in _PATHS:
+        try:
+            req = urllib.request.Request(f"https://{host}{path}", headers=UA)
+            with urllib.request.urlopen(req, timeout=TIMEOUT, context=_CTX) as r:
+                raw = r.read(400_000)
+        except urllib.error.HTTPError as e:
+            last_err = f"HTTP {e.code}"
+            continue
+        except Exception as e:  # noqa: BLE001 - unreachable is a result, not a crash
+            last_err = type(e).__name__
+            continue
+        try:
+            return json.loads(raw), None, path
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            last_err = f"unparseable JSON ({type(e).__name__})"
+    return None, last_err, None
 
 
 def _offers(man):
@@ -169,11 +185,11 @@ def schema_family(man):
 
 
 def check(host):
-    man, err = fetch_manifest(host)
+    man, err, path = fetch_manifest(host)
     if man is None:
         return {"host": host, "served": False, "error": err}
     verdict, missing, ev = payability(man)
-    return {"host": host, "served": True, "family": schema_family(man),
+    return {"host": host, "served": True, "path": path, "family": schema_family(man),
             "top_keys": sorted(man)[:8] if isinstance(man, dict) else ["(list)"],
             "payable": verdict, "missing": missing, "evidence": ev}
 
@@ -184,7 +200,7 @@ def main(argv):
     hosts = sorted({r["host"] for r in rows if r.get("host")})
     if limit:
         hosts = hosts[:limit]
-    print(f"  fetching /.well-known/x402.json from {len(hosts)} hosts\n")
+    print(f"  fetching {' and '.join(_PATHS)} from {len(hosts)} hosts\n")
 
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         res = list(ex.map(check, hosts))
@@ -203,6 +219,10 @@ def main(argv):
     if served:
         print(f"\n  -> {len(payable)/len(served)*100:.1f}% of manifest-serving hosts publish "
               f"enough for a buyer to construct a payment")
+
+    print("\n  which path actually served it:")
+    for path, n in Counter(r.get("path") for r in served).most_common():
+        print(f"   {n:>4}x  {path}")
 
     print("\n  schema families (each is somebody's invention):")
     for fam, n in Counter(r["family"] for r in served).most_common(10):
