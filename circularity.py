@@ -49,6 +49,27 @@ OUT = HERE / "circularity.json"
 FUNDING_LOOKBACK_DAYS = 120
 
 
+# Floor for the adaptive window in _logs. Below this the call count explodes for no benefit, and
+# a range that still will not answer at 64 blocks is a real failure worth raising on rather than
+# grinding at.
+_MIN_RANGE = 64
+
+
+def _fetch_range(params, frm, to, chain):
+    """One eth_getLogs with backoff. Raises if the endpoint will not answer this window."""
+    delay = 2.0
+    for attempt in range(4):
+        try:
+            return rpc("eth_getLogs",
+                       [dict(params, fromBlock=hex(frm), toBlock=hex(to))], chain)
+        except Exception:  # noqa: BLE001 - transient load-shedding, retry then hand back up
+            if attempt == 3:
+                raise
+            time.sleep(delay)
+            delay *= 2
+    return []
+
+
 def _logs(params, chain="base", on_progress=None):
     """eth_getLogs across a block range the public RPCs will actually accept.
 
@@ -63,22 +84,32 @@ def _logs(params, chain="base", on_progress=None):
     frm, head = params.pop("_from"), params.pop("_to")
     total = max(1, head - frm)
     out = []
+    span = MAX_RANGE
     while frm <= head:
-        to = min(frm + MAX_RANGE - 1, head)
-        delay = 2.0
-        for attempt in range(5):
-            try:
-                out.extend(rpc("eth_getLogs",
-                               [dict(params, fromBlock=hex(frm), toBlock=hex(to))], chain))
-                break
-            except Exception:  # noqa: BLE001 - retry transient RPC load-shedding, then give up
-                if attempt == 4:
-                    raise
-                time.sleep(delay)
-                delay *= 2
+        to = min(frm + span - 1, head)
+        try:
+            out.extend(_fetch_range(params, frm, to, chain))
+        except Exception:  # noqa: BLE001 - narrow the window rather than lose the seller
+            # BACKOFF ALONE CANNOT FIX THIS ONE. Waiting longer and re-sending an IDENTICAL
+            # request gets an identical refusal: a 408 here is usually the node declining to
+            # serialise the number of logs the window matches, not a transient blip. The only
+            # variable that changes the answer is the size of the window.
+            #
+            # Found on the largest wallet on the network: 1,088,620 payments in seven days is
+            # roughly 32k logs per 9,000-block range, and every retry timed out at the same
+            # size, so the biggest seller was the one seller we could not measure. Quartering
+            # the window until it is answerable costs more calls and returns the data.
+            if span <= _MIN_RANGE:
+                raise
+            span = max(_MIN_RANGE, span // 4)
+            continue                      # same frm, smaller window
         if on_progress:
             on_progress(min(1.0, (to - (head - total)) / total))
         frm = to + 1
+        # Widen back once a range succeeds, so one dense stretch does not force the rest of a
+        # sweep to crawl at the narrow size.
+        if span < MAX_RANGE:
+            span = min(MAX_RANGE, span * 2)
     return out
 
 
