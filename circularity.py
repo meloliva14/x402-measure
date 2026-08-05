@@ -258,6 +258,17 @@ def main(argv):
               f"{r['at_least_circular_share_n']*100:5.1f}% of count from wallets it funded "
               f"or itself")
 
+    # ALWAYS flush at the end, whatever the mix of fresh and cached was.
+    #
+    # This line is here because its absence destroyed fourteen sellers. flush() only ran inside
+    # the analyze branch, and a cached seller hits `continue` before reaching it. So a run whose
+    # only fresh work was the FIRST seller wrote a one-seller file and then appended the other
+    # fourteen to `results` in memory and never touched disk again. The printed summary said
+    # "15 analysed" and was correct; the file on disk had one. The resume feature that exists to
+    # stop long work being lost is exactly what lost it, and it did so silently, because the
+    # summary is computed from memory rather than from what was actually written.
+    flush(results)
+
     ok = [r for r in results if "error" not in r]
     failed = len(results) - len(ok)
     tot = sum(r["receipts_usd"] for r in ok)

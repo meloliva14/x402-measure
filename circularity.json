@@ -1,0 +1,1571 @@
+{
+ "window_days": 7,
+ "funding_lookback_days": 120,
+ "sellers": [
+  {
+   "seller": "0xe9030014f5dae217d0a152f02a043567b16c1abf",
+   "window_days": 7,
+   "receipts_usd": 35255.689369,
+   "receipts_n": 1081813,
+   "payers": 194,
+   "at_least_circular_usd": 0.0,
+   "at_least_circular_n": 0,
+   "at_least_circular_share_usd": 0.0,
+   "at_least_circular_share_n": 0.0,
+   "detail": [
+    {
+     "payer": "0x2b4ee3387008e5ff1a9996fc8b48d2fd61389037",
+     "usd": 35055.743925,
+     "n": 1075936,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xebc8c71970eeb6973bd87f1ff146b3ec4a5972f8",
+     "usd": 115.566335,
+     "n": 170,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xe58b043fbd701b5808cffbfe7e455a7f466d2ef8",
+     "usd": 20.012505,
+     "n": 172,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x23b7cab2388d6743425d5abab837c57e23da41ff",
+     "usd": 19.367982,
+     "n": 137,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbc9ce6efbe7c313b9c75b726d6a607ab1e80bc63",
+     "usd": 10.75424,
+     "n": 436,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x0ab8e863c5f39cda36207abd07c093b7df92fd2c",
+     "usd": 9.157269,
+     "n": 615,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x0bbd2fec713482d888b6d7d7ea7ec8c632297aa8",
+     "usd": 6.599531,
+     "n": 74,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xcc7854ae277e8ec12a6abec254b66d4d0be6f24c",
+     "usd": 5.790081,
+     "n": 2758,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2acb854ac185dad5d7486a45e91a5863d3fca6a1",
+     "usd": 2.90866,
+     "n": 201,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9d3d9410be95fa1d230734b961997427fc61d837",
+     "usd": 1.921,
+     "n": 197,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x943e7cf12a7c2a3c88f54fde013f754f506d4f1d",
+     "usd": 0.866291,
+     "n": 79,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x272b034e462258ecc826486a4e0f03e7f11cdb91",
+     "usd": 0.718689,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x0b41d227c75d84b1428976c67d7a5905eb3ecb5e",
+     "usd": 0.5485,
+     "n": 13,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xa39c469c59270f5403b4641131b89bfe2459889f",
+     "usd": 0.449,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x14fb24b8553c7c51237fa8dc4ebb699d556b999b",
+     "usd": 0.385284,
+     "n": 16,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x078bf172b571ff390a2e369293dd16feffead9af",
+     "usd": 0.374507,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc533bf5268a2f64adde58dce380651f70aa92d7a",
+     "usd": 0.3545,
+     "n": 5,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb646a104cc03404a2883eb160ead5d471cf56e56",
+     "usd": 0.342004,
+     "n": 6,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xcc8c44ad3dc2a58d841c3eb26131e49b22665ef8",
+     "usd": 0.329081,
+     "n": 87,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x54c9df94be00e49fd5c5323f64507d183a6b0b90",
+     "usd": 0.326414,
+     "n": 120,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9b1a8314bf629032b8feb36688200c4d1f701f49",
+     "usd": 0.317,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xef5d128c4543cc61c387a218c7feae9aa0239546",
+     "usd": 0.293439,
+     "n": 9,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x36a5198f43494a1858189a366b042cbf652f7924",
+     "usd": 0.272554,
+     "n": 8,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xae24939eb3b5f0ece7db6dba8fab7b8c19144040",
+     "usd": 0.2635,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x0d4d5e5eab1854ebe4a4c875a0e78c2be577555c",
+     "usd": 0.246,
+     "n": 36,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x77d919cf27b7e9583a57e98cf66f3d2e55782ed5",
+     "usd": 0.223044,
+     "n": 80,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xcd513d2e063177caa937d70b4d87603a9a4946a9",
+     "usd": 0.217,
+     "n": 33,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x36be4323df26d13735986e508e799f54032de7d2",
+     "usd": 0.148189,
+     "n": 35,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf7dcf5489a29c6e8e83369710aab965d5e4317b8",
+     "usd": 0.127,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf92892babf5ea838b856d43ca5f04abe61625718",
+     "usd": 0.121316,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x1b6ee612a5b08f25109be88c20922d0b70d8f269",
+     "usd": 0.07,
+     "n": 35,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x810f6d61f7606deee2657d3083e150a222bc29c5",
+     "usd": 0.064,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x68a14203953130ae840e37dbe3d64c1e6858da7b",
+     "usd": 0.049962,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x1a36afa930a15c220bb358a4b6e8f496142c41d4",
+     "usd": 0.044131,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd394bb2dbdf6d898b3810664968202f41e2f8b5c",
+     "usd": 0.043662,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x80c51bdb6846963930f1114a96b37429c5d4a238",
+     "usd": 0.038,
+     "n": 19,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xfe0d23810666fc140ccac7ee3ac8f9bc23b34ef3",
+     "usd": 0.035,
+     "n": 4,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4a93ae06b056ec6cb82f627f3da59941998e2941",
+     "usd": 0.022,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x07fbca218b0a0a35244e0025a036fa85a6dc97dc",
+     "usd": 0.022,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbe1ecf7905e0d44f6afaf039f17ac58639b310cf",
+     "usd": 0.016,
+     "n": 8,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb13eb9a5a650d86a0f173f8300ba28d281e5a6ce",
+     "usd": 0.014,
+     "n": 7,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x430ecb9f22f28a827cc0eaadcbb7ebdda3bbf7e7",
+     "usd": 0.014,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x040d5a87ec7e675201e38846966d0afe3b1e07f9",
+     "usd": 0.012,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x455df653ac689ec3b32491a5a60a2d14c5f9099d",
+     "usd": 0.012,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3a823ed489485360f53e50794189c496354fd36b",
+     "usd": 0.012,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4334238eb67c35e5f5f8a551cf2b03c8af17df42",
+     "usd": 0.012,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x6ee6232c515e0f6e0cce0f73d7cac68ad554cf85",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x946ac55f5739c558a52e578034f9c5ece37f27e0",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xafa4a33a993fc693cddee5a5557cb73e2b22e5f9",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4d03f6a11cc28a17530148785156f109ef8c3838",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x20971587df3ad7357aeff73a3e726e4f61f3e03f",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf18a9c4723c4807fb5d5aaba5744d619fe4b42c7",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9918f94bebd5590518ba84f5b40bfe925e825ca7",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x94d084b4cef897f8c3f2082575588573e036512a",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbc1994a1e3c0f543f8d95ddc041783a5c13bf2eb",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xe6c4bb4136b66dee35d66c22dbcec20b496fe17d",
+     "usd": 0.011,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc52b35f9e8cbfa65c4b825697fd50ace754e1df7",
+     "usd": 0.01,
+     "n": 5,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x34913a202138c83d0ed5fca84e15da456d24402e",
+     "usd": 0.008,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x071ab5e86dd2d55b8220edd84b4c73005c7ecfc0",
+     "usd": 0.00716,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x86dcfca29e8d39b41363952682af6a599a03f714",
+     "usd": 0.007,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x6a0724d9835766f6500fe3880876465a609a60a4",
+     "usd": 0.007,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2ed0ace4998c3e3e42d86e3d07c139718d55b7ac",
+     "usd": 0.007,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x1e1818681cd300ddcec82b712dad6252c476cd48",
+     "usd": 0.007,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x5cef0a7e87b359474417f1a017cf56041f1bd36b",
+     "usd": 0.006,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x05af5a7f53fc8768368815a4e6aa7f09d72b3bb7",
+     "usd": 0.006,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf642d454ac3b5777d61cf49b1cd28e94b59a71a7",
+     "usd": 0.006,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd5791860ca10a6f39749fb499931c79c7c35071a",
+     "usd": 0.006,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3d09e5b237a82bea77bdc01fbc2a28fec8cb7e00",
+     "usd": 0.006,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9688385469cd5d216fd5a89eb03ec7fd0e0bd92d",
+     "usd": 0.006,
+     "n": 3,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x8c064af4609332a0642f0d439d34b0af70e5acca",
+     "usd": 0.005411,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x45c87ac96865202e9b47a6b02fed49d7638cc89c",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x98978c8926ac59325b74c7070d9b71fe8d8de042",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbbf38648250b174ada9461315c614c3b0785c70a",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xdbb3e7d5a1ba5c44c1015513c16de3981e928cb8",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb05bacb13845646bcc25eb6ef22336308f5d0d51",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x72d378144db5df1d9c1f6615510dd8fcde2d4e11",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x630c7675c2a600c3f0a50f30bbe67711799875aa",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x6686e10fc4f7a43cca67cb26844d9f8f458f1d0a",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xad8caf1dcdda4e813c5ffbb3e36ab95ca3693b99",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x85bdb78ad4c39565f767da6733a071f86baedb6b",
+     "usd": 0.005,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc939fc4369325f3160b124c407bb677da0d38af9",
+     "usd": 0.00405,
+     "n": 270,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x8d5ee167d913a79c1afd062e51146370238c6c26",
+     "usd": 0.004,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x8fd5b22cdafb751a5b705bf94c2bccb0009e8894",
+     "usd": 0.004,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3a2157ff7b760b299a66afd29f774d871aded912",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x35ba1e5c0a7cab0336f0a06bb52552510ae1db12",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x834e0d42b0e7d8aafe15ac673f639e445e4d9085",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3e96ee475ab6b775898e4696c8c4e583b7dee558",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x137a1f9fd6369cd3a29e0a4fc9fe6dd20bde765e",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf6ba788e36e69c2b6dae3e4bcbd166cc5b6d8f58",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xcca25cf82ca7d9b92748302cb932a04083900141",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xabd75733069733f0d28333e9b2a7bd4b06c7c23e",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x878927cc9f94c5d8c8775fe5ad01f481073f42d8",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xdaa65c6cbed3b46357967a63424e1f3e1c3bbda1",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xfeec35b8c2de33f288fd5f7c4f3c947df4a3799a",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb95ea7db64813e04083665a9250a7c74b66f64a3",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x955a296e235f687d259dce1e5eaa053128d110d6",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xa4f54971c14239de0671e501d859115ffb4cb1ff",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x71f3b73dec69070a1f70fd3f53319d8155e5e07e",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd626c8b4ba265b29b4a5060874318d678c5109e5",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3eccad24794ca298d25378e9902a251322ea8749",
+     "usd": 0.004,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb1432365300ba2557adb998e89760d1f3a1961df",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd2877fdf7529e3e6d323d0be4965ab655f803e1b",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd31a5858850dde481b90dc93c0facf9de4eb35f0",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xb759b1afaca6cbb80288c7939aaa9f9070293c12",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x8961bf724fe806a5e9d1869e23973013273fc757",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf2f126bf085ede7fe654de80493d72157cfcaeba",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x8e843872e88b100feefca3db632d23b30df20af7",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xe4dd14b6df827e708b116de6d32985271ab9993e",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbde126109ec0449cdcd2ef91a3a1ccc7d9ee88a4",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4c79bc2f81a2f9fbf789d9ca794169c849d3f58c",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x84e8d3d2c2baf6e5edf26f8c9f4b46b09a48e1e2",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x5694c490edc208b9ab8e2ddf45ae61f3f6769f63",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x328a114da51e6b275ab8f76cdbe1bd15399869d5",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x477eee98a025770a6eb8753ac2577c202aa2e97e",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xe57af3fa70804fad1281339846cc919479a2c970",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xa0ac533b98f1db70d90477326a6b946edf4c96e8",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4cc9054ce6e614d1f271992c7c20402358fc37fd",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xaacb04f918ab70fa7075efa3eb43f60933b13761",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x1aa0bce1c46985b2e86fc7fec8424ca8ca8b895c",
+     "usd": 0.003,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9df067a996f69a23bd8e53136963e2a8288f7d59",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x811c1326b64fd88238bf391c1488df9aa77c9189",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x62c8c817bde598356a12409295f823446fc906f5",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x36095dbf2444eecfbe1ce46ba4639364c4ebcc72",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd131bc60065f4d5f4f7ba759f639e517fca96fad",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc25038248ad8ef5f37dcc2f9312e6f595fb4c8a9",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xd321efe24e105e20f2bb7bb4f6a1fb6090d6e43c",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9e854d513ec158d20d8506ba66e47cbe187ec25d",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x90755fe03e0f91f218aaff144b24d927a70196bf",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x5642af8bf9e74e03f202f13591ce2cf0e4e4c6c5",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x566890cf3ac51384a0c42d9f8a1ce22f6ac8522c",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x76bba520adf66bdb1cc502bd5d35441d15079e96",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3bf134e68ba9ce92fdae885e537551f3a0d895c5",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x6ed976d274300c4107eb8f84a98c8fabc4a06548",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x84dd562662926c7ce83808a89456d2ac1a074057",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3ed93a7b87832f04a91137cacb273d39295e430e",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc9556c866a4a13c3df4fd7fc641d463dace4f3bb",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xa49296145304c258e44b030bec5d9dfc60d921aa",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x61da2d0faf5f4c08527ba91b78eb1f86b13a6477",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xee4bf8779a3102c378f19b5b9c553fd93e9a200f",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x4f643d8c03be99e82ba48f35ea29d4f136e2c0ca",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x09ed8066f0c32eb86b8a83ce6d4ecef7b33d64b2",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x378e167f09d746cf06c7591b5a5700cc691a315f",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2cb8b9e93a44c07d65b9f1f7d5cddb33217fc4ab",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xf5a0f698f5b1db8152d188c066d40c3d0e53c9b4",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x9d46d5bca27b452ac4c74ca610bbd04610696622",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xdc5ce72b84d0fb29240bc1fef8fdff36e875432e",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xbc25f0f12472579a901b7f2f7f2e169065e26e7b",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc922647c0f3989f5cee64ee69191d0699c3949d9",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x52ee3eb48a41c5d9db564dc16762a930360791fe",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x6ed540391cc3aad2e9f38c53e6ccca34d02d1d81",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x39d14a7996117dd4a0fd15ec24d48234deedcaf7",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x0861864671123828d69795641fc9790eb4651c81",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x34dd36bc475b59298a20bbcf2f62fa529374b445",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x10901bb1b339a635f847a1b9878b6f81a50807d4",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x3aebb73a33377f0d6fc2195f83559635adee8408",
+     "usd": 0.002,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0xc9390a1d1d40c13f1b0397e83b6ae4bcd0780af9",
+     "usd": 0.000115,
+     "n": 2,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e1738d9d5625323393191bc5e28dadede9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e18f982310bf83f4478dc6567a9bb96d49037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ebc2a3985dec8c29b05e6cc6d07e05b559037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e497f9dfe032f35bcd15d1fac1397c2239037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ed1dadcba3e797b426e519f9b77b666309037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ef94bcaec074d2001bfbd0e1b0b4029c59037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e13232333cb3744fdde277922833b30ff9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e1b0ffd82685e1f15512a6cdf06e770109037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e23f0a1e36586955083d7dd878ed5dd769037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e10f996ba1da7dec870f558ca03b3c8fb9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e30ced38e427f2a19fea6881bccc2e3c99037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4eb46f939462bf01e8d8fb945c5efc4a399037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ee65d42b2651608be2c0d40b685a30b8e9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ea4d4cf3e9542528cd5b57ba7b977e5549037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e893465ec7ee14a626c59673bead518ee9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e7f928dca4be583687ebcbbc0e56a76be9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4edc4be398cba8823695f159ecb334ac5b9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e8d1081cb94e6b62bf342d7f2f85945379037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e7b739a1c405aae55a25ef495c9dc57049037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e5a15b0c4e5ba66a996f3a8923b87df889037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ec46b716e8df69c5a1e9f9c65086f81859037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e827901c9bdf0fc2e96abf4518a61f8669037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4eefcf0bf30eb8734306ac50e5daef46dd9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e43a6f0c8c8f273049eb593ecddbf52ea9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4eda6690064aca93a965243b45acddeac99037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e3540943765f211bec1c70df36bde56539037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e128efa13d24c80a8a223569a05cec3349037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e01e0a0de06b9feabe703f067db81cb369037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4eab30d47b072c1f8a038f91d17a045aa79037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e47c104b9fe60ee8fc6fcc52ee5231a259037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e0d564a0380be919f9bb293585c1f408a9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ea32f244de4cab6b263e2f60329c93df79037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e2e1eaa213d200b3ef3d87810ec4652fc9037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4eb9dcde389d0f6225ef4aa878aa9300129037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4ed694c8d8e7fc4a961f69e55353b0ff619037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e9007270210893a1b7bfe4986be7f35309037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e6b6dce20e952ca4665f8a42efbc761419037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    },
+    {
+     "payer": "0x2b4e8c64cb4789808737e672fc61eef8b8889037",
+     "usd": 1e-06,
+     "n": 1,
+     "relationship": "independent",
+     "funded_usd": 0.0,
+     "funded_transfers": 0
+    }
+   ]
+  }
+ ]
+}
