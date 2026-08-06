@@ -210,9 +210,26 @@ def main(argv):
     print(f"  serve a manifest            : {len(served)}/{len(res)}")
     print(f"  would PASS the spec as-is   : {len(conf)}")
     print(f"  would need changes          : {len(served) - len(conf)}")
+
+    # THE HEADLINE NUMBER ON ITS OWN IS MISLEADING, so it never prints on its own.
+    #
+    # `kind` is a field this spec INVENTS. Exactly one host in the entire sweep publishes it,
+    # which is not a finding about the network, it is arithmetic: nobody can already satisfy a
+    # requirement that did not exist until last week. Reporting "0% pass" and stopping there
+    # reads as "the proposal is unreasonable" when what it actually measures is "the proposal
+    # is new".
+    #
+    # The number that means something is how many hosts are ONE net-new field away. Those hosts
+    # already satisfy everything the spec asks that was askable before it was written.
+    NET_NEW = ("no kind",)
+    near = [r for r in served
+            if r["violations"] and all(any(n in v for n in NET_NEW) for v in r["violations"])]
     if served:
-        print(f"\n  -> {len(conf)/len(served)*100:.1f}% of hosts that publish a manifest today "
-              f"already satisfy the proposed MUSTs")
+        print(f"\n  -> {len(conf)/len(served)*100:.1f}% satisfy every proposed MUST today")
+        print(f"  -> but {len(near)} ({len(near)/len(served)*100:.1f}%) violate NOTHING except "
+              f"fields this spec introduces,")
+        print(f"     so they are one mechanical edit from compliant. Quote this number, not the "
+              f"one above.")
 
     print("\n  every MUST violation, by count:")
     for v, n in Counter(v for r in served for v in r["violations"]).most_common(12):
