@@ -1,0 +1,31 @@
+{
+ "queried": 1971,
+ "controls": "passed",
+ "counts": {
+  "no-record": 1968,
+  "HAS_RECORD": 3
+ },
+ "hits": [
+  {
+   "name": "api.posttosource.com",
+   "status": "HAS_RECORD",
+   "records": [
+    "v=x4021;descriptor=api;url=https://api.posttosource.com/.well-known/x402"
+   ]
+  },
+  {
+   "name": "api.telemost.io",
+   "status": "HAS_RECORD",
+   "records": [
+    "v=x4021;descriptor=api;url=https://api.telemost.io/.well-known/x402"
+   ]
+  },
+  {
+   "name": "posttosource.com",
+   "status": "HAS_RECORD",
+   "records": [
+    "v=x4021;descriptor=api;url=https://api.posttosource.com/.well-known/x402"
+   ]
+  }
+ ]
+}
