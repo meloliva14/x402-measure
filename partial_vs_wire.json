@@ -1,0 +1,1167 @@
+{
+ "checked": 205,
+ "results": [
+  {
+   "host": "2s-3cpr6qm6j-alleyford.vercel.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "2s-jwnd2jdga-alleyford.vercel.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "2s.io",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "402.com.tr",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "402atlas.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "address.agentic-jp.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "aeml-x402.zeabur.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "afriref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "agent-data-hub-thebrandbard.replit.app",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    {
+     "field": "network",
+     "manifest": "base",
+     "wire": "eip155:8453"
+    }
+   ]
+  },
+  {
+   "host": "agent-trust-layer.agent-trust-layer.workers.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "agentcrush.xyz",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentdataapi.onrender.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "agentkit0.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentpay.tools",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "agentres.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "aicomglobal.com",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    {
+     "field": "network",
+     "manifest": "base",
+     "wire": "eip155:8453"
+    }
+   ]
+  },
+  {
+   "host": "alpha402x.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "apexscout.ai",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api-production-17e1.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.aitrailblazer.net",
+   "verdict": "disagrees",
+   "compared": [
+    "payTo",
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "api.anchor-x402.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.biotechcatalystsentinel.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.businesschanges.dev",
+   "verdict": "agrees",
+   "compared": [
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "verdict": "disagrees",
+   "compared": [
+    "asset"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "api.clawfetch.ai",
+   "verdict": "agrees",
+   "compared": [
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.deepnets.ai",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.demandex.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.devdrops.run",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.getplexa.com",
+   "verdict": "disagrees",
+   "compared": [
+    "asset"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "api.gitbeacon.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.isocast.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.lastlookdata.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.melvea.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.memoryapi.org",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.moltalyzer.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.nimatron.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.orcatrace.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.ownedforever.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.polym.uk",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.printmoneylab.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.regressionincoming.fyi",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.seneschal.space",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.signalfuse.co",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.signalis.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.stelardigital.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.telemost.io",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.trustboost.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.vindexapi.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.webbersites.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.x-402.online",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "api.x-ego.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.x402intel.uk",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api.zaroniacalculator.co.za",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "api2ls.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "apiwitchcraft.duckdns.org",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "app-443.hdgregory.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "app-446.hdgregory.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "asiaref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "attester.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "aubrai-x402.vercel.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "ausref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "aviation.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "base-intel-api.jakemaxsigal.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "bittensorman.xyz",
+   "verdict": "agrees",
+   "compared": [
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "bizintel-api.hahavoid0.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "blockint.ai",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "brdata.thomenz.me",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "brmarket.thomenz.me",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "chain-analyzer.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "chat.anchor-x402.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "codepulse-api.hahavoid0.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "company.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "data.greeneris.io",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "data.lagoontechsystems.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "deepseek.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "denpyo-api.hp-vladic.workers.dev",
+   "verdict": "disagrees",
+   "compared": [
+    "payTo",
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "diet.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "earth.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "energybilltoolkit.co.uk",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "entertainment.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "entities.recordsforagents.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "euroref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "execbox.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "finance.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "furigana.agentic-jp.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "gateway.spraay.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "gateway.stride20k.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "gblin-sentinel.vercel.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "gblin.digital",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "gleif-entity.xplowdiaka.workers.dev",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "h1dr4.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "hars.cryptotavern.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "hello-world-x402.vercel.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "hermes-storefront.onrender.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "hmo.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "holiday.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "houjin.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "intel.twzrd.xyz",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "jp-data-api-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "jsonrecon.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "jurat.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "kaisha-api.hp-vladic.workers.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "keyronne.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "kronos-x402.vercel.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "kronossignals.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "latamref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "licenses.recordsforagents.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "marine.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "mearef.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "minifetch.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "modelprices.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "music.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "nad.payflowagent.net",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "netintel-production-440c.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "netintel.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "news.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "ontarioprotocol.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "openfda-drug-safety.xplowdiaka.workers.dev",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "opportunity-api-production.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "oracles-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "orchard-data.letom1176.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "orionkr.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "ot-intel-api.onrender.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "oyapicks.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "pmhxr44qn4qitobucm7ctgklbq0svqjb.lambda-url.ap-southeast-2.on.aws",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "polynews.news",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "property.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "prospex.x402tools.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "quantum-artificer.surewhynot.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "quickpoll.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "recalls.recordsforagents.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "recordsforagents.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "redlynr.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "regime.nsgoods.org",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "research.appliedidentities.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "router.forgemesh.io",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "router.mudko.com",
+   "verdict": "agrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "sanctions-screening.xplowdiaka.workers.dev",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "schema.nsgoods.org",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "scry.moreright.xyz",
+   "verdict": "agrees",
+   "compared": [
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "sec-regcf-tracker.xplowdiaka.workers.dev",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "sec.multyplylabs.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "shopifyagentdata.com",
+   "verdict": "disagrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    {
+     "field": "network",
+     "manifest": "base",
+     "wire": "eip155:8453"
+    }
+   ]
+  },
+  {
+   "host": "signal-engine-production-d88d.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "solar.nsgoods.org",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "soldefi.thomenz.me",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "space.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "statepulse-api.hahavoid0.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "stem.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "supplier-risk-api-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "telesint-api.onrender.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "tenjin.blog",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "the-stall.intuitek.ai",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "token-api.x402hub.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "toolcall.click",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "tooloracle.io",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "toolsmith-api.dassad10.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "trader.rigoblock.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "transit.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "trust402.aztecbeacon.uk",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "asset",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "trust402.vercel.app",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "asset",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "underground.substratesymposium.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "usaref.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "vealth.net",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "vedetta.dethboy.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "vehicle.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "verity-suite.onrender.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "verza.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "vibes-coded-production.up.railway.app",
+   "verdict": "disagrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "payTo",
+     "manifest": "FmC5pYspDdjBntYdyjcahAHd3zAYj3ucx1dgoGs6LjMB",
+     "wire": "0xDBbC87e7947201EAcC9a7521dda4801e99994566"
+    },
+    {
+     "field": "network",
+     "manifest": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+     "wire": "eip155:8453"
+    }
+   ]
+  },
+  {
+   "host": "vibes-coded.com",
+   "verdict": "disagrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "payTo",
+     "manifest": "FmC5pYspDdjBntYdyjcahAHd3zAYj3ucx1dgoGs6LjMB",
+     "wire": "0xDBbC87e7947201EAcC9a7521dda4801e99994566"
+    },
+    {
+     "field": "network",
+     "manifest": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+     "wire": "eip155:8453"
+    }
+   ]
+  },
+  {
+   "host": "vibesprings.net",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "weather.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "weather.payapi.market",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "weather.x402.press",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "web-production-18a32.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "wintel.canopy.finance",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "www.jurat.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "www.paylog.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-api.aubr.ai",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-company-api-production.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-data-api.onrender.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402-datashop-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402-endpoints.onrender.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402-farm.vercel.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-finance-api-production.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-paid-service.iholt.workers.dev",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "x402-store.dgdb.workers.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-vehicle-api-production.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402-weather-api-production-04c4.up.railway.app",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.aubr.ai",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.bakdupoffroad.com",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402.botsmith.dev",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "x402.charliemorrison.dev",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402.dailyelo.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.forgemesh.io",
+   "verdict": "disagrees",
+   "compared": [
+    "payTo",
+    "asset",
+    "network"
+   ],
+   "diffs": [
+    {
+     "field": "asset",
+     "manifest": "USDC",
+     "wire": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    }
+   ]
+  },
+  {
+   "host": "x402.ochinimus.app",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402.omardev.xyz",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.payperbyte.io",
+   "verdict": "unknown",
+   "reason": "no readable 402 at the resource url"
+  },
+  {
+   "host": "x402.professorsausages.com",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.shizu.me",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "x402.telnyx.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "x402toll.com",
+   "verdict": "agrees",
+   "compared": [
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "zaref.dev",
+   "verdict": "nothing-actionable"
+  },
+  {
+   "host": "zlurp.ai",
+   "verdict": "agrees",
+   "compared": [
+    "asset",
+    "network"
+   ],
+   "diffs": []
+  }
+ ]
+}
