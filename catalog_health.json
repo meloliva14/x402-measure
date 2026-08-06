@@ -1,0 +1,1008 @@
+{
+ "catalogue": "CDP x402 Bazaar",
+ "listings_total": 14364,
+ "listings_covered": 14363,
+ "hosts_covered": 1521,
+ "hosts_total": 1522,
+ "by_verdict": {
+  "UNREACHABLE": 70,
+  "OK": 11723,
+  "NON_EVM": 148,
+  "V1": 1411,
+  "NO_402": 998,
+  "BLOCKED": 8,
+  "UNKNOWN_NETWORK": 5
+ },
+ "unpayable": {
+  "listings": 1419,
+  "hosts": 100,
+  "operators": 60
+ },
+ "affected_hosts": [
+  {
+   "host": "clonecho.builda.company",
+   "listings": 993,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base-sepolia\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.strale.io",
+   "listings": 92,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.the402.ai",
+   "listings": 86,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "aeml-x402.zeabur.app",
+   "listings": 57,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "dartapi.ljaysk.com",
+   "listings": 13,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.tcgapi.dev",
+   "listings": 11,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "agent-data-toolkit.onrender.com",
+   "listings": 9,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api-production-54bd.up.railway.app",
+   "listings": 7,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "bittensorman.xyz",
+   "listings": 6,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.demandex.dev",
+   "listings": 5,
+   "verdict": "BLOCKED",
+   "notes": [
+    "x402Version=None, no accepts[] in the body - a v2 client has nothing to iterate over"
+   ]
+  },
+  {
+   "host": "31-172-70-14.nip.io",
+   "listings": 5,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "slidingbox.ai",
+   "listings": 5,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "cnvrt.ing",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "pitchiq-mcp-production.up.railway.app",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "jp-calendar-x402.onrender.com",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.genbase.fun",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "pulsefeed.dev",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "enrich-gate.vercel.app",
+   "listings": 4,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "staging.toolkit.dev",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.stakedbots.com",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "app.suedeai.ai",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)"
+   ]
+  },
+  {
+   "host": "api.slamai.dev",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.freaks.one",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "xpensli.app",
+   "listings": 3,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402factory.ai",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402.browserbase.com",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "liquita-x402-edge.liquita.workers.dev",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402.d-bis.org",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "ecosystem-intelligence.onrender.com",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "schemafetch.panmediatech.workers.dev",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "horizon-pulse.vercel.app",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "chrombot-x402.vercel.app",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "mpp.hyreagent.fun",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.paylog.dev",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-next-mainnet-wheat.vercel.app",
+   "listings": 2,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.hibra.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api-dev.agents.skillfulai.io",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "mediaforge.mediaforge-hq.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "blockmachine.io",
+   "listings": 1,
+   "verdict": "BLOCKED",
+   "notes": [
+    "x402Version=2, no accepts[] in the header - a v2 client has nothing to iterate over"
+   ]
+  },
+  {
+   "host": "nut402.codenut.xyz",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.proxyllm.ai",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "slamlink-ai-main-50fbb45.d2.zuplo.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "app.aabc.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "quotesheet.panmediatech.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "receiptstamp.panmediatech.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "spendguard.panmediatech.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "openfda-drug-safety.xplowdiaka.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "sec-regcf-tracker.xplowdiaka.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "sanctions-screening.xplowdiaka.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "gleif-entity.xplowdiaka.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "gifu-server.onrender.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402pixels.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)"
+   ]
+  },
+  {
+   "host": "dlf-gateway.agentlabel.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "probe.onchainintel.net",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)"
+   ]
+  },
+  {
+   "host": "polymarketeer.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "protocol-health-oracle-production.up.railway.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "broker-sync-api-production.up.railway.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "test.alexwlex143.workers.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x721.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "patternfetch.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-echo-service.fly.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "xx402.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-cybercentry-cyber-security-consultant.up.railway.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "recoup-api-git-sweetmantech-myc-4077-32a4e4-recoupable-ad724970.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "bounty.btnomb.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "nittarab.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.vandaagai.nl",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "nico222222222-x402-trust-guard.hf.space",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "api.instahuman.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "nolawealthfinancial.com",
+   "listings": 1,
+   "verdict": "BLOCKED",
+   "notes": [
+    "x402Version=None, no accepts[] in the body - a v2 client has nothing to iterate over"
+   ]
+  },
+  {
+   "host": "x402.icu",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "recoup-api.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.xplace.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.basehelper.fun",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "witness.bnbot.ai",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "pay.lnpay.ai",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402pay.org",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-cybercentry-wallet-verification.up.railway.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402payswap.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "recoup-qgrbqflbo-recoupable-ad724970.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-pay.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "bricks.builddetroit.xyz",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "www.netprotocol.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402.thematrixofdestiny.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "mint.snowfro.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "deep-report-gilt.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "token-api.x402hub.xyz",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-demo-discovery-endpoint.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "kleros-ipfs-gateway.fly.dev",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "gankdat.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "epsteinisland.club",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "aiact-api.com",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "nickeljoke.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base-sepolia\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "lore-prod.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base-sepolia\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "base-bookvs-movie.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "ethmumbai-three.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-mainnet.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  },
+  {
+   "host": "x402-ai-starter.vercel.app",
+   "listings": 1,
+   "verdict": "BLOCKED",
+   "notes": [
+    "x402Version=None, no accepts[] in the body - a v2 client has nothing to iterate over"
+   ]
+  },
+  {
+   "host": "bcb-x402-hackathon.vercel.app",
+   "listings": 1,
+   "verdict": "V1",
+   "notes": [
+    "network=\"base-sepolia\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)",
+    "challenge is in the body with no PAYMENT-REQUIRED header, so a v2 buyer reads the header, finds nothing, and never sees your price",
+    "uses v1 maxAmountRequired rather than v2 amount"
+   ]
+  }
+ ]
+}
