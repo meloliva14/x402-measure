@@ -184,6 +184,50 @@ def schema_family(man):
     return f"{ver}+{container}"
 
 
+PEERS_CAP = 32          # the cap in x402-foundation/x402#2979
+
+
+def peers_of(man, host):
+    """The `peers` hint array (#2979, commit c320fc1), and whether it is well formed.
+
+    Added ahead of any deployment on purpose. Nothing published one at the time this was
+    written, and the point of having it early is that the first publisher gets measured on the
+    day they appear rather than whenever someone remembers to look.
+
+    The spec's grammar is deliberately minimal: an entry is a BARE DOMAIN NAME and nothing else,
+    because existence is allowed to spread peer-to-peer while trust is not. So a scheme, a path,
+    a port or a literal IP is a parse failure rather than a lenient read. Being generous here
+    would hide exactly the abuse the bare-name rule exists to prevent.
+    """
+    if not isinstance(man, dict):
+        return None
+    raw = man.get("peers")
+    if raw is None:
+        return None
+    if not isinstance(raw, list):
+        return {"present": True, "entries": 0, "malformed": ["peers is not an array"],
+                "over_cap": False, "self_ref": 0}
+
+    bad, self_ref = [], 0
+    for e in raw[:200]:                       # bound the scan; a huge array is itself the finding
+        if not isinstance(e, str):
+            bad.append(f"non-string entry ({type(e).__name__})")
+            continue
+        v = e.strip()
+        if not v:
+            bad.append("empty entry")
+        elif "://" in v or "/" in v or ":" in v:
+            bad.append(f"not a bare name: {v[:40]!r}")
+        elif all(p.isdigit() for p in v.split(".") if p):
+            bad.append(f"IP literal: {v[:40]!r}")
+        elif "." not in v:
+            bad.append(f"not a domain: {v[:40]!r}")
+        elif v.lower() == host.lower():
+            self_ref += 1
+    return {"present": True, "entries": len(raw), "malformed": bad[:5],
+            "over_cap": len(raw) > PEERS_CAP, "self_ref": self_ref}
+
+
 def check(host):
     man, err, path = fetch_manifest(host)
     if man is None:
@@ -191,7 +235,8 @@ def check(host):
     verdict, missing, ev = payability(man)
     return {"host": host, "served": True, "path": path, "family": schema_family(man),
             "top_keys": sorted(man)[:8] if isinstance(man, dict) else ["(list)"],
-            "payable": verdict, "missing": missing, "evidence": ev}
+            "payable": verdict, "missing": missing, "evidence": ev,
+            "peers": peers_of(man, host)}
 
 
 def main(argv):
@@ -219,6 +264,20 @@ def main(argv):
     if served:
         print(f"\n  -> {len(payable)/len(served)*100:.1f}% of manifest-serving hosts publish "
               f"enough for a buyer to construct a payment")
+
+    # The three numbers whawk46 asked for on #2979, reported as absent rather than as zero when
+    # nothing publishes yet. "0 entries per manifest" and "nobody has adopted this" are different
+    # facts and the second one is the true one today.
+    withpeers = [r for r in served if r.get("peers")]
+    print(f"\n  peers hints (#2979 c320fc1): {len(withpeers)} of {len(served)} manifests publish one")
+    if withpeers:
+        ent = [r["peers"]["entries"] for r in withpeers]
+        print(f"   entries per manifest: min {min(ent)}, median {sorted(ent)[len(ent)//2]}, max {max(ent)}")
+        print(f"   over the {PEERS_CAP} cap : {sum(1 for r in withpeers if r['peers']['over_cap'])}")
+        print(f"   malformed entries   : {sum(1 for r in withpeers if r['peers']['malformed'])}")
+        print(f"   self-referencing    : {sum(1 for r in withpeers if r['peers']['self_ref'])}")
+    else:
+        print("   nothing to report yet. Not zero adoption measured badly, no adoption to measure.")
 
     print("\n  which path actually served it:")
     for path, n in Counter(r.get("path") for r in served).most_common():
