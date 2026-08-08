@@ -1,0 +1,75 @@
+{
+ "checked": "2026-08-08T13:07:20.910719+00:00",
+ "unscoped": [
+  {
+   "pkg": "x402-express",
+   "exists": true,
+   "latest": "1.2.0",
+   "published": "2026-04-16",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 5880,
+   "downloads_error": null
+  },
+  {
+   "pkg": "x402-hono",
+   "exists": true,
+   "latest": "1.2.0",
+   "published": "2026-04-16",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 1937,
+   "downloads_error": null
+  },
+  {
+   "pkg": "x402-next",
+   "exists": true,
+   "latest": "1.2.0",
+   "published": "2026-04-16",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 2036,
+   "downloads_error": null
+  },
+  {
+   "pkg": "x402-fetch",
+   "exists": true,
+   "latest": "1.2.0",
+   "published": "2026-04-16",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 22723,
+   "downloads_error": null
+  },
+  {
+   "pkg": "x402-axios",
+   "exists": true,
+   "latest": "1.2.1",
+   "published": "2026-05-29",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 4846,
+   "downloads_error": null
+  },
+  {
+   "pkg": "x402-koa",
+   "exists": false,
+   "error": "HTTP 404"
+  },
+  {
+   "pkg": "x402-fastify",
+   "exists": false,
+   "error": "HTTP 404"
+  },
+  {
+   "pkg": "x402",
+   "exists": true,
+   "latest": "1.2.0",
+   "published": "2026-04-16",
+   "deprecated": false,
+   "deprecation_message": null,
+   "downloads_last_week": 347288,
+   "downloads_error": null
+  }
+ ]
+}
