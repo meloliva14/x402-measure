@@ -1,0 +1,2459 @@
+{
+ "checked": 400,
+ "results": [
+  {
+   "host": "2s-3cpr6qm6j-alleyford.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "2s-jwnd2jdga-alleyford.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "2s.io",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "31-172-70-14.nip.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "401-chi.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "402.com.tr",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "402atlas.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "402timezones.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "402utils.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "5.75.142.199.sslip.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "action402.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "address-risk.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "address.agentic-jp.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "ads.apitoll.cloud",
+   "verdict": "not-both"
+  },
+  {
+   "host": "ads.forgemesh.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "ads.gitlawb.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "aeml-x402.zeabur.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "afriref.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-budget-guard.onrender.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agent-compression-biz-production.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent-data-hub-thebrandbard.replit.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agent-data-toolkit.onrender.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent-id-x402-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-offers-api-replitzip.replit.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-paycheck.onrender.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-production-1daa.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent-ready.dev",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-sop-compiler-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-treats-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent-trust-layer.agent-trust-layer.workers.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent-vending-machine.avm-7301.workers.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent.api.0x.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent.memoryapi.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agent.soliduscapital.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agent402.tools",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentattest.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentbodega.store",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentcard.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentcash-fortune-demo-six.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentcash-fortune-demo3.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentcrush.xyz",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agentdata-api.sander-van-aard.workers.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentdataapi.onrender.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentgate-production-eb21.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentguard.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agenticinsights.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentkit0.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agentpay.tools",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentpmt-webapp.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentproof-murex.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentres.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agents.ai-rook.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agents.datalegion.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agents.driftflight.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agents.dyoeway.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agents.freederia.com",
+   "verdict": "agree",
+   "compared": [
+    "amount"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agents.sayerandstone.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agents.withzero.xyz",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agents.x402stock.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agentspec-one.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "agenttrust.uk",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "agentworld.me",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agi.apify.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "agri.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "ai-agent-payment-safety-stack.onrender.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "ai-summarizer.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "ai.tureka.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "aiact-api.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "aiagentoracle.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "airdrop-checker.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "airdroppulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "almanac.locomot.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "alpha402x.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "alphapulse-omega.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "alphapulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "amlscreen.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "anicca-x402-discovery-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "anomaly.forgemesh.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "apexrunner.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api-dev-v2.ixs.finance",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api-dev.agents.skillfulai.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api-dev.cueframe.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api-onchain.optimai.network",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api-production-17e1.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api-production-54bd.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api-v2.ixs.finance",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.agentfeeds.jp",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.agenticweb.nl",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.agentinternetruntime.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.agentphone.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.agentstools.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.agentwonderland.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.agentx402.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.aiapi.ch",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.aidress.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.aitrailblazer.net",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.algovault.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.anchor-x402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.apex-db.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.arkm.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.atms.nathanlidurin.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.auor.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.aventtech.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.babyblueviper.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.basefeed.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.biotechcatalystsentinel.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.bitrefill.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.boonprotocol.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.borisinc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.brazilayer.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.brokenkeyremapper.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.businesschanges.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.clawfetch.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.clawinabox.xyz",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.cn402.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.commodities.sh",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.compatify.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.cryptoetfsentinel.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.cueframe.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.curb.numetal.xyz",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.devdrops.run",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.doc2json.de",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.dripmetrics.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.dyor.network",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.exa.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.forum-labs.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.freaks.one",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.getplexa.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.getsly.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.gitbeacon.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.glianalabs.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.gmfarcaster.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.gocreativeai.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.govparse.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.healthparse.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.hookfindr.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.hyperextend.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.immuta.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.influship.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.instahuman.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.intelica.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.interzoid.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.invoket.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.ipintel.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.isocast.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.jamton.network",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.jarvisclaw.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.jubjubapp.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.justaname.id",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.kadec0.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.kakerapetit.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.lastlookdata.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.linkedpanda.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.locus.report",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.losbeto.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.loyalspark.online",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.mcx-ventures.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.melvea.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.memoryapi.org",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.messari.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.metalend.tech",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.mintverdict.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.moltalyzer.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.munition.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.myceliasignal.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.n0brains.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.nameintel.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.nansen.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.nativebtc.org",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.nimatron.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.node4all.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.northeastdealintel.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.octodamus.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.omninexu.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.onesource.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.orcatrace.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.osf-master-server.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.ownedforever.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.pak-labs.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.palmai.tech",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.paysponge.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.paytoll.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.pixo.tools",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.polym.uk",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.predictionmarketdata.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.printmoneylab.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.proxyllm.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.qonoro.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.querylines.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.recallradar.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.regressionincoming.fyi",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.reloadpi.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.remix.live",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.robinx.io",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.robotsshop.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.romny.dpdns.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.rtkmotion.io",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.run402.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.rxatlas.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.santosautomation.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.scoop.sundaebar.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.seerium.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.seneschal.space",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.signalfuse.co",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.signalis.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.sirenic.eu",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.slamai.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.socialfetch.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.solprobe.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.sourcestrand.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.stacktr.ee",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.stakedbots.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.stelardigital.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.stocktrends.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.strale.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.sumvid.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.svgsmith.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.sygnliq.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.syntaxrate.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.tcgapi.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.telemost.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.terradeed.co.uk",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.the402.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.tickersfeed.net",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.trialbase-db.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.trustboost.dev",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.trustsource.cc",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.useatelier.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.utilia.ink",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.vaults.fyi",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.veradata.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.veritylayer.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.vetpulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.vevang.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.vindexapi.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.wallettriage.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.webbersites.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.wrathproductions.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.writer.place",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.x-402.online",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.x402.printmoneylab.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.x402agentic.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "api.x402dataapi.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api.x402intel.uk",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.x402node.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "api.xona-agent.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "api2ls.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "apiwitchcraft.duckdns.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app-443.hdgregory.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "app-446.hdgregory.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "app-production-23b4.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app-production-3fbff.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app-production-cd86.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app.aabc.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app.r3p.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "app.suedeai.ai",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "appstore.use.x402atlas.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "arbipulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "arbipulse.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "arbitrum-mpp-transaction-preflight-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "asahi-1.tail779e35.ts.net",
+   "verdict": "not-both"
+  },
+  {
+   "host": "asia-pulse.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "asiaref.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "asistent-crypto.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "asn-lookup.underscoredone.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "assay.nominal-labs.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "astatelypleasuredome.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "atq6wtkp6k.execute-api.us-east-1.amazonaws.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "attester.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "aubrai-x402.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "audiobook-api-beta.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "audit-tools.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "audit.crestsystems.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "ausref.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "autonomy-api-network.onrender.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "autopulse-navy.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "autopulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "aviation.x402.press",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "avt-x402.ttsempelis.workers.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "barcode-generator.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "base-block-metrics.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "base-bookvs-movie.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "base-intel-api.jakemaxsigal.workers.dev",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "base-launch-radar.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "base-rugcheck.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "base-sol-rugcheck.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "base64-codec.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "basefeed-io.fly.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "basescout-feed-x402.baseagentx402.workers.dev",
+   "verdict": "not-both"
+  },
+  {
+   "host": "batch-runner.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bazaar-gateway.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bcb-x402-hackathon.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "biccheck.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "billitright.co",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "binance-ticker24.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "bio.memoryapi.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "biopulse-nine.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "biopulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "bittensorman.xyz",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "blockint.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "blockrun-web-vbsbhh7lea-uc.a.run.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "blockrun.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "booaip.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "book-bot.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bounty.btnomb.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "brain.zugabot.ai",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "brasil-dados-api.onrender.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "brdata.thomenz.me",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bricks.builddetroit.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bridge-routes.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "bridgerisk.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "brmarket.thomenz.me",
+   "verdict": "not-both"
+  },
+  {
+   "host": "brokenkey-api-link-ruby.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "brokenkey-api-link-tau.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "broker-sync-api-production.up.railway.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "browser.gedx402.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "buildpulse-alpha.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "buildpulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "buildscottsbluff.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "bundle-maker.vercel.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "bundle.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "businessrisk.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "byshovel.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "capitol.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "careerpulse-steel.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "careerpulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cars2026.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "cascade.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "cc0.company",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "cdo-production.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "cdo-staging.up.railway.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "cdp-agent-0-01.onrender.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "centry.cybercentry.co.uk",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "chain-analyzer.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "chainscout.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "chat.anchor-x402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "chat.gedx402.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "chatrip.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "cheaptokens.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "chess402.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "chrombot-x402.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "chronicapulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "chronicapulse.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "citepulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "claudelines.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "clear-care-pulse.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "clearcarepulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "climatepulse-six.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "climatepulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "clinical.memoryapi.org",
+   "verdict": "not-both"
+  },
+  {
+   "host": "clinicalintelpulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "clinicalintelpulse.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "clonecho.builda.company",
+   "verdict": "not-both"
+  },
+  {
+   "host": "cloud.hyrule.host",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cnvrt.ing",
+   "verdict": "not-both"
+  },
+  {
+   "host": "coil.trade",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "coinflip402.vercel.app",
+   "verdict": "not-both"
+  },
+  {
+   "host": "coingecko.use.x402atlas.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "collectablespulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "collectablespulse.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "color-palette.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "company-enrichment.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "company.payapi.market",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "compliancepulse-eight.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "compliancepulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "compute.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "conc-exe.xyz",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "conch402.dylan-caponi.workers.dev",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "concordancehq.duckdns.org",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "consumer.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "content.hugen.tokyo",
+   "verdict": "not-both"
+  },
+  {
+   "host": "contract.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "contractwatch.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cors-header-checker.underscoredone.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "costpulse.waltsoft.net",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cpi-report-us.underscoredone.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  },
+  {
+   "host": "cron-parser.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "crontab-generator.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "crownblock.lonestaroracle.xyz",
+   "verdict": "not-both"
+  },
+  {
+   "host": "crypto-news.api.klymax402.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "crypto-trending.hergertsynthora.com",
+   "verdict": "not-both"
+  },
+  {
+   "host": "crypto.apitoll.cloud",
+   "verdict": "not-both"
+  },
+  {
+   "host": "crypto.forgemesh.io",
+   "verdict": "not-both"
+  },
+  {
+   "host": "cryptonews.hergertsynthora.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cryptopulse-xi-five.vercel.app",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cryptopulse.theaslangroupllc.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "cryptyx.ai",
+   "verdict": "not-both"
+  },
+  {
+   "host": "csv-to-json.api.klymax402.com",
+   "verdict": "agree",
+   "compared": [
+    "asset",
+    "amount",
+    "payTo",
+    "network"
+   ],
+   "diffs": []
+  },
+  {
+   "host": "curl-http-request.underscoredone.com",
+   "verdict": "unknown",
+   "reason": "one side had no readable offer"
+  }
+ ]
+}
