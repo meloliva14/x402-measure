@@ -1,0 +1,80 @@
+# Daily signed snapshot of the Verity Index.
+#
+# WHY THREE SCHEDULES A DAY AND NOT ONE. GitHub documents that scheduled workflows can be
+# delayed during periods of high load and may be dropped entirely; runs on the hour are the
+# worst affected. A dropped run is not a late file, it is a permanent hole in a series whose
+# entire value is that it has no holes. So this fires three times at odd minutes, and
+# snapshot.py --skip-if-exists turns the second and third into no-ops once the day is recorded.
+# Any one of the three landing saves the day. It also means a transient network failure or a
+# run that aborted on the answer-rate floor gets two more chances without anyone watching.
+name: snapshot
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+    - cron: "23 12 * * *"
+    - cron: "31 20 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "UTC date to record (YYYY-MM-DD). Blank = today. Append-only: an existing date is never overwritten."
+        required: false
+        type: string
+
+# Two runs must never probe and commit at once. Do not cancel an in-flight run: it may be most
+# of the way through a sweep that a later one would have to redo from scratch.
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet cryptography
+
+      - name: Record today's observation
+        env:
+          VERITY_INDEX_KEY: ${{ secrets.VERITY_INDEX_KEY }}
+        run: |
+          if [ -z "$VERITY_INDEX_KEY" ]; then
+            echo "::error::VERITY_INDEX_KEY is not set. Refusing to run: a snapshot signed by a"
+            echo "::error::freshly generated key would not verify against the published one, and"
+            echo "::error::would silently fork the archive's key history."
+            exit 1
+          fi
+          python snapshot.py --skip-if-exists ${{ inputs.date && format('--date {0}', inputs.date) || '' }}
+
+      # Verification is a separate step on purpose. If signing or continuity is broken, that must
+      # fail the job loudly rather than be discovered on day seven when the series is needed.
+      - name: Verify every snapshot and the continuity of the series
+        run: python verify_snapshot.py --all | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit
+        run: |
+          if [ -z "$(git status --porcelain snapshots/)" ]; then
+            echo "nothing new to commit (the day was already recorded)"
+            exit 0
+          fi
+          git config user.name  "verity-index[bot]"
+          git config user.email "veritylayer@gmail.com"
+          git add snapshots/
+          DAY=$(git diff --cached --name-only | sed -n 's#snapshots/\([0-9-]*\)/.*#\1#p' | head -1)
+          git commit -m "Observation ${DAY}" -m "Recorded automatically. Verify with: python verify_snapshot.py ${DAY}"
+          # The scheduler and a human can both land commits; rebase rather than fail the day.
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push --quiet && exit 0
+            echo "push attempt $i failed, retrying"
+            sleep 5
+          done
+          exit 1

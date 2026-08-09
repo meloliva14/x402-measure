@@ -99,16 +99,23 @@ def load_or_create_key() -> tuple[Ed25519PrivateKey, str, str]:
 
 # --- observation -----------------------------------------------------------------------
 
-def targets() -> list[dict]:
-    """Host + probe URL for everything the census knows about.
+def targets() -> tuple[list[dict], dict]:
+    """The pinned population, from the committed targets.json.
 
-    Read from sweep_results.json because that is where the URL per host lives. The VERDICTS in
-    that file are deliberately ignored — this run re-probes and records what it sees today.
+    Deliberately NOT re-derived from sweep_results.json on each run. That file is gitignored, so
+    a scheduled runner would not have it — but the deeper reason is that a target list which moves
+    every run makes day-over-day comparison meaningless: the series would be measuring a shifting
+    set of hosts rather than a change in their behaviour. Adding or removing targets is a commit.
     """
-    src = HERE / "sweep_results.json"
-    if not src.exists():
-        sys.exit("  sweep_results.json is absent; run the sweep first (it is the target list)")
-    rows = json.loads(src.read_text(encoding="utf-8"))
+    src = HERE / "targets.json"
+    if src.exists():
+        doc = json.loads(src.read_text(encoding="utf-8"))
+        return doc.get("targets", []), doc
+
+    legacy = HERE / "sweep_results.json"   # pre-targets.json fallback, local runs only
+    if not legacy.exists():
+        sys.exit("  targets.json is absent and there is no sweep_results.json to fall back to")
+    rows = json.loads(legacy.read_text(encoding="utf-8"))
     out, seen = [], set()
     for r in rows:
         h, u = r.get("host"), r.get("url")
@@ -116,7 +123,7 @@ def targets() -> list[dict]:
             continue
         seen.add(h)
         out.append({"host": h, "url": u})
-    return out
+    return out, {"source": "sweep_results.json (fallback)"}
 
 
 def observe(t: dict) -> dict:
@@ -129,7 +136,7 @@ def observe(t: dict) -> dict:
 
 
 def build(date: str) -> dict:
-    tg = targets()
+    tg, tmeta = targets()
     print(f"  probing {len(tg)} hosts (one unauthenticated request each, nothing paid)\n")
     started = datetime.now(timezone.utc)
     t0 = time.time()
@@ -168,9 +175,14 @@ def build(date: str) -> dict:
                 (HERE / "preflight.py").read_bytes()).hexdigest(),
             "snapshot_script_sha256": hashlib.sha256(
                 Path(__file__).read_bytes()).hexdigest(),
-            "target_list_source": "sweep_results.json (hosts + probe URLs; its verdicts unused)",
-            "target_list_collected_at_utc": harvest.get("collected_at_utc"),
-            "target_list_caveat": harvest.get("caveat"),
+            "target_list_source": tmeta.get("source", "targets.json"),
+            "target_list_count": tmeta.get("count", len(tg)),
+            "target_list_sha256": hashlib.sha256(
+                (HERE / "targets.json").read_bytes()).hexdigest()
+            if (HERE / "targets.json").exists() else None,
+            "target_list_collected_at_utc": (tmeta.get("collected_at_utc")
+                                             or harvest.get("collected_at_utc")),
+            "target_list_caveat": tmeta.get("source_caveat") or harvest.get("caveat"),
             "known_limits": [
                 "One probe per host. A host that is briefly down reads as UNREACHABLE, which is "
                 "why UNREACHABLE is recorded and never treated as a state change.",
@@ -191,12 +203,20 @@ def canonical(obj: dict) -> bytes:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.now(timezone.utc).date().isoformat())
+    ap.add_argument("--skip-if-exists", action="store_true",
+                    help="exit 0 instead of erroring when the date is already recorded. For the "
+                         "scheduler, which fires several times a day on purpose so that one "
+                         "delayed or dropped run cannot put a hole in the series.")
     a = ap.parse_args(argv)
 
-    priv, pub_hex, key_id = load_or_create_key()
     out = SNAPSHOTS / a.date
     if (out / "observation.json").exists():
+        if a.skip_if_exists:
+            print(f"  {a.date} already recorded — nothing to do.")
+            return 0
         sys.exit(f"  {a.date} already exists. The archive is append-only; refusing to overwrite.")
+
+    priv, pub_hex, key_id = load_or_create_key()
 
     doc = build(a.date)
     payload = canonical(doc)
