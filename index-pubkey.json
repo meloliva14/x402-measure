@@ -1,0 +1,7 @@
+{
+ "key_id": "ed25519:5d99c600ea396f4e",
+ "algorithm": "Ed25519",
+ "public_key_hex": "a1abd423f60c2158e824f3c64254854af942c09f310131267c20226e2541c90d",
+ "created": "2026-08-09",
+ "purpose": "Signs Verity Index observation files only. This is NOT the VerityLayer receipt key at /.well-known/verity-pubkey.json \u2014 that one signs verdicts and is rotatable; this one signs an immutable archive and is not."
+}

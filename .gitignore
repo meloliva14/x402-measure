@@ -9,3 +9,6 @@ demand_results.json
 dist.json
 manifest_probe.json
 harvest_meta.json
+
+# archive signing key - NEVER commit
+.index_key
