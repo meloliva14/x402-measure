@@ -1,0 +1,5450 @@
+[
+ {
+  "payTo": "0x50ab2018c06c6e4eaa9ba52057eb55ed284912fc",
+  "hosts": [
+   "airdroppulse.theaslangroupllc.com",
+   "alphapulse-omega.vercel.app",
+   "alphapulse.theaslangroupllc.com",
+   "api.vetpulse.theaslangroupllc.com",
+   "arbipulse.theaslangroupllc.com",
+   "arbipulse.vercel.app",
+   "autopulse-navy.vercel.app",
+   "autopulse.theaslangroupllc.com",
+   "biopulse-nine.vercel.app",
+   "biopulse.theaslangroupllc.com",
+   "buildpulse-alpha.vercel.app",
+   "buildpulse.theaslangroupllc.com",
+   "careerpulse-steel.vercel.app",
+   "careerpulse.theaslangroupllc.com",
+   "chronicapulse.theaslangroupllc.com",
+   "chronicapulse.vercel.app",
+   "citepulse.theaslangroupllc.com",
+   "clear-care-pulse.vercel.app",
+   "clearcarepulse.theaslangroupllc.com",
+   "climatepulse-six.vercel.app",
+   "climatepulse.theaslangroupllc.com",
+   "clinicalintelpulse.theaslangroupllc.com",
+   "clinicalintelpulse.vercel.app",
+   "collectablespulse.theaslangroupllc.com",
+   "collectablespulse.vercel.app",
+   "compliancepulse-eight.vercel.app",
+   "compliancepulse.theaslangroupllc.com",
+   "cryptopulse-xi-five.vercel.app",
+   "cryptopulse.theaslangroupllc.com",
+   "cyberpulse-six.vercel.app",
+   "cyberpulse.theaslangroupllc.com",
+   "dealpulse-weld.vercel.app",
+   "dealpulse.theaslangroupllc.com",
+   "debtpulse.theaslangroupllc.com",
+   "debtpulse.vercel.app",
+   "econsignalpulse.theaslangroupllc.com",
+   "econsignalpulse.vercel.app",
+   "edupulse-xi-blond.vercel.app",
+   "edupulse.theaslangroupllc.com",
+   "esgpulse.theaslangroupllc.com",
+   "esgpulse.vercel.app",
+   "fanpulse-tau.vercel.app",
+   "fanpulse.theaslangroupllc.com",
+   "fieldpulse-tan.vercel.app",
+   "fieldpulse.theaslangroupllc.com",
+   "filingspulse.theaslangroupllc.com",
+   "filingspulse.vercel.app",
+   "findpulse-omega.vercel.app",
+   "findpulse.theaslangroupllc.com",
+   "fitpulse-vert.vercel.app",
+   "fitpulse.theaslangroupllc.com",
+   "footballpulse-six.vercel.app",
+   "footballpulse.theaslangroupllc.com",
+   "franchisepulse-six.vercel.app",
+   "franchisepulse.theaslangroupllc.com",
+   "gamepulse-zeta.vercel.app",
+   "gamepulse.theaslangroupllc.com",
+   "geopoliticalpulse.theaslangroupllc.com",
+   "geopoliticalpulse.vercel.app",
+   "glowpulse-nine.vercel.app",
+   "glowpulse.theaslangroupllc.com",
+   "govspendpulse.theaslangroupllc.com",
+   "govspendpulse.vercel.app",
+   "grantpulse-three.vercel.app",
+   "grantpulse.theaslangroupllc.com",
+   "gridpulse-amber.vercel.app",
+   "gridpulse.theaslangroupllc.com",
+   "harvestpulse.theaslangroupllc.com",
+   "harvestpulse.vercel.app",
+   "herbapulse.theaslangroupllc.com",
+   "herbapulse.vercel.app",
+   "homepulse-seven.vercel.app",
+   "homepulse.theaslangroupllc.com",
+   "immigrationpulse.theaslangroupllc.com",
+   "immigrationpulse.vercel.app",
+   "insurepulse.theaslangroupllc.com",
+   "insurepulse.vercel.app",
+   "legalpulse.theaslangroupllc.com",
+   "longevitypulse.theaslangroupllc.com",
+   "longevitypulse.vercel.app",
+   "macropulse-alpha.vercel.app",
+   "macropulse.theaslangroupllc.com",
+   "mailpulse.theaslangroupllc.com",
+   "marketpulse-brown.vercel.app",
+   "marketpulse.theaslangroupllc.com",
+   "mcp-pulsenetwork.vercel.app",
+   "mealpulse.theaslangroupllc.com",
+   "mealpulse.vercel.app",
+   "mindpulse-lilac.vercel.app",
+   "mindpulse.theaslangroupllc.com",
+   "nutripulse.theaslangroupllc.com",
+   "onchainpulse-nine.vercel.app",
+   "onchainpulse.theaslangroupllc.com",
+   "parentpulse-delta.vercel.app",
+   "parentpulse.theaslangroupllc.com",
+   "patentpulse-self.vercel.app",
+   "patentpulse.theaslangroupllc.com",
+   "petpulse-alpha.vercel.app",
+   "petpulse.theaslangroupllc.com",
+   "policypulse-ten.vercel.app",
+   "policypulse.theaslangroupllc.com",
+   "proppulse-gules.vercel.app",
+   "proppulse.theaslangroupllc.com",
+   "prospectpulse-pi.vercel.app",
+   "prospectpulse.theaslangroupllc.com",
+   "pulse.theaslangroupllc.com",
+   "racingpulse.theaslangroupllc.com",
+   "racingpulse.vercel.app",
+   "remittancepulse.theaslangroupllc.com",
+   "remittancepulse.vercel.app",
+   "riskpulse-five.vercel.app",
+   "riskpulse.theaslangroupllc.com",
+   "safepulse-xi.vercel.app",
+   "safepulse.theaslangroupllc.com",
+   "scentpulse-xi.vercel.app",
+   "scentpulse.theaslangroupllc.com",
+   "scholarpulse-bice.vercel.app",
+   "scholarpulse.theaslangroupllc.com",
+   "seniorpulse.theaslangroupllc.com",
+   "seniorpulse.vercel.app",
+   "shopperpulse.theaslangroupllc.com",
+   "signalpulse-peach.vercel.app",
+   "signalpulse.theaslangroupllc.com",
+   "stablecoinpulse.theaslangroupllc.com",
+   "stateedge.theaslangroupllc.com",
+   "stateedge.vercel.app",
+   "tablepulse.theaslangroupllc.com",
+   "tablepulse.vercel.app",
+   "talentpulse-six.vercel.app",
+   "talentpulse.theaslangroupllc.com",
+   "taxpulse-phi.vercel.app",
+   "taxpulse.theaslangroupllc.com",
+   "tradepulse.theaslangroupllc.com",
+   "transitpulse.theaslangroupllc.com",
+   "transitpulse.vercel.app",
+   "travelpulse-nu.vercel.app",
+   "travelpulse.theaslangroupllc.com",
+   "truthpulse.theaslangroupllc.com",
+   "venturepulse.theaslangroupllc.com",
+   "vetpulse-five.vercel.app",
+   "waterpulse-henna.vercel.app",
+   "waterpulse.theaslangroupllc.com",
+   "wealthpulse-phi.vercel.app",
+   "wealthpulse.theaslangroupllc.com"
+  ],
+  "n_hosts": 144,
+  "amounts": [
+   "10000",
+   "100000",
+   "1000000",
+   "120000",
+   "150000",
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6e8b64638b24c6d625b045dd353120d850064e2e",
+  "hosts": [
+   "ai-summarizer.api.klymax402.com",
+   "airdrop-checker.api.klymax402.com",
+   "barcode-generator.api.klymax402.com",
+   "base64-codec.api.klymax402.com",
+   "bridge-routes.api.klymax402.com",
+   "color-palette.api.klymax402.com",
+   "company-enrichment.api.klymax402.com",
+   "cron-parser.api.klymax402.com",
+   "crontab-generator.api.klymax402.com",
+   "csv-to-json.api.klymax402.com",
+   "currency-converter.api.klymax402.com",
+   "defi-yields.api.klymax402.com",
+   "diff-checker.api.klymax402.com",
+   "dns-lookup.api.klymax402.com",
+   "domain-intelligence.api.klymax402.com",
+   "email-deliverability.api.klymax402.com",
+   "email-finder.api.klymax402.com",
+   "email-send.api.klymax402.com",
+   "ens-resolver.api.klymax402.com",
+   "fact-checker.api.klymax402.com",
+   "funding-rates.api.klymax402.com",
+   "gas-estimator.api.klymax402.com",
+   "gdpr-scanner.api.klymax402.com",
+   "hash-generator.api.klymax402.com",
+   "hl-portfolio.api.klymax402.com",
+   "html-to-markdown.api.klymax402.com",
+   "http-headers.api.klymax402.com",
+   "hyperliquid-data.api.klymax402.com",
+   "image-resize.api.klymax402.com",
+   "ip-geolocation.api.klymax402.com",
+   "json-validator.api.klymax402.com",
+   "jupiter-quotes.api.klymax402.com",
+   "jwt-decoder.api.klymax402.com",
+   "keyword-research.api.klymax402.com",
+   "language-detector.api.klymax402.com",
+   "lorem-ipsum.api.klymax402.com",
+   "markdown-renderer.api.klymax402.com",
+   "markdown-to-html.api.klymax402.com",
+   "nft-floor.api.klymax402.com",
+   "nft-metadata.api.klymax402.com",
+   "ocr-extract.api.klymax402.com",
+   "orderbook-depth.api.klymax402.com",
+   "password-strength.api.klymax402.com",
+   "person-enrichment.api.klymax402.com",
+   "phone-validation.api.klymax402.com",
+   "port-scanner.api.klymax402.com",
+   "regex-generator.api.klymax402.com",
+   "research-report.api.klymax402.com",
+   "seo-analyzer.api.klymax402.com",
+   "slug-generator.api.klymax402.com",
+   "sms-validator.api.klymax402.com",
+   "solana-pools.api.klymax402.com",
+   "ssl-checker.api.klymax402.com",
+   "stock-price.api.klymax402.com",
+   "tech-enrichment.api.klymax402.com",
+   "text-classifier.api.klymax402.com",
+   "text-to-speech.api.klymax402.com",
+   "text-translator.api.klymax402.com",
+   "timezone-converter.api.klymax402.com",
+   "token-holders.api.klymax402.com",
+   "token-ohlcv.api.klymax402.com",
+   "token-price.api.klymax402.com",
+   "twitter-scraper.api.klymax402.com",
+   "unit-converter.api.klymax402.com",
+   "url-shortener.api.klymax402.com",
+   "user-agent-parser.api.klymax402.com",
+   "uuid-generator.api.klymax402.com",
+   "vector-search.api.klymax402.com",
+   "weather-api.api.klymax402.com",
+   "web-search.api.klymax402.com",
+   "webhook-tester.api.klymax402.com",
+   "whale-alert.api.klymax402.com"
+  ],
+  "n_hosts": 72,
+  "amounts": [
+   "1000",
+   "12000",
+   "20000",
+   "3000",
+   "30000",
+   "35000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x10800a5a5b9d72251566ec651e862a8b4b427de0",
+  "hosts": [
+   "agentcard.hergertsynthora.com",
+   "amlscreen.hergertsynthora.com",
+   "binance-ticker24.hergertsynthora.com",
+   "bridgerisk.hergertsynthora.com",
+   "businessrisk.hergertsynthora.com",
+   "contractwatch.hergertsynthora.com",
+   "cryptonews.hergertsynthora.com",
+   "defidata.hergertsynthora.com",
+   "deliver.hergertsynthora.com",
+   "derivbundle.hergertsynthora.com",
+   "dex-pair-price.hergertsynthora.com",
+   "fear-greed.hergertsynthora.com",
+   "forex-latest.hergertsynthora.com",
+   "funding-rates.hergertsynthora.com",
+   "mailcheck.hergertsynthora.com",
+   "market-dominance.hergertsynthora.com",
+   "mcpscan.hergertsynthora.com",
+   "mtasts.hergertsynthora.com",
+   "ohlcv-candles.hergertsynthora.com",
+   "onchain.hergertsynthora.com",
+   "openinterest.hergertsynthora.com",
+   "perps.hergertsynthora.com",
+   "polymarket-markets.hergertsynthora.com",
+   "protocol-tvl.hergertsynthora.com",
+   "regwatch.hergertsynthora.com",
+   "tokenrisk.hergertsynthora.com",
+   "translate.hergertsynthora.com",
+   "txintent.hergertsynthora.com",
+   "walletrep.hergertsynthora.com",
+   "websearch.hergertsynthora.com"
+  ],
+  "n_hosts": 30,
+  "amounts": [
+   "100000",
+   "20000",
+   "320000",
+   "4000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe9740820225b3918b4ddd1292c7ca4ca0e2c2f08",
+  "hosts": [
+   "asn-lookup.underscoredone.com",
+   "cors-header-checker.underscoredone.com",
+   "cpi-report-us.underscoredone.com",
+   "curl-http-request.underscoredone.com",
+   "dmarc-lookup.underscoredone.com",
+   "dns-whois-lookup.underscoredone.com",
+   "domain-age-checker.underscoredone.com",
+   "domain-availability-checker.underscoredone.com",
+   "ens-resolver.underscoredone.com",
+   "hackernews-data.underscoredone.com",
+   "hash-hmac.underscoredone.com",
+   "http-header-checker.underscoredone.com",
+   "http-status-checker.underscoredone.com",
+   "json-suite.underscoredone.com",
+   "leetspeak-translator.underscoredone.com",
+   "mortgage-amortization.underscoredone.com",
+   "ocr.underscoredone.com",
+   "port-scanner.underscoredone.com",
+   "qr-code-generator.underscoredone.com",
+   "screenshots.underscoredone.com",
+   "seo-data-extractor.underscoredone.com",
+   "shopify-ai-rank-checker.underscoredone.com",
+   "sitemap-url-extractor.underscoredone.com",
+   "url-uptime-checker.underscoredone.com"
+  ],
+  "n_hosts": 24,
+  "amounts": [
+   "10000",
+   "20000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x325bdf6f7efab24a2210c48c1b64cab2eae1d430",
+  "hosts": [
+   "enrichx402.com",
+   "stable-enrich-git-fix-stableenrich-exa-api-schema-merit-systems.vercel.app",
+   "stable-enrich-git-fix-stableenrich-exa-leg-547ea8-merit-systems.vercel.app",
+   "stable-enrich-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-fix-fullenrich-nbsp-enums-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-fullenrich-search-pricing-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-merchant-health-sc-efad26-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-pdl-not-found-200-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-pdl-people-enrich-25cca0-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stabledomains-pork-25b57c-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-compa-a1ba99-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-exa-b-f22424-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-fulle-a23f83-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-nearb-74cfdf-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-pdl-p-274589-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-peopl-60ba0c-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-peopl-a13b22-merit-systems.vercel.app",
+   "stable-enrich-git-shafu-stableenrich-valid-89fbcd-merit-systems.vercel.app",
+   "stableenrich.dev"
+  ],
+  "n_hosts": 19,
+  "amounts": [
+   "10000",
+   "140000",
+   "2000",
+   "200000",
+   "280000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3c74ce3f8566ff04b312320e7c264a691c409992",
+  "hosts": [
+   "aviation.x402.press",
+   "deepseek.x402.press",
+   "earth.x402.press",
+   "entertainment.x402.press",
+   "marine.x402.press",
+   "music.x402.press",
+   "news.x402.press",
+   "quickpoll.x402.press",
+   "space.x402.press",
+   "stem.x402.press",
+   "weather.x402.press"
+  ],
+  "n_hosts": 11,
+  "amounts": [
+   "103750",
+   "250000",
+   "253750",
+   "53750",
+   "7500"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xffc458db291b4abce020fe3de4f91f2770e537b1",
+  "hosts": [
+   "company.payapi.market",
+   "finance.payapi.market",
+   "hmo.payapi.market",
+   "property.payapi.market",
+   "vehicle.payapi.market",
+   "weather.payapi.market",
+   "web-production-18a32.up.railway.app",
+   "x402-company-api-production.up.railway.app",
+   "x402-finance-api-production.up.railway.app",
+   "x402-vehicle-api-production.up.railway.app",
+   "x402-weather-api-production-04c4.up.railway.app"
+  ],
+  "n_hosts": 11,
+  "amounts": [
+   "1000",
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xee72b902af7466023595512e3359bb5bf312977c",
+  "hosts": [
+   "donate.0000402.xyz",
+   "forecast.0000402.xyz",
+   "giveth.0000402.xyz",
+   "leaderboard.0000402.xyz",
+   "omniac.0000402.xyz",
+   "pastebin.0000402.xyz",
+   "play.0000402.xyz",
+   "proxy.0000402.xyz",
+   "stamp.0000402.xyz",
+   "tempfile.0000402.xyz",
+   "timecapsule.0000402.xyz"
+  ],
+  "n_hosts": 11,
+  "amounts": [
+   "10000",
+   "100000",
+   "1000000",
+   "20000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb3c2776ce3f99cb3366520c27b4ac5d436942ab6",
+  "hosts": [
+   "browser.gedx402.com",
+   "chat.gedx402.com",
+   "db.gedx402.com",
+   "embed.gedx402.com",
+   "gateway.gedx402.com",
+   "images-api.gedx402.com",
+   "rag.gedx402.com",
+   "search.gedx402.com",
+   "social.gedx402.com",
+   "verify.gedx402.com"
+  ],
+  "n_hosts": 10,
+  "amounts": [
+   "10000",
+   "14000",
+   "15000",
+   "17000",
+   "1852000",
+   "2300"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf04220c87894e7cbc0273f38c18195dab0db5fe5",
+  "hosts": [
+   "stable-jobs-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "stable-jobs-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "stable-jobs-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "stable-jobs-git-fix-stablejobs-default-act-9e0365-merit-systems.vercel.app",
+   "stable-jobs-git-fix-stablejobs-default-recency-merit-systems.vercel.app",
+   "stable-jobs-git-fix-stablejobs-location-guidance-merit-systems.vercel.app",
+   "stable-jobs-git-fix-stablejobs-pricing-sch-7bfb9c-merit-systems.vercel.app",
+   "stablejobs.dev"
+  ],
+  "n_hosts": 8,
+  "amounts": [
+   "100000",
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcd6b6d99b7751ff30b68fa1365488eb73fa7cefa",
+  "hosts": [
+   "base-rugcheck.vercel.app",
+   "base-sol-rugcheck.vercel.app",
+   "booaip.vercel.app",
+   "evm-meme-intel.vercel.app",
+   "rh-chain-intel.vercel.app",
+   "sol-meme-intel.vercel.app"
+  ],
+  "n_hosts": 6,
+  "amounts": [
+   "10000",
+   "15000",
+   "20000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcb79b3c5a7dadcd7c30e3be252c0ca44a06c6f78",
+  "hosts": [
+   "stable-browser-git-ben-test-agentcash-rout-1850e3-merit-systems.vercel.app",
+   "stable-browser-git-shafu-stablebrowser-410-220925-merit-systems.vercel.app",
+   "stable-browser-git-shafu-stablebrowser-han-020dc6-merit-systems.vercel.app",
+   "stable-browser-git-stablebrowser-public-live-view-merit-systems.vercel.app",
+   "stablebrowser.vercel.app",
+   "www.stablebrowser.dev"
+  ],
+  "n_hosts": 6,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa76a820655e984936324c62a9f95940da5d4d3d7",
+  "hosts": [
+   "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "agent-inbound-content-bpyht.ondigitalocean.app",
+   "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "compliance-verifier-agent-6fe6y.ondigitalocean.app"
+  ],
+  "n_hosts": 5,
+  "amounts": [
+   "100000",
+   "250000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcebbb82a183faa69b929ed1f417aafc63fa3b5b6",
+  "hosts": [
+   "docparse.x402tools.xyz",
+   "guard.x402tools.xyz",
+   "prospex.x402tools.xyz",
+   "qr.x402tools.xyz",
+   "visionex.x402tools.xyz"
+  ],
+  "n_hosts": 5,
+  "amounts": [
+   "10000",
+   "30000",
+   "50000",
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7f33b3c113915a0f2981070553ba9538c0f90171",
+  "hosts": [
+   "stable-people-data-git-ben-test-agentcash-dfcfa3-merit-systems.vercel.app",
+   "stable-people-data-git-pdl-signoz-usage-alarms-merit-systems.vercel.app",
+   "stable-people-data-git-shafu-merchant-heal-bd8263-merit-systems.vercel.app",
+   "stable-people-data-git-shafu-pdl-api-settl-95fdf9-merit-systems.vercel.app",
+   "stablepeopledata.dev"
+  ],
+  "n_hosts": 5,
+  "amounts": [
+   "100000",
+   "20000",
+   "280000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfee13309251b632317ea2d475d6aba7e7e0219e6",
+  "hosts": [
+   "centry.cybercentry.co.uk",
+   "x402-cybercentry-cyber-security-consultant.up.railway.app",
+   "x402-cybercentry-wallet-verification.up.railway.app",
+   "x402-cybercentry.up.railway.app"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "100000",
+   "20000"
+  ],
+  "networks": [
+   "base",
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x20beffad24499e9b3d45dd0971b1d6afb0ae925d",
+  "hosts": [
+   "dns-email-hygiene.relayhop.workers.dev",
+   "free-api-resell.relayhop.workers.dev",
+   "nba-odds-gap.relayhop.workers.dev",
+   "wallet-aml-screen.relayhop.workers.dev"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "1000",
+   "2000",
+   "5000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x8e57bfde053dbb6862991759c19affc5f383d5d0",
+  "hosts": [
+   "gate402.app",
+   "nodeproxy-production.up.railway.app",
+   "tokensqueezer-production.up.railway.app",
+   "vectorcache-production.up.railway.app"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "1000",
+   "10000",
+   "2000",
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1873366fb50c2e26eea2a02440e5d2af643dbfe4",
+  "hosts": [
+   "gleif-entity.xplowdiaka.workers.dev",
+   "openfda-drug-safety.xplowdiaka.workers.dev",
+   "sanctions-screening.xplowdiaka.workers.dev",
+   "sec-regcf-tracker.xplowdiaka.workers.dev"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "15000",
+   "20000",
+   "40000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x8fc4006534801c17a3368075a1fb3b3c511edb1f",
+  "hosts": [
+   "project-formatter-production.up.railway.app",
+   "projectx402-production.up.railway.app",
+   "web-production-2d1051.up.railway.app",
+   "web-production-78e17.up.railway.app"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "2000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7e05d79f914fdac136812af82d304e8272b3dc20",
+  "hosts": [
+   "quotesheet.panmediatech.workers.dev",
+   "receiptstamp.panmediatech.workers.dev",
+   "schemafetch.panmediatech.workers.dev",
+   "spendguard.panmediatech.workers.dev"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "10000",
+   "20000",
+   "5000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xcfa26f13c6c18307033ece13bbb8f470da5b4dbe",
+  "hosts": [
+   "socialx402.com",
+   "stable-social-5jshn0wk0-merit-systems.vercel.app",
+   "stable-social-git-shafu-stablesocial-not-f-3816e7-merit-systems.vercel.app",
+   "stablesocial.dev"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "60000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x26bbf0f6bc7a6492e4029327f2ef7c1363f9b4f6",
+  "hosts": [
+   "stable-media-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "stable-media-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "stable-media-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "stable-media-git-ben-upgrade-agentcash-rou-02e093-merit-systems.vercel.app"
+  ],
+  "n_hosts": 4,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x38c9f689274e2fc3ae360744ef88ce212077a584",
+  "hosts": [
+   "address.agentic-jp.com",
+   "furigana.agentic-jp.com",
+   "holiday.agentic-jp.com"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "1600",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x63ebccd826b874ce988e6498eaabb6bd47afc8a4",
+  "hosts": [
+   "api-production-54bd.up.railway.app",
+   "broker-sync-api-production.up.railway.app",
+   "protocol-health-oracle-production.up.railway.app"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x6302d9e6dbb22fec3c350551568bb39b4b35ad57",
+  "hosts": [
+   "api.paysponge.com",
+   "deepgram.x402.paysponge.com",
+   "screenshotone.x402.paysponge.com"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "10000",
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x89d38023167bda453bed9f6cbf22ddd1ec5f70a7",
+  "hosts": [
+   "api.veritylayer.dev",
+   "verity-bzw7.onrender.com",
+   "verity-suite.onrender.com"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "20000",
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x23d931f95831cee50b5f5edf4d0e88270f6c8411",
+  "hosts": [
+   "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "stableapify.dev"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "10000",
+   "100000",
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1a9a7c72208abf3552750eb1c4a4f2ca9e8733e5",
+  "hosts": [
+   "app-443.hdgregory.com",
+   "app-446.hdgregory.com",
+   "redlynr.com"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "1000",
+   "10000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x44dc2dceaa22c7ef6b2e2cf2362fd3fb476b7c2c",
+  "hosts": [
+   "aubrai-x402.vercel.app",
+   "x402-api.aubr.ai",
+   "x402.aubr.ai"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1f2a484ef654d49c58c625b09e78b538501d652d",
+  "hosts": [
+   "dicta-notes.com",
+   "imagcon.app",
+   "stackbill.app"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "10000",
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x5bcda55247b238a573a968b234f788a2d35664dd",
+  "hosts": [
+   "eltociear-contract-guard.hf.space",
+   "eltociear-skill-audit.hf.space",
+   "eltociear-tokenguard.hf.space"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "10000",
+   "20000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb40a687ca5483ebc02f870348f6e08971cae1308",
+  "hosts": [
+   "pqs.onchainintel.net",
+   "probe.onchainintel.net",
+   "promptqualityscore.com"
+  ],
+  "n_hosts": 3,
+  "amounts": [
+   "1000",
+   "25000",
+   "50000"
+  ],
+  "networks": [
+   "base",
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcee4259fae5931078cd3ed030180e55f11bb9f35",
+  "hosts": [
+   "2s-3cpr6qm6j-alleyford.vercel.app",
+   "2s-jwnd2jdga-alleyford.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0xc55a2d530b53cbad1001e4afd4720b7e71f9c291",
+  "hosts": [
+   "402utils.com",
+   "staging.402utils.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453",
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x60c402878efcecae5733a88075328aa2320c39be",
+  "hosts": [
+   "agent-budget-guard.onrender.com",
+   "ai-agent-payment-safety-stack.onrender.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "20000",
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xeae48f1e0d58a58bdff4bce24941c8d80f71a999",
+  "hosts": [
+   "agent-data-hub-thebrandbard.replit.app",
+   "shopifyagentdata.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000",
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xdc40cbf86727093c52582405703e5b97d5c64b66",
+  "hosts": [
+   "agentcash-fortune-demo3.vercel.app",
+   "www.agenticcommerce.cafe"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000",
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe682dc3c6b79c1c87dfd17e5e25b1a07834b9f5d",
+  "hosts": [
+   "agentspec-one.vercel.app",
+   "depscout.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "20000",
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa3091005a76b1480f1897a9d0c2e1c55b7767674",
+  "hosts": [
+   "almanac.locomot.io",
+   "touchstone.locomot.io"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x64842cd797198143a8ff191e4bdbde7e0fbf7f6d",
+  "hosts": [
+   "api.aiapi.ch",
+   "demo.aiapi.ch"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000",
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453",
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x6d6e695b09861467c7d462f5aaf31cf3540b9192",
+  "hosts": [
+   "api.aidress.ai",
+   "api.exa.ai"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "7000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x127462e296fac1a7f5cf33ba57bb2f0fff5cd0b6",
+  "hosts": [
+   "api.anchor-x402.com",
+   "chat.anchor-x402.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000",
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf121fbecec43e1b616d47285851c20d5fc64431b",
+  "hosts": [
+   "api.boonprotocol.com",
+   "api.locus.report"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0550779cfbc832657a8bb46bac9f359a5ad038b8",
+  "hosts": [
+   "api.ipintel.ai",
+   "sat.ipintel.ai"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000",
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcf1d31020a7915421f6d66b9835dcb6f422337e7",
+  "hosts": [
+   "api.trustboost.dev",
+   "sentinel-agent-wru6.onrender.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xefabaae57e9aacab865dccce024053fcb9b0072e",
+  "hosts": [
+   "base-launch-radar.vercel.app",
+   "rugsense.xyz"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe9030014f5dae217d0a152f02a043567b16c1abf",
+  "hosts": [
+   "blockrun-web-vbsbhh7lea-uc.a.run.app",
+   "blockrun.ai"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "11000",
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0d0e3539da45c573af8730045e7d5f634243f3d3",
+  "hosts": [
+   "cdo-production.up.railway.app",
+   "cdo-staging.up.railway.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfbd46201267609ad3c66bd1b99b7f1cc80b1852f",
+  "hosts": [
+   "chess402.vercel.app",
+   "jesuschrist.sh"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000",
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfae3b355dce282768da52ecd43c861927222fd30",
+  "hosts": [
+   "deep-report-gilt.vercel.app",
+   "enrich-gate.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "250000",
+   "5000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x9b442c40daac631f74de4094f2998e4ac016098a",
+  "hosts": [
+   "deploy.acu.run",
+   "tee.papers.tech"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "50000",
+   "79000"
+  ],
+  "networks": [
+   "eip155:196",
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x85557c90027354eaeffe9ee4b4f4014818d8d3e1",
+  "hosts": [
+   "eagle.quickai.build",
+   "zk.quickai.build"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "5000",
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0a84bcc15048c336ca603511363f7ae37579d358",
+  "hosts": [
+   "eleven.tokens.fun",
+   "tts-service-production-e8a7.up.railway.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa5f6ca1393cc766b62c45a6f663c8d69540bc2bb",
+  "hosts": [
+   "feeler.man-o-to.net",
+   "testnet.feeler.man-o-to.net"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453",
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x0eba5d314f4f5dcb7a094953fa9311a45172dd1b",
+  "hosts": [
+   "gblin-sentinel.vercel.app",
+   "gblin.digital"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000",
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x52ab53912d37759b2ad364f22dd06b16714b6c06",
+  "hosts": [
+   "grid.lonestaroracle.xyz",
+   "realestate.lonestaroracle.xyz"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd433f056270912659f073d5ffe7ae247e39235a5",
+  "hosts": [
+   "mcp.stg.yield.xyz",
+   "mcp.yield.xyz"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbad1aa224bfe4feb460e12b2553dcdf98a7098d0",
+  "hosts": [
+   "mechamanda.com",
+   "x402-tools.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcb9b3f94387389e38ef2a7b3c0b851fb8325d7e9",
+  "hosts": [
+   "pmhxr44qn4qitobucm7ctgklbq0svqjb.lambda-url.ap-southeast-2.on.aws",
+   "x402.botsmith.dev"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfbd7b7ed48146ad9beff956212c77ce056815ad0",
+  "hosts": [
+   "polymarketeer.vercel.app",
+   "stable-studio-git-mason-migrate-off-prices-map-merit-systems.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base",
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xdedd050dfe4212d52f2a6ed6a2d5d3289de0d5ac",
+  "hosts": [
+   "stable-supabase-git-ben-test-agentcash-rou-586785-merit-systems.vercel.app",
+   "stablebase.dev"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x06dff3c8380b5d1799874ada903fc3422882fd6f",
+  "hosts": [
+   "stable-upload-git-mason-1140-merit-systems.vercel.app",
+   "stableupload.dev"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "2000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x07f067959297767c887dbfa3c72379c66e82a045",
+  "hosts": [
+   "stablestudio.dev",
+   "stablestudio.io"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3f4cee4c6bad04fcca3138dffdee579ddf17049b",
+  "hosts": [
+   "trust402.aztecbeacon.uk",
+   "trust402.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x76f15a092c7ddac99b2276e9289f061fa1244c45",
+  "hosts": [
+   "x402-pay.vercel.app",
+   "x402.icu"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xd617a7145ca56e3ed58d639f9dec6999b22441ee",
+  "hosts": [
+   "x402-store.dgdb.workers.dev",
+   "x402.dailyelo.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "20000",
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1563cde0042d17f53b23d91fd9b73ace9da26a09",
+  "hosts": [
+   "x402.orth.sh",
+   "x402.orthogonal.com"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "2000",
+   "6000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2ec4545f96a24876764bf2b04d54e66a1351be71",
+  "hosts": [
+   "x402scan-e11utvi3p-merit-systems.vercel.app",
+   "x402scan-hnqp3auxm-merit-systems.vercel.app"
+  ],
+  "n_hosts": 2,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2b6d4988db4723e6908db86ab2b8dfbc51fc32c5",
+  "hosts": [
+   "2s.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2500"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7f5f784ba98cecfc0ba4336f0e48222a3d4d69a8",
+  "hosts": [
+   "31-172-70-14.nip.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x4c7128ece22d35edbf342c7feaec336080a88227",
+  "hosts": [
+   "401-chi.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x973a31858f4d2125f48c880542da11a2796f12d6",
+  "hosts": [
+   "402.com.tr"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "750000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x75113dcf8ce34f0338440d40270e420f8c1762b8",
+  "hosts": [
+   "action402.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa05c8d9e988cd23450b702d98b88142f60cac452",
+  "hosts": [
+   "ads.gitlawb.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x65003c15622f8fbecfa60805777f9c5ae8fb77fc",
+  "hosts": [
+   "agent-id-x402-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x85c4158f5742baba902cc911dd6c1641be605c8c",
+  "hosts": [
+   "agent-offers-api-replitzip.replit.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3772e91c287b7be00a67cfb2a72cc5fb5958af06",
+  "hosts": [
+   "agent-paycheck.onrender.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x5c08951b999cc133ee4161a3a2b299160f66c42e",
+  "hosts": [
+   "agent-ready.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd3bcd3d63a628a8b1358f122ee5161089cd46638",
+  "hosts": [
+   "agent-sop-compiler-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbd65c2d2ac9d3df9ce77e5e2579b5b38efee36f0",
+  "hosts": [
+   "agent-treats-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x51acf9c355ee2b703891cf385d3e8c305ad13b09",
+  "hosts": [
+   "agent-vending-machine.avm-7301.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x298a9c08075a684a5b43e6e128fc4db18d354780",
+  "hosts": [
+   "agent.soliduscapital.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbe47b7413af0bd2eb2bfa8ac11561309dff77998",
+  "hosts": [
+   "agentaegis-mcp-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xe8799c2deda78ecceb329d1e8fe9f110bf55e4f8",
+  "hosts": [
+   "agentbodega.store"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0d083590c048a243e24a75e3a7c968145de25b44",
+  "hosts": [
+   "agentcash-fortune-demo-six.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x58e632fa698383820ffc22156352c9836790e2c0",
+  "hosts": [
+   "agentcrush.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc794070cf310ab3766a8a3903fc6d50e082c3d65",
+  "hosts": [
+   "agentkit0.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe8b25a72dd6aef69515452a61ad231c7df2843b7",
+  "hosts": [
+   "agentpay.tools"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7ed9057a8edec4496c902c9aecf1d30947d7cc09",
+  "hosts": [
+   "agentpmt-webapp.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x9299ea851fcf213071a6dd94ffcd026834d61023",
+  "hosts": [
+   "agentproof-murex.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x66717045858d9f598e2ebd046bf42a0b1063c0fa",
+  "hosts": [
+   "agentres.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd5f96558fcb1f127c77c7d95eea067f526d08618",
+  "hosts": [
+   "agents.ai-rook.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf1ad93cf340d9b42a1cc5ce63592336b42094960",
+  "hosts": [
+   "agents.datalegion.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa443f1cc64dbbf9f1ea69541ec0c89415355c885",
+  "hosts": [
+   "agents.driftflight.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "60000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xdddd0cb78cdd9f60dcc96948ecf5ef2d481f70b4",
+  "hosts": [
+   "agents.freederia.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0000000000000000000000000000000000000000",
+  "hosts": [
+   "agents.sayerandstone.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2950000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe8802d8ccef9032f61562b0b044f7cf74ac058c8",
+  "hosts": [
+   "agents.withzero.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe08e64d4044cd7ce4bfbb44d908e358c4eafde09",
+  "hosts": [
+   "agenttrust.uk"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "15000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x367f1b3d8ca90d1e087481a9a40d585bf3451a03",
+  "hosts": [
+   "agentworld.me"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4aabe17c239ef71c3a26ba7c2b3e0aebbfc1df26",
+  "hosts": [
+   "agi.apify.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2593d6e658db5a092a0e43de8b05acce815d2c16",
+  "hosts": [
+   "ai.tureka.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe894f459b8f25af062d744c71c714b64e4f5c8dd",
+  "hosts": [
+   "aiact-api.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x810f6d61f7606deee2657d3083e150a222bc29c5",
+  "hosts": [
+   "anicca-x402-discovery-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe295b6641b32998537ae0f8e61babf729eaed6e5",
+  "hosts": [
+   "anomaly.forgemesh.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x82134912ccc71610da9350ff59cd279fad494a98",
+  "hosts": [
+   "api-dev.cueframe.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x98c67dfad5f7d70e2782521cd09bb80f560ea2c3",
+  "hosts": [
+   "api-onchain.optimai.network"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x354d30b316aac919e8c19dffcc350fbe295a96ec",
+  "hosts": [
+   "api.agentphone.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd9b7eccaa07c274338e17b934b665662eaad58a6",
+  "hosts": [
+   "api.agentwonderland.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xedc70b35572a2264aa7c31cf0f2a639f8007d952",
+  "hosts": [
+   "api.agentx402.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "4000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x778a05280fd8db980e920fe9f31d0a8eabd17d59",
+  "hosts": [
+   "api.algovault.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x942bd3e3073543c674efc0c378d5bce20f9120c1",
+  "hosts": [
+   "api.arkm.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "400000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x57210b95ecbfd6f2ee74d77830228b48d1878867",
+  "hosts": [
+   "api.auor.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x161dbdd73d025e9aedd4918a67c28e5bf9a87fb9",
+  "hosts": [
+   "api.babyblueviper.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "19509"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x480cd46e6fade651a0437deadda53d5c8e7d846a",
+  "hosts": [
+   "api.bitrefill.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x30a535132ea7573fd339b30fee8b677e0ec947e0",
+  "hosts": [
+   "api.borisinc.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4dbd0d9be6171c212617b8adc4d35152f9f23115",
+  "hosts": [
+   "api.businesschanges.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc2afb91833f4de19542a025872c6085cc29185eb",
+  "hosts": [
+   "api.clawfetch.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x46f297e342bc0b44b9f9c427e53c56e9f83bb660",
+  "hosts": [
+   "api.clawinabox.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x13273fe5cfee0c289ee30dac40ea58d4fb823c36",
+  "hosts": [
+   "api.compatify.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x546217c24617bcf9fad565e8ecabe5de2d41326b",
+  "hosts": [
+   "api.curb.numetal.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe72b85a97a6e19413d8b80633787eda6d6237a77",
+  "hosts": [
+   "api.doc2json.de"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc9b70d8d342609437bc87ec3c877911a306d3e6a",
+  "hosts": [
+   "api.dripmetrics.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x191eaf1d2134aacc2d7209ef5df077e4f134af34",
+  "hosts": [
+   "api.dyor.network"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xffa3e5fa7ae5f0dd1fd196cbd41d40325e4aa831",
+  "hosts": [
+   "api.forum-labs.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf9c1a74620295f7646ff209c78e45c06c8833553",
+  "hosts": [
+   "api.freaks.one"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "90000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xd993eafba87cffa2ca2cff5a56ef89034575a7ef",
+  "hosts": [
+   "api.getplexa.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xed181bcadb44681e44fa365521af1251625e57b7",
+  "hosts": [
+   "api.getsly.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7662e00f8ab4c362166e1ff649ff6c2a638c80ad",
+  "hosts": [
+   "api.glianalabs.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "833750"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x8a99fef40d17e0bd6d48ce088cc207847d1c0596",
+  "hosts": [
+   "api.gmfarcaster.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xae0fea8bb97db83ffc96baada9a4d8da6efd21ba",
+  "hosts": [
+   "api.hookfindr.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb60a3181303953e6f909ba4d3b09282beefcdd6b",
+  "hosts": [
+   "api.immuta.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6d02e3f7c68e7492cc5474ef8ce17dedfd11df89",
+  "hosts": [
+   "api.influship.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "900000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7ce4378a9601d7765bc126a2c7a1cbadb034be2f",
+  "hosts": [
+   "api.instahuman.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x4465825b0ac713aa2fa07ea29023020804a128ee",
+  "hosts": [
+   "api.invoket.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xefb3d3b26b31982293be31bdf389e7b5f3b4dcde",
+  "hosts": [
+   "api.jamton.network"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xdc59fa7b64988b846e76ec9849bb68f889071506",
+  "hosts": [
+   "api.jarvisclaw.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "45000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6e1cdbbbc6e6fb422af89b2e47fb553b725ad728",
+  "hosts": [
+   "api.jubjubapp.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe740d5701749d262da5e4fcb9f814c5b6d91cf46",
+  "hosts": [
+   "api.linkedpanda.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x40a8cdd6a10ec1a8cb3dfb2834675e7a2cf4ad8b",
+  "hosts": [
+   "api.loyalspark.online"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2c9db263f5da45149820e2888e874196fae67fbf",
+  "hosts": [
+   "api.mcx-ventures.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x24facafeb49b4e3facf0b3e69604a2f4640c9bf2",
+  "hosts": [
+   "api.memoryapi.org"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x54d6c2c08e10f1a1d3da88df513bbe9bcf1a4afa",
+  "hosts": [
+   "api.munition.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xecd6edc72f228dcff9a7e7e981fd64bea5a4a395",
+  "hosts": [
+   "api.nameintel.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x93053f1e7a5efeda532fe69cbbe43cbec3a0f13f",
+  "hosts": [
+   "api.nansen.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0300e73759b357ceee5a248d1801ecb8abf7a1d4",
+  "hosts": [
+   "api.nativebtc.org"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x52e29e0d2aa49bfbfc548c0a9f2196f4aa51f3ea",
+  "hosts": [
+   "api.onesource.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x72f62de8b70d6cfa8cc2df6f21f243f289f3396c",
+  "hosts": [
+   "api.osf-master-server.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x08261f5b6d893e1af90a2f23d9535d8723d1207d",
+  "hosts": [
+   "api.palmai.tech"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc3e835c247fb8dfd83088e1b865b2d79dc709a60",
+  "hosts": [
+   "api.pixo.tools"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf4d43bdaae23a7d2012c49cb9f57eaab89d4ffc2",
+  "hosts": [
+   "api.proxyllm.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x40b62aa49f4a929760fb2dd0fcb0642f0aa872eb",
+  "hosts": [
+   "api.qonoro.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "600000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3567c566e194dd25ed580ad917160b8700fe7460",
+  "hosts": [
+   "api.regressionincoming.fyi"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4cf33ccb14b43d76b4f672c3fede297d1d763ace",
+  "hosts": [
+   "api.remix.live"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa13d363aecccf878ec64f6eb687eb4a771fb0599",
+  "hosts": [
+   "api.robinx.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6c11f8a21f7ca922f483ed21c3b6c2d9b305b10c",
+  "hosts": [
+   "api.rtkmotion.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x059d091d51a0f011c9872eaa63df538f5ce15945",
+  "hosts": [
+   "api.run402.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x48e23742181654139f9a7c1b14dd64b04e89ed3b",
+  "hosts": [
+   "api.scoop.sundaebar.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcc985ba6934d134feec4824ba40258608f3a4333",
+  "hosts": [
+   "api.stacktr.ee"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xaeeb8eabdc05532a26123045f99d208eb1cc00ab",
+  "hosts": [
+   "api.stocktrends.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "0"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x66d7c2f952362bfb24fd7f02a9bec9c754ea83bc",
+  "hosts": [
+   "api.strale.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "324000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x9036ff40101eeff4cb8a377d59e9432819b5d420",
+  "hosts": [
+   "api.sumvid.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc34cda76d8b9edd3be25c336ca1cf668522fdf0c",
+  "hosts": [
+   "api.svgsmith.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3ef598358b4f0e44af234e52e41010bf59fa7c7a",
+  "hosts": [
+   "api.syntaxrate.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4e024e356bd01853654b7b5196f2b85f67cc39ec",
+  "hosts": [
+   "api.terradeed.co.uk"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa8cc4011eb545ee5d436a599c9a8bd03dd1e1df3",
+  "hosts": [
+   "api.useatelier.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "550000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbf9305e6ee38e92c296aa3fb0a844977307520fa",
+  "hosts": [
+   "api.utilia.ink"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "6000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa9085ff9a2a2b703331730c00bbb156a64813d25",
+  "hosts": [
+   "api.vevang.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "12000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcc2011577cad30e15d8c8d6329d36deaf85bd2cc",
+  "hosts": [
+   "api.writer.place"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc23c4afa42cbabbc03d04bc87ecb769fc82f1f43",
+  "hosts": [
+   "api.x402agentic.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe3e597a4698e0ed0e06f9d9fe513157728fbc28b",
+  "hosts": [
+   "api.x402dataapi.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x515e7bce44baa5f6e42d16d4b5f27768e7f2f8cc",
+  "hosts": [
+   "api.xona-agent.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x10ff767043a1723e0bb5b9207bc37d3442cc9e4f",
+  "hosts": [
+   "app.suedeai.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "150000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x20cefa1804905878458390e6b6719c4b1d45a0b7",
+  "hosts": [
+   "arbitrum-mpp-transaction-preflight-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:42161"
+  ]
+ },
+ {
+  "payTo": "0xebe771d3fc1b9d55e3f36abc9e9c1c45952bc14d",
+  "hosts": [
+   "asia-pulse.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "200000"
+  ],
+  "networks": [
+   "eip155:196"
+  ]
+ },
+ {
+  "payTo": "0xbeebd30639e99bbce11faa2b463fcccf6215831b",
+  "hosts": [
+   "asistent-crypto.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x002cfd89c5636f45e3c8576d6e35154748412bac",
+  "hosts": [
+   "atq6wtkp6k.execute-api.us-east-1.amazonaws.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x57407d691f755caa107647718f3582a8a87467dd",
+  "hosts": [
+   "attester.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfb5f5a44611ca6765ad57536b90a32ea87328ae0",
+  "hosts": [
+   "audiobook-api-beta.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x95de884e9eb3f90e496200693d94a636942a130d",
+  "hosts": [
+   "audit-tools.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x71db9a4a49c4f904b70dfd6c8f4b77705af99c22",
+  "hosts": [
+   "autonomy-api-network.onrender.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9dc9a48611b53145bfaa3535dbc1d01df89159bd",
+  "hosts": [
+   "base-intel-api.jakemaxsigal.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "15000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc62e6800ca1b0f08b63ad5a754eabc509b24f646",
+  "hosts": [
+   "bcb-x402-hackathon.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "base-sepolia"
+  ]
+ },
+ {
+  "payTo": "0xef2fc5b24339371a659fd0571c9d0a1d63268d4f",
+  "hosts": [
+   "billitright.co"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "150000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x444fadbd6e1fed0cfbf7613b6c9f91b9021eecbd",
+  "hosts": [
+   "bittensorman.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x26b354827942a0802552e433d357c78d78d2e987",
+  "hosts": [
+   "book-bot.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcbcbc4257d96341cbaa636e85ba45c5427c104a2",
+  "hosts": [
+   "brain.zugabot.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x84d2d6536fe3553c537233160f3611a794b18d13",
+  "hosts": [
+   "bricks.builddetroit.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xabf01df9428ead5418473a7c91244826a3af23b3",
+  "hosts": [
+   "bundle-maker.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x14849afa040edeee524a40c52b877fe1b6e6c2c5",
+  "hosts": [
+   "cc0.company"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa8fed285ebb73cd894539ea33a0c0eb058ad957c",
+  "hosts": [
+   "chatrip.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "70000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x21dfc81726538fcfd7dfb5e4d14aab4475ef8694",
+  "hosts": [
+   "chrombot-x402.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xe0df4aa687080f35c5ffe4235f456c69850d28fb",
+  "hosts": [
+   "claudelines.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xff4555af30a1066a889324a3fe88c76796159f15",
+  "hosts": [
+   "cloud.hyrule.host"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfad67ce5a834e68d5533ba7ac08619ff82a42084",
+  "hosts": [
+   "cnvrt.ing"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "25000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x7b53524d5c5d29efb8c1d128c56f62fe38cd9476",
+  "hosts": [
+   "coil.trade"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb85c83cc448edca8eb724f5d79b523faff9375a7",
+  "hosts": [
+   "conc-exe.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6ea81be98bc360fb2291a3cd1b2d598c1cc1dd66",
+  "hosts": [
+   "conch402.dylan-caponi.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1f5f8474fa0dc1fde79187abd68ef8ea15adae34",
+  "hosts": [
+   "concordancehq.duckdns.org"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x318a4b4764eb37c3fcbce434713128143815fd57",
+  "hosts": [
+   "costpulse.waltsoft.net"
+  ],
+  "n_hosts": 1,
+  "amounts": [],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x7ccb91a3ad4c45097bda4c3c29d2cc89fa93ab36",
+  "hosts": [
+   "datasourcepulse.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc8a8cd75457103f847eeddc7f6fe4efb3ca31b75",
+  "hosts": [
+   "deal-verdict-api-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x289aa17875d1adbe3dc66d7658218d14258d81f2",
+  "hosts": [
+   "decipherranker.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x1480d7a7a299576b45d1793ec8fb1e68361045b0",
+  "hosts": [
+   "delta.rursus.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x20fb0619b6d23f8463d41c938fc92115cc89406e",
+  "hosts": [
+   "dlf-gateway.agentlabel.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x8b207b0234f59969c676eb9b4d6f1dba3fecc51c",
+  "hosts": [
+   "docparse-x402.f3rnandonhan.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x39e10e5f431b26cae3d7d0a39aef86055d015d8c",
+  "hosts": [
+   "econdash.org"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc9368b30bd620164fd1a05a5d99dcaf8ae754775",
+  "hosts": [
+   "emc2ai.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "450000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xec7051578c9ce20ea27eed1052f8b4c584aee2b3",
+  "hosts": [
+   "emoji.today"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe602344ef3944497a72981e36066c62e7a99f599",
+  "hosts": [
+   "energybilltoolkit.co.uk"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4293f75e69b22ee68afa0f464de86e5cd80bed75",
+  "hosts": [
+   "entropy.rip"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x29ef82b3cf12c6e71fcfc4cc40678e1b02f95a91",
+  "hosts": [
+   "epsteinisland.club"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "200000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x7d9a95c46d50231016f12a79c5bdea2936570b05",
+  "hosts": [
+   "ethmumbai-three.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "200000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x21ba2c2f9cb292cf72360776389099dd0e9a3ae0",
+  "hosts": [
+   "execbox.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x8a76cff6382deeeaa1a72ac62cd45c374e3faf35",
+  "hosts": [
+   "extract.vevang.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xda158f96c7d02e787ec75858d108366bda6aaeb3",
+  "hosts": [
+   "financial-analyst.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xfda5a8dc19e814a7880515feb88308bbee625d6d",
+  "hosts": [
+   "flipr-x402.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3a0aee5c49e6d32a2b7a333dc3500ad6a7901eae",
+  "hosts": [
+   "fortune.fulinlabs.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x63347cd326a50696f76cfe4b8ce079d3c8ed3039",
+  "hosts": [
+   "fresh-feeds.foomworks.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x702ba46435d1e55b18440100bc81eb055574875e",
+  "hosts": [
+   "gamemaxxing.baes.so"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa3b3e856198727383c6eb6788fbc5d4fe3dd192d",
+  "hosts": [
+   "gankdat.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xa039e3deb5ca71e41905f90491fc5d016ce23b79",
+  "hosts": [
+   "gateway.apiosk.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa29fb9cd97cf57948ae8bfe891476f5ab13220d3",
+  "hosts": [
+   "gateway.drillr.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xabe512e06dddc82581d2e5a19ab594e778490441",
+  "hosts": [
+   "gateway.stride20k.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xdd85ed9e404d22c137a5d9fc3c200847aa3b11cf",
+  "hosts": [
+   "geodns.iwsolutions.ca"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcd95802a4abddd75a5750dd2d6935007ef268275",
+  "hosts": [
+   "gifu-server.onrender.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x0ff5a6ecef783bba35463ec2f8403b9b5e9e7c86",
+  "hosts": [
+   "graphadvocate.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x99eedce3c87adf3de1c9b8b08f1810c168d6e039",
+  "hosts": [
+   "h1dr4.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x67ea082639ea17be250ea7dc1e2d7c9e4adbf0fe",
+  "hosts": [
+   "halfwayapi.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa1ae67b4f4f5e22dba4b97be55fa221c11367e17",
+  "hosts": [
+   "hars.cryptotavern.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3900"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb5194a98dbdbb7028b585db26b972e7f0f3f826a",
+  "hosts": [
+   "hirescrape.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "210000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x74718dd5a04e0a0a2bfaf3bd06adb27032c67f7f",
+  "hosts": [
+   "hl-tool.darren-pi.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x77f3c9bcb898ad1d30e9a336e2cc3108d88d6c09",
+  "hosts": [
+   "img402.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x5a45010395d62e9c4a8a0931bde0493aaca4f657",
+  "hosts": [
+   "imgopt.use.x402atlas.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbb3b7b9b1053ebc0c763fa1a8f09f4af5978612c",
+  "hosts": [
+   "induction.aarei.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x29322ea7ecb34aa6164cb2ddeb9ce650902e4f60",
+  "hosts": [
+   "intel.hugen.tokyo"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd727082fe03a798c667366b9467b1cf5964bbe54",
+  "hosts": [
+   "jeonjang.kr"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "120000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc1726e09aea4b9b967353b7b56890955e9e5bc2c",
+  "hosts": [
+   "jsonrecon.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0d59a2a9e70fa6574dfa78c0ab5250c3accbb956",
+  "hosts": [
+   "jtifhcvbgxqwlywugvjv.supabase.co"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3a7292b88471691946d8d8856925e22246bed743",
+  "hosts": [
+   "kenoodl.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb86f95ef5fa904318ea9df3b59adce099b478fc4",
+  "hosts": [
+   "keyronne.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf1c7c037891525e360c59f708739ac09a7670c59",
+  "hosts": [
+   "kleros-ipfs-gateway.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xbcae60ff5f3ddc4dd37df85a1e7ab0504d266d21",
+  "hosts": [
+   "legalfournier.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6ede3258bce2ef32f9bb614c781818b4efd0e765",
+  "hosts": [
+   "liquita-x402-edge.liquita.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xd9e7a161ad06f410c28b3939cef5f06f0a327a8c",
+  "hosts": [
+   "listing-roast-x402-service-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe05cf38aabc0a046cf0057d2656f3c374132667a",
+  "hosts": [
+   "llm402.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5632"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6a6e4294deb8322a150642807f25cb587dc5cf63",
+  "hosts": [
+   "lore-prod.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "base-sepolia"
+  ]
+ },
+ {
+  "payTo": "0x60675cc0da2131dfd2e8b887ebf8356b2cbd701e",
+  "hosts": [
+   "madoromi.fun"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9bb96acb3fd11d8949d862736b96e7e12d319dc4",
+  "hosts": [
+   "makespdf.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7b49fd1c58017b6e545acfb62b455addd0efca57",
+  "hosts": [
+   "mediaforge.mediaforge-hq.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x764d6953132ac85eda0708c7ffd65eb1b1a80db3",
+  "hosts": [
+   "midway.lol"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x40e5a6647803c2dd686049dcdc5f9c34817d7a7f",
+  "hosts": [
+   "mimirapi.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6e1081d518f8ee5d11460cbedef1ed5a47bf98a7",
+  "hosts": [
+   "mint.snowfro.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x6ca33cc6833fb61f760c8ee3e5ae5927a98d8b69",
+  "hosts": [
+   "mobilitychain.kr"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "137000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb5998e11e666fd1e7f3b8e8d9122a755eec1e9b7",
+  "hosts": [
+   "mpp.hyreagent.fun"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x389ba2fab205f20724d9d7014669e172a37f9b42",
+  "hosts": [
+   "nectar-tools.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "15000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xda8a384c99832de7f176a6c21720227ac024e364",
+  "hosts": [
+   "news-x402.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7861db4efc14a1ed5dd8c96c528a3796560f1393",
+  "hosts": [
+   "nft-alpha-x402.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6813749e1eb9e0001a44c2684695fe8ad676cdd0",
+  "hosts": [
+   "nickeljoke.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "base-sepolia"
+  ]
+ },
+ {
+  "payTo": "0x92cb873c2d114d6aa847eb110f721da22b5220f7",
+  "hosts": [
+   "nico222222222-x402-trust-guard.hf.space"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "80000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x89764c3ded721c29999a237cf935a34e1c8edf97",
+  "hosts": [
+   "nittarab.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x53799d42e72e3d41625006d310a55ec486da5213",
+  "hosts": [
+   "nwb-vending.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa2d72abf2c5e939fddca4156b74de482e03ca3ec",
+  "hosts": [
+   "ontarioprotocol.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0e84ddedaae6a779c462c22a59f301ec31b6b808",
+  "hosts": [
+   "openrouter-production-d0d6.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x8b1cf12e7efe6aea59cd1124ebbe7709e3ac6085",
+  "hosts": [
+   "orcpin.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd30fa3412cab70ea62fe4478388d1df82bba8e1a",
+  "hosts": [
+   "orionkr.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf0efafed3bed84b12dc89ba80e62131faace0ecd",
+  "hosts": [
+   "outcomescout.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x95c9216fca7a77a91ddacd08e1ddab6babc4288b",
+  "hosts": [
+   "patternfetch.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x617122b245c776a6b83a1f2821617819e2d38f6b",
+  "hosts": [
+   "payflowagent.net"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3c423b365efb79bfb42c9ec8f6f0745195ca7745",
+  "hosts": [
+   "paysafe-agent.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x63ffca01d352a245f9d5cf372380966814d3ee5e",
+  "hosts": [
+   "persona-mcp-server.onrender.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x91859e0f5269a082f0419fb9ca2174680c9387b0",
+  "hosts": [
+   "pitchiq-mcp-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xc599e8e2f9afcd5eff6ad2158b1a5afa83ac299a",
+  "hosts": [
+   "pitfalls.doggo-company.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3bf4f4914f78c3c2b2f2801f8ea717135b7d3bdf",
+  "hosts": [
+   "preppers-paradise.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3c5f3a6ce224bb89d72f5eb4232ecc27f67b3eea",
+  "hosts": [
+   "pro-api.coinmarketcap.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x318a8bac69c4ec1f9e489ce223b7ce2d719bcd3b",
+  "hosts": [
+   "property-risk-passport-api.lifebite-app.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xce48d4c2914c9e22a920883622cc04b1f6a5856c",
+  "hosts": [
+   "proxy.aproxpay.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4261701a4ddf4625ebfa80ceefb5b3b2b5453b2e",
+  "hosts": [
+   "proxy.suverse.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x8f9ef7f8c4744bfaedaa5d315c21f9770c10f931",
+  "hosts": [
+   "quietstore-production.edge-7e13f.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbaf31935ed514e8f7da81d0a730ab5362deeeeb7",
+  "hosts": [
+   "recoup-api-git-sweetmantech-myc-4077-32a4e4-recoupable-ad724970.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xfbc4f75278c9f3c901efada9feb3de76089fcb99",
+  "hosts": [
+   "red-breeze-8b8c.keenanbooker83.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "40000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9baa4417d1e78f2ed5b09aa4abfb541aeb2cd6ed",
+  "hosts": [
+   "rest.staging.wagmi.productions"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0xb6a059e341769c08310a8cfaef17015fc5f896c4",
+  "hosts": [
+   "revert.wtf"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xee1c101a65605a235f0c4f6c8b83a176369f899f",
+  "hosts": [
+   "robotinsight.kr"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "110000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x53598173ce7c26025bab0520d9e9d0c28fbcf7de",
+  "hosts": [
+   "router.mudko.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9d86e0e74333b297b1d0b6ba30d2ed1b5f01f296",
+  "hosts": [
+   "rpc.nodeflare.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xab6731a0bcdf511c2842c768a03448075ab654ca",
+  "hosts": [
+   "rubric-protocol.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf815f25e2c3ec4cf9af787cd3ebe5d8f5a91239f",
+  "hosts": [
+   "ryansproule.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc87a06dee4c0e85912296002617120bbfd5ef990",
+  "hosts": [
+   "schema.nsgoods.org"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9876af0f6d8ed5155cd02d1ca56d128601612690",
+  "hosts": [
+   "schemasure.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3205859b58fcb55ac6c30a01bd09c7ed371323b7",
+  "hosts": [
+   "scorestatus.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x24445efddb08d4938e3e3627042b2cf4063d9092",
+  "hosts": [
+   "scry.moreright.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:4663"
+  ]
+ },
+ {
+  "payTo": "0xac6aa71c4b48b75d2dff70a4bc7a0f5d547c302f",
+  "hosts": [
+   "selun.sagitta.systems"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7bebee9f4c1694e18fd9bf3bf0f113d7fb2d6bb3",
+  "hosts": [
+   "sentedge.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0xf080a1aab08650946acda41410a7edc14f7be035",
+  "hosts": [
+   "signal-engine-production-d88d.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb1acd9e0269023546074400a434e703b646aabba",
+  "hosts": [
+   "socialintel.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x15773309e68e7d6b561a86bfca8f1bfbf1807d90",
+  "hosts": [
+   "soldefi.thomenz.me"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xadf0a71e898d350653e7668edab95a020884b74f",
+  "hosts": [
+   "sparky-works.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xade02dff58b0316f04cd59806e3fdb4690fe89ab",
+  "hosts": [
+   "stable-deepline.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xabcb091d90419e1c8ad4818f1b33fc4645501892",
+  "hosts": [
+   "stable-domains-git-ben-upgrade-agentcash-r-bb6a65-merit-systems.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x7bcd1f84a601f941e883892992a73ce87d7ca2d9",
+  "hosts": [
+   "stable-leadmagic.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "30000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x124f620b4f3b53559cd9148c9b1b2773ca104478",
+  "hosts": [
+   "stablecrypto.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2e87ae5ab4d061c1213c70dd58b0cfb9c955753d",
+  "hosts": [
+   "stableestate.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb6a6ba7f58fe92e77bce040cc0818c63ab9ac768",
+  "hosts": [
+   "stableflare.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd9f3261c9fea20a99d0708815010280c549e8ebf",
+  "hosts": [
+   "stableproduct.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe6814e0172c9f15f2ba2e09fe9d9f3751fa38b75",
+  "hosts": [
+   "stabletickets.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0cc2cdc0eb992860d6c2a216b1dc0895fd2df82f",
+  "hosts": [
+   "staging.toolkit.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xb06f063650516982fead1ee848239c0b1e189cc0",
+  "hosts": [
+   "task-relay-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x549c82e6bfc54bdae9a2073744cbc2af5d1fc6d1",
+  "hosts": [
+   "tensorfeed.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x159be9e316bc5fac8ce05aec4eaae46e8f8a4908",
+  "hosts": [
+   "test.alexwlex143.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x03d773c52b67993e60ecb3134b17436fe03b584c",
+  "hosts": [
+   "the-stall.intuitek.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "350000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x85f415fd33d7c985c866cdfb625f1d5183ce2c82",
+  "hosts": [
+   "theagent.club"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xed32885e5bef081b8a18aa034dd3a4b50501a507",
+  "hosts": [
+   "theideamachine.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x4022de2d36c334e73c7a108805cea11c0564f402",
+  "hosts": [
+   "three.ws"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf41daf0ba8d5f5915d927e005b2eb2ded7b6fecf",
+  "hosts": [
+   "timezone-toolkit.agishub.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x332dbf15a8bcca8eeb4390b380202360f4f45401",
+  "hosts": [
+   "token-risk.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb3e7993ed2fc2c79fff220620240f298bba9bf5b",
+  "hosts": [
+   "tollbooth-sanctions-screener.sjwilliams8.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x11f591c3496c0632e7b173184f5bc71dc941125d",
+  "hosts": [
+   "tooloracle.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x879933456986877f5d87e6ee24d1e0ebd264f527",
+  "hosts": [
+   "tools.miniframe.com.br"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0b6e3594df4faa6d66196d5a3271796ad8bb505d",
+  "hosts": [
+   "trace.sociologic.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "120000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x687e3217668dde7c32478a3f2613750c8bd505e9",
+  "hosts": [
+   "transit402.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf47e84caf47bb85e16c08d6140435882815502ee",
+  "hosts": [
+   "twentyonemillion.art"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xaeebb2d90667b79e49c1fac0f4255231f5f61972",
+  "hosts": [
+   "uat-api.certaindata.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "214000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x538aa4800ae2bd8e90556899514376ab96113a8e",
+  "hosts": [
+   "vealth.net"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf9259b4324f77dd87728b1c1d15cdb8be1793cfe",
+  "hosts": [
+   "verdikt-worker.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb9fae1e2aa1a508bbafd511b804b7067fe5a3986",
+  "hosts": [
+   "verifier.vevang.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3a86924d0bb29ff8b1469472f4294cc7e62b54b7",
+  "hosts": [
+   "verify.inferenceview.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x9ee3cef3a4172e46ba011cfb1b86a4d1f3b242b9",
+  "hosts": [
+   "visibility.vevang.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "4000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf0beee7f4db720d96241cdc1e2503525423019d5",
+  "hosts": [
+   "vit-tu-ma-production.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd78522d5b43bd0a934e333ef5b5c0f70f683dd4e",
+  "hosts": [
+   "vixilabs-x402-stage.valerioreden.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "9000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0xd8ca10c55296bd8ca1dd409ea2f0fa72fb0c643f",
+  "hosts": [
+   "vu.velvetdao.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x08e3edbf5fe9e8b2312838d6c563fc03b037700a",
+  "hosts": [
+   "web-production-77376.up.railway.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x9fb365e4e9385e2a39febad70368267e6f571d9a",
+  "hosts": [
+   "win.oneshotagent.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x054ade63d8046e189fbad70fae1e6203f92190ee",
+  "hosts": [
+   "www.agentgram.site"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "200000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x2ae6394a883facf8fdbfd9d24200d21fc7d591c4",
+  "hosts": [
+   "www.cryptowerk.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf338bdd9ec443335b1c33ad3bb21a421a36f97ea",
+  "hosts": [
+   "www.genbase.fun"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xcaedaf1fbf0dd26d93d50bd9878ac1167f1d0dfd",
+  "hosts": [
+   "www.hibra.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x6462f8f301bd08c206ee611aa00015ba41acc1d0",
+  "hosts": [
+   "www.netprotocol.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x451e7ed883f5da640be12b595021428aad79af0c",
+  "hosts": [
+   "www.pontor.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa9bd0171cf284f338a1925e352db4a7d4caed0b8",
+  "hosts": [
+   "www.rebatify.net"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "100000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xb0d0207bcd46c6a7009ca5c8294177d79adc0807",
+  "hosts": [
+   "www.robbiegeorgephotography.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x967f08fc4d3b9651314207f6cd4c7d166b94880c",
+  "hosts": [
+   "www.stable-shovels.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "250000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x5d51ecc50813e0937a5c43be298e9146796ad60d",
+  "hosts": [
+   "www.stratalize.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "500000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x76e8778a3122dbf4f78288bc3545ce305f3b96dd",
+  "hosts": [
+   "www.tryskopos.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd5c6489d0c40bd7711dc9fcd831f328151164c75",
+  "hosts": [
+   "www.xplace.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x23c920649f148bd253583f140f540797b312db35",
+  "hosts": [
+   "x402-crypto-data.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x021028695eafdde60e139d87000a8bd6cb65645e",
+  "hosts": [
+   "x402-demo-discovery-endpoint.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xcb399bbed205ae963ab2f5cc5fa1b3c1fba7f916",
+  "hosts": [
+   "x402-echo-service.fly.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xe2433f056f953b7d4c946cffb1201d2e9601eabf",
+  "hosts": [
+   "x402-hono-api.inraby.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "20000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6e3e1104911423509112e755e7366659452d72a8",
+  "hosts": [
+   "x402-insolvency.nobodytools.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa954852f41aabb6e8577eb661449531472aed775",
+  "hosts": [
+   "x402-mainnet.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x1deeaec4250e66702e22777ec1e3a70b19745a72",
+  "hosts": [
+   "x402-market.kore-app.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x749b7b7a6944d72266be9500fc8c221b6a7554ce",
+  "hosts": [
+   "x402-next-mainnet-wheat.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x60c4499870f115664d7ffd8411b023dbef3377d9",
+  "hosts": [
+   "x402-paid-service.iholt.workers.dev"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xa238af2e66d9d7301f2d02932931851ddf900dcd",
+  "hosts": [
+   "x402-solvers.onrender.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xc0ce6bfb16bb6b6e10a9d806e509d8d20996380f",
+  "hosts": [
+   "x402.api.browser-use.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xd5f8481d8f25d3966d2010dbf9b47ffbdf745a9e",
+  "hosts": [
+   "x402.asterpay.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x205e4e65fb6b3442d962966926a855b6a8e417e1",
+  "hosts": [
+   "x402.browserbase.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "2000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x1304ec1a8945365e43a5c18a734065f107b417ca",
+  "hosts": [
+   "x402.coinopai.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0750a9e669c37fe1a1847e4b8f9e16f07c16162f",
+  "hosts": [
+   "x402.coinstats.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x45ac00db8bdd4b837abbbf75888cbdfe6b6d8943",
+  "hosts": [
+   "x402.creative-tim.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xe79e7fa7ce7259c46f9b127b837d2907bb036f95",
+  "hosts": [
+   "x402.devvizion.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x65e3e64935ea709bdf1119e1fc991299c04c0154",
+  "hosts": [
+   "x402.fablerlabs.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x850363a27f0ac6feb9c7a3ec4c1d295262df9432",
+  "hosts": [
+   "x402.forgemesh.io"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xbbecbe90f28632a9d52ed67b33b43767b8c89285",
+  "hosts": [
+   "x402.fuchss.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x0dd5f7c1ef90c577daf4742ef08694448f405b2f",
+  "hosts": [
+   "x402.getautomatedrcm.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x624faf18c78456c8da5bf156cd77c1a2033f21c5",
+  "hosts": [
+   "x402.jmthomasofficial.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x6cab485fc28ec70d3845113b704d4824e4d2b24f",
+  "hosts": [
+   "x402.miroshark.xyz"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x3e7c9ca818f713f19e126e3b7b37b47dc1411570",
+  "hosts": [
+   "x402.openwebninja.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "3000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xf46394addda95a3d5bcc1124605e3d15d204623c",
+  "hosts": [
+   "x402.quicknode.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "eip155:84532"
+  ]
+ },
+ {
+  "payTo": "0x08e82839e1513023d115451babc0ff18eda8f925",
+  "hosts": [
+   "x402.sleuthagent.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "99000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x59959450bb3da79a8bc07cc078696d6cba3beb4a",
+  "hosts": [
+   "x402.tabiji.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xcd273a14ba2a2684efc44b1ec7ed1151c606ca0c",
+  "hosts": [
+   "x402.tavily.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x081f8761f68e9387d339bddaaa0c8db5d3a72f5e",
+  "hosts": [
+   "x402.tradesnack.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0x402faccc3faeb72351cc2b68c7966faf5f22b0d4",
+  "hosts": [
+   "x402factory.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0xc0887adf2411c4db859e497c1f931c59600b1ec4",
+  "hosts": [
+   "x402payswap.vercel.app"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "10000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x6b4c217000c9a97108f2ed4086f42b62edd42665",
+  "hosts": [
+   "x402pixels.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "1000000"
+  ],
+  "networks": [
+   "base"
+  ]
+ },
+ {
+  "payTo": "0x1c9923489cd7d75dd2f6735c48090b8bd4c7e5a9",
+  "hosts": [
+   "x402toll.com"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "50000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ },
+ {
+  "payTo": "0xed1f3bd0c17b4eb4bcbb2ddb1e436015ac45b711",
+  "hosts": [
+   "zlurp.ai"
+  ],
+  "n_hosts": 1,
+  "amounts": [
+   "5000"
+  ],
+  "networks": [
+   "eip155:8453"
+  ]
+ }
+]
