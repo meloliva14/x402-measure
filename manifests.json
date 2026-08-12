@@ -24,7 +24,8 @@
     "asset": null,
     "amount": 0.06,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "2s-jwnd2jdga-alleyford.vercel.app",
@@ -49,7 +50,8 @@
     "asset": null,
     "amount": 0.06,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "2s.io",
@@ -74,7 +76,8 @@
     "asset": null,
     "amount": 0.15,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "31-172-70-14.nip.io",
@@ -98,7 +101,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "401-chi.vercel.app",
@@ -131,7 +135,8 @@
     "asset": null,
     "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "402atlas.com",
@@ -154,7 +159,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": "0x20dcca105275f53ad67e0576a5b99555bbe591e5"
-   }
+   },
+   "peers": null
   },
   {
    "host": "402timezones.vercel.app",
@@ -187,7 +193,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x78c2feaaf46e147FB29a3B9b8b5dfb6D95f3a096"
-   }
+   },
+   "peers": null
   },
   {
    "host": "action402.vercel.app",
@@ -211,7 +218,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "actionlayer.pay.zeroclick.io",
@@ -234,7 +242,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "address.agentic-jp.com",
@@ -260,7 +269,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "ads.apitoll.cloud",
@@ -280,7 +290,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ads.forgemesh.io",
@@ -299,7 +310,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0x65E02cB7Fee27630bB7d1a3ADd02Ef7Aa2D21701"
-   }
+   },
+   "peers": null
   },
   {
    "host": "ads.gitlawb.com",
@@ -335,7 +347,8 @@
     "asset": null,
     "amount": "$0.09",
     "payTo": "0x2d16a243ba9facc6ac85519d5efad2149dc4c6c3"
-   }
+   },
+   "peers": null
   },
   {
    "host": "aeonos.basechainlabs.com",
@@ -363,7 +376,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
@@ -392,7 +406,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agent-card-validator-mcp.mtree.workers.dev",
@@ -416,7 +431,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-carwash.agentfetcher.workers.dev",
@@ -453,12 +469,13 @@
     "asset": "USDC",
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-data-toolkit.onrender.com",
    "served": false,
-   "error": "HTTP 503"
+   "error": "HTTP 404"
   },
   {
    "host": "agent-id-x402-production.up.railway.app",
@@ -507,7 +524,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-production-1daa.up.railway.app",
@@ -528,9 +546,10 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "250000",
+    "amount": "50000",
     "payTo": "0x77c947f8534E5dC79B4a41280D597eC210BCD93c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-proxy.alchemy.com",
@@ -557,7 +576,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x5c08951b999cc133eE4161a3a2B299160f66C42E"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
@@ -591,7 +611,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agent-treats-production.up.railway.app",
@@ -616,7 +637,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": "0xb5e78bB597e1b6f6825AfcF6B31992E7a630EfD7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agent-vending-machine.avm-7301.workers.dev",
@@ -660,7 +682,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentaegis-mcp-production.up.railway.app",
@@ -683,7 +706,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentbodega.store",
@@ -706,7 +730,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentcash-fortune-demo-six.vercel.app",
@@ -737,7 +762,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": "0x58e632Fa698383820FFC22156352C9836790E2c0"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agentdata-api.sander-van-aard.workers.dev",
@@ -757,7 +783,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "2000",
     "payTo": "0xb0ae6a9bd7a573ddda58db6c28622417e8ca2099"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agentdataapi.onrender.com",
@@ -769,10 +796,10 @@
     "docs",
     "free",
     "llms_txt",
+    "mcp",
     "payment",
     "resources",
-    "service",
-    "x402Version"
+    "service"
    ],
    "payable": "partial",
    "missing": [
@@ -783,9 +810,10 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.01",
+    "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agentgate-production-eb21.up.railway.app",
@@ -794,21 +822,8 @@
   },
   {
    "host": "agentguard.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "agenticinsights.com",
@@ -836,7 +851,8 @@
      "amount": "0.01"
     },
     "payTo": "0xc794070cF310AB3766a8A3903fC6d50e082c3D65"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agentpay.tools",
@@ -861,7 +877,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agentpmt-webapp.vercel.app",
@@ -886,7 +903,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentres.dev",
@@ -914,7 +932,8 @@
     "asset": null,
     "amount": "0 USD",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agents.ai-rook.com",
@@ -932,7 +951,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.allium.so",
@@ -952,7 +972,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.chain.link",
@@ -975,7 +996,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.driftflight.com",
@@ -1000,7 +1022,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.freederia.com",
@@ -1024,7 +1047,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.gedx402.com",
@@ -1048,7 +1072,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.sayerandstone.com",
@@ -1066,7 +1091,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agents.suedeai.ai",
@@ -1089,7 +1115,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "90000",
     "payTo": "0xb5a05466712fd5bcdf2883f43cC6B1799428032d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "agents.withzero.xyz",
@@ -1112,7 +1139,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentspec-one.vercel.app",
@@ -1145,7 +1173,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "agenttoll.dev",
@@ -1168,7 +1197,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agenttrust.uk",
@@ -1192,7 +1222,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agentworld.me",
@@ -1216,7 +1247,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "agi.apify.com",
@@ -1240,7 +1272,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ai-agent-payment-safety-stack.onrender.com",
@@ -1262,7 +1295,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x60c402878EfcEcAe5733A88075328Aa2320C39BE"
-   }
+   },
+   "peers": null
   },
   {
    "host": "ai-summarizer.api.klymax402.com",
@@ -1280,7 +1314,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ai.stable-jack.com",
@@ -1314,7 +1349,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "aiagentoracle.ai",
@@ -1338,7 +1374,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "aicomglobal.com",
@@ -1364,7 +1401,8 @@
     "asset": "USDC",
     "amount": "0.05",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "airdrop-checker.api.klymax402.com",
@@ -1382,7 +1420,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "airdroppulse.theaslangroupllc.com",
@@ -1405,12 +1444,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "almanac.locomot.io",
    "served": true,
-   "path": "/.well-known/x402",
+   "path": "/.well-known/x402.json",
    "family": "version+resources",
    "top_keys": [
     "resources",
@@ -1423,7 +1463,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "alpha402x.com",
@@ -1449,7 +1490,8 @@
     "asset": "USDC",
     "amount": "$0.05",
     "payTo": "0x73AcE32013985f715B5e00E5A341259cCE17D220"
-   }
+   },
+   "peers": null
   },
   {
    "host": "alphapulse-omega.vercel.app",
@@ -1472,7 +1514,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "alphapulse.theaslangroupllc.com",
@@ -1495,7 +1538,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "amlscreen.hergertsynthora.com",
@@ -1513,7 +1557,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "anicca-x402-discovery-production.up.railway.app",
@@ -1537,7 +1582,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0xE295B6641b32998537Ae0f8E61Babf729EAEd6E5"
-   }
+   },
+   "peers": null
   },
   {
    "host": "apexrunner.ai",
@@ -1561,7 +1607,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "apexscout.ai",
@@ -1588,7 +1635,8 @@
     "asset": null,
     "amount": "$0.25",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api-dev-v2.ixs.finance",
@@ -1621,27 +1669,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api-production-17e1.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+accepts",
-   "top_keys": [
-    "accepts",
-    "version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset"
-   ],
-   "evidence": {
-    "network": "base",
-    "asset": "USDC",
-    "amount": "1000",
-    "payTo": "0xF7fdEFfc3ABc97379418b0A687FDb54e1CBcE163"
-   }
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "api-production-54bd.up.railway.app",
@@ -1666,7 +1700,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api-v2.ixs.finance",
@@ -1695,7 +1730,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "250000",
     "payTo": "0xCA758c922D8476C2ceC49c6Cc96A4EEbA89FbF3b"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.402pixels.com",
@@ -1715,7 +1751,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.agentfeeds.jp",
@@ -1744,7 +1781,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.agentinternetruntime.com",
@@ -1763,7 +1801,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.agentphone.ai",
@@ -1819,7 +1858,8 @@
     "asset": "USDC",
     "amount": "0.04",
     "payTo": "0x6D91ADF2c545047cbbC5b37a5f457cce081B48d3"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.algovault.com",
@@ -1852,7 +1892,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.apex-db.org",
@@ -1882,7 +1923,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.atms.nathanlidurin.com",
@@ -1907,7 +1949,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.aventtech.com",
@@ -1932,7 +1975,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.basefeed.io",
@@ -1952,7 +1996,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.biotechcatalystsentinel.com",
@@ -1978,7 +2023,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.bitfence.ai",
@@ -1992,8 +2038,28 @@
   },
   {
    "host": "api.blockchainmoneymap.com",
-   "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "caip2Network",
+    "chain",
+    "currency",
+    "description",
+    "instructions",
+    "manifest",
+    "name",
+    "network"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.boonprotocol.com",
@@ -2018,7 +2084,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.brazilayer.com",
@@ -2036,7 +2103,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.brokenkeyremapper.xyz",
@@ -2066,7 +2134,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.carbon-cashmere.de",
@@ -2094,12 +2163,26 @@
     "asset": "USDC",
     "amount": "$0.50",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.certaindata.ai",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "no-version+none",
+   "top_keys": [
+    "items"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.clawfetch.ai",
@@ -2126,7 +2209,8 @@
     "asset": "USDC",
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.clawinabox.xyz",
@@ -2150,7 +2234,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.commodities.sh",
@@ -2174,7 +2259,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.compatify.io",
@@ -2194,7 +2280,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x13273fE5CfEe0C289EE30DAC40ea58D4Fb823c36"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.craigmbrown.com",
@@ -2218,7 +2305,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.cueframe.ai",
@@ -2247,7 +2335,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.curb.numetal.xyz",
@@ -2271,7 +2360,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x546217c24617bCF9faD565E8ECABe5dE2D41326b"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.deepnets.ai",
@@ -2298,7 +2388,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.demandex.dev",
@@ -2325,7 +2416,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.devdrops.run",
@@ -2353,7 +2445,8 @@
     "asset": "USDC",
     "amount": "0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.doc2json.de",
@@ -2387,7 +2480,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.exa.ai",
@@ -2416,7 +2510,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.forum-labs.com",
@@ -2434,7 +2529,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0xffa3e5fa7AE5F0DD1fd196Cbd41d40325E4Aa831"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.freaks.one",
@@ -2452,7 +2548,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.getanyapi.com",
@@ -2465,6 +2562,7 @@
    "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
+    "contact",
     "description",
     "links",
     "note",
@@ -2483,7 +2581,8 @@
     "asset": "USDC",
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.getsly.ai",
@@ -2516,7 +2615,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.glianalabs.com",
@@ -2561,7 +2661,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.hyperextend.xyz",
@@ -2586,7 +2687,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.influship.com",
@@ -2609,7 +2711,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.instahuman.com",
@@ -2637,7 +2740,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.invoket.com",
@@ -2665,7 +2769,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x36de990133D36d7E3DF9a820aA3eDE5a2320De71"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.isocast.dev",
@@ -2691,7 +2796,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.jamton.network",
@@ -2715,7 +2821,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000000000",
     "payTo": "0xEfB3d3b26b31982293bE31bDf389e7b5F3b4DcDE"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.jarvisclaw.ai",
@@ -2743,7 +2850,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0xc529edd6d47c60923902514c7c0b3993ae42c2ec"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.kadec0.xyz",
@@ -2762,7 +2870,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.kakerapetit.dev",
@@ -2795,7 +2904,8 @@
     "asset": "USDC",
     "amount": "0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.linkedpanda.com",
@@ -2819,7 +2929,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.lmxcloud.io",
@@ -2849,7 +2960,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0xd5Ba9711a3D052846a3695C70e7fcb8b3168FE7d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.loyalspark.online",
@@ -2876,7 +2988,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "500000",
     "payTo": "0x2C9dB263F5dA45149820E2888E874196FAE67fBf"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.melvea.com",
@@ -2902,7 +3015,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.memoryapi.org",
@@ -2927,7 +3041,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.messari.io",
@@ -2947,7 +3062,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.metalend.tech",
@@ -2985,7 +3101,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.molty.cash",
@@ -3014,7 +3131,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.myceliasignal.com",
@@ -3031,7 +3149,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0xD593832Ce9C2B13B192ba50B55dd9AF44e96700d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.n0brains.com",
@@ -3055,7 +3174,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0xc1793B8AA0D25193117EF025f145994e1c02011F"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.nameintel.io",
@@ -3079,7 +3199,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.nansen.ai",
@@ -3101,7 +3222,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.nativebtc.org",
@@ -3129,7 +3251,8 @@
     "asset": "USDC",
     "amount": "100000",
     "payTo": "0x306c8148a5E433CEDdF184a0b0Db4A6631E74E51"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.node4all.com",
@@ -3148,7 +3271,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "$0.002",
     "payTo": "0xd275612Bf0BB35638432c4D95eAA8D5d22346Ca6"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.northeastdealintel.com",
@@ -3167,7 +3291,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.octodamus.com",
@@ -3191,7 +3316,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.omninexu.com",
@@ -3217,7 +3343,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.orcatrace.dev",
@@ -3245,7 +3372,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.osf-master-server.com",
@@ -3269,7 +3397,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x72f62dE8b70d6CFa8Cc2dF6f21F243f289F3396c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.ownedforever.com",
@@ -3293,7 +3422,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.ozdreamtools.de",
@@ -3348,7 +3478,8 @@
     "asset": "USDC",
     "amount": "$0.20",
     "payTo": "0x7b13107779CfDA1bEba3289d0Fbe27310436f3E3"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.posttosource.com",
@@ -3368,7 +3499,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.predictionmarketdata.io",
@@ -3401,7 +3533,8 @@
     "asset": null,
     "amount": "$0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.proxyllm.ai",
@@ -3453,7 +3586,8 @@
      "network": "eip155:8453"
     },
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.relaystation.ai",
@@ -3482,7 +3616,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.remix.live",
@@ -3511,7 +3646,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.robotsshop.io",
@@ -3535,7 +3671,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.romny.dpdns.org",
@@ -3561,7 +3698,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.run402.com",
@@ -3584,7 +3722,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.rxatlas.dev",
@@ -3632,7 +3771,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.signalfuse.co",
@@ -3660,7 +3800,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.signalis.dev",
@@ -3688,7 +3829,8 @@
     "asset": null,
     "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.sirenic.eu",
@@ -3706,7 +3848,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.slamai.dev",
@@ -3730,7 +3873,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.solenrich.com",
@@ -3750,7 +3894,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.solprobe.xyz",
@@ -3793,7 +3938,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.stocktrends.com",
@@ -3816,7 +3962,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.sumvid.app",
@@ -3835,7 +3982,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x9036fF40101eeff4Cb8A377d59e9432819b5d420"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.surplusintelligence.ai",
@@ -3854,7 +4002,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.suverse.io",
@@ -3877,7 +4026,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.svgsmith.dev",
@@ -3928,7 +4078,8 @@
     "asset": null,
     "amount": "$0.0165",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.terradeed.co.uk",
@@ -3959,7 +4110,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.trialbase-db.org",
@@ -3986,7 +4138,8 @@
     "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
     "amount": "149000000",
     "payTo": "giu4VciTkfWJNG1oeP6SzHEJwmabikJSMB91GaFNWE4"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.trustsource.cc",
@@ -4010,7 +4163,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.usenami.io",
@@ -4034,7 +4188,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.utilia.ink",
@@ -4054,7 +4209,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.vaults.fyi",
@@ -4087,7 +4243,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x89d38023167bdA453BeD9F6CbF22dDd1EC5f70a7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.vetpulse.theaslangroupllc.com",
@@ -4110,7 +4267,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.vevang.com",
@@ -4128,7 +4286,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.vindexapi.dev",
@@ -4156,7 +4315,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.wallettriage.com",
@@ -4184,7 +4344,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": "0xdd5fcEa81CA6f1EB39FEd5B973DE794293B81ba6"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.wrathproductions.com",
@@ -4218,9 +4379,10 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$3.50",
+    "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.x-ego.com",
@@ -4242,7 +4404,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.x402.printmoneylab.com",
@@ -4263,7 +4426,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.x402agentic.ai",
@@ -4282,7 +4446,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "$0.10",
     "payTo": "0xc23C4aFA42cbaBbc03D04Bc87ecB769Fc82F1f43"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.x402dataapi.com",
@@ -4307,7 +4472,8 @@
     "asset": "USDC",
     "amount": "$0.20",
     "payTo": "0x7b13107779CfDA1bEba3289d0Fbe27310436f3E3"
-   }
+   },
+   "peers": null
   },
   {
    "host": "api.x402node.dev",
@@ -4326,7 +4492,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.x402passport.xyz",
@@ -4349,7 +4516,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.xona-agent.com",
@@ -4369,7 +4537,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.zaroniacalculator.co.za",
@@ -4392,7 +4561,8 @@
     "asset": null,
     "amount": "$0.25",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "api2ls.com",
@@ -4416,7 +4586,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": "0x692DcE6b2876854FA9d348BFBfd9C1c4DE6C07DD"
-   }
+   },
+   "peers": null
   },
   {
    "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
@@ -4430,31 +4601,8 @@
   },
   {
    "host": "apiwitchcraft.duckdns.org",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "no-version+endpoints",
-   "top_keys": [
-    "baseUrl",
-    "bazaar",
-    "categories",
-    "description",
-    "endpoints",
-    "mcp",
-    "name",
-    "owner"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   }
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "app-443.hdgregory.com",
@@ -4475,7 +4623,8 @@
     "asset": "USDC",
     "amount": "$0.01",
     "payTo": "0x1A9a7C72208ABf3552750eB1C4a4F2cA9e8733E5"
-   }
+   },
+   "peers": null
   },
   {
    "host": "app-446.hdgregory.com",
@@ -4496,7 +4645,8 @@
     "asset": "USDC",
     "amount": "$0.005",
     "payTo": "0x1A9a7C72208ABf3552750eB1C4a4F2cA9e8733E5"
-   }
+   },
+   "peers": null
   },
   {
    "host": "app-production-23b4.up.railway.app",
@@ -4545,7 +4695,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0xDa2F35d283c42dd60B965322394bc658a5c1769F"
-   }
+   },
+   "peers": null
   },
   {
    "host": "app.r3p.xyz",
@@ -4564,7 +4715,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "app.suedeai.ai",
@@ -4588,7 +4740,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "500000",
     "payTo": "0x10FF767043A1723E0BB5B9207bC37D3442cC9E4F"
-   }
+   },
+   "peers": null
   },
   {
    "host": "app.wellnizz.com",
@@ -4612,7 +4765,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "appstore.use.x402atlas.com",
@@ -4630,7 +4784,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "arbipulse.theaslangroupllc.com",
@@ -4653,7 +4808,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "arbipulse.vercel.app",
@@ -4676,7 +4832,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "arbitrum-mpp-transaction-preflight-production.up.railway.app",
@@ -4710,7 +4867,8 @@
     "asset": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
     "amount": "30000",
     "payTo": "0xebe771d3fc1b9d55e3f36abc9e9c1c45952bc14d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "asiaref.dev",
@@ -4733,7 +4891,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "asistent-crypto.vercel.app",
@@ -4786,7 +4945,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "aubrai-x402.vercel.app",
@@ -4810,7 +4970,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "audiobook-api-beta.vercel.app",
@@ -4830,7 +4991,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "audit-tools.ai",
@@ -4848,7 +5010,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "audit.crestsystems.ai",
@@ -4877,7 +5040,8 @@
     "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
     "amount": "10000",
     "payTo": "0x56a093255D6E0536109b5F255Fc71Bb74BfE5838"
-   }
+   },
+   "peers": null
   },
   {
    "host": "ausref.dev",
@@ -4900,7 +5064,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "autonomy-api-network.onrender.com",
@@ -4920,7 +5085,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "autopulse-navy.vercel.app",
@@ -4943,7 +5109,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "autopulse.theaslangroupllc.com",
@@ -4966,7 +5133,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "aviation.x402.press",
@@ -4992,7 +5160,8 @@
     "asset": "USDC",
     "amount": "0.00375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "aviationapis.com",
@@ -5021,7 +5190,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "b20check.fly.dev",
@@ -5040,7 +5210,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ba-x402-requirements-agent.onrender.com",
@@ -5063,7 +5234,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "base-block-metrics.hergertsynthora.com",
@@ -5081,7 +5253,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "base-bookvs-movie.vercel.app",
@@ -5118,7 +5291,8 @@
      "payTo": "0x9dc9a48611b53145bfaa3535dbc1d01df89159bd"
     },
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "base-launch-radar.vercel.app",
@@ -5151,7 +5325,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "basefeed-io.fly.dev",
@@ -5171,7 +5346,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "basescout-feed-x402.baseagentx402.workers.dev",
@@ -5209,7 +5385,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "billitright.co",
@@ -5218,21 +5395,8 @@
   },
   {
    "host": "binance-crypto-24h-stats.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "HTTP 502"
   },
   {
    "host": "binance-ticker24.hergertsynthora.com",
@@ -5250,7 +5414,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "bio.memoryapi.org",
@@ -5278,7 +5443,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "biopulse.theaslangroupllc.com",
@@ -5301,7 +5467,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "bittensorman.xyz",
@@ -5327,7 +5494,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "bizintel-api.hahavoid0.workers.dev",
@@ -5355,7 +5523,8 @@
     "asset": null,
     "amount": "$0.050",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "blockint.ai",
@@ -5381,7 +5550,8 @@
     "asset": "USDC",
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "blockmachine.io",
@@ -5398,10 +5568,10 @@
     "description",
     "documentation",
     "extensions",
+    "instructions",
     "name",
     "network",
-    "resource",
-    "resources"
+    "resource"
    ],
    "payable": "none",
    "missing": [
@@ -5410,7 +5580,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "blockrun.ai",
@@ -5422,10 +5593,10 @@
     "description",
     "documentation",
     "extensions",
+    "instructions",
     "name",
     "network",
-    "resource",
-    "resources"
+    "resource"
    ],
    "payable": "none",
    "missing": [
@@ -5434,7 +5605,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "booaip.vercel.app",
@@ -5460,7 +5632,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "bounty.btnomb.com",
@@ -5494,7 +5667,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "brasil-dados-api.onrender.com",
@@ -5527,7 +5701,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "bricks.builddetroit.xyz",
@@ -5550,7 +5725,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "bridgerisk.hergertsynthora.com",
@@ -5568,12 +5744,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "brmarket.thomenz.me",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "no-version+resources",
    "top_keys": [
     "billing",
@@ -5596,7 +5773,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "brokenkey-api-link-ruby.vercel.app",
@@ -5635,7 +5813,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "btcnode.uk",
@@ -5663,7 +5842,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "buildpulse.theaslangroupllc.com",
@@ -5686,7 +5866,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "buildscottsbluff.com",
@@ -5710,7 +5891,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0x53a05c0Eed6cBf065F31aEDbAE7B0D8Ce1A0f4DB"
-   }
+   },
+   "peers": null
   },
   {
    "host": "bundle-maker.vercel.app",
@@ -5729,7 +5911,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "bundle.lonestaroracle.xyz",
@@ -5748,7 +5931,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "buoy-snapshot.buoycast.workers.dev",
@@ -5771,7 +5955,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "byshovel.com",
@@ -5795,7 +5980,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "careerpulse-steel.vercel.app",
@@ -5818,7 +6004,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "careerpulse.theaslangroupllc.com",
@@ -5841,7 +6028,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cars2026.vercel.app",
@@ -5865,7 +6053,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cc0.company",
@@ -5918,7 +6107,8 @@
     "asset": null,
     "amount": "$1.00",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "chainscout.lonestaroracle.xyz",
@@ -5937,7 +6127,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "chat.anchor-x402.com",
@@ -5965,7 +6156,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "chat.gedx402.com",
@@ -5989,7 +6181,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "chatrip.app",
@@ -6016,7 +6209,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "chess402.vercel.app",
@@ -6037,7 +6231,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "chrombot-x402.vercel.app",
@@ -6065,7 +6260,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "chronicapulse.vercel.app",
@@ -6088,7 +6284,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "citepulse.theaslangroupllc.com",
@@ -6111,7 +6308,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "claudelines.com",
@@ -6139,7 +6337,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "clearcarepulse.theaslangroupllc.com",
@@ -6162,7 +6361,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "climatepulse-six.vercel.app",
@@ -6185,7 +6385,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "climatepulse.theaslangroupllc.com",
@@ -6208,7 +6409,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "clinical.memoryapi.org",
@@ -6236,7 +6438,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "clinicalintelpulse.vercel.app",
@@ -6259,7 +6462,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "clonecho.builda.company",
@@ -6286,7 +6490,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cnvrt.ing",
@@ -6319,7 +6524,8 @@
     "asset": null,
     "amount": "$0.030",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "coil.trade",
@@ -6339,7 +6545,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "250000",
     "payTo": "0x7B53524d5c5D29EfB8C1d128C56F62FE38Cd9476"
-   }
+   },
+   "peers": null
   },
   {
    "host": "coinflip402.vercel.app",
@@ -6362,7 +6569,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "collectablespulse.theaslangroupllc.com",
@@ -6385,7 +6593,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "collectablespulse.vercel.app",
@@ -6408,7 +6617,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "color-palette.api.klymax402.com",
@@ -6426,7 +6636,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "company-enrichment.api.klymax402.com",
@@ -6444,7 +6655,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "company.payapi.market",
@@ -6468,7 +6680,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
@@ -6496,7 +6709,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "compliancepulse.theaslangroupllc.com",
@@ -6519,7 +6733,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "compute.lonestaroracle.xyz",
@@ -6538,7 +6753,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "conc-exe.xyz",
@@ -6562,7 +6778,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "conch402.dylan-caponi.workers.dev",
@@ -6580,7 +6797,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "concordancehq.duckdns.org",
@@ -6604,7 +6822,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "content.hugen.tokyo",
@@ -6623,7 +6842,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "contract.lonestaroracle.xyz",
@@ -6642,7 +6862,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "contractwatch.hergertsynthora.com",
@@ -6660,7 +6881,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "convert.bip-rep.com",
@@ -6683,7 +6905,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "convrgent.ai",
@@ -6701,7 +6924,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "conway-address-intel-production.up.railway.app",
@@ -6739,7 +6963,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cron.bip-rep.com",
@@ -6762,7 +6987,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crontab-generator.api.klymax402.com",
@@ -6780,7 +7006,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crownblock.lonestaroracle.xyz",
@@ -6799,7 +7026,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crypto-news.api.klymax402.com",
@@ -6817,7 +7045,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crypto-trending.hergertsynthora.com",
@@ -6835,7 +7064,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crypto.apitoll.cloud",
@@ -6855,7 +7085,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "crypto.forgemesh.io",
@@ -6874,7 +7105,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0x93A1F57D2e0DBE4cc882b5DbAEbe7F0F16443338"
-   }
+   },
+   "peers": null
   },
   {
    "host": "cryptonews.hergertsynthora.com",
@@ -6892,7 +7124,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cryptopulse-xi-five.vercel.app",
@@ -6915,7 +7148,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cryptopulse.theaslangroupllc.com",
@@ -6938,7 +7172,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cryptyx.ai",
@@ -6962,7 +7197,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "csv-to-json.api.klymax402.com",
@@ -6980,7 +7216,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "curatoria.dev",
@@ -7004,7 +7241,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "curl-http-request.underscoredone.com",
@@ -7027,7 +7265,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cyberpulse-six.vercel.app",
@@ -7050,7 +7289,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cyberpulse.theaslangroupllc.com",
@@ -7073,7 +7313,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "cycle.lonestaroracle.xyz",
@@ -7092,7 +7333,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "darrylbots.com",
@@ -7111,7 +7353,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dartapi.ljaysk.com",
@@ -7133,7 +7376,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "2000",
     "payTo": "0x3b20d22540deb3CF1162B195CD15756adb5ceB5D"
-   }
+   },
+   "peers": null
   },
   {
    "host": "data.crestsystems.ai",
@@ -7160,7 +7404,8 @@
     "asset": "USDC",
     "amount": "$0.002",
     "payTo": "0x6ab8efe305cce67daa48c97bde29c04402822dff"
-   }
+   },
+   "peers": null
   },
   {
    "host": "data.japanagent.dev",
@@ -7184,31 +7429,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "data.lagoontechsystems.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+endpoints",
-   "top_keys": [
-    "description",
-    "endpoints",
-    "name",
-    "version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "USDC",
-    "amount": null,
-    "payTo": null
-   }
+   "served": false,
+   "error": "TimeoutError"
   },
   {
    "host": "datasourcepulse.com",
@@ -7226,7 +7453,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "db.gedx402.com",
@@ -7250,7 +7478,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "deal-verdict-api-production.up.railway.app",
@@ -7278,7 +7507,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dealpulse.theaslangroupllc.com",
@@ -7301,7 +7531,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "debtpulse.theaslangroupllc.com",
@@ -7324,7 +7555,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "debtpulse.vercel.app",
@@ -7347,7 +7579,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "decipherranker.com",
@@ -7368,7 +7601,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "deep-report-gilt.vercel.app",
@@ -7402,7 +7636,8 @@
     "asset": "USDC",
     "amount": "0.0075",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "defi-api.agenticfi.wtf",
@@ -7420,7 +7655,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defi-shield-hazel.vercel.app",
@@ -7443,7 +7679,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defi.hugen.tokyo",
@@ -7462,7 +7699,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defi.lonestaroracle.xyz",
@@ -7481,7 +7719,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defidata.hergertsynthora.com",
@@ -7499,7 +7738,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defillama.use.x402atlas.com",
@@ -7517,7 +7757,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "defiverdict.hergertsynthora.com",
@@ -7535,7 +7776,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "deliver.hergertsynthora.com",
@@ -7553,7 +7795,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "delta.rursus.app",
@@ -7588,7 +7831,8 @@
     "asset": "USDC",
     "amount": "$0.04",
     "payTo": "0xF2A6416EBb0C594Ab2977695bED061729ddEb47b"
-   }
+   },
+   "peers": null
   },
   {
    "host": "deploy.acu.run",
@@ -7621,7 +7865,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dex-pair-price.hergertsynthora.com",
@@ -7639,7 +7884,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dicex402.vercel.app",
@@ -7675,7 +7921,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "diff-checker.api.klymax402.com",
@@ -7693,7 +7940,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "disruption.forgemesh.io",
@@ -7712,7 +7960,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0xA8774fACfD3Da2EA11f240C977b9973D78aDFCFe"
-   }
+   },
+   "peers": null
   },
   {
    "host": "dlf-gateway.agentlabel.workers.dev",
@@ -7744,7 +7993,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dns-lookup.api.klymax402.com",
@@ -7762,7 +8012,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dns-whois-lookup.underscoredone.com",
@@ -7785,7 +8036,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dns.x402tools.xyz",
@@ -7803,7 +8055,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dnsdomain.hergertsynthora.com",
@@ -7821,7 +8074,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "docparse-x402.f3rnandonhan.workers.dev",
@@ -7841,7 +8095,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x8b207b0234f59969C676Eb9B4D6F1dBa3fECc51c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "docparse.x402tools.xyz",
@@ -7859,7 +8114,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "domain-age-checker.underscoredone.com",
@@ -7887,7 +8143,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "domain.hugen.tokyo",
@@ -7906,7 +8163,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "donate.0000402.xyz",
@@ -7929,7 +8187,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dripstack.xyz",
@@ -7947,7 +8206,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "dyoe-audit-verify.netlify.app",
@@ -7967,7 +8227,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "eagle.quickai.build",
@@ -7991,7 +8252,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "earth.x402.press",
@@ -8019,7 +8281,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "econ.memoryapi.org",
@@ -8052,7 +8315,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "econsignalpulse.vercel.app",
@@ -8075,7 +8339,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ecosystem-intelligence.onrender.com",
@@ -8100,7 +8365,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "edupulse-xi-blond.vercel.app",
@@ -8123,7 +8389,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "edupulse.theaslangroupllc.com",
@@ -8146,7 +8413,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "eleven.tokens.fun",
@@ -8172,7 +8440,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "eltociear-skill-audit.hf.space",
@@ -8193,7 +8462,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "eltociear-tokenguard.hf.space",
@@ -8214,7 +8484,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "email-auth.use.x402atlas.com",
@@ -8232,7 +8503,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "email-deliverability.api.klymax402.com",
@@ -8250,7 +8522,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "email-finder.api.klymax402.com",
@@ -8268,7 +8541,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "email-send.api.klymax402.com",
@@ -8286,7 +8560,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "embed.gedx402.com",
@@ -8310,7 +8585,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "emc2ai.io",
@@ -8334,7 +8610,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "emoji.today",
@@ -8345,28 +8622,28 @@
    "host": "energybilltoolkit.co.uk",
    "served": true,
    "path": "/.well-known/x402.json",
-   "family": "x402Version+services",
+   "family": "x402Version+accepts",
    "top_keys": [
+    "accepts",
     "asset",
     "description",
     "facilitator",
     "name",
     "network",
     "payTo",
-    "service_count",
-    "services"
+    "service_count"
    ],
    "payable": "partial",
    "missing": [
-    "asset",
-    "payTo"
+    "asset"
    ],
    "evidence": {
     "network": "eip155:8453",
-    "asset": "USDC",
-    "amount": "0.01",
-    "payTo": null
-   }
+    "asset": "usdc:eip155:8453:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amount": 10000,
+    "payTo": "0xe602344ef3944497a72981e36066c62e7a99f599"
+   },
+   "peers": null
   },
   {
    "host": "enrich-gate.vercel.app",
@@ -8395,7 +8672,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "$0.01",
     "payTo": "0xbAf55b24CA99bd7393B6e627093b13c6628b53Cc"
-   }
+   },
+   "peers": null
   },
   {
    "host": "enrichx402.com",
@@ -8417,7 +8695,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ens-resolver.api.klymax402.com",
@@ -8435,7 +8714,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ens-resolver.underscoredone.com",
@@ -8468,7 +8748,8 @@
     "asset": null,
     "amount": "$0.25",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "entities.recordsforagents.com",
@@ -8491,7 +8772,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "entityresolver.xyz",
@@ -8511,7 +8793,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "entropy.rip",
@@ -8530,7 +8813,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ephemeris.561.group",
@@ -8559,7 +8843,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "esgpulse.theaslangroupllc.com",
@@ -8582,7 +8867,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "esgpulse.vercel.app",
@@ -8605,7 +8891,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ethmumbai-three.vercel.app",
@@ -8633,7 +8920,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "evm-gas.apitoll.cloud",
@@ -8651,7 +8939,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "evm-meme-intel.vercel.app",
@@ -8674,7 +8963,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "execbox.xyz",
@@ -8701,7 +8991,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "extract.vevang.com",
@@ -8719,7 +9010,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fact-checker.api.klymax402.com",
@@ -8737,7 +9029,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fanfare.run",
@@ -8761,7 +9054,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fanpulse-tau.vercel.app",
@@ -8784,7 +9078,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fanpulse.theaslangroupllc.com",
@@ -8807,7 +9102,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fear-greed.hergertsynthora.com",
@@ -8825,7 +9121,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "feeler.man-o-to.net",
@@ -8853,7 +9150,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fieldpulse.theaslangroupllc.com",
@@ -8876,7 +9174,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "files.camelai.io",
@@ -8904,7 +9203,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "filingspulse.vercel.app",
@@ -8927,7 +9227,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "finance.payapi.market",
@@ -8951,7 +9252,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "finance.toon.haus",
@@ -8971,7 +9273,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "finance.toonhaus.dev",
@@ -8991,7 +9294,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "financial-analyst.ai",
@@ -9011,7 +9315,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000000",
     "payTo": "0xDA158f96C7d02e787EC75858d108366BDa6aAeb3"
-   }
+   },
+   "peers": null
   },
   {
    "host": "findpulse-omega.vercel.app",
@@ -9034,7 +9339,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "findpulse.theaslangroupllc.com",
@@ -9057,7 +9363,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fishing-returns-orlando-innovation.trycloudflare.com",
@@ -9085,7 +9392,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fitpulse.theaslangroupllc.com",
@@ -9108,7 +9416,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "flipr-x402.fly.dev",
@@ -9130,9 +9439,10 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "986400",
+    "amount": "992300",
     "payTo": "0xfdA5a8DC19e814A7880515fEB88308BbEE625D6D"
-   }
+   },
+   "peers": null
   },
   {
    "host": "flutter.bip-rep.com",
@@ -9155,7 +9465,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "football-pulse-x402-production.up.railway.app",
@@ -9183,7 +9494,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "footballpulse.theaslangroupllc.com",
@@ -9206,7 +9518,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "forecast.0000402.xyz",
@@ -9229,7 +9542,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fortune.fulinlabs.com",
@@ -9257,7 +9571,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "franchisepulse.theaslangroupllc.com",
@@ -9280,7 +9595,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "franklin1.tail7a0ba4.ts.net",
@@ -9298,7 +9614,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "$0.003",
     "payTo": "0x3EcCAD24794ca298D25378E9902A251322ea8749"
-   }
+   },
+   "peers": null
   },
   {
    "host": "free-api-resell.relayhop.workers.dev",
@@ -9320,7 +9637,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "fresh-feeds.foomworks.workers.dev",
@@ -9343,7 +9661,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "funding-rates.hergertsynthora.com",
@@ -9361,7 +9680,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "funding.lonestaroracle.xyz",
@@ -9380,7 +9700,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "furigana.agentic-jp.com",
@@ -9406,7 +9727,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "fx-rates.hergertsynthora.com",
@@ -9424,7 +9746,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gamemaxxing.baes.so",
@@ -9452,7 +9775,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gamepulse.theaslangroupllc.com",
@@ -9475,7 +9799,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gankdat.com",
@@ -9498,7 +9823,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gas.apitoll.cloud",
@@ -9516,7 +9842,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gasoracle.hergertsynthora.com",
@@ -9534,7 +9861,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gate402.app",
@@ -9558,7 +9886,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gateway.apiosk.com",
@@ -9581,7 +9910,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gateway.drillr.ai",
@@ -9610,7 +9940,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gateway.grapevine.fyi",
@@ -9633,7 +9964,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gateway.sanfoundation.com",
@@ -9665,7 +9997,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "gateway.stride20k.com",
@@ -9692,7 +10025,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "gblin-sentinel.vercel.app",
@@ -9720,7 +10054,8 @@
     "asset": null,
     "amount": "0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "gblin.digital",
@@ -9748,7 +10083,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "gdelt.use.x402atlas.com",
@@ -9766,7 +10102,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gdpr-scanner.api.klymax402.com",
@@ -9784,7 +10121,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "geo.lonestaroracle.xyz",
@@ -9803,7 +10141,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "geodns.iwsolutions.ca",
@@ -9831,7 +10170,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "geopoliticalpulse.vercel.app",
@@ -9854,7 +10194,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gifu-server.onrender.com",
@@ -9886,7 +10227,8 @@
     "asset": "USDC",
     "amount": "$0.015",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "glim.sh",
@@ -9905,7 +10247,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "globalrules-api.onrender.com",
@@ -9933,7 +10276,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "glowpulse.theaslangroupllc.com",
@@ -9956,7 +10300,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "google-patents.use.x402atlas.com",
@@ -9974,7 +10319,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "google-trends.use.x402atlas.com",
@@ -9992,7 +10338,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gotobi.hugen.tokyo",
@@ -10011,7 +10358,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "govedge.lonestaroracle.xyz",
@@ -10030,7 +10378,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "govfiles-api-git-govfiles-api-x402-merit-systems.vercel.app",
@@ -10063,7 +10412,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "govspendpulse.vercel.app",
@@ -10086,7 +10436,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "grantpulse-three.vercel.app",
@@ -10109,7 +10460,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "grantpulse.theaslangroupllc.com",
@@ -10132,7 +10484,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "graphadvocate.com",
@@ -10154,7 +10507,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "grid.lonestaroracle.xyz",
@@ -10173,7 +10527,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gridpulse-amber.vercel.app",
@@ -10196,7 +10551,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "gridpulse.theaslangroupllc.com",
@@ -10219,7 +10575,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "groundcheck.seiche.info",
@@ -10243,7 +10600,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x5B4A78b7EFe482d1579E287dA6F0043f89cf0EA1"
-   }
+   },
+   "peers": null
   },
   {
    "host": "guard.x402tools.xyz",
@@ -10261,7 +10619,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "h1dr4.dev",
@@ -10288,7 +10647,8 @@
     "asset": "USDC",
     "amount": "0.0001 USDC",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "hackernews-data.underscoredone.com",
@@ -10324,7 +10684,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0xa1ae67b4F4F5e22dBA4b97be55fa221c11367e17"
-   }
+   },
+   "peers": null
   },
   {
    "host": "harvestpulse.theaslangroupllc.com",
@@ -10347,7 +10708,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "harvestpulse.vercel.app",
@@ -10370,7 +10732,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hash-generator.api.klymax402.com",
@@ -10388,7 +10751,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hash-hmac.underscoredone.com",
@@ -10411,7 +10775,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "health.memoryapi.org",
@@ -10443,7 +10808,8 @@
     "asset": "USDC",
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "herbapulse.theaslangroupllc.com",
@@ -10466,7 +10832,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "herbapulse.vercel.app",
@@ -10489,7 +10856,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hermes-storefront.onrender.com",
@@ -10521,7 +10889,8 @@
      "network": "eip155:8453"
     },
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "hermesplant.com",
@@ -10546,7 +10915,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hivemindos-paid-agent-gateway.hivemindos.workers.dev",
@@ -10569,7 +10939,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hl-tool.darren-pi.workers.dev",
@@ -10592,7 +10963,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hmo.payapi.market",
@@ -10616,7 +10988,8 @@
     "asset": null,
     "amount": "0.020",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "holiday.agentic-jp.com",
@@ -10642,7 +11015,8 @@
     "asset": null,
     "amount": "$0.001000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "holidays.hergertsynthora.com",
@@ -10660,7 +11034,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "homepulse-seven.vercel.app",
@@ -10683,7 +11058,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "homepulse.theaslangroupllc.com",
@@ -10706,7 +11082,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "horizon-pulse.vercel.app",
@@ -10734,7 +11111,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "houjin.agentic-jp.com",
@@ -10760,7 +11138,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "html-to-markdown.api.klymax402.com",
@@ -10778,7 +11157,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "http-header-checker.underscoredone.com",
@@ -10801,7 +11181,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "http-status-checker.underscoredone.com",
@@ -10829,7 +11210,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hyperliquid-data.api.klymax402.com",
@@ -10847,7 +11229,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hyperliquid-predict.use.x402atlas.com",
@@ -10865,7 +11248,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hyperliquid-whales.api.klymax402.com",
@@ -10883,7 +11267,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hyperliquid.use.x402atlas.com",
@@ -10901,7 +11286,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "hypernatt.com",
@@ -10924,7 +11310,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "iamrich402.dylan-caponi.workers.dev",
@@ -10942,7 +11329,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ibancheck.hergertsynthora.com",
@@ -10960,7 +11348,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ics.hergertsynthora.com",
@@ -10978,7 +11367,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "imagcon.app",
@@ -11001,7 +11391,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "image.gedx402.com",
@@ -11025,7 +11416,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "imagegen.coinopai.com",
@@ -11044,7 +11436,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "250000",
     "payTo": "0x4C1a4FcE51Fea51f128a01ccE8BecB106d391155"
-   }
+   },
+   "peers": null
   },
   {
    "host": "images-api.gedx402.com",
@@ -11068,7 +11461,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "img402.dev",
@@ -11088,7 +11482,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "imgopt.use.x402atlas.com",
@@ -11106,7 +11501,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "immigrationpulse.theaslangroupllc.com",
@@ -11129,7 +11525,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "immigrationpulse.vercel.app",
@@ -11152,7 +11549,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "india-news.hillguava.xyz",
@@ -11170,7 +11568,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "induction.aarei.ai",
@@ -11193,30 +11592,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "innernetcorp.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "no-version+none",
-   "top_keys": [
-    "components",
-    "externalDocs",
-    "info",
-    "openapi",
-    "paths",
-    "servers",
-    "x-mcp"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "insider.lonestaroracle.xyz",
@@ -11235,7 +11617,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "instagram.use.x402atlas.com",
@@ -11253,7 +11636,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "insurepulse.theaslangroupllc.com",
@@ -11276,7 +11660,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "insurepulse.vercel.app",
@@ -11299,7 +11684,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "intel.chainquery.com",
@@ -11323,7 +11709,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "intel.twzrd.xyz",
@@ -11349,7 +11736,8 @@
     "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
     "amount": "50000",
     "payTo": "GFpLvocNdEjnSsLH3VJQL6wGcjGxTbUBrj6fqN3Qe1Gs"
-   }
+   },
+   "peers": null
   },
   {
    "host": "ip-geolocation.api.klymax402.com",
@@ -11367,7 +11755,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ip402.xyz",
@@ -11390,7 +11779,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "jesuschrist.sh",
@@ -11419,7 +11809,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "jobs.gedx402.com",
@@ -11443,7 +11834,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "jokes-endpoint.vercel.app",
@@ -11457,25 +11849,8 @@
   },
   {
    "host": "jp-data-api-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "description",
-    "name",
-    "resources",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": null,
-    "amount": "$0.01",
-    "payTo": "0xD5CA2593CE6489467Cf57a6CC8435329D6ECB468"
-   }
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "json-suite.underscoredone.com",
@@ -11498,7 +11873,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "jsonrecon.com",
@@ -11526,7 +11902,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "jtifhcvbgxqwlywugvjv.supabase.co",
@@ -11554,7 +11931,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "jurat.dev",
@@ -11581,7 +11959,8 @@
     "asset": null,
     "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "jwt-decoder.api.klymax402.com",
@@ -11599,7 +11978,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "kaisha-api.hp-vladic.workers.dev",
@@ -11624,7 +12004,8 @@
     "asset": "USDC",
     "amount": "$0.005",
     "payTo": "0xF2A6416EBb0C594Ab2977695bED061729ddEb47b"
-   }
+   },
+   "peers": null
   },
   {
    "host": "kari.mayim-mayim.com",
@@ -11651,7 +12032,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x3A7292b88471691946D8D8856925e22246bed743"
-   }
+   },
+   "peers": null
   },
   {
    "host": "keyronne.com",
@@ -11676,7 +12058,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "keyword-research.api.klymax402.com",
@@ -11694,7 +12077,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "kleros-ipfs-gateway.fly.dev",
@@ -11713,7 +12097,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "know.fast",
@@ -11741,7 +12126,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "kronos-x402.vercel.app",
@@ -11767,7 +12153,8 @@
     "asset": "USDC",
     "amount": "$0.02",
     "payTo": "0x36038e1d712c5e39f35952164ec58ec2b96caee7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "kronossignals.com",
@@ -11793,7 +12180,8 @@
     "asset": "USDC",
     "amount": "$0.02",
     "payTo": "0x36038e1d712c5e39f35952164ec58ec2b96caee7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "labor.lonestaroracle.xyz",
@@ -11812,7 +12200,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ladyfortunalx402.vercel.app",
@@ -11835,7 +12224,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "laso.finance",
@@ -11853,7 +12243,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "latam.lonestaroracle.xyz",
@@ -11872,12 +12263,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "latamref.dev",
    "served": true,
-   "path": "/.well-known/x402",
+   "path": "/.well-known/x402.json",
    "family": "version+resources",
    "top_keys": [
     "description",
@@ -11895,7 +12287,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "launches.lonestaroracle.xyz",
@@ -11914,7 +12307,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "law-mcp.toulaw.workers.dev",
@@ -11943,7 +12337,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "leetspeak-translator.underscoredone.com",
@@ -11970,7 +12365,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "legalpulse.theaslangroupllc.com",
@@ -11993,7 +12389,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "lei-lookup.hergertsynthora.com",
@@ -12011,7 +12408,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "library.proofivy.com",
@@ -12039,7 +12437,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "lionx402.com",
@@ -12062,7 +12461,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "liq.lonestaroracle.xyz",
@@ -12081,7 +12481,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "liqrisk.hergertsynthora.com",
@@ -12099,7 +12500,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "liquidation-oracle.api.klymax402.com",
@@ -12117,7 +12519,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "liquidation-risk-mcp.mtree.workers.dev",
@@ -12141,7 +12544,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "30000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "liquita-x402-edge.liquita.workers.dev",
@@ -12175,7 +12579,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "llm402.ai",
@@ -12204,7 +12609,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "longevitypulse.theaslangroupllc.com",
@@ -12227,7 +12633,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "longevitypulse.vercel.app",
@@ -12250,7 +12657,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "lore-prod.vercel.app",
@@ -12273,7 +12681,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "losbeto-production-dd7c.up.railway.app",
@@ -12293,7 +12702,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0xd5Ba9711a3D052846a3695C70e7fcb8b3168FE7d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "lst-health.naber-research.com",
@@ -12322,7 +12732,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "macropulse-alpha.vercel.app",
@@ -12345,7 +12756,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "macropulse.theaslangroupllc.com",
@@ -12368,7 +12780,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "madoromi.fun",
@@ -12396,7 +12809,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mailpulse.theaslangroupllc.com",
@@ -12419,7 +12833,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "makespdf.com",
@@ -12437,7 +12852,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "marine.x402.press",
@@ -12465,7 +12881,8 @@
     "asset": null,
     "amount": "$0.00375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "markdown-renderer.api.klymax402.com",
@@ -12483,7 +12900,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "markdown-to-html.api.klymax402.com",
@@ -12501,7 +12919,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "market-dominance.hergertsynthora.com",
@@ -12519,7 +12938,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "market.memoryapi.org",
@@ -12542,7 +12962,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "marketpulse-brown.vercel.app",
@@ -12565,7 +12986,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "marketpulse.theaslangroupllc.com",
@@ -12588,7 +13010,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp-pulsenetwork.vercel.app",
@@ -12611,7 +13034,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp.barker.money",
@@ -12633,7 +13057,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp.deep3.ai",
@@ -12664,7 +13089,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp.toolstem.com",
@@ -12693,7 +13119,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp.yield.xyz",
@@ -12716,7 +13143,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcpscan.hergertsynthora.com",
@@ -12734,7 +13162,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "md.fastdb.in",
@@ -12758,7 +13187,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mealpulse.theaslangroupllc.com",
@@ -12781,7 +13211,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mealpulse.vercel.app",
@@ -12804,7 +13235,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mearef.dev",
@@ -12827,7 +13259,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "mechamanda.com",
@@ -12847,7 +13280,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "media.gedx402.com",
@@ -12871,7 +13305,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mediaforge.mediaforge-hq.workers.dev",
@@ -12905,7 +13340,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mevdetector.hergertsynthora.com",
@@ -12923,7 +13359,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "micropay-test-suite.netlify.app",
@@ -12961,7 +13398,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mindpulse.theaslangroupllc.com",
@@ -12984,7 +13422,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "minerals.lonestaroracle.xyz",
@@ -13003,7 +13442,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "minifetch.com",
@@ -13023,7 +13463,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": "0xffA9155A0e4B3d8d42351Da226cC1feEe449686f"
-   }
+   },
+   "peers": null
   },
   {
    "host": "miningincidents.org",
@@ -13051,7 +13492,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "modelprices.xyz",
@@ -13076,7 +13518,8 @@
     "asset": null,
     "amount": "$0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "monitor.memoryapi.org",
@@ -13110,7 +13553,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "80000",
     "payTo": "0xb5998e11E666Fd1e7f3B8e8d9122A755eec1E9b7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "mru-oracle.com",
@@ -13133,7 +13577,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mudko.com",
@@ -13152,7 +13597,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "350000000",
     "payTo": "0x53598173ce7c26025bab0520d9e9d0c28fbcf7de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "music.jamesbpollack.com",
@@ -13181,7 +13627,8 @@
     "asset": "USDC",
     "amount": "0.10375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "myagenticoverlord.com",
@@ -13219,7 +13666,8 @@
     "asset": null,
     "amount": 0.1,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "nba-odds-gap.relayhop.workers.dev",
@@ -13242,7 +13690,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nectar-tools.fly.dev",
@@ -13280,7 +13729,8 @@
     "asset": null,
     "amount": "$0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "netintel.dev",
@@ -13308,7 +13758,8 @@
     "asset": null,
     "amount": "$0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "news-x402.com",
@@ -13332,7 +13783,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "news.apitoll.cloud",
@@ -13350,7 +13802,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "news.lonestaroracle.xyz",
@@ -13369,7 +13822,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "news.x402.press",
@@ -13393,7 +13847,8 @@
     "asset": "USDC",
     "amount": "0.25375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "nexus-zero.xyz",
@@ -13422,7 +13877,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nft-floor.api.klymax402.com",
@@ -13440,7 +13896,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nft-metadata.api.klymax402.com",
@@ -13458,7 +13915,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nichedata.dev",
@@ -13480,7 +13938,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "30000",
     "payTo": "0x01387DF1570204A3470285D6FbcC191FBa2591C1"
-   }
+   },
+   "peers": null
   },
   {
    "host": "nickeljoke.vercel.app",
@@ -13504,7 +13963,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": 80000,
     "payTo": "0x92Cb873c2d114d6Aa847EB110F721DA22B5220F7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "nittarab.dev",
@@ -13538,7 +13998,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nolawealthfinancial.com",
@@ -13562,7 +14023,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nostrpulse.xyz",
@@ -13586,7 +14048,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0x814EfE784709f5bF8dF47735D87602B01030e5D2"
-   }
+   },
+   "peers": null
   },
   {
    "host": "nut402.codenut.xyz",
@@ -13614,7 +14077,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "nwb-vending.com",
@@ -13634,7 +14098,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "obagents.vercel.app",
@@ -13668,7 +14133,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ocr-extract.api.klymax402.com",
@@ -13686,7 +14152,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ocr.underscoredone.com",
@@ -13710,7 +14177,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "4000",
     "payTo": "0xa2C0C48c1a8BA19a832fD77Fa77963a897e5fb18"
-   }
+   },
+   "peers": null
   },
   {
    "host": "og.bip-rep.com",
@@ -13733,7 +14201,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ohlcv-candles.hergertsynthora.com",
@@ -13751,7 +14220,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "oi.lonestaroracle.xyz",
@@ -13770,7 +14240,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "omniac.0000402.xyz",
@@ -13799,7 +14270,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "$0.02",
     "payTo": "0xbAf55b24CA99bd7393B6e627093b13c6628b53Cc"
-   }
+   },
+   "peers": null
   },
   {
    "host": "omniterminal.app",
@@ -13822,7 +14294,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "onchainpulse-nine.vercel.app",
@@ -13845,7 +14318,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "onchainpulse.theaslangroupllc.com",
@@ -13868,7 +14342,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ontarioprotocol.com",
@@ -13895,7 +14370,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "openapi.aisa.one",
@@ -13922,7 +14398,8 @@
     "asset": "USDC",
     "amount": "$0.04",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "openinterest.hergertsynthora.com",
@@ -13940,7 +14417,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "openrouter-production-d0d6.up.railway.app",
@@ -13973,7 +14451,8 @@
     "asset": null,
     "amount": 0.01,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "options.lonestaroracle.xyz",
@@ -13992,7 +14471,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "oracle.inspectmyads.com",
@@ -14015,7 +14495,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x642e8a7C289381f24f0395e0539f0bA41c74Cc1B"
-   }
+   },
+   "peers": null
   },
   {
    "host": "oracles-production.up.railway.app",
@@ -14041,7 +14522,8 @@
     "asset": null,
     "amount": "$0.05",
     "payTo": "0xC66EE26cAE6cd34970f51f644f36D720826d392A"
-   }
+   },
+   "peers": null
   },
   {
    "host": "orchard-data.letom1176.workers.dev",
@@ -14069,12 +14551,13 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "orchard-data.netlify.app",
    "served": false,
-   "error": "HTTP 503"
+   "error": "HTTP 404"
   },
   {
    "host": "orcpin.dev",
@@ -14092,7 +14575,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x8B1CF12e7efe6AEA59cD1124eBbe7709E3Ac6085"
-   }
+   },
+   "peers": null
   },
   {
    "host": "orderbook-depth.api.klymax402.com",
@@ -14110,7 +14594,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "orderbook-liquidity.hergertsynthora.com",
@@ -14128,7 +14613,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "orionkr.xyz",
@@ -14156,26 +14642,13 @@
     "asset": null,
     "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "orisha-data.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "instructions",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "ot-intel-api.onrender.com",
@@ -14201,7 +14674,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "oussapi.duckdns.org",
@@ -14239,7 +14713,8 @@
     "asset": null,
     "amount": "$0.25",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "ozmium.org",
@@ -14262,7 +14737,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0x53a05c0eed6cbf065f31aedbae7b0d8ce1a0f4db"
-   }
+   },
+   "peers": null
   },
   {
    "host": "paddock.finance",
@@ -14280,7 +14756,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0x153AA87807D8f6deb65Bd53B137Cee7AD2dacCDb"
-   }
+   },
+   "peers": null
   },
   {
    "host": "palmyr.ai",
@@ -14299,7 +14776,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "parentpulse-delta.vercel.app",
@@ -14322,7 +14800,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "parentpulse.theaslangroupllc.com",
@@ -14345,7 +14824,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "password-strength.api.klymax402.com",
@@ -14363,7 +14843,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "pastebin.0000402.xyz",
@@ -14391,7 +14872,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "patentpulse.theaslangroupllc.com",
@@ -14414,7 +14896,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "patternfetch.com",
@@ -14432,7 +14915,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000000",
     "payTo": "0x95C9216FCa7A77A91DDACd08e1ddab6bABc4288b"
-   }
+   },
+   "peers": null
   },
   {
    "host": "paulgraham.persona.energy",
@@ -14452,7 +14936,7 @@
   {
    "host": "pay.alephant.io",
    "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "error": "HTTP 404"
   },
   {
    "host": "pay.hergertsynthora.com",
@@ -14471,7 +14955,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "pay.lnpay.ai",
@@ -14500,7 +14985,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "paygent.obsmetrics.com",
@@ -14518,7 +15004,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "paysafe-agent.com",
@@ -14542,7 +15029,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0x3C423B365efB79bFB42C9eC8f6F0745195ca7745"
-   }
+   },
+   "peers": null
   },
   {
    "host": "perps.hergertsynthora.com",
@@ -14560,7 +15048,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "perpsignals.use.x402atlas.com",
@@ -14578,7 +15067,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "person-enrichment.api.klymax402.com",
@@ -14596,7 +15086,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "persona-mcp-server.onrender.com",
@@ -14624,7 +15115,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "petpulse.theaslangroupllc.com",
@@ -14647,7 +15139,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "phone-validation.api.klymax402.com",
@@ -14665,7 +15158,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "pitchiq-mcp-production.up.railway.app",
@@ -14693,7 +15187,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "play.0000402.xyz",
@@ -14718,9 +15213,10 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.003",
+    "amount": "$0.005",
     "payTo": "0xcb9b3F94387389e38EF2A7b3C0B851FB8325d7e9"
-   }
+   },
+   "peers": null
   },
   {
    "host": "pnl.lonestaroracle.xyz",
@@ -14739,7 +15235,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "policypulse-ten.vercel.app",
@@ -14762,7 +15259,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "policypulse.theaslangroupllc.com",
@@ -14785,7 +15283,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "polymarket-markets.hergertsynthora.com",
@@ -14803,7 +15302,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "polymarket-signal-api.pwnker-polymarket-signals.workers.dev",
@@ -14841,7 +15341,8 @@
     "asset": null,
     "amount": "$0.00",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "port-scanner.api.klymax402.com",
@@ -14859,7 +15360,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "port-scanner.underscoredone.com",
@@ -14883,7 +15385,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "pqs.onchainintel.net",
@@ -14906,7 +15409,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "prance-mounting-watch.ngrok-free.dev",
@@ -14940,7 +15444,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "presign.hergertsynthora.com",
@@ -14958,7 +15463,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "preview.agenticinsights.com",
@@ -14995,7 +15501,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "project-formatter-production.up.railway.app",
@@ -15028,7 +15535,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "property-risk-passport-api.lifebite-app.workers.dev",
@@ -15057,7 +15565,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "proppulse-gules.vercel.app",
@@ -15080,7 +15589,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "proppulse.theaslangroupllc.com",
@@ -15103,7 +15613,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "prospectpulse-pi.vercel.app",
@@ -15126,7 +15637,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "prospectpulse.theaslangroupllc.com",
@@ -15149,7 +15661,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "prospex.x402tools.xyz",
@@ -15176,7 +15689,8 @@
      "network": "base"
     },
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "protocol-health-oracle-production.up.railway.app",
@@ -15199,7 +15713,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "proxy.0000402.xyz",
@@ -15227,7 +15742,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "proxy.suverse.io",
@@ -15265,7 +15781,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "pulsefeed.dev",
@@ -15289,7 +15806,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "qr-code-generator.underscoredone.com",
@@ -15317,7 +15835,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "qr.x402tools.xyz",
@@ -15335,7 +15854,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "quantum-artificer.surewhynot.app",
@@ -15361,7 +15881,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0xf786a555be87c6d3b316c976b643c70326565f3f"
-   }
+   },
+   "peers": null
   },
   {
    "host": "quartermaster.surewhynot.app",
@@ -15380,7 +15901,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "quickpoll.x402.press",
@@ -15405,7 +15927,8 @@
     "asset": "USDC",
     "amount": "0.25375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "quietstore-production.edge-7e13f.workers.dev",
@@ -15443,7 +15966,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "racingpulse.vercel.app",
@@ -15466,7 +15990,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rag.gedx402.com",
@@ -15490,7 +16015,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "randomfactsx402.vercel.app",
@@ -15518,7 +16044,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "realestate.lonestaroracle.xyz",
@@ -15537,7 +16064,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "recalls.recordsforagents.com",
@@ -15560,7 +16088,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "receiptstamp.panmediatech.workers.dev",
@@ -15588,7 +16117,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "recoup-api-git-sweetmantech-myc-4077-32a4e4-recoupable-ad724970.vercel.app",
@@ -15628,7 +16158,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "redlynr.com",
@@ -15649,7 +16180,8 @@
     "asset": "USDC",
     "amount": "$0.001",
     "payTo": "0x1A9a7C72208ABf3552750eB1C4a4F2cA9e8733E5"
-   }
+   },
+   "peers": null
   },
   {
    "host": "regex-generator.api.klymax402.com",
@@ -15667,7 +16199,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "regime.nsgoods.org",
@@ -15693,7 +16226,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": "0xc87a06DEE4c0E85912296002617120BBfd5EF990"
-   }
+   },
+   "peers": null
   },
   {
    "host": "regimeshift.xyz",
@@ -15712,7 +16246,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "regwatch.hergertsynthora.com",
@@ -15731,7 +16266,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "remittancepulse.theaslangroupllc.com",
@@ -15754,7 +16290,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "remittancepulse.vercel.app",
@@ -15777,7 +16314,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ren-api-production.up.railway.app",
@@ -15810,7 +16348,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "research.appliedidentities.com",
@@ -15836,7 +16375,8 @@
     "asset": "USDC",
     "amount": "0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "researcher.now",
@@ -15860,7 +16400,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "revert.wtf",
@@ -15893,7 +16434,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "0.005 USDC",
     "payTo": "0xcd6b6d99b7751ff30b68fa1365488eb73fa7cefa"
-   }
+   },
+   "peers": null
   },
   {
    "host": "riddlex402.vercel.app",
@@ -15931,7 +16473,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "riskpulse.theaslangroupllc.com",
@@ -15954,7 +16497,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rng.sociologic.ai",
@@ -15975,7 +16519,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0x0b6E3594Df4Faa6D66196D5a3271796AD8Bb505d"
-   }
+   },
+   "peers": null
   },
   {
    "host": "roastx402endpoint.vercel.app",
@@ -15998,7 +16543,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "roger-tomfoolish-liam.ngrok-free.dev",
@@ -16024,7 +16570,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": "0xa1EbB2A8a8ed5497Cf09C861a1e135520A3B3396"
-   }
+   },
+   "peers": null
   },
   {
    "host": "router.kaspa-402.org",
@@ -16050,7 +16597,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "routingcheck.hergertsynthora.com",
@@ -16068,7 +16616,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-balance.hergertsynthora.com",
@@ -16086,7 +16635,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-code.hergertsynthora.com",
@@ -16104,7 +16654,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-contract.hergertsynthora.com",
@@ -16122,7 +16673,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-ens.hergertsynthora.com",
@@ -16140,7 +16692,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-erc20-balance.hergertsynthora.com",
@@ -16158,7 +16711,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-network.hergertsynthora.com",
@@ -16176,7 +16730,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-proxy.hergertsynthora.com",
@@ -16194,7 +16749,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-receipt.hergertsynthora.com",
@@ -16212,7 +16768,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc-tx.hergertsynthora.com",
@@ -16230,7 +16787,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rpc.nodeflare.app",
@@ -16264,7 +16822,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "rugsense.xyz",
@@ -16293,7 +16852,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ryansproule.com",
@@ -16314,7 +16874,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "safepulse-xi.vercel.app",
@@ -16337,7 +16898,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "safepulse.theaslangroupllc.com",
@@ -16360,7 +16922,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "safetyincidents.org",
@@ -16387,7 +16950,8 @@
     "asset": "USDC",
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "sandbox.node4all.com",
@@ -16406,7 +16970,8 @@
     "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
     "amount": "$0.002",
     "payTo": "0xd275612Bf0BB35638432c4D95eAA8D5d22346Ca6"
-   }
+   },
+   "peers": null
   },
   {
    "host": "sat.ipintel.ai",
@@ -16426,7 +16991,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scan.convrgent.ai",
@@ -16444,7 +17010,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scan.madhousewallet.com",
@@ -16463,7 +17030,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scentpulse-xi.vercel.app",
@@ -16486,7 +17054,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scentpulse.theaslangroupllc.com",
@@ -16509,7 +17078,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "schema.nsgoods.org",
@@ -16535,7 +17105,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": "0xc87a06DEE4c0E85912296002617120BBfd5EF990"
-   }
+   },
+   "peers": null
   },
   {
    "host": "schemafetch.panmediatech.workers.dev",
@@ -16564,7 +17135,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0x9876af0F6D8Ed5155Cd02d1ca56D128601612690"
-   }
+   },
+   "peers": null
   },
   {
    "host": "scholarpulse-bice.vercel.app",
@@ -16587,7 +17159,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scholarpulse.theaslangroupllc.com",
@@ -16610,7 +17183,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scorestatus.dev",
@@ -16631,7 +17205,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "scout.hugen.tokyo",
@@ -16650,7 +17225,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "screenshotone.x402.paysponge.com",
@@ -16688,7 +17264,8 @@
     "asset": null,
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "scry.solanahub.de",
@@ -16701,14 +17278,14 @@
    "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
+    "a2a",
     "anchor_log",
     "catalog",
     "description",
     "did",
     "liveness",
     "name",
-    "network",
-    "networks"
+    "network"
    ],
    "payable": "none",
    "missing": [
@@ -16717,7 +17294,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "search.gedx402.com",
@@ -16741,7 +17319,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "search.reversesandbox.com",
@@ -16761,7 +17340,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sec-regcf-tracker.xplowdiaka.workers.dev",
@@ -16783,7 +17363,8 @@
     "asset": "USDC",
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "sec.multyplylabs.com",
@@ -16805,7 +17386,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "second-opinion-production.up.railway.app",
@@ -16824,7 +17406,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "secondopinionx402.com",
@@ -16843,12 +17426,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "selun.sagitta.systems",
    "served": true,
-   "path": "/.well-known/x402",
+   "path": "/.well-known/x402.json",
    "family": "version+resources",
    "top_keys": [
     "resources",
@@ -16861,7 +17445,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sendquotenow.com",
@@ -16879,7 +17464,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "seniorpulse.theaslangroupllc.com",
@@ -16902,7 +17488,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "seniorpulse.vercel.app",
@@ -16925,12 +17512,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sentedge.ai",
    "served": false,
-   "error": "HTTP 403"
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "sentinel-agent-wru6.onrender.com",
@@ -16953,7 +17541,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "seo-data-extractor.underscoredone.com",
@@ -16976,7 +17565,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sftunes.com",
@@ -17000,7 +17590,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sgpropertydata.com",
@@ -17026,7 +17617,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "shopify-ai-rank-checker.underscoredone.com",
@@ -17058,7 +17650,8 @@
     "asset": "USDC",
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "shopperpulse.theaslangroupllc.com",
@@ -17081,7 +17674,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "signal-engine-production-d88d.up.railway.app",
@@ -17109,7 +17703,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "signal.keelbase.io",
@@ -17148,7 +17743,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sitemap-url-extractor.underscoredone.com",
@@ -17186,7 +17782,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "slug-generator.api.klymax402.com",
@@ -17204,7 +17801,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "sms-validator.api.klymax402.com",
@@ -17222,7 +17820,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "social.gedx402.com",
@@ -17246,7 +17845,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "socialintel.dev",
@@ -17264,7 +17864,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "socialx402.com",
@@ -17297,7 +17898,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "solar.nsgoods.org",
@@ -17323,7 +17925,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": "0xc87a06DEE4c0E85912296002617120BBfd5EF990"
-   }
+   },
+   "peers": null
   },
   {
    "host": "soldefi.thomenz.me",
@@ -17351,7 +17954,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "solidus-x402.fly.dev",
@@ -17379,7 +17983,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "space.x402.press",
@@ -17407,7 +18012,8 @@
     "asset": null,
     "amount": "$0.10",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "sparky-works.vercel.app",
@@ -17442,7 +18048,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ssl-checker.api.klymax402.com",
@@ -17460,7 +18067,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-browser-git-ben-test-agentcash-rout-1850e3-merit-systems.vercel.app",
@@ -17480,7 +18088,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-browser-git-shafu-stablebrowser-410-220925-merit-systems.vercel.app",
@@ -17500,7 +18109,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-browser-git-shafu-stablebrowser-han-020dc6-merit-systems.vercel.app",
@@ -17520,7 +18130,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-browser-git-stablebrowser-public-live-view-merit-systems.vercel.app",
@@ -17540,7 +18151,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-deepline.dev",
@@ -17560,7 +18172,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-domains-git-ben-upgrade-agentcash-r-bb6a65-merit-systems.vercel.app",
@@ -17581,7 +18194,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-fix-stableenrich-exa-api-schema-merit-systems.vercel.app",
@@ -17603,7 +18217,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-fix-stableenrich-exa-leg-547ea8-merit-systems.vercel.app",
@@ -17625,7 +18240,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
@@ -17647,7 +18263,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-fix-fullenrich-nbsp-enums-merit-systems.vercel.app",
@@ -17669,7 +18286,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-fullenrich-search-pricing-merit-systems.vercel.app",
@@ -17691,7 +18309,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-merchant-health-en-9d6393-merit-systems.vercel.app",
@@ -17713,7 +18332,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-merchant-health-sc-efad26-merit-systems.vercel.app",
@@ -17735,7 +18355,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-pdl-not-found-200-merit-systems.vercel.app",
@@ -17757,7 +18378,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-pdl-people-enrich-25cca0-merit-systems.vercel.app",
@@ -17779,7 +18401,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stabledomains-pork-25b57c-merit-systems.vercel.app",
@@ -17801,7 +18424,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-compa-a1ba99-merit-systems.vercel.app",
@@ -17823,7 +18447,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-exa-b-f22424-merit-systems.vercel.app",
@@ -17845,7 +18470,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-fulle-a23f83-merit-systems.vercel.app",
@@ -17867,7 +18493,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-nearb-74cfdf-merit-systems.vercel.app",
@@ -17889,7 +18516,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-pdl-p-274589-merit-systems.vercel.app",
@@ -17911,7 +18539,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-peopl-60ba0c-merit-systems.vercel.app",
@@ -17933,7 +18562,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-peopl-a13b22-merit-systems.vercel.app",
@@ -17955,7 +18585,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-enrich-git-shafu-stableenrich-valid-89fbcd-merit-systems.vercel.app",
@@ -17977,7 +18608,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-financial.vercel.app",
@@ -17998,7 +18630,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
@@ -18019,7 +18652,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
@@ -18040,7 +18674,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
@@ -18061,7 +18696,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-fix-stablejobs-default-act-9e0365-merit-systems.vercel.app",
@@ -18082,7 +18718,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-fix-stablejobs-default-recency-merit-systems.vercel.app",
@@ -18103,7 +18740,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-fix-stablejobs-location-guidance-merit-systems.vercel.app",
@@ -18124,7 +18762,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-jobs-git-fix-stablejobs-pricing-sch-7bfb9c-merit-systems.vercel.app",
@@ -18145,7 +18784,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-leadmagic.dev",
@@ -18165,7 +18805,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-media-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
@@ -18185,7 +18826,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-media-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
@@ -18205,7 +18847,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-media-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
@@ -18225,7 +18868,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-media-git-ben-upgrade-agentcash-rou-02e093-merit-systems.vercel.app",
@@ -18245,7 +18889,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-people-data-git-ben-test-agentcash-dfcfa3-merit-systems.vercel.app",
@@ -18266,7 +18911,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-people-data-git-pdl-signoz-usage-alarms-merit-systems.vercel.app",
@@ -18287,7 +18933,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-people-data-git-shafu-merchant-heal-bd8263-merit-systems.vercel.app",
@@ -18308,7 +18955,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-people-data-git-shafu-pdl-api-settl-95fdf9-merit-systems.vercel.app",
@@ -18329,7 +18977,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-social-5jshn0wk0-merit-systems.vercel.app",
@@ -18361,7 +19010,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-supabase-git-ben-test-agentcash-rou-586785-merit-systems.vercel.app",
@@ -18381,7 +19031,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-travel-git-migrate-stabletravel-router-140-merit-systems.vercel.app",
@@ -18402,7 +19053,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable-travel-hkd3tku0j-merit-systems.vercel.app",
@@ -18428,7 +19080,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stable.lonestaroracle.xyz",
@@ -18447,7 +19100,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableapify.dev",
@@ -18472,7 +19126,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablebrowser.vercel.app",
@@ -18492,7 +19147,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablecoin-mcap.hergertsynthora.com",
@@ -18510,7 +19166,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablecoin-peg.hergertsynthora.com",
@@ -18528,7 +19185,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablecoinpulse.theaslangroupllc.com",
@@ -18551,7 +19209,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablecrypto.dev",
@@ -18572,7 +19231,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableenrich.dev",
@@ -18594,7 +19254,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableestate.dev",
@@ -18615,7 +19276,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablefinance.dev",
@@ -18636,7 +19298,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableflare.dev",
@@ -18657,7 +19320,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablejobs.dev",
@@ -18678,7 +19342,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableninja.dev",
@@ -18698,7 +19363,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablepeopledata.dev",
@@ -18719,7 +19385,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stableproduct.dev",
@@ -18751,7 +19418,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stablestudio.io",
@@ -18773,7 +19441,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stabletickets.dev",
@@ -18794,7 +19463,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stabletravel.dev",
@@ -18820,7 +19490,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stackbill.app",
@@ -18864,7 +19535,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stamp.0000402.xyz",
@@ -18892,7 +19564,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stateedge.vercel.app",
@@ -18915,7 +19588,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "statepulse-api.hahavoid0.workers.dev",
@@ -18943,7 +19617,8 @@
     "asset": null,
     "amount": "$0.020",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "stem.x402.press",
@@ -18967,7 +19642,8 @@
     "asset": "USDC",
     "amount": "0.25375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "stock-price.api.klymax402.com",
@@ -18985,7 +19661,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "stockapi.hillguava.xyz",
@@ -19003,7 +19680,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "storage.gedx402.com",
@@ -19027,7 +19705,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "store.agentexchange.work",
@@ -19051,26 +19730,13 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "90000",
     "payTo": "0xc91cE6291eDC0713ec753BAFBA002506ffb2b95c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "store.cryptotradecalc.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "instructions",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "store.nosub.club",
@@ -19100,7 +19766,8 @@
     "asset": "USDC",
     "amount": "$0.15",
     "payTo": "0x32fb20b949bf1606f01d344601571b5c56d07ed0"
-   }
+   },
+   "peers": null
   },
   {
    "host": "supply.lonestaroracle.xyz",
@@ -19119,7 +19786,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "supported-rely-thee-portion.trycloudflare.com",
@@ -19143,7 +19811,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tablepulse.theaslangroupllc.com",
@@ -19166,7 +19835,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tablepulse.vercel.app",
@@ -19189,7 +19859,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "talentpulse-six.vercel.app",
@@ -19212,7 +19883,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "talentpulse.theaslangroupllc.com",
@@ -19235,7 +19907,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "task-relay-production.up.railway.app",
@@ -19263,7 +19936,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "taxpulse.theaslangroupllc.com",
@@ -19286,7 +19960,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tech-enrichment.api.klymax402.com",
@@ -19304,7 +19979,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tee.papers.tech",
@@ -19334,7 +20010,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "tempfile.0000402.xyz",
@@ -19345,23 +20022,23 @@
    "host": "tenjin.blog",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "x402Version+resources",
+   "family": "x402Version+none",
    "top_keys": [
     "generatedAt",
-    "resources",
+    "items",
+    "pagination",
     "service",
     "x402Version"
    ],
-   "payable": "partial",
+   "payable": "none",
    "missing": [
+    "network",
+    "asset",
+    "amount",
     "payTo"
    ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "100000",
-    "payTo": null
-   }
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tensorfeed.ai",
@@ -19379,7 +20056,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "test.alexwlex143.workers.dev",
@@ -19407,7 +20085,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "text-to-speech.api.klymax402.com",
@@ -19425,7 +20104,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "text-translator.api.klymax402.com",
@@ -19443,7 +20123,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "the-stall.intuitek.ai",
@@ -19469,7 +20150,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0x03d773c52B67993e60Ecb3134b17436fE03B584c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "theagent.club",
@@ -19489,7 +20171,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "theideamachine.dev",
@@ -19517,26 +20200,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tick.hugen.tokyo",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "instructions",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "timecapsule.0000402.xyz",
@@ -19559,7 +20229,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "timezone-toolkit.agishub.com",
@@ -19592,7 +20263,8 @@
     "asset": null,
     "amount": "0.001\n",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "token-holders.api.klymax402.com",
@@ -19610,7 +20282,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "token-ohlcv.api.klymax402.com",
@@ -19628,7 +20301,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "token-price.api.klymax402.com",
@@ -19646,7 +20320,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "token-risk.com",
@@ -19669,7 +20344,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "token.lonestaroracle.xyz",
@@ -19688,7 +20364,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tokenrisk.hergertsynthora.com",
@@ -19706,7 +20383,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tokensqueezer-production.up.railway.app",
@@ -19729,7 +20407,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tollbooth-fdic-verify.sjwilliams8.workers.dev",
@@ -19768,7 +20447,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "toolcall.click",
@@ -19794,9 +20474,10 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": 0.001,
+    "amount": 0.002,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "tooloracle.io",
@@ -19824,7 +20505,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "tools.bip-rep.com",
@@ -19847,7 +20529,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tools.ipintel.ai",
@@ -19869,7 +20552,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tools.miniframe.com.br",
@@ -19900,9 +20584,10 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": 0.001,
+    "amount": 0.002,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "toolvend.dev",
@@ -19925,7 +20610,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "trabotpro.it",
@@ -19949,7 +20635,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "trace.sociologic.ai",
@@ -19969,7 +20656,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "trade.lonestaroracle.xyz",
@@ -19988,12 +20676,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tradeos.tech",
    "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "error": "HTTP 530"
   },
   {
    "host": "tradepulse.theaslangroupllc.com",
@@ -20016,7 +20705,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "trader.rigoblock.com",
@@ -20043,7 +20733,8 @@
     "asset": null,
     "amount": "up to $0.10 (billed by usage, ~$0.003-$0.015)",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "transit.agentic-jp.com",
@@ -20069,7 +20760,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "transit402.dev",
@@ -20087,7 +20779,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "transitpulse.theaslangroupllc.com",
@@ -20110,7 +20803,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "transitpulse.vercel.app",
@@ -20133,7 +20827,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "translate.hergertsynthora.com",
@@ -20151,7 +20846,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "travel-agent.forgemesh.io",
@@ -20170,7 +20866,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x7F7C9bfF1DDF2817641740962A9872e6421eBBFc"
-   }
+   },
+   "peers": null
   },
   {
    "host": "travel.forgemesh.io",
@@ -20189,7 +20886,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "100000",
     "payTo": "0x6B1aC7935DAD576b921af0E6EDC27319bc27AAdD"
-   }
+   },
+   "peers": null
   },
   {
    "host": "travelpulse-nu.vercel.app",
@@ -20212,7 +20910,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "travelpulse.theaslangroupllc.com",
@@ -20235,7 +20934,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tripadvisor.x402.paysponge.com",
@@ -20266,7 +20966,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0x3f4CEE4c6bad04FcCA3138dFFDEE579ddf17049B"
-   }
+   },
+   "peers": null
   },
   {
    "host": "trust402.vercel.app",
@@ -20292,7 +20993,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0x3f4CEE4c6bad04FcCA3138dFFDEE579ddf17049B"
-   }
+   },
+   "peers": null
   },
   {
    "host": "truthpulse.theaslangroupllc.com",
@@ -20315,7 +21017,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "try.madhousewallet.com",
@@ -20339,7 +21042,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "tts-service-production-e8a7.up.railway.app",
@@ -20353,21 +21057,8 @@
   },
   {
    "host": "twit.use.x402atlas.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "twitter-scraper.api.klymax402.com",
@@ -20385,7 +21076,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "txintent.hergertsynthora.com",
@@ -20403,7 +21095,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "uat-api.certaindata.ai",
@@ -20420,7 +21113,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "underground.substratesymposium.com",
@@ -20447,7 +21141,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": "0xA3bAbB36564b0383a82c617050306EE30fd18E08"
-   }
+   },
+   "peers": null
   },
   {
    "host": "unit-converter.api.klymax402.com",
@@ -20465,7 +21160,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "unwrap.use.x402atlas.com",
@@ -20483,7 +21179,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "url-extractor.x402.paysponge.com",
@@ -20506,7 +21203,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "url-uptime-checker.underscoredone.com",
@@ -20534,7 +21232,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "user-agent-parser.api.klymax402.com",
@@ -20552,7 +21251,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "uuid-generator.api.klymax402.com",
@@ -20570,7 +21270,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vaaya.ai",
@@ -20589,7 +21290,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vape-x402.vapex402.workers.dev",
@@ -20617,7 +21319,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vealth.net",
@@ -20645,7 +21348,8 @@
     "asset": null,
     "amount": 0.03,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "vector-search.api.klymax402.com",
@@ -20663,7 +21367,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vectorcache-production.up.railway.app",
@@ -20686,7 +21391,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vedetta.dethboy.com",
@@ -20714,7 +21420,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "vehicle.payapi.market",
@@ -20738,7 +21445,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "vending-machine-seven.vercel.app",
@@ -20762,7 +21470,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "venturepulse.theaslangroupllc.com",
@@ -20785,7 +21494,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "verdikt-worker.fly.dev",
@@ -20808,7 +21518,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "verify.agentutil.net",
@@ -20837,7 +21548,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "verify.inferenceview.com",
@@ -20860,7 +21572,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "verity-bzw7.onrender.com",
@@ -20883,7 +21596,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "20000",
     "payTo": "0x89d38023167bdA453BeD9F6CbF22dDd1EC5f70a7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "verity-suite.onrender.com",
@@ -20906,7 +21620,8 @@
     "asset": "USDC",
     "amount": "0.02",
     "payTo": "0x89d38023167bdA453BeD9F6CbF22dDd1EC5f70a7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "verza.dev",
@@ -20934,7 +21649,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "vetpulse-five.vercel.app",
@@ -20957,7 +21673,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vibes-coded-production.up.railway.app",
@@ -20986,7 +21703,8 @@
      "amount": "0.02"
     },
     "payTo": "FmC5pYspDdjBntYdyjcahAHd3zAYj3ucx1dgoGs6LjMB"
-   }
+   },
+   "peers": null
   },
   {
    "host": "vibes-coded.com",
@@ -21015,7 +21733,8 @@
      "amount": "0.02"
     },
     "payTo": "FmC5pYspDdjBntYdyjcahAHd3zAYj3ucx1dgoGs6LjMB"
-   }
+   },
+   "peers": null
   },
   {
    "host": "vibesprings.net",
@@ -21043,7 +21762,8 @@
     "asset": null,
     "amount": "$0.002",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "vin-decode.hergertsynthora.com",
@@ -21061,7 +21781,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "visibility.vevang.com",
@@ -21079,7 +21800,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "visionex.x402tools.xyz",
@@ -21097,7 +21819,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "visual.hugen.tokyo",
@@ -21116,12 +21839,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vit-tu-ma-production.up.railway.app",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 401"
   },
   {
    "host": "vixilabs-x402-stage.valerioreden.workers.dev",
@@ -21150,7 +21874,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0x962794FB8aD92941fAf1ab446b9e30637B86F331"
-   }
+   },
+   "peers": null
   },
   {
    "host": "voidfeed.ai",
@@ -21183,7 +21908,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wallet-aml-screen.relayhop.workers.dev",
@@ -21205,7 +21931,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wallet-portfolio-history-mcp.mtree.workers.dev",
@@ -21229,7 +21956,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "200000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "wallet-portfolio-risk-mcp.mtree.workers.dev",
@@ -21253,7 +21981,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "300000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "wallet.lonestaroracle.xyz",
@@ -21272,7 +22001,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "walletrep.hergertsynthora.com",
@@ -21290,7 +22020,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wallets-demo-seller-server.calebgcarithers.workers.dev",
@@ -21318,7 +22049,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "waterpulse.theaslangroupllc.com",
@@ -21341,7 +22073,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wealth.lonestaroracle.xyz",
@@ -21360,7 +22093,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wealthpulse-phi.vercel.app",
@@ -21383,7 +22117,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wealthpulse.theaslangroupllc.com",
@@ -21406,7 +22141,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "weather-api.api.klymax402.com",
@@ -21424,7 +22160,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "weather.agentic-jp.com",
@@ -21450,7 +22187,8 @@
     "asset": null,
     "amount": "$0.005000",
     "payTo": "0x38c9F689274E2fC3AE360744eF88ce212077a584"
-   }
+   },
+   "peers": null
   },
   {
    "host": "weather.hugen.tokyo",
@@ -21469,7 +22207,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "weather.lonestaroracle.xyz",
@@ -21488,7 +22227,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "weather.payapi.market",
@@ -21512,7 +22252,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "weather.x402.press",
@@ -21536,7 +22277,8 @@
     "asset": "USDC",
     "amount": "0.00375",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "web-production-18a32.up.railway.app",
@@ -21560,7 +22302,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "web-production-2d1051.up.railway.app",
@@ -21598,7 +22341,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "web-search.api.klymax402.com",
@@ -21616,7 +22360,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "web3-signals-api-production.up.railway.app",
@@ -21634,7 +22379,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "webhook-tester.api.klymax402.com",
@@ -21652,7 +22398,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "websearch.hergertsynthora.com",
@@ -21670,7 +22417,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "websearch.use.x402atlas.com",
@@ -21688,7 +22436,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "webtools402.176-109-107-191.sslip.io",
@@ -21722,7 +22471,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "50000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "whale-alert.api.klymax402.com",
@@ -21740,7 +22490,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "whale.hugen.tokyo",
@@ -21759,7 +22510,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "whale.lonestaroracle.xyz",
@@ -21778,7 +22530,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wiki-summary.hergertsynthora.com",
@@ -21796,7 +22549,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "wiki.use.x402atlas.com",
@@ -21814,7 +22568,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "willimake-it.dylan-caponi.workers.dev",
@@ -21832,7 +22587,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "win.oneshotagent.com",
@@ -21863,7 +22619,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "witness.bnbot.ai",
@@ -21899,7 +22656,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "www.basehelper.fun",
@@ -21948,7 +22706,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "www.getquali.com",
@@ -21985,7 +22744,8 @@
     "asset": null,
     "amount": "$0.03",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "www.miniup.io",
@@ -22010,7 +22770,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "www.paylog.dev",
@@ -22035,7 +22796,8 @@
     "asset": null,
     "amount": "10000",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "www.pontor.io",
@@ -22085,7 +22847,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "www.stablebrowser.dev",
@@ -22105,7 +22868,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "www.stratalize.com",
@@ -22164,7 +22928,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "90000",
     "payTo": "0xc91cE6291eDC0713ec753BAFBA002506ffb2b95c"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-ai-starter.vercel.app",
@@ -22198,7 +22963,8 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-company-api-production.up.railway.app",
@@ -22222,7 +22988,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-crypto-data.vercel.app",
@@ -22265,7 +23032,8 @@
     "asset": null,
     "amount": "$0.001",
     "payTo": "0xdd5fcEa81CA6f1EB39FEd5B973DE794293B81ba6"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-data-api.sigrunner.workers.dev",
@@ -22289,7 +23057,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0x5765ae06a52dc7A0BB71c36A11db512c7ea9ed10"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-datashop-production.up.railway.app",
@@ -22311,7 +23080,8 @@
     "asset": "USDC",
     "amount": "$0.002",
     "payTo": "0x6ab8efe305cce67daa48c97bde29c04402822dff"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-defi-signals.onrender.com",
@@ -22338,7 +23108,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402-echo-service.fly.dev",
@@ -22367,7 +23138,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "150000",
     "payTo": "0x1664530DC2A1CA350B1dbaD1Fc1F1a70c90fe4de"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-endpoints.onrender.com",
@@ -22393,7 +23165,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-factory.com",
@@ -22427,9 +23200,10 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$3.50",
+    "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-finance-api-production.up.railway.app",
@@ -22453,7 +23227,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-gateway-omega.vercel.app",
@@ -22482,7 +23257,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "15000",
     "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-hono-api.inraby.workers.dev",
@@ -22531,7 +23307,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402-next-mainnet-wheat.vercel.app",
@@ -22540,33 +23317,8 @@
   },
   {
    "host": "x402-paid-service.iholt.workers.dev",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+endpoints",
-   "top_keys": [
-    "alchemy",
-    "asset",
-    "discovery",
-    "endpoints",
-    "ethEnabled",
-    "facilitator",
-    "network",
-    "payTo"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": null,
-    "amount": {
-     "amount": "10000",
-     "currency": "USDC",
-     "decimals": 6
-    },
-    "payTo": "0x60C4499870f115664d7FfD8411b023DBEf3377d9"
-   }
+   "served": false,
+   "error": "HTTP 403"
   },
   {
    "host": "x402-pay.vercel.app",
@@ -22620,7 +23372,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402-services-production.up.railway.app",
@@ -22642,7 +23395,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402-solvers.onrender.com",
@@ -22683,7 +23437,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0xD617a7145ca56E3ed58d639F9DEC6999B22441eE"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-tools.vercel.app",
@@ -22703,7 +23458,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402-vehicle-api-production.up.railway.app",
@@ -22727,7 +23483,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402-watcher-api-main.jpgame-intel.workers.dev",
@@ -22756,7 +23513,8 @@
     "asset": null,
     "amount": "0.001",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.911fund.io",
@@ -22778,7 +23536,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.agentutility.ai",
@@ -22795,7 +23554,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.api.browser-use.com",
@@ -22821,7 +23581,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0xd5f8481D8F25d3966d2010DBf9B47fFbdf745A9E"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.aubr.ai",
@@ -22845,27 +23606,13 @@
     "asset": null,
     "amount": "$0.02",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.bakdupoffroad.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "resources",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": null,
-    "amount": "50000",
-    "payTo": "0x7579fb8105D0036A891fAf7aE93E34A511b66c03"
-   }
+   "served": false,
+   "error": "HTTP 530"
   },
   {
    "host": "x402.blackswan.wtf",
@@ -22885,7 +23632,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.botsmith.dev",
@@ -22905,9 +23653,10 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.003",
+    "amount": "$0.005",
     "payTo": "0xcb9b3F94387389e38EF2A7b3C0B851FB8325d7e9"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.browserbase.com",
@@ -22934,7 +23683,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0x435afaC555fe115f18e657E49960063c12C6AEd0"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.cheetahsecurity.de",
@@ -22955,7 +23705,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.clashofcoins.com",
@@ -22979,7 +23730,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.cloudpulsepoint.com",
@@ -23003,7 +23755,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0x1304EC1A8945365e43A5c18a734065f107B417cA"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.coinstats.app",
@@ -23023,7 +23776,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.creative-tim.com",
@@ -23042,7 +23796,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.d-bis.org",
@@ -23061,7 +23816,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.dailyelo.com",
@@ -23087,7 +23843,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0xD617a7145ca56E3ed58d639F9DEC6999B22441eE"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.deepsearch.com",
@@ -23105,7 +23862,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.dellbot.win",
@@ -23134,7 +23892,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "10000",
     "payTo": "0xE79e7fa7Ce7259C46F9B127b837d2907Bb036F95"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.fablerlabs.com",
@@ -23157,12 +23916,13 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0x65E3E64935eA709bDf1119E1fC991299c04c0154"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.forgemesh.io",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
     "extensions",
@@ -23179,7 +23939,8 @@
     "asset": "USDC",
     "amount": "0.001",
     "payTo": "0x850363a27F0aC6fEb9C7a3eC4C1d295262dF9432"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.fuchss.app",
@@ -23197,7 +23958,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.getautomatedrcm.com",
@@ -23212,7 +23974,7 @@
   {
    "host": "x402.icu",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "x402.jmthomasofficial.com",
@@ -23236,7 +23998,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.midnight-compliance.com",
@@ -23245,8 +24008,24 @@
   },
   {
    "host": "x402.miroshark.xyz",
-   "served": false,
-   "error": "URLError"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+none",
+   "top_keys": [
+    "documentation",
+    "items",
+    "skill",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.nichospt.net",
@@ -23276,7 +24055,8 @@
     "asset": "USDC",
     "amount": null,
     "payTo": "4a8o45skRPcyjAdyR8yES215Swvh8uTpZD6KLarhxCJ7"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.omardev.xyz",
@@ -23304,7 +24084,8 @@
     "asset": null,
     "amount": "$0.01",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.openwebninja.com",
@@ -23323,7 +24104,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "5000",
     "payTo": "0x3e7c9cA818f713F19e126E3B7B37B47dC1411570"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.orth.sh",
@@ -23353,7 +24135,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.payperbyte.io",
@@ -23386,7 +24169,8 @@
      }
     },
     "payTo": "0xffFf4B8Da8C165B556326453446F6940C8AFE0DB"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.professorsausages.com",
@@ -23409,10 +24193,11 @@
     "asset": null,
     "amount": {
      "amount": "0.02",
-     "description": "Token safety & rug-pull/honeypot risk check \u2014 scans an ERC-20's bytecode & ownership on Base/Ethereum for mint, blacklist, pause, fee traps"
+     "description": "Token safety & rug-pull/honeypot risk check \u2014 follows the proxy and scans the bytecode that actually runs, plus ownership, on Base/Ethereum"
     },
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.quicknode.com",
@@ -23422,7 +24207,7 @@
   {
    "host": "x402.servicesmax.xyz",
    "served": false,
-   "error": "URLError"
+   "error": "HTTP 404"
   },
   {
    "host": "x402.shizu.me",
@@ -23450,7 +24235,8 @@
     "asset": null,
     "amount": "$0.006",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.sleuthagent.ai",
@@ -23472,7 +24258,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402.smartmoney.market",
@@ -23512,7 +24299,8 @@
     "asset": null,
     "amount": "$0.002856",
     "payTo": "0x19a78B27a28eD93C3c914878bde7f2f843AfAEa8"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402.thematrixofdestiny.com",
@@ -23542,7 +24330,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402currencyconvert.vercel.app",
@@ -23576,7 +24365,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "15000",
     "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402factory.ai",
@@ -23609,7 +24399,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402pay.org",
@@ -23645,7 +24436,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402scan-git-router-117-merit-systems.vercel.app",
@@ -23671,28 +24463,13 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402scan-j55w7ornb-merit-systems.vercel.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "ownershipProofs",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {}
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "x402stock.vercel.app",
@@ -23710,7 +24487,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402stock.xyz",
@@ -23728,7 +24506,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "x402swag.com",
@@ -23748,7 +24527,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000",
     "payTo": "0xf4F7182508895812F235C5D1c47C0cfc89fDAb5B"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402toll.com",
@@ -23773,7 +24553,8 @@
     "asset": null,
     "amount": "50000",
     "payTo": "0x1C9923489CD7D75Dd2f6735c48090b8bD4c7E5a9"
-   }
+   },
+   "peers": null
   },
   {
    "host": "x402wordoftheday.vercel.app",
@@ -23807,7 +24588,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "xmedia.use.x402atlas.com",
@@ -23825,7 +24607,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "xpensli.app",
@@ -23839,8 +24622,24 @@
   },
   {
    "host": "yieldsignal.vercel.app",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "instructions",
+    "ownershipProofs",
+    "resources",
+    "version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "ylk.one",
@@ -23863,7 +24662,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "zaref.dev",
@@ -23891,7 +24691,8 @@
     "asset": null,
     "amount": "$0.005",
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "zk.quickai.build",
@@ -23917,7 +24718,8 @@
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": null
-   }
+   },
+   "peers": null
   },
   {
    "host": "zoningverdict.com",
@@ -23946,7 +24748,8 @@
     "amount",
     "payTo"
    ],
-   "evidence": {}
+   "evidence": {},
+   "peers": null
   }
  ]
 }
