@@ -60,15 +60,20 @@ jobs:
       - name: Verify every snapshot and the continuity of the series
         run: python verify_snapshot.py --all | tee -a "$GITHUB_STEP_SUMMARY"
 
+      # Runs AFTER verification, never before: publishing a digest for a file that does not
+      # verify would hand an anchoring counterparty a hash of something broken.
+      - name: Publish digest lines and the day-digest
+        run: python digests.py | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Commit
         run: |
-          if [ -z "$(git status --porcelain snapshots/)" ]; then
+          if [ -z "$(git status --porcelain snapshots/ digests.txt)" ]; then
             echo "nothing new to commit (the day was already recorded)"
             exit 0
           fi
           git config user.name  "verity-index[bot]"
           git config user.email "veritylayer@gmail.com"
-          git add snapshots/
+          git add snapshots/ digests.txt
           DAY=$(git diff --cached --name-only | sed -n 's#snapshots/\([0-9-]*\)/.*#\1#p' | head -1)
           git commit -m "Observation ${DAY}" -m "Recorded automatically. Verify with: python verify_snapshot.py ${DAY}"
           # The scheduler and a human can both land commits; rebase rather than fail the day.
