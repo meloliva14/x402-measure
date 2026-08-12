@@ -64,7 +64,10 @@ def main() -> int:
         out.append("")
         summary.append((d.name, len(lines), dd))
 
-    OUT.write_text("\n".join(out).rstrip() + "\n", encoding="utf-8")
+    # write_bytes, never write_text. On Windows write_text turns \n into \r\n, and this file is
+    # itself fetched and read by third parties. The same trap put a CRLF hash of signature.json
+    # in here on 2026-08-12, a value nobody outside a Windows checkout could ever reproduce.
+    OUT.write_bytes(("\n".join(out).rstrip() + "\n").encode("utf-8"))
 
     print(f"  {len(summary)} day(s), {sum(s[1] for s in summary)} files\n")
     print(f"  {'date':<12} {'files':>5}  day-digest")

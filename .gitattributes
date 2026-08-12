@@ -1,0 +1,12 @@
+# Everything published here is hashed by third parties over its exact bytes, and an anchored
+# digest is permanent. Git's newline translation would make a file's hash depend on the OS that
+# checked it out, so a Windows contributor and a Linux verifier would compute different digests
+# for a byte-identical archive. Caught 2026-08-12: signature.json was 603 bytes locally with
+# CRLF and 591 bytes on GitHub with LF, so digests.txt recorded a hash nobody else could
+# reproduce. Turn translation off for the whole tree.
+* -text
+
+# Belt and braces for the files whose bytes are actually signed or digested.
+snapshots/** -text
+digests.txt -text
+index-pubkey.json -text

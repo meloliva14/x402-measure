@@ -224,7 +224,13 @@ def main(argv=None) -> int:
 
     out.mkdir(parents=True, exist_ok=True)
     (out / "observation.json").write_bytes(payload)
-    (out / "signature.json").write_text(json.dumps({
+    # write_bytes, never write_text: on Windows write_text turns 
+ into 
+, so this file's
+    # hash would depend on which OS produced it. Third parties digest these exact bytes and an
+    # anchored digest is permanent. Caught 2026-08-12 when GitHub served 591 bytes for a file
+    # that was 603 locally.
+    (out / "signature.json").write_bytes((json.dumps({
         "schema": "verity-index-signature/1",
         "signs": "observation.json",
         "payload_sha256": hashlib.sha256(payload).hexdigest(),
