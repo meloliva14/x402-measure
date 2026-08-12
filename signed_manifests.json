@@ -1,0 +1,24 @@
+{
+ "checked_utc": "2026-08-12T22:43:51.876540+00:00",
+ "counts": {
+  "authentic": 1
+ },
+ "results": [
+  {
+   "host": "x402.magentix.ai",
+   "manifest_bytes": 534,
+   "manifest_sha256": "536fdc580c713bc919f0df1fca94588d7ee3ddb99068953c56986d3c858eadb9",
+   "sig_bytes": 390,
+   "sig_sha256": "5678e5f2f7d0913aefcb278505f0384954724459286c14efa4ca4f4aaafa3d67",
+   "kid": "s1._x402key.x402.magentix.ai",
+   "sig_input": "canonical-bytes",
+   "canon": "RFC8785-JCS",
+   "declared_version": null,
+   "canonical_bytes": 387,
+   "canonical_sha256": "d743be2828e4019640e0f30748a49b81f624fffbacbe2a436b367d4428bb681c",
+   "publisher_content_digest": "d743be2828e4019640e0f30748a49b81f624fffbacbe2a436b367d4428bb681c",
+   "our_canon_agrees_with_publisher": true,
+   "verdict": "authentic"
+  }
+ ]
+}
