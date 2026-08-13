@@ -43,6 +43,13 @@ jobs:
 
       - run: pip install --quiet cryptography
 
+      # A syntax error in any script must fail here, loudly, and not at 04:17 as a missing day.
+      # Pushed a broken snapshot.py on 2026-08-12; the three runs that day had already gone, so
+      # nothing failed and nothing warned. The next scheduled run would have been the first sign,
+      # by which point the series would already have a hole in it.
+      - name: Every script must compile before anything else runs
+        run: python -m compileall -q . && echo "all scripts compile"
+
       - name: Record today's observation
         env:
           VERITY_INDEX_KEY: ${{ secrets.VERITY_INDEX_KEY }}

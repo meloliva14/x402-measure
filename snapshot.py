@@ -126,6 +126,31 @@ def targets() -> tuple[list[dict], dict]:
     return out, {"source": "sweep_results.json (fallback)"}
 
 
+def vantage() -> dict:
+    """WHERE this sweep was run from, as a CATEGORY and never as an address.
+
+    Walter's point on #wg-domain-discovery: his prober sits on a residential network and this
+    series runs from a datacenter, and the same host answered one and refused the other on the
+    same morning. A verdict from a single vantage is partly a fact about the vantage, so the
+    vantage has to travel with the verdict or a reader cannot tell the two apart.
+
+    Checking this repo's own history found the series had already crossed that boundary silently:
+    2026-08-08 was swept from a residential line, everything after from a CI runner.
+
+    CATEGORY ONLY. Never an IP, hostname, ISP, or city. The analytic value is entirely in the
+    residential-vs-datacenter axis; an actual address adds nothing to the diff and permanently
+    associates a real person's home connection with sweeping activity. Closed vocabulary so a
+    free-text field can never quietly become an identifier.
+    """
+    if os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+        return {"class": "ci-runner", "note": "GitHub-hosted runner, datacenter egress"}
+    declared = (os.getenv("VERITY_VANTAGE") or "").strip().lower()
+    if declared in ("residential", "datacenter", "ci-runner", "vpn", "mobile"):
+        return {"class": declared}
+    return {"class": "unspecified",
+            "note": "set VERITY_VANTAGE to one of residential/datacenter/ci-runner/vpn/mobile"}
+
+
 def observe(t: dict) -> dict:
     try:
         verdict, notes, _challenge = preflight.classify(t["url"])
@@ -166,6 +191,7 @@ def build(date: str) -> dict:
             "answered": answered,
             "answer_rate": round(rate, 4),
             "verdicts": dict(counts.most_common()),
+            "vantage": vantage(),
             "sweep_started_utc": started.isoformat(),
             "sweep_ended_utc": ended.isoformat(),
             "method": ("preflight.classify(url) — one unauthenticated request per host, GET with a "
@@ -224,9 +250,7 @@ def main(argv=None) -> int:
 
     out.mkdir(parents=True, exist_ok=True)
     (out / "observation.json").write_bytes(payload)
-    # write_bytes, never write_text: on Windows write_text turns 
- into 
-, so this file's
+    # write_bytes, never write_text. On Windows write_text translates newlines, so this file's
     # hash would depend on which OS produced it. Third parties digest these exact bytes and an
     # anchored digest is permanent. Caught 2026-08-12 when GitHub served 591 bytes for a file
     # that was 603 locally.
@@ -241,7 +265,7 @@ def main(argv=None) -> int:
         "signature_hex": sig,
         "signed_at_utc": datetime.now(timezone.utc).isoformat(),
         "verify": "python verify_snapshot.py " + a.date,
-    }, indent=1) + "\n", encoding="utf-8")
+    }, indent=1) + "\n").encode("utf-8"))
 
     print(f"\n  wrote snapshots/{a.date}/observation.json  ({len(payload):,} bytes)")
     print(f"  signed with {key_id}")
