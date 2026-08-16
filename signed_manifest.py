@@ -2,7 +2,24 @@
 
 Martin stood up the first live instance of the detached-signature hook on #wg-domain-discovery
 (x402.magentix.ai) and asked for independent verdicts. Walter ran the second implementation. This
-is the third, wired into the daily sweep so the answer is dated rather than a one-off.
+is the third.
+
+THIS IS NOT PART OF THE DAILY JOB, AND NOTHING FROM IT IS A DAILY SERIES. An earlier version of
+this docstring claimed it was "wired into the daily sweep", and the 2026-08-12 commit message said
+"in the sweep". Both were false: neither snapshot.py nor .github/workflows/snapshot.yml calls this
+script, and before 2026-08-15 it had been run exactly once, against one host named on the command
+line. The only date anyone may quote from it is `checked_utc` inside signed_manifests.json.
+
+Wiring it into the cron is not a one-line change, so do not attempt it in passing. The workflow's
+commit step stages only snapshots/ and digests.txt, so a modified signed_manifests.json would sit
+unstaged and make `git pull --rebase` fail on every run afterwards. The right fix is to write the
+result into snapshots/<date>/ so it is signed and append-only like the rest of the archive, which
+is a change to the observation schema and needs to be proven with a real run first.
+
+LAST FULL SWEEP 2026-08-15: of the 972 census hosts that serve a discovery manifest, ZERO serve a
+signed one (898 unsigned, 74 unreachable from a residential vantage). x402.magentix.ai verifies
+`authentic` but is NOT in the 1,521-host target list, so it is not in that denominator and must
+never be counted as though it were. Adoption inside the measured network is zero.
 
 THE VERDICT THAT IS NOT ALLOWED TO BE WRONG. Publishing "signature-invalid" about a named host is
 an accusation. It says either the operator is serving something that does not match what they
