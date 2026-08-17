@@ -314,6 +314,14 @@ def build(date: str) -> dict:
             "answered": answered,
             "answer_rate": round(rate, 4),
             "verdicts": dict(counts.most_common()),
+            # Read straight out of preflight so it can never drift from what the code can
+            # actually emit. Walter ported classify() and found the vocabulary is nine, not the
+            # six I told him in Slack: WARN, UNPARSEABLE and UNKNOWN_NETWORK are all reachable
+            # and my data simply has not produced them yet. A verdict set that lives in a chat
+            # message is not a schema, so it lives in the file now. Deliberately NOT folded:
+            # WARN is not OK, and UNPARSEABLE is not BLOCKED. Two observers should disagree
+            # loudly rather than agree because both flattened the same distinction.
+            "verdict_vocabulary": dict(sorted(preflight.VERDICT_NOTE.items())),
             "signed_manifests": signed,
             "vantage": vantage(),
             "sweep_started_utc": started.isoformat(),

@@ -29,10 +29,13 @@ USAGE
 Exit code is 0 if every endpoint is payable, 1 otherwise.
 """
 import base64
+import ipaddress
 import json
+import socket
 import ssl
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 CTX = ssl.create_default_context()
@@ -40,6 +43,79 @@ CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE
 
 UA = "x402-measure preflight (read-only; no payment is ever sent)"
+
+# --- SSRF fence -------------------------------------------------------------------------
+#
+# WHY THIS EXISTS. Until 2026-08-17 this prober followed redirects wherever they pointed and
+# had no idea what address space it was reaching. Proved locally: a host answering
+# `302 -> http://127.0.0.1:<port>` was followed, the private response was read, and classify()
+# returned NO_402 as though the host had simply not been payment-gated. That is a third party
+# steering the prober, and it runs on a CI runner with a cloud metadata endpoint on it.
+#
+# Walter (wdhawkins46) declared the same boundary on his second observer before I did, and
+# refuses private-space destinations while recording them UNREACHABLE with the refusal named.
+# Matching that behaviour keeps the two columns comparable instead of diverging on policy.
+#
+# TLS stays unverified (CERT_NONE above) on purpose. It is a deliberate, declared property of
+# this measurement: a cert error is a fact about a host's TLS config, not about whether it can
+# take a payment, and the second observer matched it. Changing it here would silently change
+# what the series measures.
+
+class BlockedDestination(Exception):
+    """A URL resolved to address space a public prober has no business reaching."""
+
+
+# Hosts already proven public in this process. The fence adds a lookup on top of the one urllib
+# does to connect, and get_402 checks twice per host because of the GET-then-POST fallback. At
+# 14-way concurrency that tripled DNS load and produced TRANSIENT getaddrinfo failures on hosts
+# that were perfectly fine, which would have written phantom UNREACHABLE rows into a series whose
+# whole value is that a verdict means something. Measured on 2026-08-17: 16 hosts failed to
+# resolve mid-sweep and all 16 resolved on retry seconds later.
+#
+# SUCCESS ONLY. A failure is never cached, because caching a transient failure is the same bug
+# one layer down.
+_PUBLIC_OK: set[str] = set()
+
+
+def _public_host(host: str) -> None:
+    """Raise BlockedDestination unless every address `host` resolves to is public.
+
+    Checks EVERY returned address, not just the first. A name that returns one public and one
+    loopback address is a DNS-rebinding shape, and answering it is the whole problem.
+    """
+    if not host:
+        raise BlockedDestination("no host in URL")
+    if host in _PUBLIC_OK:
+        return
+    # A name that will not resolve is an ordinary unreachable host, NOT a refusal by this
+    # prober, and conflating the two would put a false claim about my own behaviour into the
+    # record. Let it raise as itself so it lands in UNREACHABLE the same way it always has.
+    infos = socket.getaddrinfo(host, None)
+    for info in infos:
+        ip = ipaddress.ip_address(info[4][0])
+        if (ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved
+                or ip.is_multicast or ip.is_unspecified):
+            raise BlockedDestination(f"{host} resolves to non-public {ip}")
+    _PUBLIC_OK.add(host)
+
+
+def _check_url(url: str) -> None:
+    p = urllib.parse.urlsplit(url)
+    if p.scheme not in ("http", "https"):
+        raise BlockedDestination(f"scheme {p.scheme!r} is not http(s)")
+    _public_host(p.hostname or "")
+
+
+class _FencedRedirect(urllib.request.HTTPRedirectHandler):
+    """Validate every hop. A redirect chain is only as safe as its least-checked link."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        _check_url(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+_OPENER = urllib.request.build_opener(
+    _FencedRedirect, urllib.request.HTTPSHandler(context=CTX))
 
 EVM_SIGN_ERROR = ("EIP-712 domain parameters (name, version) are required in "
                   "payment requirements")
@@ -56,6 +132,7 @@ V1_EVM_NAMES = {
 
 
 def fetch(url, method):
+    _check_url(url)                       # the first hop is a destination too
     req = urllib.request.Request(url, method=method)
     req.add_header("User-Agent", UA)
     req.add_header("Accept", "application/json")
@@ -63,7 +140,7 @@ def fetch(url, method):
         req.data = b"{}"
         req.add_header("Content-Type", "application/json")
     try:
-        with urllib.request.urlopen(req, timeout=20, context=CTX) as r:
+        with _OPENER.open(req, timeout=20) as r:
             return r.status, dict(r.headers), r.read()
     except urllib.error.HTTPError as e:
         return e.code, dict(e.headers), e.read()
@@ -98,6 +175,10 @@ def parse_challenge(headers, body):
 def classify(url):
     try:
         status, headers, body = get_402(url)
+    except BlockedDestination as e:
+        # Named rather than swallowed. A reader must be able to tell "this host refused to
+        # answer" from "I refused to ask", because they are facts about different parties.
+        return "UNREACHABLE", [f"refused by prober policy: {e}"], None
     except Exception as e:  # noqa: BLE001
         return "UNREACHABLE", [type(e).__name__], None
 
