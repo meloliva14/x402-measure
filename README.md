@@ -8,6 +8,42 @@ on-chain. Python standard library only, nothing to install.
 
 ---
 
+## What this has found
+
+Every figure below is dated and recomputable from files committed in this repo. None of it
+requires trusting me.
+
+**The network is in better shape than the discourse suggests.** 91.6% of payment-gated hosts
+serve a challenge a stock v2 client can actually sign. That is 1,193 of 1,302, on 2026-08-16.
+
+**Nobody signs their discovery manifest.** 972 of the 1,521 hosts publish one. **Zero** serve a
+cryptographically signed one. That is checked daily now, so the number is dated rather than
+anecdotal, and it will mean something when it moves. The one working implementation I know of is
+a reference host outside this target list, so it is deliberately not counted in that denominator.
+
+**Counting sellers per host overstates badly.** 811 gated hosts answered with a payout address,
+resolving to 379 distinct addresses. 69 of those addresses are advertised by more than one host,
+and the largest is advertised by **144**. A per-host seller count is wrong by 144x in that case
+alone. The reverse inference is worse: a shared payout address does not establish a shared
+operator, so counting distinct addresses is neither a ceiling nor a floor on distinct parties.
+
+**20 advertised payout addresses have never been paid at all.** Of the 379, 359 have received
+USDC on the settlement chain and 20 have received nothing, ever.
+
+**The measurement is itself checkable.** Nine consecutive days as of 2026-08-16, no gaps. Each
+day's observation is Ed25519-signed and append-only, and verifies against a published key with a
+short, dependency-free verifier:
+
+```bash
+python verify_snapshot.py --all
+```
+
+A second operator independently runs the same method against the same pinned host list from a
+different network, so the two columns can be diffed daily. A verdict from one vantage is partly a
+fact about the vantage.
+
+---
+
 ## Why this exists
 
 A seller instrumenting their own funnel sees discovery hits, then price quotes, then
@@ -42,6 +78,12 @@ python demand_sweep.py 7     # on-chain revenue, 7 days     -> demand_results.js
 
 # One wallet, on its own
 python rpc.py 0xYourPayToAddress 30
+
+# The daily signed archive
+python snapshot.py           # record + sign today        -> snapshots/<date>/
+python verify_snapshot.py --all   # verify every day and the continuity of the series
+python digests.py            # publish per-file and per-day digests for external anchoring
+python signed_manifest.py    # does a host's signed manifest verify, and over which bytes?
 ```
 
 `preflight.py` exits non-zero if any endpoint is unpayable, so it drops into CI.
@@ -58,6 +100,10 @@ python rpc.py 0xYourPayToAddress 30
 | `manifest_probe.py` | Do registry-listed sellers also publish their own `/.well-known/x402`? |
 | `demand_sweep.py` | Which advertised payTo wallets actually received USDC, from how many payers? |
 | `rpc.py` | Shared JSON-RPC + USDC log helpers. Also runnable for a single address. |
+| `snapshot.py` | Records and signs one day of the census. Append-only; refuses to overwrite a date. |
+| `verify_snapshot.py` | Verifies any day without trusting whoever produced it, and checks the series for gaps. |
+| `digests.py` | Publishes per-file and per-day digests so a third party can anchor them externally. |
+| `signed_manifest.py` | Does a host's signed manifest verify, and over the canonical bytes or the served ones? |
 
 ---
 
@@ -143,6 +189,7 @@ doing to people who are building in the open.
 ## License
 
 MIT. Built while doing interop work in the
-[x402 Foundation](https://github.com/x402-foundation/x402) Domain Discovery working group.
+[x402 Foundation](https://github.com/x402-foundation/x402) Domain Discovery and Identity
+working groups.
 
 Bug reports and results that contradict mine are both welcome — the second kind more so.
