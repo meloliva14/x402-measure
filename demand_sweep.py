@@ -11,8 +11,18 @@ like this must not err in.
 
 Run harvest_bazaar.py first. Writes demand_results.json.
 
+WHY THIS AND NOT THE PER-ADDRESS API. ecosystem_revenue.py asks Blockscout for each wallet's
+transfer history, and that endpoint pages: on 2026-08-16 it returned a first page for 239 of 379
+wallets and stopped, so its $42,019.73 total was a floor with no way to know how deep. Paginating
+it is not the fix either, because the busiest seller wallet alone carries on the order of a
+million transfers. Scanning blocks answers the same question exactly, in one pass, because a
+window of blocks is finite where an address's history is not.
+
 USAGE
-    python demand_sweep.py [days]        # default 7
+    python demand_sweep.py [days] [wallet-file]
+      days         default 7
+      wallet-file  default paytos.json (registry-advertised). Pass payto_wallets.json to use
+                   the addresses actually returned by live 402s instead.
 """
 import collections
 import json
@@ -23,17 +33,41 @@ import time
 from rpc import USDC, TRANSFER, rpc, topic_addr, blocks_for_days
 
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 7
+SRC = sys.argv[2] if len(sys.argv) > 2 else "paytos.json"
 CHUNK = 3000
 
 try:
-    pay = json.load(open("paytos.json", encoding="utf-8"))
+    pay = json.load(open(SRC, encoding="utf-8"))
 except FileNotFoundError:
-    raise SystemExit("paytos.json not found - run: python harvest_bazaar.py")
+    raise SystemExit(f"{SRC} not found - run: python harvest_bazaar.py")
 
-addrs = sorted(pay)
+# paytos.json is a dict keyed by address; payto_wallets.json is a list of {"payTo": ...}.
+# Accept either so the demand figure can be quoted against the same population as the rest
+# of the census rather than against a different one.
+if isinstance(pay, dict):
+    addrs = sorted(pay)
+else:
+    addrs = sorted({(r.get("payTo") or "").lower() for r in pay if r.get("payTo")})
+if not addrs:
+    raise SystemExit(f"no addresses found in {SRC}")
+
+# The null address is a BURN destination, not a seller wallet, and counting transfers into it
+# as revenue is catastrophic rather than merely wrong: a 30-day scan on 2026-08-17 attributed
+# $3,109,683,234 of USDC burns to "seller revenue", which was 99.98% of the total and made the
+# top wallet read as 100% of the network. It is in the census legitimately, because
+# agents.sayerandstone.com really does serve it as its payTo, so the fix belongs here at the
+# revenue layer and NOT in the census, which is supposed to record what a host actually served.
+BURN = {"0x" + "0" * 40, "0x" + "0" * 39 + "1", "0x" + "d" * 40}
+burned = [a for a in addrs if a.lower() in BURN]
+if burned:
+    print(f"  excluding {len(burned)} burn address(es) from the revenue population: "
+          + ", ".join(burned))
+    print("  (they are still real payTo values and stay in the census; they are just not"
+          " destinations anyone gets paid at)")
+    addrs = [a for a in addrs if a.lower() not in BURN]
 topics = [topic_addr(a) for a in addrs]
 start, head = blocks_for_days(DAYS)
-print(f"\n  {len(addrs)} seller wallets | blocks {start}..{head} ({DAYS}d)\n")
+print(f"\n  {len(addrs)} seller wallets from {SRC} | blocks {start}..{head} ({DAYS}d)\n")
 
 count = collections.Counter()
 total = collections.defaultdict(float)

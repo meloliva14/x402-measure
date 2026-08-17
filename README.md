@@ -30,6 +30,20 @@ operator, so counting distinct addresses is neither a ceiling nor a floor on dis
 **20 advertised payout addresses have never been paid at all.** Of the 379, 359 have received
 USDC on the settlement chain and 20 have received nothing, ever.
 
+**The median seller earns almost nothing.** Over the 30 days to 2026-08-17, with full block
+coverage and no sampling (1,296,001 of 1,296,001 blocks), the median advertised payout address
+received **$0.57**. 93.4% received under $100, and 56 of 378 received nothing in the window at
+all. The gross total was $627,494.90, but 65% of that landed in a single address averaging
+$114.73 per payment across 3,316 distinct payers, which is retail-sized rather than agent-sized
+and is near-certainly ordinary commerce sharing the same wallet. That is why the medians lead
+here and the total does not.
+
+**One host advertises the null address as its payout destination.** `0x0000…0000` appears as a
+live `payTo`. Anyone paying it burns the money and the operator never sees it. It also has to be
+excluded from any revenue measurement by hand: USDC burns run to billions, so a scan that treats
+it as a seller wallet reports the burn pile as network revenue and buries every real number
+underneath it.
+
 **The measurement is itself checkable.** Nine consecutive days as of 2026-08-16, no gaps. Each
 day's observation is Ed25519-signed and append-only, and verifies against a published key with a
 short, dependency-free verifier:
