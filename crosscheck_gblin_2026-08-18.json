@@ -1,0 +1,1421 @@
+{
+ "ran_at": "2026-08-18T15:56:18Z",
+ "against": "gblin observatory.json generated 2026-08-18T15:50:12.178Z",
+ "method": "preflight.classify \u2014 GET then POST fallback on 400/404/405/501; reads PAYMENT-REQUIRED header and body",
+ "summary": {
+  "endpoints": 201,
+  "their_alive": 199,
+  "my_OK": 193,
+  "my_UNREACHABLE": 0,
+  "disagreements": 2
+ },
+ "rows": [
+  {
+   "url": "https://2s.io/api/calendar/holidays",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://402timezones.vercel.app/api/convert-timezone",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://agent402.tools/api/random",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://agentpay.tools/tools/pre_trade_check/call",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://agentres.dev/api/book",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://agi.apify.com/protocols/x402/prepaid-tokens",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.aidress.ai/pay/agent_ottoai_crypto_news",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.anchor-x402.com/v1/roll",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.arkm.com/x402/intelligence/address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=200000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.bitrefill.com/x402/checkout/info",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.bitrefill.com/x402/gift-cards/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.bitrefill.com/x402/products/detail",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.exa.ai/contents",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=0 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.exa.ai/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=7000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.hyperextend.xyz/v1/candles/BTC/1m/latest",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.justaname.id/ens/v2/resolve",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/analytics",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/customers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/merchant-profile",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/offers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/programs",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/accept-offer",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/balances",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/cancel-offer",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/offers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/prepare-transfer",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/redeem-reward",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/rewards",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/vouchers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/workflow/prepare-reward-redemption",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/recipient-api/workflow/reward-status",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/rewards",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.loyalspark.online/x402-gateway/vouchers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.n0brains.com/x402/macro",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.nansen.ai/api/v1/profiler/address/current-balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.nativebtc.org/v1/mempool/stream-ticket",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/allowance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/block-number",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/block/:number",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/call",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/chain-id",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/code/:address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/contract/:address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/ens/:input",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc1155-balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc20-balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc20-transfers",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/erc721-tokens",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/estimate-gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=4000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/events",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/live-balance",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/network-info",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/nft-metadata",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/nft-owner",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/nonce/:address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/pending",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/proxy/:address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/receipt/:hash",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/storage",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/total-supply",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.onesource.io/api/chain/tx/:hash",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.printmoneylab.com/api/v1/kr-prices",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.run402.com/tiers/v1/prototype",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=100000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.stocktrends.com/v1/prices/latest",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.vindexapi.dev/v1/decode",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://api.webbersites.com/api/seo/metadata",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/exa/answer",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=11000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/exa/contents",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/exa/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=11000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/pm/kalshi/markets",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/pm/markets/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://blockrun.ai/api/v1/pm/polymarket/markets",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=8500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://brasil-dados-api.onrender.com/cambio",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://chat.gedx402.com/v1/chat/completions",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://cheaptokens.ai/api/buy",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://coinflip402.vercel.app/api/coinflip",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://coingecko.use.x402atlas.com/markets",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://coingecko.use.x402atlas.com/ohlc",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://coingecko.use.x402atlas.com/price",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/global",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/perps",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/price",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/sentiment",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://crypto.apitoll.cloud/v1/crypto/yields",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://dicex402.vercel.app/api/dice",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://dns.use.x402atlas.com/whois",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://edgar.apitoll.cloud/v1/edgar/filings",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://edgar.apitoll.cloud/v1/edgar/insider",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://email-auth.use.x402atlas.com/check",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://evm-gas.apitoll.cloud/v1/evm/gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://gas.apitoll.cloud/v1/base/gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://gateway.stride20k.com/v1/category-breakdown",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://gblin.digital/api/x402/attestation",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://glim.sh/api/v1/amazon/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "NON_EVM",
+   "verity_note": "network=solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp - different signer, not assessed"
+  },
+  {
+   "url": "https://glim.sh/api/v1/inference/v1/chat/completions",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "NON_EVM",
+   "verity_note": "network=solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp - different signer, not assessed"
+  },
+  {
+   "url": "https://glim.sh/api/v1/twitter/get",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "NON_EVM",
+   "verity_note": "network=solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp - different signer, not assessed"
+  },
+  {
+   "url": "https://google-trends.use.x402atlas.com/related-queries",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://google-trends.use.x402atlas.com/trend",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://grid.lonestaroracle.xyz/report",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://headers.use.x402atlas.com/",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://horrorstoryapi.vercel.app/api/horror-story",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1300 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://hyperliquid-accounts.use.x402atlas.com/spot",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://jokes-endpoint.vercel.app/api/jokes",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://kronossignals.com/api/v1/fear-greed",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://kronossignals.com/api/v1/forecast/doge",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://kronossignals.com/api/v1/price/btc",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://kronossignals.com/api/v1/signals/btc",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://ladyfortunalx402.vercel.app/api/fortune",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://laso.finance/auth",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://laso.finance/get-card",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://laso.finance/order-gift-card",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5240000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://mcp.yield.xyz/x402/yields_get_all",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://memegeneratorx402.vercel.app/api/generate-meme",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://metals.lonestaroracle.xyz/report",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://minifetch.com/api/v1/x402/extract/url-content",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://minifetch.com/api/v1/x402/extract/url-metadata",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://omniterminal.app/api/x402/v1/news",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x036CbD53842c5426634e7929541eC2318f3dCF7e extra.name='USDC'"
+  },
+  {
+   "url": "https://orcpin.dev/v1/endpoint-reliability",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://orcpin.dev/v1/wallet-snapshot",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://places.use.x402atlas.com/local",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://pro-api.coingecko.com/api/v3/x402/onchain/search/pools",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://pro-api.coingecko.com/api/v3/x402/onchain/simple/networks/base/token_price/:address",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://quartermaster.surewhynot.app/v1/gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://randomfactsx402.vercel.app/api/random-fact",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://readx.sh/api/:name",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://readx.sh/api/search/tweets",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://realestate.lonestaroracle.xyz/report",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://riddlex402.vercel.app/api/riddle",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://roastx402endpoint.vercel.app/api/roast",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1700 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://rpc.nodeflare.app/base/x402",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://sitemap-url-extractor.underscoredone.com/extract",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/clado/contacts-enrich",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=200000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/companyenrich/properties-enrich",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=60000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/exa/contents",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/exa/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/firecrawl/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=25200 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/fullenrich/company-search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=150000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/fullenrich/people-search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=150000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/pdl/people-enrich",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=280000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/reddit/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=20000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableenrich.dev/api/whitepages/person-search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=220000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableupload.dev/api/site",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://stableupload.dev/api/upload",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://supply.lonestaroracle.xyz/report",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://tenjin.blog/api/read/:handle/:slug",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=100000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://tick.hugen.tokyo/tick/all",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://tick.hugen.tokyo/tick/latest",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://tick.hugen.tokyo/tick/symbols",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://unwrap.use.x402atlas.com/",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=9000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://vaaya.ai/api/run/exa/search",
+   "their_alive": true,
+   "their_http": 200,
+   "verity_verdict": "NO_402",
+   "verity_note": "HTTP 200 - endpoint is not payment-gated right now"
+  },
+  {
+   "url": "https://vaaya.ai/api/run/firecrawl/scrape",
+   "their_alive": true,
+   "their_http": 200,
+   "verity_verdict": "NO_402",
+   "verity_note": "HTTP 200 - endpoint is not payment-gated right now"
+  },
+  {
+   "url": "https://vibesprings.net/api/address-risk",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://vibesprings.net/api/exchange/convert",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://vibesprings.net/api/gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://vibesprings.net/api/price/base-gas",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://vibesprings.net/api/price/btc-usd",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://weather.payapi.market/current",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://websearch.use.x402atlas.com/extract",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://websearch.use.x402atlas.com/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://weight402endpoint.vercel.app/api/convert-weight",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://whale.lonestaroracle.xyz/whales",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://www.stablebrowser.dev/api/sessions",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=100000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://www.x402scan.com/api/x402/merchants",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402-data-api.onrender.com/api/geo",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.browserbase.com/browser/session/create",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "V1",
+   "verity_note": "network=\"base\" is v1 naming; v2 uses CAIP-2 (e.g. eip155:8453)"
+  },
+  {
+   "url": "https://x402.charliemorrison.dev/extract",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.dailyelo.com/v1/recipient-check",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.devvizion.com/v0/outline",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.fuchss.app/v1/x402-trust",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.jmthomasofficial.com/v2/api/edgar-company-lookup",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.miroshark.xyz/run",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/base-ecosystem-news",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/base-season",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/crypto-news",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/defi-analytics",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/funding-rates",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/fx-rates",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/hyperliquid-market",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/kol-sentiment",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/pm-crypto",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/token-details",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/token-price",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/tradfi-data",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=3000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/trending-altcoins",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/tweet-search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/twitter-summary",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/weather",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/whois-lookup",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/yield-alpha",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=2000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.ottoai.services/yield-markets",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.tavily.com/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.twit.sh/tweets/search",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=6000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.twit.sh/tweets/user",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=10000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402.twit.sh/users/by/username",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402lifeadvice.vercel.app/api/life-advice",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402uselessfacts.vercel.app/api/useless-fact",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://x402wordoftheday.vercel.app/api/word-of-the-day",
+   "their_alive": true,
+   "their_http": 402,
+   "verity_verdict": "OK",
+   "verity_note": "amount=1500 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 extra.name='USD Coin'"
+  },
+  {
+   "url": "https://dripstack.xyz/api/v1/publications/:publicationSlug/:postSlug",
+   "their_alive": false,
+   "their_http": 404,
+   "verity_verdict": "NO_402",
+   "verity_note": "HTTP 404 - endpoint is not payment-gated right now"
+  },
+  {
+   "url": "https://omniterminal.app/api/x402/v1/market-risk/:symbol",
+   "their_alive": false,
+   "their_http": 400,
+   "verity_verdict": "NO_402",
+   "verity_note": "HTTP 400 - endpoint is not payment-gated right now"
+  }
+ ]
+}
