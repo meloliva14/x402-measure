@@ -147,10 +147,26 @@ def fetch(url, method):
 
 
 def get_402(url):
-    """Try GET, fall back to POST. Match the verb to the resource before concluding
-    anything -- a POST-only route answers GET with 404/405 and looks broken when it isn't."""
+    """Try GET, then POST if GET did not produce a challenge. Match the verb to the resource
+    before concluding anything -- a POST-only route answers GET with 404/405 and looks broken
+    when it isn't.
+
+    WHY THE CONDITION IS `!= 402` AND NOT A STATUS LIST. It used to fall back only on
+    400/404/405/501, which silently assumed a 200 on GET meant the route was not payment-gated.
+    It does not. vaaya.ai/api/run/exa/search returns 200 to GET and 402 to POST: the GET serves
+    something free and the paid route is the POST. Measured 2026-08-18 across the whole census,
+    51 of 200 hosts filed as NO_402 answered 402 on POST, so a quarter of that bucket was
+    payment-gated and recorded as not gated.
+
+    Found by the operator of the GBLIN uptime observatory while diffing his probe against ours,
+    which is the entire argument for a second observer.
+
+    The published conformance rate does NOT move: those 51 split 47 OK / 4 V1, almost exactly
+    the population rate, so 1188/1298 and 1235/1349 are both 91.5%. The counts were wrong, the
+    headline was not, and both statements need making rather than only the comfortable one.
+    """
     status, headers, body = fetch(url, "GET")
-    if status in (400, 404, 405, 501):
+    if status != 402:
         status, headers, body = fetch(url, "POST")
     return status, headers, body
 
