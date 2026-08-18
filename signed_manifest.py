@@ -4,20 +4,20 @@ Martin stood up the first live instance of the detached-signature hook on #wg-do
 (x402.magentix.ai) and asked for independent verdicts. Walter ran the second implementation. This
 is the third.
 
-THIS IS NOT PART OF THE DAILY JOB, AND NOTHING FROM IT IS A DAILY SERIES. An earlier version of
-this docstring claimed it was "wired into the daily sweep", and the 2026-08-12 commit message said
-"in the sweep". Both were false: neither snapshot.py nor .github/workflows/snapshot.yml calls this
-script, and before 2026-08-15 it had been run exactly once, against one host named on the command
-line. The only date anyone may quote from it is `checked_utc` inside signed_manifests.json.
+THIS IS PART OF THE DAILY JOB AS OF 2026-08-16. snapshot.py calls check() across the pinned
+population and writes the result into snapshots/<date>/observation.json under
+manifest.signed_manifests, so it is signed and append-only like the rest of the archive.
 
-Wiring it into the cron is not a one-line change, so do not attempt it in passing. The workflow's
-commit step stages only snapshots/ and digests.txt, so a modified signed_manifests.json would sit
-unstaged and make `git pull --rebase` fail on every run afterwards. The right fix is to write the
-result into snapshots/<date>/ so it is signed and append-only like the rest of the archive, which
-is a change to the observation schema and needs to be proven with a real run first.
+The old warning is kept here because it is the whole reason not to trust a docstring. Before
+2026-08-15 this file claimed to be "wired into the daily sweep" and the 2026-08-12 commit message
+said "in the sweep". Both were false when written: nothing called this script, and it had been run
+exactly once, against one host named on the command line. The wiring that paragraph described as
+the right fix is the wiring that now exists. A file describing itself is evidence and not proof, so
+the dates anyone may quote are the ones inside snapshots/<date>/observation.json.
 
-LAST FULL SWEEP 2026-08-15: of the 972 census hosts that serve a discovery manifest, ZERO serve a
-signed one (898 unsigned, 74 unreachable from a residential vantage). x402.magentix.ai verifies
+ADOPTION AS OF 2026-08-18, from the daily record: of the 972 census hosts that serve a discovery
+manifest, ZERO serve a signed one, on every day the census has run (08-16: 894 unsigned and 78
+unreachable, 08-17: 897 and 75, 08-18: 899 and 73). x402.magentix.ai verifies
 `authentic` but is NOT in the 1,521-host target list, so it is not in that denominator and must
 never be counted as though it were. Adoption inside the measured network is zero.
 
@@ -39,7 +39,10 @@ even agree with the publisher's own published content_digest:
                          disagreement to resolve, not their defect. Undetermined, never invalid.
   unsigned               manifest served, no .sig alongside it
   no-key                 .sig names a kid we cannot resolve in DNS
-  unreachable            could not fetch
+  unreachable            could not fetch. A fact about the host or the network.
+  refused                this prober declined to fetch, on its own policy. A fact about MY
+                         configuration and never about the operator, so it is never merged
+                         into any of the above.
 
 WHY THE SERVED-BYTE DIGESTS ARE RECORDED. Walter anchored the repo-published pair because a WAF
 ban on his address stops him fetching the live host. Recording sha256 over the exact served bytes
@@ -75,10 +78,35 @@ _CTX = ssl.create_default_context()
 _CTX.check_hostname = False
 _CTX.verify_mode = ssl.CERT_NONE
 
+# --- SSRF fence -----------------------------------------------------------------------------
+#
+# WHY THIS EXISTS. Until 2026-08-18 this script fetched 972 third-party hosts three times a day
+# from a CI runner through a bare urlopen, which follows redirects wherever they point. preflight.py
+# was fenced on 2026-08-17 and this one was not: same repo, same population, same runner, and the
+# runner has a cloud metadata endpoint on it. Any host in the census could have steered it.
+#
+# The address-space policy is imported rather than restated so that exactly one definition of
+# "non-public" exists across both probers. The private names are imported deliberately: renaming
+# them in preflight.py would change its method_sha256, which is stamped into every observation, and
+# a cosmetic rename would read as a method change in a series whose value is that it has none.
+from preflight import BlockedDestination, _check_url as _fence_url
+
+
+class _FencedRedirect(urllib.request.HTTPRedirectHandler):
+    """Validate every hop. A redirect chain is only as safe as its least-checked link."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        _fence_url(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+_OPENER = urllib.request.build_opener(
+    _FencedRedirect, urllib.request.HTTPSHandler(context=_CTX))
+
 
 def _get(url: str) -> bytes:
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA),
-                                timeout=TIMEOUT, context=_CTX) as r:
+    _fence_url(url)                      # the first hop is a destination too
+    with _OPENER.open(urllib.request.Request(url, headers=UA), timeout=TIMEOUT) as r:
         return r.read(2_000_000)
 
 
@@ -142,6 +170,8 @@ def check(host: str) -> dict:
     out = {"host": host}
     try:
         man = _get(f"{base}/x402")
+    except BlockedDestination as e:
+        return {**out, "verdict": "refused", "note": f"refused by prober policy: {e}"}
     except Exception as e:  # noqa: BLE001
         return {**out, "verdict": "unreachable", "note": type(e).__name__}
     out["manifest_bytes"] = len(man)
@@ -149,6 +179,13 @@ def check(host: str) -> dict:
 
     try:
         sraw = _get(f"{base}/x402.sig")
+    except BlockedDestination as e:
+        # MUST precede the handlers below. Without it a refusal falls through into `unsigned`,
+        # which is a false statement about a named operator: it reports that they publish no
+        # signature when the truth is that I declined to look. The manifest fetch already cleared
+        # the fence and _PUBLIC_OK caches only successes, so arriving here means the name resolved
+        # differently between two requests, which is the DNS-rebinding shape itself.
+        return {**out, "verdict": "refused", "note": f"refused by prober policy: {e}"}
     except urllib.error.HTTPError as e:
         return {**out, "verdict": "unsigned", "note": f"HTTP {e.code} on .sig"}
     except Exception as e:  # noqa: BLE001
