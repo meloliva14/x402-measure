@@ -304,16 +304,11 @@
   },
   {
    "host": "agent-data-hub-thebrandbard.replit.app",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "agent-data-toolkit.onrender.com",
@@ -624,18 +619,11 @@
   },
   {
    "host": "agentguard.hergertsynthora.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "JSONDecodeError"
   },
   {
    "host": "agenticinsights.com",
@@ -1223,18 +1211,11 @@
   },
   {
    "host": "api-production-17e1.up.railway.app",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "api-production-54bd.up.railway.app",
@@ -1536,11 +1517,17 @@
   },
   {
    "host": "api.blockchainmoneymap.com",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no x402Version",
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp"
+   ],
    "dns_records": 0,
-   "error": "JSONDecodeError"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "api.boonprotocol.com",
@@ -1780,17 +1767,11 @@
   },
   {
    "host": "api.devdrops.run",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "URLError"
   },
   {
    "host": "api.doc2json.de",
@@ -1860,17 +1841,11 @@
   },
   {
    "host": "api.freaks.one",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "api.getanyapi.com",
@@ -1917,11 +1892,18 @@
   },
   {
    "host": "api.glianalabs.com",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no x402Version",
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp",
+    "SHOULD: no name or description"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "api.gmfarcaster.com",
@@ -2489,18 +2471,11 @@
   },
   {
    "host": "api.ownedforever.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 502"
   },
   {
    "host": "api.ozdreamtools.de",
@@ -2824,16 +2799,13 @@
   {
    "host": "api.sirenic.eu",
    "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
+   "violations": [],
    "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
+    "SHOULD: no updated timestamp"
    ],
-   "dns_records": 0,
+   "dns_records": 1,
    "path": "/.well-known/x402",
-   "conformant": false
+   "conformant": true
   },
   {
    "host": "api.slamai.dev",
@@ -3014,7 +2986,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "HTTP 530"
   },
   {
    "host": "api.tcgapi.dev",
@@ -3161,15 +3133,11 @@
   {
    "host": "api.veritylayer.dev",
    "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
    "path": "/.well-known/x402",
-   "conformant": false
+   "conformant": true
   },
   {
    "host": "api.vetpulse.theaslangroupllc.com",
@@ -3428,17 +3396,11 @@
   },
   {
    "host": "apiwitchcraft.duckdns.org",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 502"
   },
   {
    "host": "app-443.hdgregory.com",
@@ -3518,8 +3480,7 @@
     "MUST: no kind"
    ],
    "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
+    "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
    "path": "/.well-known/x402",
@@ -4058,7 +4019,6 @@
    "host": "binance-crypto-24h-stats.hergertsynthora.com",
    "manifest": true,
    "violations": [
-    "MUST: no x402Version",
     "MUST: no kind"
    ],
    "warnings": [
@@ -7737,7 +7697,7 @@
     "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
-   "path": "/.well-known/x402",
+   "path": "/.well-known/x402.json",
    "conformant": false
   },
   {
@@ -8456,18 +8416,11 @@
   },
   {
    "host": "innernetcorp.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "insider.lonestaroracle.xyz",
@@ -8651,20 +8604,15 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "TimeoutError"
   },
   {
    "host": "jp-data-api-production.up.railway.app",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "json-suite.underscoredone.com",
@@ -8744,7 +8692,7 @@
     "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "conformant": false
   },
   {
@@ -8777,11 +8725,17 @@
   },
   {
    "host": "kari.mayim-mayim.com",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no x402Version",
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "kenoodl.com",
@@ -8849,17 +8803,11 @@
   },
   {
    "host": "kr-intel-agent-production.up.railway.app",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "kronos-x402.vercel.app",
@@ -9280,11 +9228,17 @@
   },
   {
    "host": "lst-health.naber-research.com",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp",
+    "SHOULD: no name or description"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "lunar-api-production-cba9.up.railway.app",
@@ -9977,16 +9931,11 @@
   },
   {
    "host": "nad.payflowagent.net",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
-   "conformant": false
+   "error": "HTTP 530"
   },
   {
    "host": "nba-odds-gap.relayhop.workers.dev",
@@ -10212,7 +10161,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "JSONDecodeError"
+   "error": "HTTP 404"
   },
   {
    "host": "nodeproxy-production.up.railway.app",
@@ -10622,7 +10571,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 503"
+   "error": "HTTP 404"
   },
   {
    "host": "orcpin.dev",
@@ -10683,18 +10632,11 @@
   },
   {
    "host": "orisha-data.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "URLError"
   },
   {
    "host": "ot-intel-api.onrender.com",
@@ -10900,7 +10842,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "JSONDecodeError"
+   "error": "HTTP 404"
   },
   {
    "host": "pay.hergertsynthora.com",
@@ -10927,16 +10869,11 @@
   },
   {
    "host": "payflowagent.net",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
-   "conformant": false
+   "error": "HTTP 530"
   },
   {
    "host": "paygent.obsmetrics.com",
@@ -11268,17 +11205,11 @@
   },
   {
    "host": "preppers-paradise.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "presign.hergertsynthora.com",
@@ -12791,7 +12722,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 403"
+   "error": "JSONDecodeError"
   },
   {
    "host": "sentinel-agent-wru6.onrender.com",
@@ -12884,16 +12815,11 @@
   },
   {
    "host": "shopifyagentdata.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 404"
   },
   {
    "host": "shopperpulse.theaslangroupllc.com",
@@ -13842,11 +13768,17 @@
   },
   {
    "host": "stable-travel-git-migrate-stabletravel-router-140-merit-systems.vercel.app",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no x402Version",
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "stable-travel-hkd3tku0j-merit-systems.vercel.app",
@@ -14333,18 +14265,11 @@
   },
   {
    "host": "store.cryptotradecalc.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "URLError"
   },
   {
    "host": "store.nosub.club",
@@ -14739,7 +14664,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "token-api.x402hub.xyz",
@@ -15063,7 +14988,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "JSONDecodeError"
+   "error": "HTTP 530"
   },
   {
    "host": "tradepulse.theaslangroupllc.com",
@@ -15295,18 +15220,11 @@
   },
   {
    "host": "twit.use.x402atlas.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "URLError"
   },
   {
    "host": "twitter-scraper.api.klymax402.com",
@@ -15501,7 +15419,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "HTTP 503"
   },
   {
    "host": "vat-validate.hergertsynthora.com",
@@ -15685,28 +15603,20 @@
   {
    "host": "verity-bzw7.onrender.com",
    "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
    "path": "/.well-known/x402",
-   "conformant": false
+   "conformant": true
   },
   {
    "host": "verity-suite.onrender.com",
    "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
-   "conformant": false
+   "path": "/.well-known/x402",
+   "conformant": true
   },
   {
    "host": "verza.dev",
@@ -15718,7 +15628,7 @@
     "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "conformant": false
   },
   {
@@ -15840,7 +15750,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "HTTP 401"
   },
   {
    "host": "vixilabs-x402-stage.valerioreden.workers.dev",
@@ -16546,7 +16456,7 @@
     "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "conformant": false
   },
   {
@@ -17289,17 +17199,11 @@
   },
   {
    "host": "x402.bakdupoffroad.com",
-   "manifest": true,
-   "violations": [
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp",
-    "SHOULD: no name or description"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 530"
   },
   {
    "host": "x402.blackswan.wtf",
@@ -17382,11 +17286,17 @@
   },
   {
    "host": "x402.cloudpulsepoint.com",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp",
+    "SHOULD: no name or description"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "x402.coinopai.com",
@@ -17558,7 +17468,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "x402.jmthomasofficial.com",
@@ -17584,11 +17494,17 @@
   },
   {
    "host": "x402.miroshark.xyz",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp",
+    "SHOULD: no name or description"
+   ],
    "dns_records": 0,
-   "error": "URLError"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "x402.nichospt.net",
@@ -17710,7 +17626,7 @@
    "violations": [],
    "warnings": [],
    "dns_records": 0,
-   "error": "URLError"
+   "error": "HTTP 404"
   },
   {
    "host": "x402.shizu.me",
@@ -17948,17 +17864,11 @@
   },
   {
    "host": "x402scan-j55w7ornb-merit-systems.vercel.app",
-   "manifest": true,
-   "violations": [
-    "MUST: no x402Version",
-    "MUST: no kind"
-   ],
-   "warnings": [
-    "SHOULD: no updated timestamp"
-   ],
+   "manifest": false,
+   "violations": [],
+   "warnings": [],
    "dns_records": 0,
-   "path": "/.well-known/x402",
-   "conformant": false
+   "error": "HTTP 410"
   },
   {
    "host": "x402stock.vercel.app",
@@ -18078,11 +17988,18 @@
   },
   {
    "host": "yieldsignal.vercel.app",
-   "manifest": false,
-   "violations": [],
-   "warnings": [],
+   "manifest": true,
+   "violations": [
+    "MUST: no x402Version",
+    "MUST: no kind"
+   ],
+   "warnings": [
+    "SHOULD: no updated timestamp",
+    "SHOULD: no name or description"
+   ],
    "dns_records": 0,
-   "error": "HTTP 404"
+   "path": "/.well-known/x402",
+   "conformant": false
   },
   {
    "host": "ylk.one",
@@ -18117,7 +18034,7 @@
     "SHOULD: no updated timestamp"
    ],
    "dns_records": 0,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "conformant": false
   },
   {
