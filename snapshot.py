@@ -270,12 +270,20 @@ def signed_manifest_census() -> dict:
 
 
 def observe(t: dict) -> dict:
+    """One host, one fetch, both dialect verdicts.
+
+    `verdict` is the running v2 series and its meaning has not changed. `v1` is additive, added
+    2026-08-19: can the deprecated-but-installed x402-fetch 1.2.0 read the BODY. A host can be OK
+    on one and unreadable on the other, which is the whole reason to record both.
+    """
     try:
-        verdict, notes, _challenge = preflight.classify(t["url"])
+        verdict, notes, _ch, v1, v1_notes = preflight.classify_both(t["url"])
     except Exception as e:  # noqa: BLE001
         return {"host": t["host"], "url": t["url"], "verdict": "UNREACHABLE",
-                "notes": [f"{type(e).__name__} during classify"]}
-    return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": list(notes)}
+                "notes": [f"{type(e).__name__} during classify"],
+                "v1": "V1_NO_BODY", "v1_notes": [f"{type(e).__name__} during classify"]}
+    return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": list(notes),
+            "v1": v1, "v1_notes": list(v1_notes)}
 
 
 def build(date: str) -> dict:

@@ -188,7 +188,95 @@ def parse_challenge(headers, body):
     return hdr, bod
 
 
+# --- v1 dialect readability ------------------------------------------------------------------
+#
+# WHY THIS IS SEPARATE FROM classify(). classify() answers "can a spec-current v2 buyer sign this",
+# reading the PAYMENT-REQUIRED header first. That question and its verdict vocabulary are a running
+# series and must not change meaning. This answers a DIFFERENT question about the same response:
+# can the deprecated-but-installed v1 buyer read the BODY. A host can pass one and fail the other,
+# and api.nansen.ai on 2026-08-19 is exactly that host.
+#
+# THE RULE THAT IS EASY TO GET WRONG. x402-fetch 1.2.0 does:
+#
+#     const parsed = accepts.map((x) => PaymentRequirementsSchema.parse(x));
+#
+# `.parse()` throws and `.map()` propagates, with no filter and no try/catch. So EVERY entry in
+# accepts[] must validate or the client throws. A valid v1 entry sitting beside a v2 entry does
+# NOT rescue it. An earlier version of this check asked "does any entry pass" and would have
+# written a false `v1-readable` into a signed series for every dual-dialect host on the network.
+#
+# Enums below are read from the published x402@1.2.0 tarball (PaymentRequirementsSchema,
+# NetworkSchema, schemes), not from V1_EVM_NAMES above, which is our own v2-era convenience list
+# and is NOT the same set.
+V1_NETWORKS = frozenset({
+    "abstract", "abstract-testnet", "base-sepolia", "base", "avalanche-fuji", "avalanche",
+    "iotex", "solana-devnet", "solana", "sei", "sei-testnet", "polygon", "polygon-amoy",
+    "peaq", "story", "educhain", "skale-base-sepolia",
+})
+V1_SCHEMES = frozenset({"exact"})
+V1_REQUIRED = ("scheme", "network", "maxAmountRequired", "resource",
+               "description", "mimeType", "payTo", "maxTimeoutSeconds", "asset")
+
+
+def _v1_entry_faults(a) -> list:
+    """Every reason this ONE accepts[] entry fails PaymentRequirementsSchema."""
+    if not isinstance(a, dict):
+        return [f"entry is {type(a).__name__}, not an object"]
+    bad = [f"missing {f}" for f in V1_REQUIRED if a.get(f) is None]
+    if a.get("scheme") is not None and a.get("scheme") not in V1_SCHEMES:
+        bad.append(f"scheme={a.get('scheme')!r} not in {sorted(V1_SCHEMES)}")
+    net = a.get("network")
+    if net is not None and net not in V1_NETWORKS:
+        # The common real-world case: a CAIP-2 id where v1 wants a bare name.
+        bad.append(f"network={net!r} is not a v1 name"
+                   + (" (CAIP-2 id where v1 wants a bare name)" if ":" in str(net) else ""))
+    m = a.get("maxAmountRequired")
+    if m is not None and not (isinstance(m, str) and m.lstrip("-").isdigit()):
+        # z.string().refine(isInteger) — a NUMBER fails even when the value is right.
+        bad.append(f"maxAmountRequired={m!r} is not a string of digits")
+    t = a.get("maxTimeoutSeconds")
+    if t is not None and not isinstance(t, int):
+        bad.append(f"maxTimeoutSeconds={t!r} is not an integer")
+    r = a.get("resource")
+    if r is not None and not str(r).startswith(("http://", "https://")):
+        bad.append(f"resource={r!r} is not a URL")
+    return bad
+
+
+def v1_verdict(body) -> tuple:
+    """Can x402-fetch 1.2.0 construct a payment from this BODY? -> (verdict, notes)
+
+    Verdicts:
+      V1_OK          every accepts[] entry validates, so the v1 client can select and sign
+      V1_UNREADABLE  at least one entry fails, so .map(parse) throws for the whole array
+      V1_NO_ACCEPTS  body parsed but carries no accepts[]
+      V1_NO_BODY     body is not JSON
+    """
+    try:
+        doc = json.loads(body) if isinstance(body, (bytes, str)) else body
+    except Exception:  # noqa: BLE001
+        return "V1_NO_BODY", ["body is not JSON, and v1 reads the body only"]
+    if not isinstance(doc, dict):
+        return "V1_NO_BODY", ["body is not a JSON object"]
+    accepts = doc.get("accepts")
+    if not isinstance(accepts, list) or not accepts:
+        return "V1_NO_ACCEPTS", ["no accepts[] in the body; v1 never reads the header"]
+
+    notes, failing = [], 0
+    for i, a in enumerate(accepts):
+        faults = _v1_entry_faults(a)
+        if faults:
+            failing += 1
+            notes.append(f"accepts[{i}]: " + "; ".join(faults))
+    if failing:
+        notes.append(f"{failing} of {len(accepts)} entries fail; v1 parses the whole array and "
+                     "throws on the first failure, so adding a valid entry alongside does not help")
+        return "V1_UNREADABLE", notes
+    return "V1_OK", [f"all {len(accepts)} entries validate against PaymentRequirementsSchema"]
+
+
 def classify(url):
+    """v2 verdict for one URL. Unchanged contract: (verdict, notes, challenge)."""
     try:
         status, headers, body = get_402(url)
     except BlockedDestination as e:
@@ -197,7 +285,33 @@ def classify(url):
         return "UNREACHABLE", [f"refused by prober policy: {e}"], None
     except Exception as e:  # noqa: BLE001
         return "UNREACHABLE", [type(e).__name__], None
+    return decide(status, headers, body)
 
+
+def classify_both(url):
+    """Both dialect verdicts from ONE fetch: (v2, v2_notes, challenge, v1, v1_notes).
+
+    Exists so the daily sweep can answer the v1 question without a second request to every host
+    on the network. Doubling 1,521 probes to add a field would be a real cost to the hosts we
+    measure, and we are the ones publishing that they should not be surprised by traffic.
+    """
+    try:
+        status, headers, body = get_402(url)
+    except BlockedDestination as e:
+        return ("UNREACHABLE", [f"refused by prober policy: {e}"], None,
+                "V1_NO_BODY", ["not fetched: refused by prober policy"])
+    except Exception as e:  # noqa: BLE001
+        return ("UNREACHABLE", [type(e).__name__], None,
+                "V1_NO_BODY", [f"not fetched: {type(e).__name__}"])
+    v2, notes, ch = decide(status, headers, body)
+    if status != 402:
+        return v2, notes, ch, "V1_NO_BODY", [f"HTTP {status}, no challenge to read"]
+    v1, v1n = v1_verdict(body)
+    return v2, notes, ch, v1, v1n
+
+
+def decide(status, headers, body):
+    """The pure decision half of classify(), over an already-fetched response."""
     if status != 402:
         return "NO_402", [f"HTTP {status} - endpoint is not payment-gated right now"], None
 
