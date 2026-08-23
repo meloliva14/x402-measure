@@ -54,7 +54,12 @@ def txt(name):
             d = json.loads(r.read(200_000))
     except Exception as e:  # noqa: BLE001
         return None, type(e).__name__
-    return [a.get("data", "").strip('"') for a in (d.get("Answer") or [])], None
+    # type 16 = TXT. The Answer array also carries the CNAME chase (type 5) when the queried
+    # name is an alias, and a CNAME target is not a TXT record. Unfiltered, every wildcard-CNAME
+    # platform name (onrender, vercel) reads as "label occupied", which is a false positive the
+    # old substring filter was accidentally hiding.
+    return [a.get("data", "").strip('"')
+            for a in (d.get("Answer") or []) if a.get("type") == 16], None
 
 
 def registrable(h):
@@ -80,14 +85,40 @@ def controls_pass():
     return True
 
 
+def grade(rec: str) -> str:
+    """Version-token grade only. Full grammar conformance is the spec's job, not this file's:
+    'conforming-version' means the record opens with the document's exact token, nothing more."""
+    r = rec.strip().lower()
+    if r.startswith("v=x402-1"):
+        return "conforming-version"
+    if r.startswith("v=x402"):
+        return "near-miss-version"          # v=x4021 and friends: token present, wrong spelling
+    return "no-version-token"               # bare URLs, x402-manifest=, wk=-only, ...
+
+
 def check(name):
     recs, err = txt("_x402." + name)
     if err:
         return {"name": name, "status": "query-failed", "error": err}
-    hits = [r for r in (recs or []) if "v=x402" in r.lower()]
-    if hits:
-        return {"name": name, "status": "HAS_RECORD", "records": hits}
-    return {"name": name, "status": "no-record", "any_txt": len(recs or [])}
+    recs = [r for r in (recs or []) if r]
+    # Two classes of occupied label, and conflating them was this file's 2026-08-23 bug in both
+    # directions at once. Until then check() filtered on the substring "v=x402", which (a) threw
+    # away every x402 attempt with no version token -- bare URLs, x402-manifest= -- exactly the
+    # near-misses this census was cited as evidence about, and (b) hid that txt() was not
+    # filtering DoH answers to type 16, so CNAME chases would have counted as records. Found
+    # because novadyne-hq's independent walk on #2979 saw records at two names this census had
+    # queried and reported empty. Fixing the filter then surfaced a third population: wildcard
+    # TXT (SPF, site-verification, registrar parking) that answers at ANY label, x402 included.
+    # Spot-checked by querying garbage labels: those zones answer there too. So the split is by
+    # content -- an _x402 label carrying a record that never mentions x402 is incidental DNS
+    # hygiene, not an attempt at this convention, and counting it as one would be a new lie.
+    intent = [r for r in recs if "x402" in r.lower()]
+    if intent:
+        return {"name": name, "status": "x402-record", "records": intent,
+                "grades": [grade(r) for r in intent]}
+    if recs:
+        return {"name": name, "status": "incidental-txt", "records": recs[:3]}
+    return {"name": name, "status": "no-record"}
 
 
 def main(argv):
@@ -117,15 +148,23 @@ def main(argv):
     for s, n in c.most_common():
         print(f"   {n:>6,}  {s}")
 
-    hits = [r for r in res if r["status"] == "HAS_RECORD"]
+    hits = [r for r in res if r["status"] == "x402-record"]
     print(f"\n  PUBLISH AN _x402 RECORD: {len(hits)}")
     for h in hits[:20]:
         print(f"   {h['name']}  {h['records'][:1]}")
     if not hits:
         print("   none, and the controls above are why that zero is reportable")
 
-    OUT.write_text(json.dumps({"queried": len(targets), "controls": "passed",
-                               "counts": dict(c), "hits": hits}, indent=1), encoding="utf-8")
+    # observedAt: this file previously carried no date, which is the exact stamping failure
+    # the #2979 thread is about -- two counts of a moving surface are not comparable without it.
+    import datetime as _dt
+    OUT.write_text(json.dumps({"observedAt": _dt.datetime.now(_dt.timezone.utc)
+                                   .strftime("%Y-%m-%dT%H:%M:%SZ"),
+                               "queried": len(targets), "controls": "passed",
+                               "counts": dict(c), "hits": hits,
+                               "incidental": [r for r in res
+                                              if r["status"] == "incidental-txt"]},
+                              indent=1), encoding="utf-8")
     print(f"\n  wrote {OUT.name}")
     return 0
 

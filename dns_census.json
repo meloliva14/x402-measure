@@ -1,30 +1,131 @@
 {
+ "observedAt": "2026-08-23T13:16:04Z",
  "queried": 1971,
  "controls": "passed",
  "counts": {
-  "no-record": 1968,
-  "HAS_RECORD": 3
+  "no-record": 1958,
+  "incidental-txt": 6,
+  "x402-record": 7
  },
  "hits": [
   {
    "name": "api.posttosource.com",
-   "status": "HAS_RECORD",
+   "status": "x402-record",
    "records": [
     "v=x4021;descriptor=api;url=https://api.posttosource.com/.well-known/x402"
+   ],
+   "grades": [
+    "near-miss-version"
+   ]
+  },
+  {
+   "name": "api.sirenic.eu",
+   "status": "x402-record",
+   "records": [
+    "v=x402-1; wk=https://api.sirenic.eu/.well-known/x402; k=resource-server; net=eip155:8453; scheme=exact"
+   ],
+   "grades": [
+    "conforming-version"
    ]
   },
   {
    "name": "api.telemost.io",
-   "status": "HAS_RECORD",
+   "status": "x402-record",
    "records": [
     "v=x4021;descriptor=api;url=https://api.telemost.io/.well-known/x402"
+   ],
+   "grades": [
+    "near-miss-version"
+   ]
+  },
+  {
+   "name": "auor.io",
+   "status": "x402-record",
+   "records": [
+    "https://api.auor.io/.well-known/x402"
+   ],
+   "grades": [
+    "no-version-token"
    ]
   },
   {
    "name": "posttosource.com",
-   "status": "HAS_RECORD",
+   "status": "x402-record",
    "records": [
     "v=x4021;descriptor=api;url=https://api.posttosource.com/.well-known/x402"
+   ],
+   "grades": [
+    "near-miss-version"
+   ]
+  },
+  {
+   "name": "sirenic.eu",
+   "status": "x402-record",
+   "records": [
+    "v=x402-1; wk=https://api.sirenic.eu/.well-known/x402; k=resource-server; net=eip155:8453; scheme=exact"
+   ],
+   "grades": [
+    "conforming-version"
+   ]
+  },
+  {
+   "name": "vibesprings.net",
+   "status": "x402-record",
+   "records": [
+    "x402-manifest=https://vibesprings.net/.well-known/x402.json"
+   ],
+   "grades": [
+    "no-version-token"
+   ]
+  }
+ ],
+ "incidental": [
+  {
+   "name": "acu.run",
+   "status": "incidental-txt",
+   "records": [
+    "v=spf1 include:spf.efwd.registrar-servers.com ~all"
+   ]
+  },
+  {
+   "name": "canopy.finance",
+   "status": "incidental-txt",
+   "records": [
+    "afternic-verification-aGHTsEA2nLa7KRqzmJySAx",
+    "95b3a950-315c-45b8-937a-b865ebeb043a"
+   ]
+  },
+  {
+   "name": "clashofcoins.com",
+   "status": "incidental-txt",
+   "records": [
+    "google-site-verification=EbixDOQqQB-KFP_P_sXTuQXxbULzEgIlvvxCzZYn4_Y",
+    "google-site-verification=hhNk3Tm8NEdQchzK0EIfSYf-f7Cu71EZpvScFh_Seiw",
+    "v=spf1 include:spf.privateemail.com ~all"
+   ]
+  },
+  {
+   "name": "coinbase.com",
+   "status": "incidental-txt",
+   "records": [
+    "v=spf1 -all"
+   ]
+  },
+  {
+   "name": "sentedge.ai",
+   "status": "incidental-txt",
+   "records": [
+    "zoho-verification=zb68576881.zmverify.zoho.com",
+    "google-site-verification=61iu26pYRQ6D3M5K2g0sKGphGbbEoDEPYH5ZgCFxZjU",
+    "v=spf1 include:zohomail.com ~all"
+   ]
+  },
+  {
+   "name": "smartmoney.market",
+   "status": "incidental-txt",
+   "records": [
+    "v=spf1 a:replikant2007.thinline.cz include:spf.spolehlive-servery.cz include:spf.cesky-hosting.cz -all",
+    "google-site-verification=zVKtuaOEbQDXvtxXrgqMyg5zMRddrV8zGZxmzS1edsU"
    ]
   }
  ]
