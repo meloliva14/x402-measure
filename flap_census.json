@@ -1,0 +1,442 @@
+{
+  "schema": "x402-measure/flap-census/1",
+  "series": {
+    "first": "2026-08-08",
+    "last": "2026-08-23",
+    "days": 16
+  },
+  "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
+  "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
+  "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
+  "flap_events": 45,
+  "distinct_hosts": 37,
+  "false_transitions_minted": 90,
+  "worst_day": {
+    "date": "2026-08-10",
+    "events": 23
+  },
+  "per_window": [
+    {
+      "window": "2026-08-08->2026-08-09",
+      "raw": 14,
+      "from_detected_flap": 1,
+      "involving_unreachable": 10,
+      "excluding_unreachable": 4
+    },
+    {
+      "window": "2026-08-09->2026-08-10",
+      "raw": 32,
+      "from_detected_flap": 24,
+      "involving_unreachable": 26,
+      "excluding_unreachable": 6
+    },
+    {
+      "window": "2026-08-10->2026-08-11",
+      "raw": 31,
+      "from_detected_flap": 27,
+      "involving_unreachable": 29,
+      "excluding_unreachable": 2
+    },
+    {
+      "window": "2026-08-11->2026-08-12",
+      "raw": 18,
+      "from_detected_flap": 7,
+      "involving_unreachable": 7,
+      "excluding_unreachable": 11
+    },
+    {
+      "window": "2026-08-12->2026-08-13",
+      "raw": 11,
+      "from_detected_flap": 4,
+      "involving_unreachable": 5,
+      "excluding_unreachable": 6
+    },
+    {
+      "window": "2026-08-13->2026-08-14",
+      "raw": 6,
+      "from_detected_flap": 6,
+      "involving_unreachable": 6,
+      "excluding_unreachable": 0
+    },
+    {
+      "window": "2026-08-14->2026-08-15",
+      "raw": 13,
+      "from_detected_flap": 6,
+      "involving_unreachable": 8,
+      "excluding_unreachable": 5
+    },
+    {
+      "window": "2026-08-15->2026-08-16",
+      "raw": 9,
+      "from_detected_flap": 3,
+      "involving_unreachable": 4,
+      "excluding_unreachable": 5
+    },
+    {
+      "window": "2026-08-16->2026-08-17",
+      "raw": 11,
+      "from_detected_flap": 2,
+      "involving_unreachable": 5,
+      "excluding_unreachable": 6
+    },
+    {
+      "window": "2026-08-17->2026-08-18",
+      "raw": 10,
+      "from_detected_flap": 1,
+      "involving_unreachable": 3,
+      "excluding_unreachable": 7
+    },
+    {
+      "window": "2026-08-18->2026-08-19",
+      "raw": 55,
+      "from_detected_flap": 1,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 53
+    },
+    {
+      "window": "2026-08-19->2026-08-20",
+      "raw": 6,
+      "from_detected_flap": 2,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 4
+    },
+    {
+      "window": "2026-08-20->2026-08-21",
+      "raw": 5,
+      "from_detected_flap": 2,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 3
+    },
+    {
+      "window": "2026-08-21->2026-08-22",
+      "raw": 5,
+      "from_detected_flap": 2,
+      "involving_unreachable": 3,
+      "excluding_unreachable": 2
+    },
+    {
+      "window": "2026-08-22->2026-08-23",
+      "raw": 8,
+      "from_detected_flap": 2,
+      "involving_unreachable": 3,
+      "excluding_unreachable": 5
+    }
+  ],
+  "flaps": [
+    {
+      "date": "2026-08-09",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-08-08->2026-08-09",
+      "window_out": "2026-08-09->2026-08-10"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "appstore.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "coingecko.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "defillama.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "dns.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "email-auth.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "gdelt.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "google-patents.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "google-trends.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "headers.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "hotels.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "hyperliquid-accounts.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "hyperliquid-predict.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "hyperliquid.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "imgopt.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "instagram.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "marketdata.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "perpsignals.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "places.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "unwrap.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "websearch.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "wiki.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "xmedia.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-10",
+      "host": "youtube.use.x402atlas.com",
+      "verdict": "OK",
+      "window_in": "2026-08-09->2026-08-10",
+      "window_out": "2026-08-10->2026-08-11"
+    },
+    {
+      "date": "2026-08-11",
+      "host": "agent-vending-machine.avm-7301.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-10->2026-08-11",
+      "window_out": "2026-08-11->2026-08-12"
+    },
+    {
+      "date": "2026-08-11",
+      "host": "api.brazilayer.com",
+      "verdict": "OK",
+      "window_in": "2026-08-10->2026-08-11",
+      "window_out": "2026-08-11->2026-08-12"
+    },
+    {
+      "date": "2026-08-11",
+      "host": "api.hookfindr.com",
+      "verdict": "OK",
+      "window_in": "2026-08-10->2026-08-11",
+      "window_out": "2026-08-11->2026-08-12"
+    },
+    {
+      "date": "2026-08-11",
+      "host": "x402.d-bis.org",
+      "verdict": "V1",
+      "window_in": "2026-08-10->2026-08-11",
+      "window_out": "2026-08-11->2026-08-12"
+    },
+    {
+      "date": "2026-08-12",
+      "host": "tollbooth-fdic-verify.sjwilliams8.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-11->2026-08-12",
+      "window_out": "2026-08-12->2026-08-13"
+    },
+    {
+      "date": "2026-08-12",
+      "host": "tollbooth-sanctions-screener.sjwilliams8.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-11->2026-08-12",
+      "window_out": "2026-08-12->2026-08-13"
+    },
+    {
+      "date": "2026-08-12",
+      "host": "toolcall.click",
+      "verdict": "OK",
+      "window_in": "2026-08-11->2026-08-12",
+      "window_out": "2026-08-12->2026-08-13"
+    },
+    {
+      "date": "2026-08-13",
+      "host": "api.losbeto.xyz",
+      "verdict": "OK",
+      "window_in": "2026-08-12->2026-08-13",
+      "window_out": "2026-08-13->2026-08-14"
+    },
+    {
+      "date": "2026-08-14",
+      "host": "agent-vending-machine.avm-7301.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-13->2026-08-14",
+      "window_out": "2026-08-14->2026-08-15"
+    },
+    {
+      "date": "2026-08-14",
+      "host": "api.hookfindr.com",
+      "verdict": "OK",
+      "window_in": "2026-08-13->2026-08-14",
+      "window_out": "2026-08-14->2026-08-15"
+    },
+    {
+      "date": "2026-08-14",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-08-13->2026-08-14",
+      "window_out": "2026-08-14->2026-08-15"
+    },
+    {
+      "date": "2026-08-14",
+      "host": "madoromi.fun",
+      "verdict": "OK",
+      "window_in": "2026-08-13->2026-08-14",
+      "window_out": "2026-08-14->2026-08-15"
+    },
+    {
+      "date": "2026-08-14",
+      "host": "tollbooth-sanctions-screener.sjwilliams8.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-13->2026-08-14",
+      "window_out": "2026-08-14->2026-08-15"
+    },
+    {
+      "date": "2026-08-15",
+      "host": "brain.zugabot.ai",
+      "verdict": "OK",
+      "window_in": "2026-08-14->2026-08-15",
+      "window_out": "2026-08-15->2026-08-16"
+    },
+    {
+      "date": "2026-08-16",
+      "host": "api.brazilayer.com",
+      "verdict": "OK",
+      "window_in": "2026-08-15->2026-08-16",
+      "window_out": "2026-08-16->2026-08-17"
+    },
+    {
+      "date": "2026-08-16",
+      "host": "library.proofivy.com",
+      "verdict": "OK",
+      "window_in": "2026-08-15->2026-08-16",
+      "window_out": "2026-08-16->2026-08-17"
+    },
+    {
+      "date": "2026-08-18",
+      "host": "api.hookfindr.com",
+      "verdict": "OK",
+      "window_in": "2026-08-17->2026-08-18",
+      "window_out": "2026-08-18->2026-08-19"
+    },
+    {
+      "date": "2026-08-20",
+      "host": "api.brazilayer.com",
+      "verdict": "OK",
+      "window_in": "2026-08-19->2026-08-20",
+      "window_out": "2026-08-20->2026-08-21"
+    },
+    {
+      "date": "2026-08-20",
+      "host": "tollbooth-sanctions-screener.sjwilliams8.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-19->2026-08-20",
+      "window_out": "2026-08-20->2026-08-21"
+    },
+    {
+      "date": "2026-08-22",
+      "host": "api.craigmbrown.com",
+      "verdict": "NO_402",
+      "window_in": "2026-08-21->2026-08-22",
+      "window_out": "2026-08-22->2026-08-23"
+    },
+    {
+      "date": "2026-08-22",
+      "host": "apiwitchcraft.duckdns.org",
+      "verdict": "BLOCKED",
+      "window_in": "2026-08-21->2026-08-22",
+      "window_out": "2026-08-22->2026-08-23"
+    }
+  ]
+}
