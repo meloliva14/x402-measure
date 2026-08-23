@@ -227,7 +227,17 @@ def signed_manifest_census() -> dict:
     results: list[dict] = []
     ex = ThreadPoolExecutor(max_workers=SIGNED_WORKERS)
     try:
-        futures = [ex.submit(sm.check, h) for h in hosts]
+        def _second_chance(h):
+            # Same one-directional-bias fix as observe(): a transport failure gets one immediate
+            # retry, an answer never does, and a policy refusal ("refused" verdict) never does.
+            r = sm.check(h)
+            if r.get("verdict") == "unreachable":
+                r2 = sm.check(h)
+                r2["retried"] = True
+                return r2
+            return r
+
+        futures = [ex.submit(_second_chance, h) for h in hosts]
         try:
             for f in as_completed(futures, timeout=SIGNED_DEADLINE_S):
                 try:
@@ -269,21 +279,50 @@ def signed_manifest_census() -> dict:
     return out
 
 
+def _probe(url: str):
+    """One attempt, exceptions folded into the UNREACHABLE shape classify_both already uses."""
+    try:
+        verdict, notes, _ch, v1, v1_notes = preflight.classify_both(url)
+        return verdict, list(notes), v1, list(v1_notes)
+    except Exception as e:  # noqa: BLE001
+        return ("UNREACHABLE", [f"{type(e).__name__} during classify"],
+                "V1_NO_BODY", [f"{type(e).__name__} during classify"])
+
+
 def observe(t: dict) -> dict:
-    """One host, one fetch, both dialect verdicts.
+    """One host, both dialect verdicts, and one immediate retry when the only thing the first
+    attempt observed was a transport failure.
+
+    WHY THE RETRY EXISTS, added 2026-08-23. A failed fetch can only ever push a host TOWARD
+    UNREACHABLE, never toward OK, so transient failures inflate day-over-day churn in exactly one
+    direction. Measured on this series before the fix: five hosts across 08-16..08-23 read
+    X -> UNREACHABLE -> X, each minting two transitions that were about my network, not the host.
+    Two of them landed inside a transition count I had already published. The known_limits note
+    used to document this as a limitation; documenting a bias you can remove is not a limit, it
+    is a decision, and it was the wrong one.
+
+    THE RETRY IS FOR TRANSPORT FAILURES ONLY. A verdict that answered (OK, NO_402, V1, ...) is
+    never re-probed, because retrying answers would be a different measurement. A policy refusal
+    is never re-probed either: the fence refused once and asking again is exactly what the fence
+    exists to prevent. Every retried row says so on the row, so a reader can tell a first-try
+    verdict from a second-chance one.
 
     `verdict` is the running v2 series and its meaning has not changed. `v1` is additive, added
     2026-08-19: can the deprecated-but-installed x402-fetch 1.2.0 read the BODY. A host can be OK
     on one and unreadable on the other, which is the whole reason to record both.
     """
-    try:
-        verdict, notes, _ch, v1, v1_notes = preflight.classify_both(t["url"])
-    except Exception as e:  # noqa: BLE001
-        return {"host": t["host"], "url": t["url"], "verdict": "UNREACHABLE",
-                "notes": [f"{type(e).__name__} during classify"],
-                "v1": "V1_NO_BODY", "v1_notes": [f"{type(e).__name__} during classify"]}
-    return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": list(notes),
-            "v1": v1, "v1_notes": list(v1_notes)}
+    verdict, notes, v1, v1_notes = _probe(t["url"])
+    if verdict == "UNREACHABLE" and not any(n.startswith("refused by prober policy") for n in notes):
+        first = "; ".join(notes) or "no detail"
+        verdict, notes, v1, v1_notes = _probe(t["url"])
+        if verdict == "UNREACHABLE":
+            notes = [f"unreachable on both attempts (first: {first})"] + notes
+        else:
+            notes = [f"first attempt unreachable ({first}); answered on immediate retry"] + notes
+        return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": notes,
+                "v1": v1, "v1_notes": v1_notes, "retried": True}
+    return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": notes,
+            "v1": v1, "v1_notes": v1_notes}
 
 
 def build(date: str) -> dict:
@@ -334,9 +373,13 @@ def build(date: str) -> dict:
             "vantage": vantage(),
             "sweep_started_utc": started.isoformat(),
             "sweep_ended_utc": ended.isoformat(),
-            "method": ("preflight.classify(url) — one unauthenticated request per host, GET with a "
-                       "POST fallback. Nothing signed, nothing paid. A verdict describes what the "
-                       "endpoint served at that moment and nothing about the operator."),
+            "method": ("preflight.classify_both(url) — one unauthenticated request per host, GET "
+                       "with a POST fallback, plus one immediate retry when the only thing the "
+                       "first attempt observed was a transport failure. Nothing signed, nothing "
+                       "paid. A verdict describes what the endpoint served at that moment and "
+                       "nothing about the operator."),
+            "retry_rule": ("one immediate retry, UNREACHABLE first attempts only, never policy "
+                           "refusals, never answers; retried rows carry retried=true"),
             "method_sha256": hashlib.sha256(
                 (HERE / "preflight.py").read_bytes()).hexdigest(),
             "snapshot_script_sha256": hashlib.sha256(
@@ -350,8 +393,10 @@ def build(date: str) -> dict:
                                              or harvest.get("collected_at_utc")),
             "target_list_caveat": tmeta.get("source_caveat") or harvest.get("caveat"),
             "known_limits": [
-                "One probe per host. A host that is briefly down reads as UNREACHABLE, which is "
-                "why UNREACHABLE is recorded and never treated as a state change.",
+                "A host whose first probe fails at the transport layer gets one immediate "
+                "retry, because a failed fetch can only bias toward UNREACHABLE, never toward "
+                "OK. A host down for both attempts still reads UNREACHABLE, and UNREACHABLE is "
+                "recorded and never treated as a state change. Retried rows say so on the row.",
                 "Verdicts are point-in-time. Comparing two dates measures the pair of "
                 "observations, not an operator's intent.",
                 "The target list is itself a snapshot of a live registry and shifts between runs.",
