@@ -11,10 +11,20 @@ carrying the whole extension.
 
 So before reporting any zero, this asserts:
 
-  1. the resolver returns TXT records for a domain that definitely has them, and
+  1. the resolver returns TXT records for a domain that definitely has them,
   2. the resolver returns NXDOMAIN-ish empty for a name that definitely does not exist,
+  3. the wildcard detector fires on a zone that answers TXT at any label, and
+  4. the wildcard detector stays quiet on a zone that does not,
 
-and it refuses to print a result if either control fails.
+and it refuses to print a result if any control fails.
+
+THE CONTROL MUST ALSO RUN ON WHAT GETS COUNTED, NOT ONLY ON WHAT GETS DISCARDED. The first
+version of the wildcard check was a manual spot-check applied to the six incidental records
+being thrown away, and never to the records being kept. novadyne-hq named the defect exactly on
+#2979: a wildcard control run only on what you drop can only ever inflate. So every name that
+answers at `_x402` now also gets two garbage labels queried at the same zone, and a record is
+countable only if the garbage labels do not echo it back. A zone can carry both a wildcard and
+a genuine record; byte-comparing the answers is what separates those cases.
 
 Uses DNS-over-HTTPS so it needs no resolver library and behaves the same everywhere. Queries the
 registrable domain (`_x402.example.com`), which is what the spec's TXT pointer is defined on, and
@@ -67,6 +77,31 @@ def registrable(h):
     return ".".join(p[-2:]) if len(p) >= 2 else h
 
 
+# Fixed rather than random so the run reproduces byte-for-byte. Long enough that a
+# collision with a real label is not a serious thought.
+NONCE = "verity-wildcard-probe-c41f9a"
+
+
+def wildcard_echo(name, records):
+    """Does this zone hand the same records to a label that cannot exist?
+
+    Queries two garbage shapes at the same zone -- plain and underscore-led, since a provider
+    could special-case underscore labels. Returns (verdict, detail): verdict is one of
+    "specific" (garbage labels do not reproduce the records: countable), "wildcard-echo"
+    (a garbage label answers with the same set: NOT countable), or "indeterminate" (a garbage
+    query failed: not countable either, because unknown is not evidence).
+    """
+    want = sorted(records)
+    for probe in (f"{NONCE}.{name}", f"_{NONCE}.{name}"):
+        got, err = txt(probe)
+        if err:
+            return "indeterminate", f"garbage query failed at {probe}: {err}"
+        echoed = sorted(r for r in (got or []) if r in records)
+        if echoed == want:
+            return "wildcard-echo", f"{probe} answers with the same record set"
+    return "specific", "garbage labels at the same zone do not reproduce the records"
+
+
 def controls_pass():
     """Refuse to report a zero unless the resolver demonstrably works in both directions."""
     pos, err1 = txt("google.com")
@@ -80,8 +115,27 @@ def controls_pass():
     if neg:
         print(f"  CONTROL FAILED: a nonexistent name returned records: {neg[:1]}")
         return False
-    print(f"  controls pass: google.com TXT -> {len(pos)} records, "
-          f"nonexistent name -> 0 records")
+    # Detector positive: coinbase.com wildcards TXT (the census's own incidental example),
+    # so the garbage probe MUST see an answer there. Detector negative: google.com does not,
+    # so the same probe MUST stay quiet. Without both, "specific" is a reading of a dead
+    # instrument. If coinbase drops its wildcard this control fails loudly and the fix is to
+    # point it at another zone known to wildcard -- that is a maintenance cost taken on
+    # purpose, because an unexercised detector is the exact defect this file just had.
+    det_pos, err3 = txt(f"{NONCE}.coinbase.com")
+    if err3 or not det_pos:
+        print(f"  CONTROL FAILED: wildcard detector saw nothing at a zone that wildcards "
+              f"TXT ({err3 or 'empty answer'})")
+        return False
+    det_neg, err4 = txt(f"{NONCE}.google.com")
+    if err4:
+        print(f"  CONTROL FAILED: detector-negative query errored ({err4})")
+        return False
+    if det_neg:
+        print(f"  CONTROL FAILED: google.com answered TXT at a garbage label: {det_neg[:1]}")
+        return False
+    print(f"  controls pass: google.com TXT -> {len(pos)} records, nonexistent name -> 0, "
+          f"garbage label at coinbase.com -> {len(det_pos)} (wildcard detector fires), "
+          f"garbage label at google.com -> 0 (detector stays quiet)")
     return True
 
 
@@ -114,8 +168,15 @@ def check(name):
     # hygiene, not an attempt at this convention, and counting it as one would be a new lie.
     intent = [r for r in recs if "x402" in r.lower()]
     if intent:
+        verdict, detail = wildcard_echo(name, intent)
+        if verdict != "specific":
+            # Occupied label, but the zone answers the same thing at a label nobody created.
+            # That is DNS configuration, not a publication, and counting it would be the
+            # inflation this control exists to catch.
+            return {"name": name, "status": verdict, "records": intent,
+                    "wildcard_control": detail}
         return {"name": name, "status": "x402-record", "records": intent,
-                "grades": [grade(r) for r in intent]}
+                "grades": [grade(r) for r in intent], "wildcard_control": detail}
     if recs:
         return {"name": name, "status": "incidental-txt", "records": recs[:3]}
     return {"name": name, "status": "no-record"}
@@ -161,6 +222,10 @@ def main(argv):
     OUT.write_text(json.dumps({"observedAt": _dt.datetime.now(_dt.timezone.utc)
                                    .strftime("%Y-%m-%dT%H:%M:%SZ"),
                                "queried": len(targets), "controls": "passed",
+                               "wildcard_rule": ("countable = subject minus garbage: every hit "
+                                                 "re-queried at two garbage labels on the same "
+                                                 "zone; an echoed record set reads "
+                                                 "wildcard-echo and is not counted"),
                                "counts": dict(c), "hits": hits,
                                "incidental": [r for r in res
                                               if r["status"] == "incidental-txt"]},

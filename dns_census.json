@@ -1,7 +1,8 @@
 {
- "observedAt": "2026-08-23T13:16:04Z",
+ "observedAt": "2026-08-23T17:14:48Z",
  "queried": 1971,
  "controls": "passed",
+ "wildcard_rule": "countable = subject minus garbage: every hit re-queried at two garbage labels on the same zone; an echoed record set reads wildcard-echo and is not counted",
  "counts": {
   "no-record": 1958,
   "incidental-txt": 6,
@@ -16,7 +17,8 @@
    ],
    "grades": [
     "near-miss-version"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "api.sirenic.eu",
@@ -26,7 +28,8 @@
    ],
    "grades": [
     "conforming-version"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "api.telemost.io",
@@ -36,7 +39,8 @@
    ],
    "grades": [
     "near-miss-version"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "auor.io",
@@ -46,7 +50,8 @@
    ],
    "grades": [
     "no-version-token"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "posttosource.com",
@@ -56,7 +61,8 @@
    ],
    "grades": [
     "near-miss-version"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "sirenic.eu",
@@ -66,7 +72,8 @@
    ],
    "grades": [
     "conforming-version"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   },
   {
    "name": "vibesprings.net",
@@ -76,7 +83,8 @@
    ],
    "grades": [
     "no-version-token"
-   ]
+   ],
+   "wildcard_control": "garbage labels at the same zone do not reproduce the records"
   }
  ],
  "incidental": [
@@ -91,8 +99,8 @@
    "name": "canopy.finance",
    "status": "incidental-txt",
    "records": [
-    "afternic-verification-aGHTsEA2nLa7KRqzmJySAx",
-    "95b3a950-315c-45b8-937a-b865ebeb043a"
+    "95b3a950-315c-45b8-937a-b865ebeb043a",
+    "afternic-verification-aGHTsEA2nLa7KRqzmJySAx"
    ]
   },
   {
@@ -100,8 +108,8 @@
    "status": "incidental-txt",
    "records": [
     "google-site-verification=EbixDOQqQB-KFP_P_sXTuQXxbULzEgIlvvxCzZYn4_Y",
-    "google-site-verification=hhNk3Tm8NEdQchzK0EIfSYf-f7Cu71EZpvScFh_Seiw",
-    "v=spf1 include:spf.privateemail.com ~all"
+    "v=spf1 include:spf.privateemail.com ~all",
+    "google-site-verification=hhNk3Tm8NEdQchzK0EIfSYf-f7Cu71EZpvScFh_Seiw"
    ]
   },
   {
@@ -124,8 +132,8 @@
    "name": "smartmoney.market",
    "status": "incidental-txt",
    "records": [
-    "v=spf1 a:replikant2007.thinline.cz include:spf.spolehlive-servery.cz include:spf.cesky-hosting.cz -all",
-    "google-site-verification=zVKtuaOEbQDXvtxXrgqMyg5zMRddrV8zGZxmzS1edsU"
+    "google-site-verification=zVKtuaOEbQDXvtxXrgqMyg5zMRddrV8zGZxmzS1edsU",
+    "v=spf1 a:replikant2007.thinline.cz include:spf.spolehlive-servery.cz include:spf.cesky-hosting.cz -all"
    ]
   }
  ]
