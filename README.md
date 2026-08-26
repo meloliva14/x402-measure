@@ -13,8 +13,9 @@ on-chain. Python standard library only, nothing to install.
 Every figure below is dated and recomputable from files committed in this repo. None of it
 requires trusting me.
 
-**The network is in better shape than the discourse suggests.** 91.6% of payment-gated hosts
-serve a challenge a stock v2 client can actually sign. That is 1,193 of 1,302, on 2026-08-16.
+**The network is in better shape than the discourse suggests.** 91.3% of payment-gated hosts
+serve a challenge a stock v2 client can actually sign. That is 1,211 of 1,326, on 2026-08-25. It
+read 91.6% (1,193 of 1,302) on 2026-08-16, and both reproduce from the snapshots in this repo.
 
 **Nobody signs their discovery manifest.** 972 of the 1,521 hosts publish one. **Zero** serve a
 cryptographically signed one. That is checked daily now, so the number is dated rather than
@@ -44,7 +45,17 @@ excluded from any revenue measurement by hand: USDC burns run to billions, so a 
 it as a seller wallet reports the burn pile as network revenue and buries every real number
 underneath it.
 
-**The measurement is itself checkable.** Nine consecutive days as of 2026-08-16, no gaps. Each
+**The instrument had a one-directional bias, and that is a finding about instruments and not
+just about this one.** A fetch that fails can only move a host toward `UNREACHABLE`, never toward
+`OK`, so transport failure invents state transitions and never hides them. A host reading
+`OK, UNREACHABLE, OK` never changed state, but a day-over-day diff mints two transitions from it
+and drops them in two different windows. That put two wrong numbers into figures already published
+on a spec thread. Counted by script rather than by hand: **46 flap events across 38 hosts in 18
+days, 92 recorded transitions that are not state changes**, and 23 of the 46 land on a single day,
+all under one parent domain. Run `python flap_census.py` to reproduce it. The sweep now retries a
+transport failure once, never an answer and never a policy refusal, and retried rows say so.
+
+**The measurement is itself checkable.** Eighteen consecutive days as of 2026-08-25, no gaps. Each
 day's observation is Ed25519-signed and append-only, and verifies against a published key with a
 short, dependency-free verifier:
 
@@ -158,7 +169,10 @@ testnet produces signatures that fail verification with no useful error.
 - **One request per host.** These scripts are not a crawler.
 - **Nothing is signed, and no payment is ever sent.** Every check runs against the free
   402 an endpoint already returns.
-- **A timeout is recorded `UNREACHABLE`, never "broken."**
+- **A timeout is recorded `UNREACHABLE`, never "broken."** One retry is attempted first. That
+  retry exists because the error is one-directional: a failed fetch can only push a verdict toward
+  `UNREACHABLE`, so without it the series overstates churn in exactly one direction. `flap_census.py`
+  measures what is left, and the count it reports is a lower bound.
 - **`demand_sweep.py` splits any block range the RPC refuses rather than skipping it.** A
   silently dropped range would understate payments and overstate "never paid" — the exact
   direction this must not err in.
