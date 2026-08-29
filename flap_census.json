@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-08-23",
-    "days": 16
+    "last": "2026-08-29",
+    "days": 22
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 45,
-  "distinct_hosts": 37,
-  "false_transitions_minted": 90,
+  "flap_events": 52,
+  "distinct_hosts": 41,
+  "false_transitions_minted": 104,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -120,6 +120,48 @@
       "from_detected_flap": 2,
       "involving_unreachable": 3,
       "excluding_unreachable": 5
+    },
+    {
+      "window": "2026-08-23->2026-08-24",
+      "raw": 8,
+      "from_detected_flap": 1,
+      "involving_unreachable": 6,
+      "excluding_unreachable": 2
+    },
+    {
+      "window": "2026-08-24->2026-08-25",
+      "raw": 20,
+      "from_detected_flap": 3,
+      "involving_unreachable": 10,
+      "excluding_unreachable": 10
+    },
+    {
+      "window": "2026-08-25->2026-08-26",
+      "raw": 12,
+      "from_detected_flap": 4,
+      "involving_unreachable": 6,
+      "excluding_unreachable": 6
+    },
+    {
+      "window": "2026-08-26->2026-08-27",
+      "raw": 11,
+      "from_detected_flap": 3,
+      "involving_unreachable": 6,
+      "excluding_unreachable": 5
+    },
+    {
+      "window": "2026-08-27->2026-08-28",
+      "raw": 14,
+      "from_detected_flap": 2,
+      "involving_unreachable": 3,
+      "excluding_unreachable": 11
+    },
+    {
+      "window": "2026-08-28->2026-08-29",
+      "raw": 14,
+      "from_detected_flap": 1,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 12
     }
   ],
   "flaps": [
@@ -437,6 +479,55 @@
       "verdict": "BLOCKED",
       "window_in": "2026-08-21->2026-08-22",
       "window_out": "2026-08-22->2026-08-23"
+    },
+    {
+      "date": "2026-08-24",
+      "host": "tollbooth-hello-testnet.sjwilliams8.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-23->2026-08-24",
+      "window_out": "2026-08-24->2026-08-25"
+    },
+    {
+      "date": "2026-08-25",
+      "host": "agent-vending-machine.avm-7301.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-24->2026-08-25",
+      "window_out": "2026-08-25->2026-08-26"
+    },
+    {
+      "date": "2026-08-25",
+      "host": "nft-alpha-x402.fly.dev",
+      "verdict": "OK",
+      "window_in": "2026-08-24->2026-08-25",
+      "window_out": "2026-08-25->2026-08-26"
+    },
+    {
+      "date": "2026-08-26",
+      "host": "mcp.barker.money",
+      "verdict": "OK",
+      "window_in": "2026-08-25->2026-08-26",
+      "window_out": "2026-08-26->2026-08-27"
+    },
+    {
+      "date": "2026-08-26",
+      "host": "pay.alephant.io",
+      "verdict": "NO_402",
+      "window_in": "2026-08-25->2026-08-26",
+      "window_out": "2026-08-26->2026-08-27"
+    },
+    {
+      "date": "2026-08-27",
+      "host": "api.brazilayer.com",
+      "verdict": "OK",
+      "window_in": "2026-08-26->2026-08-27",
+      "window_out": "2026-08-27->2026-08-28"
+    },
+    {
+      "date": "2026-08-28",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-08-27->2026-08-28",
+      "window_out": "2026-08-28->2026-08-29"
     }
   ]
 }

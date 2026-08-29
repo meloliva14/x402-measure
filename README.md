@@ -50,9 +50,10 @@ just about this one.** A fetch that fails can only move a host toward `UNREACHAB
 `OK`, so transport failure invents state transitions and never hides them. A host reading
 `OK, UNREACHABLE, OK` never changed state, but a day-over-day diff mints two transitions from it
 and drops them in two different windows. That put two wrong numbers into figures already published
-on a spec thread. Counted by script rather than by hand: **46 flap events across 38 hosts in 18
-days, 92 recorded transitions that are not state changes**, and 23 of the 46 land on a single day,
-all under one parent domain. Run `python flap_census.py` to reproduce it. The sweep now retries a
+on a spec thread. Counted by script rather than by hand, as of 2026-08-29: **52 flap
+events across 41 hosts in 22 days, 104 recorded transitions that are not state changes**, and 23
+of the 52 land on a single day, all under one parent domain. The committed `flap_census.json` is
+the artifact behind those numbers; run `python flap_census.py` to recount it from the snapshots. The sweep now retries a
 transport failure once, never an answer and never a policy refusal, and retried rows say so.
 
 **67 live hosts absent from the discovery index** (klymax402.com 50, x402.press 11, gedx402.com 6,
@@ -62,7 +63,7 @@ lives in `thirdparty/`, so the diff no longer depends on an editable comment els
 `python verify_67.py` to reproduce every row, including the limit that runs the other way: 23
 hosts the index lists that the frozen cohort cannot see.
 
-**The measurement is itself checkable.** Eighteen consecutive days as of 2026-08-25, no gaps. Each
+**The measurement is itself checkable.** Twenty-two consecutive days as of 2026-08-29, no gaps. Each
 day's observation is Ed25519-signed and append-only, and verifies against a published key with a
 short, dependency-free verifier:
 
