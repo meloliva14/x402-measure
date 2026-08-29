@@ -55,6 +55,13 @@ days, 92 recorded transitions that are not state changes**, and 23 of the 46 lan
 all under one parent domain. Run `python flap_census.py` to reproduce it. The sweep now retries a
 transport failure once, never an answer and never a policy refusal, and retried rows say so.
 
+**67 live hosts absent from the discovery index** (klymax402.com 50, x402.press 11, gedx402.com 6,
+each answering a payable 402) is derived by diffing an archived copy of the index's own per-host
+listing against the pinned cohort. The listing, with full provenance and a hash of its source,
+lives in `thirdparty/`, so the diff no longer depends on an editable comment elsewhere. Run
+`python verify_67.py` to reproduce every row, including the limit that runs the other way: 23
+hosts the index lists that the frozen cohort cannot see.
+
 **The measurement is itself checkable.** Eighteen consecutive days as of 2026-08-25, no gaps. Each
 day's observation is Ed25519-signed and append-only, and verifies against a published key with a
 short, dependency-free verifier:
