@@ -1,0 +1,13 @@
+{
+ "what": "Public Suffix List, archived so the ICANN-vs-private-section distinction behind the Rule 1 correction (PR #2979) is reproducible against a fixed list.",
+ "source": "https://publicsuffix.org/list/public_suffix_list.dat",
+ "retrieved_at": "2026-08-29T05:20Z",
+ "sha256": "14ef61b1c212f701f3636c1d01ab9254daf841f57eb6433bcbbef56c726ca656",
+ "why": "Rule 1 as proposed says 'eTLD+1 via the PSL'. Against the full list the 32 changes collapse to 29 units (9%); against the ICANN section only, 23 (28%). Platform suffixes (up.railway.app, workers.dev, vercel.app) are private-section entries.",
+ "figures": {
+  "changes": 32,
+  "units_icann_only": 23,
+  "units_full_psl": 29,
+  "units_last_two_labels": 23
+ }
+}
