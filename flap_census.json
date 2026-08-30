@@ -2,8 +2,8 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-08-29",
-    "days": 22
+    "last": "2026-08-30",
+    "days": 23
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
@@ -162,6 +162,13 @@
       "from_detected_flap": 1,
       "involving_unreachable": 2,
       "excluding_unreachable": 12
+    },
+    {
+      "window": "2026-08-29->2026-08-30",
+      "raw": 8,
+      "from_detected_flap": 0,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 6
     }
   ],
   "flaps": [
