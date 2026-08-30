@@ -72,6 +72,20 @@ jobs:
       - name: Publish digest lines and the day-digest
         run: python digests.py | tee -a "$GITHUB_STEP_SUMMARY"
 
+      # Derived entirely from snapshots/, so it goes stale the moment a day is added and nothing
+      # regenerates it. On 2026-08-29 the repo held three different numbers for one figure: the
+      # committed JSON was frozen at 16 days, the README quoted 18, and a fresh run of the script
+      # produced 22. In a repo whose whole claim is that the numbers are checkable, that is the
+      # worst kind of defect, because each number looked sourced.
+      #
+      # continue-on-error is deliberate. The observation is the irreplaceable artifact; this is a
+      # derived statistic that can be recomputed from the series at any time. A failure here must
+      # never cost a day. A syntax error cannot reach this step, because compileall above already
+      # fails the job for that.
+      - name: Regenerate the flap census
+        continue-on-error: true
+        run: python flap_census.py | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Commit
         run: |
           if [ -z "$(git status --porcelain snapshots/ digests.txt)" ]; then
@@ -80,7 +94,7 @@ jobs:
           fi
           git config user.name  "verity-index[bot]"
           git config user.email "veritylayer@gmail.com"
-          git add snapshots/ digests.txt
+          git add snapshots/ digests.txt flap_census.json
           DAY=$(git diff --cached --name-only | sed -n 's#snapshots/\([0-9-]*\)/.*#\1#p' | head -1)
           git commit -m "Observation ${DAY}" -m "Recorded automatically. Verify with: python verify_snapshot.py ${DAY}"
           # The scheduler and a human can both land commits; rebase rather than fail the day.
