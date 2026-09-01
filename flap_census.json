@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-08-31",
-    "days": 24
+    "last": "2026-09-01",
+    "days": 25
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 53,
-  "distinct_hosts": 42,
-  "false_transitions_minted": 106,
+  "flap_events": 59,
+  "distinct_hosts": 47,
+  "false_transitions_minted": 118,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -173,9 +173,16 @@
     {
       "window": "2026-08-30->2026-08-31",
       "raw": 15,
-      "from_detected_flap": 1,
+      "from_detected_flap": 7,
       "involving_unreachable": 10,
       "excluding_unreachable": 5
+    },
+    {
+      "window": "2026-08-31->2026-09-01",
+      "raw": 15,
+      "from_detected_flap": 6,
+      "involving_unreachable": 8,
+      "excluding_unreachable": 7
     }
   ],
   "flaps": [
@@ -549,6 +556,48 @@
       "verdict": "OK",
       "window_in": "2026-08-29->2026-08-30",
       "window_out": "2026-08-30->2026-08-31"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "health.memoryapi.org",
+      "verdict": "OK",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "market.memoryapi.org",
+      "verdict": "OK",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "monitor.memoryapi.org",
+      "verdict": "OK",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "predict.memoryapi.org",
+      "verdict": "OK",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "staging.miven.dev",
+      "verdict": "NO_402",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-08-31",
+      "host": "x402.d-bis.org",
+      "verdict": "V1",
+      "window_in": "2026-08-30->2026-08-31",
+      "window_out": "2026-08-31->2026-09-01"
     }
   ]
 }
