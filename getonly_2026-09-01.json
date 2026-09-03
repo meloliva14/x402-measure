@@ -1,0 +1,1445 @@
+{
+ "snapshot": "2026-09-01",
+ "probed": 1312,
+ "got402": 944,
+ "non402": [
+  {
+   "host": "401-chi.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "402utils.com",
+   "status": 404
+  },
+  {
+   "host": "action402.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "address.agentic-jp.com",
+   "status": 405
+  },
+  {
+   "host": "aeonos.basechainlabs.com",
+   "status": 200
+  },
+  {
+   "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "status": 405
+  },
+  {
+   "host": "agent-budget-guard.onrender.com",
+   "status": 405
+  },
+  {
+   "host": "agent-card-validator-mcp.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "agent-id-x402-production.up.railway.app",
+   "status": 405
+  },
+  {
+   "host": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "status": 405
+  },
+  {
+   "host": "agent-offers-api-replitzip.replit.app",
+   "status": 404
+  },
+  {
+   "host": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "status": 405
+  },
+  {
+   "host": "agent-paycheck.onrender.com",
+   "status": 404
+  },
+  {
+   "host": "agent-payment-error-corpus.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "status": 405
+  },
+  {
+   "host": "agent-vending-machine.avm-7301.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "agent.soliduscapital.io",
+   "status": 404
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "agentbodega.store",
+   "status": 405
+  },
+  {
+   "host": "agentcash-fortune-demo-six.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "agentcash-fortune-demo3.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "agentkit0.com",
+   "status": 404
+  },
+  {
+   "host": "agentproof-murex.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "agentres.dev",
+   "status": 405
+  },
+  {
+   "host": "agents.allium.so",
+   "status": 401
+  },
+  {
+   "host": "agents.datalegion.ai",
+   "status": 404
+  },
+  {
+   "host": "agents.driftflight.com",
+   "status": 404
+  },
+  {
+   "host": "agents.freederia.com",
+   "status": 404
+  },
+  {
+   "host": "agents.sayerandstone.com",
+   "status": 404
+  },
+  {
+   "host": "agents.withzero.xyz",
+   "status": 404
+  },
+  {
+   "host": "agentspec-one.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "status": 503
+  },
+  {
+   "host": "agenttoll.dev",
+   "status": 200
+  },
+  {
+   "host": "ai-agent-payment-safety-stack.onrender.com",
+   "status": 405
+  },
+  {
+   "host": "aicomglobal.com",
+   "status": 200
+  },
+  {
+   "host": "anicca-x402-discovery-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "api-production-8785.up.railway.app",
+   "status": 200
+  },
+  {
+   "host": "api.402.coffee",
+   "status": 200
+  },
+  {
+   "host": "api.agentphone.ai",
+   "status": 404
+  },
+  {
+   "host": "api.agentwonderland.com",
+   "status": 404
+  },
+  {
+   "host": "api.aiapi.ch",
+   "status": 404
+  },
+  {
+   "host": "api.aidress.ai",
+   "status": 404
+  },
+  {
+   "host": "api.apify.com",
+   "status": 401
+  },
+  {
+   "host": "api.arkm.com",
+   "status": 405
+  },
+  {
+   "host": "api.auor.io",
+   "status": 404
+  },
+  {
+   "host": "api.boonprotocol.com",
+   "status": 404
+  },
+  {
+   "host": "api.businesschanges.dev",
+   "status": 404
+  },
+  {
+   "host": "api.clawfetch.ai",
+   "status": 404
+  },
+  {
+   "host": "api.curb.numetal.xyz",
+   "status": 404
+  },
+  {
+   "host": "api.doc2json.de",
+   "status": 405
+  },
+  {
+   "host": "api.exa.ai",
+   "status": 404
+  },
+  {
+   "host": "api.foreverbetter.xyz",
+   "status": 401
+  },
+  {
+   "host": "api.getanyapi.com",
+   "status": 401
+  },
+  {
+   "host": "api.getplexa.com",
+   "status": 405
+  },
+  {
+   "host": "api.gmfarcaster.com",
+   "status": 405
+  },
+  {
+   "host": "api.immuta.app",
+   "status": 405
+  },
+  {
+   "host": "api.influship.com",
+   "status": 404
+  },
+  {
+   "host": "api.ishtar.numetal.xyz",
+   "status": 403
+  },
+  {
+   "host": "api.linkedpanda.com",
+   "status": 404
+  },
+  {
+   "host": "api.loyalspark.online",
+   "status": 404
+  },
+  {
+   "host": "api.molty.cash",
+   "status": 200
+  },
+  {
+   "host": "api.munition.io",
+   "status": 404
+  },
+  {
+   "host": "api.nameintel.io",
+   "status": 404
+  },
+  {
+   "host": "api.nativebtc.org",
+   "status": 404
+  },
+  {
+   "host": "api.ozdreamtools.de",
+   "status": 405
+  },
+  {
+   "host": "api.palmai.tech",
+   "status": 404
+  },
+  {
+   "host": "api.paysponge.com",
+   "status": 404
+  },
+  {
+   "host": "api.posttosource.com",
+   "status": 200
+  },
+  {
+   "host": "api.qonoro.ai",
+   "status": 405
+  },
+  {
+   "host": "api.relaystation.ai",
+   "status": 401
+  },
+  {
+   "host": "api.remix.live",
+   "status": 404
+  },
+  {
+   "host": "api.run402.com",
+   "status": 404
+  },
+  {
+   "host": "api.scoop.sundaebar.ai",
+   "status": 404
+  },
+  {
+   "host": "api.solenrich.com",
+   "status": 404
+  },
+  {
+   "host": "api.sumvid.app",
+   "status": 405
+  },
+  {
+   "host": "api.suverse.io",
+   "status": 405
+  },
+  {
+   "host": "api.svgsmith.dev",
+   "status": 405
+  },
+  {
+   "host": "api.syndicatelinks.co",
+   "status": 401
+  },
+  {
+   "host": "api.syntaxrate.com",
+   "status": 405
+  },
+  {
+   "host": "api.terradeed.co.uk",
+   "status": 405
+  },
+  {
+   "host": "api.utilia.ink",
+   "status": 405
+  },
+  {
+   "host": "api.veritylayer.dev",
+   "status": 405
+  },
+  {
+   "host": "api.vevang.com",
+   "status": 405
+  },
+  {
+   "host": "api.writer.place",
+   "status": 404
+  },
+  {
+   "host": "api.x402dataapi.com",
+   "status": 404
+  },
+  {
+   "host": "api.xona-agent.com",
+   "status": 404
+  },
+  {
+   "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "app-443.hdgregory.com",
+   "status": 405
+  },
+  {
+   "host": "app-446.hdgregory.com",
+   "status": 405
+  },
+  {
+   "host": "app.heinrichstech.com",
+   "status": 403
+  },
+  {
+   "host": "app.wellnizz.com",
+   "status": 401
+  },
+  {
+   "host": "asistent-crypto.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "atq6wtkp6k.execute-api.us-east-1.amazonaws.com",
+   "status": 405
+  },
+  {
+   "host": "audiobook-api-beta.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "aura-revenue.helionixlabs.com",
+   "status": 403
+  },
+  {
+   "host": "autonomy-api-network.onrender.com",
+   "status": 404
+  },
+  {
+   "host": "aviation.x402.press",
+   "status": 405
+  },
+  {
+   "host": "aviationapis.com",
+   "status": 404
+  },
+  {
+   "host": "billitright.co",
+   "status": 405
+  },
+  {
+   "host": "bittensorman.xyz",
+   "status": 404
+  },
+  {
+   "host": "bizintel-api.hahavoid0.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "book-bot.app",
+   "status": 405
+  },
+  {
+   "host": "bundle-maker.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "cc0.company",
+   "status": 405
+  },
+  {
+   "host": "cdo-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "chatrip.app",
+   "status": 405
+  },
+  {
+   "host": "chess402.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "chrombot-x402.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "claudelines.com",
+   "status": 404
+  },
+  {
+   "host": "cnvrt.ing",
+   "status": 404
+  },
+  {
+   "host": "codepulse-api.hahavoid0.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
+   "status": 405
+  },
+  {
+   "host": "concordancehq.duckdns.org",
+   "status": 405
+  },
+  {
+   "host": "convert.bip-rep.com",
+   "status": 200
+  },
+  {
+   "host": "convrgent.ai",
+   "status": 200
+  },
+  {
+   "host": "cron.bip-rep.com",
+   "status": 200
+  },
+  {
+   "host": "deal-verdict-api-production.up.railway.app",
+   "status": 405
+  },
+  {
+   "host": "decipherranker.com",
+   "status": 405
+  },
+  {
+   "host": "deepgram.x402.paysponge.com",
+   "status": 404
+  },
+  {
+   "host": "delta.rursus.app",
+   "status": 404
+  },
+  {
+   "host": "demo.aiapi.ch",
+   "status": 404
+  },
+  {
+   "host": "deploy.acu.run",
+   "status": 404
+  },
+  {
+   "host": "depscout.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "dicta-notes.com",
+   "status": 405
+  },
+  {
+   "host": "dlf-gateway.agentlabel.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "docparse-x402.f3rnandonhan.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "donate.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "eagle.quickai.build",
+   "status": 404
+  },
+  {
+   "host": "earth.x402.press",
+   "status": 405
+  },
+  {
+   "host": "eleven.tokens.fun",
+   "status": 404
+  },
+  {
+   "host": "emoji.today",
+   "status": 405
+  },
+  {
+   "host": "energybilltoolkit.co.uk",
+   "status": 405
+  },
+  {
+   "host": "enrichx402.com",
+   "status": 405
+  },
+  {
+   "host": "entertainment.x402.press",
+   "status": 405
+  },
+  {
+   "host": "entropy.rip",
+   "status": 404
+  },
+  {
+   "host": "execbox.xyz",
+   "status": 404
+  },
+  {
+   "host": "extract.vevang.com",
+   "status": 405
+  },
+  {
+   "host": "files.camelai.io",
+   "status": 200
+  },
+  {
+   "host": "flutter.bip-rep.com",
+   "status": 200
+  },
+  {
+   "host": "forecast.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "fortune.fulinlabs.com",
+   "status": 405
+  },
+  {
+   "host": "furigana.agentic-jp.com",
+   "status": 405
+  },
+  {
+   "host": "gamemaxxing.baes.so",
+   "status": 405
+  },
+  {
+   "host": "gateway.apiosk.com",
+   "status": 405
+  },
+  {
+   "host": "gateway.drillr.ai",
+   "status": 404
+  },
+  {
+   "host": "gateway.stride20k.com",
+   "status": 405
+  },
+  {
+   "host": "geodns.iwsolutions.ca",
+   "status": 404
+  },
+  {
+   "host": "giveth.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "glim.sh",
+   "status": 404
+  },
+  {
+   "host": "graphadvocate.com",
+   "status": 405
+  },
+  {
+   "host": "h1dr4.dev",
+   "status": 404
+  },
+  {
+   "host": "halfwayapi.com",
+   "status": 404
+  },
+  {
+   "host": "holiday.agentic-jp.com",
+   "status": 405
+  },
+  {
+   "host": "imagcon.app",
+   "status": 405
+  },
+  {
+   "host": "img402.dev",
+   "status": 404
+  },
+  {
+   "host": "imgopt.use.x402atlas.com",
+   "status": 405
+  },
+  {
+   "host": "jesuschrist.sh",
+   "status": 404
+  },
+  {
+   "host": "kari.mayim-mayim.com",
+   "status": 200
+  },
+  {
+   "host": "kleros-ipfs-gateway.fly.dev",
+   "status": 404
+  },
+  {
+   "host": "leaderboard.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "liquidation-risk-mcp.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "lore-prod.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "madoromi.fun",
+   "status": 405
+  },
+  {
+   "host": "marine.x402.press",
+   "status": 405
+  },
+  {
+   "host": "mcp.stg.yield.xyz",
+   "status": 404
+  },
+  {
+   "host": "mcp.toolstem.com",
+   "status": 200
+  },
+  {
+   "host": "mcp.yield.xyz",
+   "status": 404
+  },
+  {
+   "host": "md.fastdb.in",
+   "status": 200
+  },
+  {
+   "host": "micropay-test-suite.netlify.app",
+   "status": 500
+  },
+  {
+   "host": "midway.lol",
+   "status": 404
+  },
+  {
+   "host": "mint.snowfro.com",
+   "status": 405
+  },
+  {
+   "host": "music.x402.press",
+   "status": 405
+  },
+  {
+   "host": "myagenticoverlord.com",
+   "status": 401
+  },
+  {
+   "host": "news-x402.com",
+   "status": 400
+  },
+  {
+   "host": "news.x402.press",
+   "status": 405
+  },
+  {
+   "host": "nft-alpha-x402.fly.dev",
+   "status": 404
+  },
+  {
+   "host": "og.bip-rep.com",
+   "status": 200
+  },
+  {
+   "host": "omniac.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "ontarioprotocol.com",
+   "status": 405
+  },
+  {
+   "host": "openrouter-production-d0d6.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "outcomescout.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "pastebin.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "paulgraham.researcher.now",
+   "status": 401
+  },
+  {
+   "host": "paysafe-agent.com",
+   "status": 404
+  },
+  {
+   "host": "persona-mcp-server.onrender.com",
+   "status": 404
+  },
+  {
+   "host": "pitchiq-mcp-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "pitfalls.doggo-company.com",
+   "status": 200
+  },
+  {
+   "host": "play.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "project-formatter-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "projectx402-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "property-risk-passport-api.lifebite-app.workers.dev",
+   "status": 405
+  },
+  {
+   "host": "proxy.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "proxy.aproxpay.com",
+   "status": 404
+  },
+  {
+   "host": "proxy.suverse.io",
+   "status": 404
+  },
+  {
+   "host": "qr.bip-rep.com",
+   "status": 200
+  },
+  {
+   "host": "quickpoll.x402.press",
+   "status": 404
+  },
+  {
+   "host": "quietstore-production.edge-7e13f.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "recoup-api-git-sweetmantech-myc-4077-32a4e4-recoupable-ad724970.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "red-breeze-8b8c.keenanbooker83.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "redlynr.com",
+   "status": 405
+  },
+  {
+   "host": "revert.wtf",
+   "status": 404
+  },
+  {
+   "host": "rpc.nodeflare.app",
+   "status": 405
+  },
+  {
+   "host": "ryansproule.com",
+   "status": 405
+  },
+  {
+   "host": "sat.ipintel.ai",
+   "status": 404
+  },
+  {
+   "host": "scan.convrgent.ai",
+   "status": 200
+  },
+  {
+   "host": "schemasure.com",
+   "status": 404
+  },
+  {
+   "host": "scorestatus.dev",
+   "status": 404
+  },
+  {
+   "host": "selun.sagitta.systems",
+   "status": 404
+  },
+  {
+   "host": "sendquotenow.com",
+   "status": 405
+  },
+  {
+   "host": "sentedge.ai",
+   "status": 404
+  },
+  {
+   "host": "shopperpulse.theaslangroupllc.com",
+   "status": 405
+  },
+  {
+   "host": "signal-engine-production-d88d.up.railway.app",
+   "status": 405
+  },
+  {
+   "host": "socialx402.com",
+   "status": 405
+  },
+  {
+   "host": "sol.phoneagent.xyz",
+   "status": 404
+  },
+  {
+   "host": "soldefi.thomenz.me",
+   "status": 405
+  },
+  {
+   "host": "space.x402.press",
+   "status": 405
+  },
+  {
+   "host": "stable-browser-git-ben-test-agentcash-rout-1850e3-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-browser-git-shafu-stablebrowser-410-220925-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-browser-git-shafu-stablebrowser-han-020dc6-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-browser-git-stablebrowser-public-live-view-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-deepline.dev",
+   "status": 405
+  },
+  {
+   "host": "stable-domains-git-ben-upgrade-agentcash-r-bb6a65-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-fix-stableenrich-exa-api-schema-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-fix-stableenrich-exa-leg-547ea8-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-fix-fullenrich-nbsp-enums-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-fullenrich-search-pricing-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-merchant-health-sc-efad26-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-pdl-not-found-200-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-pdl-people-enrich-25cca0-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stabledomains-pork-25b57c-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-compa-a1ba99-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-exa-b-f22424-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-fulle-a23f83-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-nearb-74cfdf-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-pdl-p-274589-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-peopl-60ba0c-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-peopl-a13b22-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-valid-89fbcd-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-default-act-9e0365-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-default-recency-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-location-guidance-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-pricing-sch-7bfb9c-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-leadmagic.dev",
+   "status": 405
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-media-git-ben-upgrade-agentcash-rou-02e093-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-people-data-git-ben-test-agentcash-dfcfa3-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-people-data-git-pdl-signoz-usage-alarms-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-people-data-git-shafu-merchant-heal-bd8263-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-people-data-git-shafu-pdl-api-settl-95fdf9-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-social-5jshn0wk0-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-social-git-shafu-stablesocial-not-f-3816e7-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-studio-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-supabase-git-ben-test-agentcash-rou-586785-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stable-upload-git-mason-1140-merit-systems.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stableapify.dev",
+   "status": 405
+  },
+  {
+   "host": "stablebase.dev",
+   "status": 405
+  },
+  {
+   "host": "stablebrowser.vercel.app",
+   "status": 405
+  },
+  {
+   "host": "stablecrypto.dev",
+   "status": 405
+  },
+  {
+   "host": "stableenrich.dev",
+   "status": 405
+  },
+  {
+   "host": "stableestate.dev",
+   "status": 405
+  },
+  {
+   "host": "stableflare.dev",
+   "status": 405
+  },
+  {
+   "host": "stablejobs.dev",
+   "status": 405
+  },
+  {
+   "host": "stablepeopledata.dev",
+   "status": 405
+  },
+  {
+   "host": "stableproduct.dev",
+   "status": 405
+  },
+  {
+   "host": "stablesocial.dev",
+   "status": 405
+  },
+  {
+   "host": "stablestudio.dev",
+   "status": 405
+  },
+  {
+   "host": "stablestudio.io",
+   "status": 405
+  },
+  {
+   "host": "stabletickets.dev",
+   "status": 405
+  },
+  {
+   "host": "stableupload.dev",
+   "status": 405
+  },
+  {
+   "host": "stackbill.app",
+   "status": 405
+  },
+  {
+   "host": "staging.402utils.com",
+   "status": 404
+  },
+  {
+   "host": "stamp.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "stem.x402.press",
+   "status": 405
+  },
+  {
+   "host": "tempfile.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "test.alexwlex143.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "theagent.club",
+   "status": 405
+  },
+  {
+   "host": "timecapsule.0000402.xyz",
+   "status": 405
+  },
+  {
+   "host": "timezone-toolkit.agishub.com",
+   "status": 200
+  },
+  {
+   "host": "token-risk.com",
+   "status": 404
+  },
+  {
+   "host": "tokensqueezer-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "tollbooth-sanctions-screener.sjwilliams8.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "tools.ipintel.ai",
+   "status": 200
+  },
+  {
+   "host": "tools.miniframe.com.br",
+   "status": 404
+  },
+  {
+   "host": "trace.sociologic.ai",
+   "status": 404
+  },
+  {
+   "host": "tradeos.tech",
+   "status": 200
+  },
+  {
+   "host": "trust402.aztecbeacon.uk",
+   "status": 404
+  },
+  {
+   "host": "trust402.vercel.app",
+   "status": 404
+  },
+  {
+   "host": "tts-service-production-e8a7.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "vaaya.ai",
+   "status": 200
+  },
+  {
+   "host": "vealth.net",
+   "status": 405
+  },
+  {
+   "host": "vectorcache-production.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "verdikt-worker.fly.dev",
+   "status": 404
+  },
+  {
+   "host": "verifier.vevang.com",
+   "status": 405
+  },
+  {
+   "host": "verify.inferenceview.com",
+   "status": 404
+  },
+  {
+   "host": "verity-bzw7.onrender.com",
+   "status": 405
+  },
+  {
+   "host": "verity-suite.onrender.com",
+   "status": 405
+  },
+  {
+   "host": "vibes-coded.com",
+   "status": 404
+  },
+  {
+   "host": "visibility.vevang.com",
+   "status": 405
+  },
+  {
+   "host": "vixilabs-x402-stage.valerioreden.workers.dev",
+   "status": 405
+  },
+  {
+   "host": "vps.phoneagent.xyz",
+   "status": 404
+  },
+  {
+   "host": "vu.velvetdao.xyz",
+   "status": 405
+  },
+  {
+   "host": "wallet-portfolio-history-mcp.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "wallet-portfolio-risk-mcp.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "weather.x402.press",
+   "status": 405
+  },
+  {
+   "host": "web-production-2d1051.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "web-production-77376.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "web-production-78e17.up.railway.app",
+   "status": 404
+  },
+  {
+   "host": "wellknown-audit-corpus.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "win.oneshotagent.com",
+   "status": 404
+  },
+  {
+   "host": "www.agentgram.site",
+   "status": 405
+  },
+  {
+   "host": "www.agenticcommerce.cafe",
+   "status": 405
+  },
+  {
+   "host": "www.cryptowerk.com",
+   "status": 405
+  },
+  {
+   "host": "www.hibra.app",
+   "status": 405
+  },
+  {
+   "host": "www.miniup.io",
+   "status": 401
+  },
+  {
+   "host": "www.netprotocol.app",
+   "status": 405
+  },
+  {
+   "host": "www.pontor.io",
+   "status": 405
+  },
+  {
+   "host": "www.rebatify.net",
+   "status": 405
+  },
+  {
+   "host": "www.stable-shovels.dev",
+   "status": 405
+  },
+  {
+   "host": "www.stablebrowser.dev",
+   "status": 405
+  },
+  {
+   "host": "www.tryskopos.xyz",
+   "status": 405
+  },
+  {
+   "host": "www.x402joker.com",
+   "status": 200
+  },
+  {
+   "host": "x402-crypto-data.vercel.app",
+   "status": 404
+  },
+  {
+   "host": "x402-deployer.x402-deployer.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "x402-echo-service.fly.dev",
+   "status": 405
+  },
+  {
+   "host": "x402-endpoint-risk-corpus.mtree.workers.dev",
+   "status": 200
+  },
+  {
+   "host": "x402-hono-api.inraby.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "x402-solvers.onrender.com",
+   "status": 404
+  },
+  {
+   "host": "x402-store.dgdb.workers.dev",
+   "status": 404
+  },
+  {
+   "host": "x402.agentutility.ai",
+   "status": 200
+  },
+  {
+   "host": "x402.asterpay.io",
+   "status": 404
+  },
+  {
+   "host": "x402.blackswan.wtf",
+   "status": 200
+  },
+  {
+   "host": "x402.dailyelo.com",
+   "status": 404
+  },
+  {
+   "host": "x402.dellbot.win",
+   "status": 200
+  },
+  {
+   "host": "x402.devvizion.com",
+   "status": 404
+  },
+  {
+   "host": "x402.fablerlabs.com",
+   "status": 404
+  },
+  {
+   "host": "x402.midnight-compliance.com",
+   "status": 404
+  },
+  {
+   "host": "x402.miroshark.xyz",
+   "status": 405
+  },
+  {
+   "host": "x402.nichospt.net",
+   "status": 404
+  },
+  {
+   "host": "x402.orth.sh",
+   "status": 404
+  },
+  {
+   "host": "x402.orthogonal.com",
+   "status": 404
+  },
+  {
+   "host": "x402.sleuthagent.ai",
+   "status": 405
+  },
+  {
+   "host": "x402.tabiji.ai",
+   "status": 404
+  },
+  {
+   "host": "x402.tavily.com",
+   "status": 404
+  },
+  {
+   "host": "x402joke.vercel.app",
+   "status": 200
+  },
+  {
+   "host": "x402pixels.com",
+   "status": 404
+  },
+  {
+   "host": "x402toll.com",
+   "status": 404
+  },
+  {
+   "host": "zk.quickai.build",
+   "status": 404
+  },
+  {
+   "host": "zlurp.ai",
+   "status": 404
+  },
+  {
+   "host": "zrdmydk1pk.execute-api.ap-northeast-1.amazonaws.com",
+   "status": 200
+  }
+ ],
+ "errors": [
+  "agent-ready.dev",
+  "coil.trade",
+  "hermesplant.com",
+  "jeonjang.kr",
+  "mobilitychain.kr",
+  "omniterminal.app",
+  "polymarket-signal-api.pwnker-polymarket-signals.workers.dev",
+  "store.cryptotradecalc.com",
+  "token-api.x402hub.xyz",
+  "vedetta.dethboy.com",
+  "www.qrbase.xyz",
+  "x402-market.kore-app.workers.dev"
+ ]
+}
