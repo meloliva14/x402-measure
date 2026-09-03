@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-09-02",
-    "days": 26
+    "last": "2026-09-03",
+    "days": 27
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 59,
-  "distinct_hosts": 47,
-  "false_transitions_minted": 118,
+  "flap_events": 60,
+  "distinct_hosts": 48,
+  "false_transitions_minted": 120,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -187,9 +187,16 @@
     {
       "window": "2026-09-01->2026-09-02",
       "raw": 6,
-      "from_detected_flap": 0,
+      "from_detected_flap": 1,
       "involving_unreachable": 2,
       "excluding_unreachable": 4
+    },
+    {
+      "window": "2026-09-02->2026-09-03",
+      "raw": 23,
+      "from_detected_flap": 1,
+      "involving_unreachable": 2,
+      "excluding_unreachable": 21
     }
   ],
   "flaps": [
@@ -605,6 +612,13 @@
       "verdict": "V1",
       "window_in": "2026-08-30->2026-08-31",
       "window_out": "2026-08-31->2026-09-01"
+    },
+    {
+      "date": "2026-09-02",
+      "host": "x402.911fund.io",
+      "verdict": "OK",
+      "window_in": "2026-09-01->2026-09-02",
+      "window_out": "2026-09-02->2026-09-03"
     }
   ]
 }
