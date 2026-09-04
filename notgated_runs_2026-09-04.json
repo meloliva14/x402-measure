@@ -1,0 +1,1528 @@
+{
+ "window": {
+  "first": "2026-08-08",
+  "last": "2026-09-04",
+  "days": 28
+ },
+ "population": 1521,
+ "rule_days": 14,
+ "summary": {
+  "ever_hit_run": 151,
+  "in_run_at_latest": 126,
+  "run_ended": 25,
+  "recovered": 20,
+  "ended_without_answer": 5
+ },
+ "runs": [
+  {
+   "host": "actionlayer.pay.zeroclick.io",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "address-risk.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "agent-carwash.agentfetcher.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-compression-biz-production.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-data-hub-thebrandbard.replit.app",
+   "run_start": "2026-08-18",
+   "run_end": "2026-09-04",
+   "run_days": 18,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-data-toolkit.onrender.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-production-1daa.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-proxy.alchemy.com",
+   "run_start": "2026-08-17",
+   "run_end": "2026-09-04",
+   "run_days": 19,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-sop-compiler-production.up.railway.app",
+   "run_start": "2026-08-19",
+   "run_end": "2026-09-04",
+   "run_days": 17,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agent-toll.agentfetcher.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agentattest.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "agentgate-production-eb21.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agentguard.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agenticinsights.com",
+   "run_start": "2026-08-09",
+   "run_end": "2026-09-04",
+   "run_days": 27,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agents.chain.link",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agents.gedx402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "agents.suedeai.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ai.stable-jack.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api-onchain.optimai.network",
+   "run_start": "2026-08-16",
+   "run_end": "2026-09-04",
+   "run_days": 20,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api-production-17e1.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.402pixels.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.bitfence.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.certaindata.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.craigmbrown.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-08-21",
+   "run_days": 14,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.curatoria.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.intelica.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.jarvisclaw.ai",
+   "run_start": "2026-08-22",
+   "run_end": "2026-09-04",
+   "run_days": 14,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.jubjubapp.com",
+   "run_start": "2026-08-13",
+   "run_end": "2026-09-04",
+   "run_days": 23,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.lmxcloud.io",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.omninexu.com",
+   "run_start": "2026-08-19",
+   "run_end": "2026-09-04",
+   "run_days": 17,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.ownedforever.com",
+   "run_start": "2026-08-18",
+   "run_end": "2026-09-04",
+   "run_days": 18,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.paytoll.io",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.surplusintelligence.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.the402.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.veradata.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.wrathproductions.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.x-402.online",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.x402passport.xyz",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.x402video.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "api.zaroniacalculator.co.za",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "app.distro.media",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "arbitrum-mpp-transaction-preflight-production.up.railway.app",
+   "run_start": "2026-08-12",
+   "run_end": "2026-09-04",
+   "run_days": 24,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "b20check.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "b20check.fly.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ba-x402-requirements-agent.onrender.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "base-block-metrics.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "biccheck.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "blockint.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "bountyverdict-agent-production.mimirslab.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "btcnode.uk",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "buoy-snapshot.buoycast.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "conway-address-intel-production.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "crypto-trending.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "curatoria.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "defi-shield-hazel.vercel.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "defiverdict.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "diet.agentic-jp.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ecosystem-intelligence.onrender.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ephemeris.561.group",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "euroref.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "exchange-rates.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "fx-rates.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "gankdat.com",
+   "run_start": "2026-08-09",
+   "run_end": "2026-09-04",
+   "run_days": 27,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "gasoracle.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "holidays.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ibancheck.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "ics.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "image.gedx402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "innernetcorp.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "intel.twzrd.xyz",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "jobs.gedx402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "jp-data-api-production.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "judicious-earnest-vaporware.replit.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "know.fast",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "kr-intel-agent-production.up.railway.app",
+   "run_start": "2026-08-13",
+   "run_end": "2026-09-04",
+   "run_days": 23,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "latamref.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "lei-lookup.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "liqrisk.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "llm.gedx402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "mail.cusethejuice.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-08-30",
+   "run_days": 23,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": null,
+   "verdict_latest": "UNREACHABLE"
+  },
+  {
+   "host": "mcp.deep3.ai",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "mcp.viridisconservation.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "media.gedx402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "meryol-agenticmarket-x402.hf.space",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "mevdetector.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "nad.payflowagent.net",
+   "run_start": "2026-08-12",
+   "run_end": "2026-09-04",
+   "run_days": 24,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "negbit.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "nichedata.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "odood.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "openapi.aisa.one",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "oracle.inspectmyads.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "orderbook-liquidity.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "paulgraham.persona.energy",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "pay.alephant.io",
+   "run_start": "2026-08-08",
+   "run_end": "2026-08-25",
+   "run_days": 18,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "pay.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "payflowagent.net",
+   "run_start": "2026-08-12",
+   "run_end": "2026-09-04",
+   "run_days": 24,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "pmhxr44qn4qitobucm7ctgklbq0svqjb.lambda-url.ap-southeast-2.on.aws",
+   "run_start": "2026-08-10",
+   "run_end": "2026-09-04",
+   "run_days": 26,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "prance-mounting-watch.ngrok-free.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "presign.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "preview.agenticinsights.com",
+   "run_start": "2026-08-09",
+   "run_end": "2026-09-04",
+   "run_days": 27,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "public.zapper.xyz",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "quantum-artificer.surewhynot.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "ren-api-production.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "researcher.now",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "roger-tomfoolish-liam.ngrok-free.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "routingcheck.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "rpc-balance.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-code.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-contract.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-erc20-balance.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-network.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-proxy.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-receipt.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc-tx.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "rpc.satelink.network",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "safetyincidents.org",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "scry.moreright.xyz",
+   "run_start": "2026-08-21",
+   "run_end": "2026-09-04",
+   "run_days": 15,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "scvd.store",
+   "run_start": "2026-08-20",
+   "run_end": "2026-09-04",
+   "run_days": 16,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "shopifyagentdata.com",
+   "run_start": "2026-08-18",
+   "run_end": "2026-09-04",
+   "run_days": 18,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "srv1334799.hstgr.cloud",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "stable-enrich-git-shafu-merchant-health-en-9d6393-merit-systems.vercel.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "stablecoin-mcap.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "stablecoin-peg.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "statepulse-api.hahavoid0.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "store.nosub.club",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-01",
+   "run_days": 25,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": null,
+   "verdict_latest": "UNREACHABLE"
+  },
+  {
+   "host": "task-relay-production.up.railway.app",
+   "run_start": "2026-08-10",
+   "run_end": "2026-09-04",
+   "run_days": 26,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "toolsmith-api.dassad10.workers.dev",
+   "run_start": "2026-08-12",
+   "run_end": "2026-09-04",
+   "run_days": 24,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "toolvend.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "tradeos.tech",
+   "run_start": "2026-08-08",
+   "run_end": "2026-08-26",
+   "run_days": 19,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-08-27",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "vape.juxtaposition1.deno.net",
+   "run_start": "2026-08-12",
+   "run_end": "2026-08-31",
+   "run_days": 20,
+   "left_censored": false,
+   "run_ended": true,
+   "recovered_on": "2026-09-01",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "vat-validate.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "verifyapi.hillguava.xyz",
+   "run_start": "2026-08-08",
+   "run_end": "2026-08-23",
+   "run_days": 16,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": null,
+   "verdict_latest": "UNREACHABLE"
+  },
+  {
+   "host": "vin-decode.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "vouchspec-sandbox.plyrium.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "web3-signals-api-production.up.railway.app",
+   "run_start": "2026-08-18",
+   "run_end": "2026-09-04",
+   "run_days": 18,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "wiki-summary.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "www.buywith402.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "www.readinessapi.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-api-production-000d.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-factory.mizcoltd.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-farm.vercel.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-portfolio.x402iom.workers.dev",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-production-f1c8.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402-services-production.up.railway.app",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402.bakdupoffroad.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402.botsmith.dev",
+   "run_start": "2026-08-10",
+   "run_end": "2026-09-04",
+   "run_days": 26,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402.telnyx.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402currencyconvert.vercel.app",
+   "run_start": "2026-08-18",
+   "run_end": "2026-09-04",
+   "run_days": 18,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "x402meta.hergertsynthora.com",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-02",
+   "run_days": 26,
+   "left_censored": true,
+   "run_ended": true,
+   "recovered_on": "2026-09-03",
+   "verdict_latest": "OK"
+  },
+  {
+   "host": "x402scan-j55w7ornb-merit-systems.vercel.app",
+   "run_start": "2026-08-11",
+   "run_end": "2026-09-04",
+   "run_days": 25,
+   "left_censored": false,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  },
+  {
+   "host": "xl402.agentsats.org",
+   "run_start": "2026-08-08",
+   "run_end": "2026-09-04",
+   "run_days": 28,
+   "left_censored": true,
+   "run_ended": false,
+   "recovered_on": null,
+   "verdict_latest": "NO_402"
+  }
+ ]
+}
