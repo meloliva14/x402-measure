@@ -6,6 +6,10 @@ address out of its own 402 challenge, then measure what those wallets actually r
 
 That is the denominator for any business case. If total ecosystem revenue is tiny, we should know
 before building, not after.
+
+2026-09-04: the roster now comes from the latest daily snapshot (verdicts OK and V1) instead of
+the frozen July sweep_results.json, so a re-run reflects the census as of its date. The probe
+itself and the output shape are unchanged from a3bc36c.
 """
 import base64, json, ssl, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -41,8 +45,11 @@ def payto_of(row):
     except Exception:
         return None
 
-rows=json.loads(Path("sweep_results.json").read_text(encoding="utf-8"))
+SNAPSHOTS=Path(__file__).parent/"snapshots"
+latest=sorted(q.name for q in SNAPSHOTS.iterdir())[-1]
+rows=json.loads((SNAPSHOTS/latest/"observation.json").read_text(encoding="utf-8"))["observations"]
 live=[r for r in rows if r.get("verdict") in ("OK","V1") and r.get("url")]
+print(f"  roster: the {latest} snapshot")
 print(f"  probing {len(live)} live gated hosts for payTo\n")
 with ThreadPoolExecutor(max_workers=16) as ex:
     res=[r for r in ex.map(payto_of, live) if r]
