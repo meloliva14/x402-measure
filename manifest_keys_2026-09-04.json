@@ -1,0 +1,28 @@
+{
+ "snapshot": "2026-09-04",
+ "population": 1521,
+ "manifests_parsed": 868,
+ "declaring_networks": 146,
+ "distinct_spellings": 18,
+ "accepted_networks_exactly": 1,
+ "spellings": {
+  "network": 105,
+  "networks": 33,
+  "accepts": 16,
+  "network_caip": 7,
+  "chain": 6,
+  "chainId": 3,
+  "default_network": 2,
+  "chain_id": 1,
+  "networkKey": 1,
+  "caip2Network": 1,
+  "chains": 1,
+  "supported_chains": 1,
+  "payment_networks": 1,
+  "paymentNetworks": 1,
+  "supportedChains": 1,
+  "acceptedNetworks": 1,
+  "network_label": 1,
+  "solanaNetwork": 1
+ }
+}
