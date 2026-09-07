@@ -1,0 +1,119 @@
+{
+ "snapshot": "2026-09-07",
+ "population": 1521,
+ "manifests_parsed": 870,
+ "declaring_networks": 146,
+ "distinct_spellings": 18,
+ "accepted_networks_exactly": 1,
+ "spellings": {
+  "network": 105,
+  "networks": 33,
+  "accepts": 16,
+  "network_caip": 7,
+  "chain": 6,
+  "chainId": 3,
+  "default_network": 2,
+  "chain_id": 1,
+  "caip2Network": 1,
+  "chains": 1,
+  "networkKey": 1,
+  "supported_chains": 1,
+  "payment_networks": 1,
+  "paymentNetworks": 1,
+  "supportedChains": 1,
+  "acceptedNetworks": 1,
+  "network_label": 1,
+  "solanaNetwork": 1
+ },
+ "value_shapes": {
+  "network": {
+   "str": 104,
+   "dict": 1
+  },
+  "network_caip": {
+   "str": 7
+  },
+  "accepts": {
+   "list": 16
+  },
+  "networks": {
+   "list": 33
+  },
+  "chain_id": {
+   "int": 1
+  },
+  "chainId": {
+   "int": 3
+  },
+  "chain": {
+   "str": 6
+  },
+  "caip2Network": {
+   "str": 1
+  },
+  "chains": {
+   "list": 1
+  },
+  "networkKey": {
+   "str": 1
+  },
+  "supported_chains": {
+   "list": 1
+  },
+  "payment_networks": {
+   "list": 1
+  },
+  "paymentNetworks": {
+   "list": 1
+  },
+  "supportedChains": {
+   "list": 1
+  },
+  "acceptedNetworks": {
+   "list": 1
+  },
+  "network_label": {
+   "str": 1
+  },
+  "default_network": {
+   "str": 2
+  },
+  "solanaNetwork": {
+   "str": 1
+  }
+ },
+ "list_entries": {
+  "accepts": {
+   "total": 21,
+   "objects_with_network": 21
+  },
+  "networks": {
+   "total": 67,
+   "objects_with_network": 0
+  },
+  "chains": {
+   "total": 1,
+   "objects_with_network": 1
+  },
+  "supported_chains": {
+   "total": 12,
+   "objects_with_network": 0
+  },
+  "payment_networks": {
+   "total": 2,
+   "objects_with_network": 2
+  },
+  "paymentNetworks": {
+   "total": 2,
+   "objects_with_network": 0
+  },
+  "supportedChains": {
+   "total": 2,
+   "objects_with_network": 0
+  },
+  "acceptedNetworks": {
+   "total": 1,
+   "objects_with_network": 0
+  }
+ }
+}

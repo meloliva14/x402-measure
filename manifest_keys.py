@@ -14,6 +14,12 @@ and prose keys (assetSymbol, payment_networks_description) are excluded, so this
 LOWER BOUND on hosts declaring networks: a manifest burying them under an idiosyncratic
 name this filter does not catch is missed.
 
+Then, because a per-chain array needs a per-chain container, the SHAPE of each value:
+scalar string (one chain, cannot carry per-chain attributes), list of strings, or list of
+objects, and for lists whether the entries carry a network field. The most-typed spelling
+turns out to be a scalar almost everywhere; only `accepts` is a list of network-bearing
+objects, and its entry shape is the 402 challenge's own accepts entry.
+
 A live re-probe drifts by a few hosts between runs (timeouts, 502s), so the count is dated
 rather than quoted flat.
 
@@ -64,11 +70,23 @@ def main() -> None:
 
     spellings = Counter()
     declaring = set()
+    shapes = {}          # spelling -> {"str": n, "list": n, "dict": n, ...}
+    entries = {}         # spelling -> {"total": n, "objects_with_network": n}
     for host, doc in docs:
         keys = [k for k in doc if NET.search(k) and not any(s in k.lower() for s in SKIP)]
         if keys:
             declaring.add(host)
             spellings.update(keys)
+        for k in keys:
+            v = doc[k]
+            t = "str" if isinstance(v, str) else "list" if isinstance(v, list) else                 "dict" if isinstance(v, dict) else type(v).__name__
+            shapes.setdefault(k, Counter())[t] += 1
+            if isinstance(v, list):
+                e = entries.setdefault(k, {"total": 0, "objects_with_network": 0})
+                for item in v:
+                    e["total"] += 1
+                    if isinstance(item, dict) and any(f in item for f in ("network", "networkCaip2", "network_caip")):
+                        e["objects_with_network"] += 1
 
     out = {
         "snapshot": day,
@@ -78,6 +96,8 @@ def main() -> None:
         "distinct_spellings": len(spellings),
         "accepted_networks_exactly": spellings.get("acceptedNetworks", 0),
         "spellings": dict(spellings.most_common()),
+        "value_shapes": {k: dict(v) for k, v in shapes.items()},
+        "list_entries": entries,
     }
     dest = HERE / f"manifest_keys_{day}.json"
     json.dump(out, open(dest, "w"), indent=1)
