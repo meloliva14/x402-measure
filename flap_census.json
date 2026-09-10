@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-09-09",
-    "days": 33
+    "last": "2026-09-10",
+    "days": 34
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 65,
+  "flap_events": 70,
   "distinct_hosts": 52,
-  "false_transitions_minted": 130,
+  "false_transitions_minted": 140,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -236,9 +236,16 @@
     {
       "window": "2026-09-08->2026-09-09",
       "raw": 11,
-      "from_detected_flap": 0,
+      "from_detected_flap": 5,
       "involving_unreachable": 7,
       "excluding_unreachable": 4
+    },
+    {
+      "window": "2026-09-09->2026-09-10",
+      "raw": 14,
+      "from_detected_flap": 5,
+      "involving_unreachable": 6,
+      "excluding_unreachable": 8
     }
   ],
   "flaps": [
@@ -696,6 +703,41 @@
       "verdict": "OK",
       "window_in": "2026-09-05->2026-09-06",
       "window_out": "2026-09-06->2026-09-07"
+    },
+    {
+      "date": "2026-09-09",
+      "host": "agent-vending-machine.avm-7301.workers.dev",
+      "verdict": "OK",
+      "window_in": "2026-09-08->2026-09-09",
+      "window_out": "2026-09-09->2026-09-10"
+    },
+    {
+      "date": "2026-09-09",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-09-08->2026-09-09",
+      "window_out": "2026-09-09->2026-09-10"
+    },
+    {
+      "date": "2026-09-09",
+      "host": "jp-calendar-x402.onrender.com",
+      "verdict": "V1",
+      "window_in": "2026-09-08->2026-09-09",
+      "window_out": "2026-09-09->2026-09-10"
+    },
+    {
+      "date": "2026-09-09",
+      "host": "madoromi.fun",
+      "verdict": "OK",
+      "window_in": "2026-09-08->2026-09-09",
+      "window_out": "2026-09-09->2026-09-10"
+    },
+    {
+      "date": "2026-09-09",
+      "host": "x402.911fund.io",
+      "verdict": "OK",
+      "window_in": "2026-09-08->2026-09-09",
+      "window_out": "2026-09-09->2026-09-10"
     }
   ]
 }
