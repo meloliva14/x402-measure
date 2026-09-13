@@ -8,11 +8,8 @@
  "landing_model_corrected": {
   "mixed_days": 18,
   "observed": 16,
-  "sampling_window_utc": [
-   "04:17",
-   "05:05"
-  ],
-  "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+  "sampling_window": "one window of about three minutes per day at a time the scheduler sets; take it from each manifest's sweep_started_utc and sweep_ended_utc, or from sweep_windows.py, never from the 04:17 UTC schedule",
+  "note": "expectation is a bracket over the draw count k the instrument could have taken; the daily sampling window is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
   "expected_k_lo": 14.6019,
   "sd_k_lo": 1.1474,
   "z_k_lo": 1.2185,
@@ -26,7 +23,7 @@
    ]
   ]
  },
- "note_on_model": "the one-draw model posted 2026-09-12 assumed one request per day taken independently of endpoint state; the probe is one to three requests at a fixed hour, so `landing_model_corrected` is the bracket to cite",
+ "note_on_model": "the one-draw model posted 2026-09-12 assumed one request per day taken independently of endpoint state; the probe is one to three requests inside one window a day, so `landing_model_corrected` is the bracket to cite",
  "records": [
   {
    "day": "2026-08-08",

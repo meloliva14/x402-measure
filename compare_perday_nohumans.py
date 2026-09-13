@@ -4,8 +4,9 @@
 THEIRS: thirdparty/nohumans_perday_four_hosts_2026-08-08_09-07.csv, one row per host per day,
   pass_402 and failures by status code across every probe they ran that day (~5-minute cadence).
 OURS:   snapshots/<day>/observation.json, one daily sample per host: one to three
-  requests (GET, POST fallback, transport retry) taken inside a fixed hour, 04:17 to
-  about 05:05 UTC. Called "exactly ONE probe" here until 2026-09-13; that was the defect.
+  requests (GET, POST fallback, transport retry) taken inside one window of about three
+  minutes per day, at a time the scheduler sets and the manifest records (sweep_windows.py
+  lists them). Called "exactly ONE probe" here until 2026-09-13; that was the defect.
 
 The question this answers is not "who is right". It is: when their day is MIXED (some probes
 answered 402 and some did not), where does a single daily sample land, and does the rate agree?
@@ -88,12 +89,12 @@ def main():
 
     # CORRECTED MODEL, 2026-09-13. The block above is the one-draw model that was posted on
     # 2026-09-12 and it is kept for continuity. It assumes the probe is ONE request taken
-    # independently of the endpoint's state. It is one to three, at a fixed hour. The honest
+    # independently of the endpoint's state. It is one to three, inside one window a day. The honest
     # answer is a bracket over the draw count the row could have had; see landing_model.py.
     landing = lm.summarise([{"share": x["share_402"], "our_served": x["our_served"],
                              "row": x["row"]} for x in mixed]) if mixed else None
     if landing:
-        print("\nCORRECTED (draw-count bracket, fixed-hour caveat applies):")
+        print("\nCORRECTED (draw-count bracket; the daily sampling window is not corrected):")
         print("  " + lm.verdict_line(landing))
 
     out = os.path.join(BASE, "compare_perday_nohumans_2026-09-13.json")
@@ -104,8 +105,8 @@ def main():
         compared=len(recs), missing=missing,
         landing_model_corrected=landing,
         note_on_model=("the one-draw model posted 2026-09-12 assumed one request per day taken "
-                       "independently of endpoint state; the probe is one to three requests at a "
-                       "fixed hour, so `landing_model_corrected` is the bracket to cite"),
+                       "independently of endpoint state; the probe is one to three requests inside "
+                       "one window a day, so `landing_model_corrected` is the bracket to cite"),
         records=recs), open(out, "w", encoding="utf-8", newline="\n"), indent=1)
     print("\n->", os.path.basename(out))
 

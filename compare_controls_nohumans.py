@@ -5,17 +5,18 @@ THEIRS: thirdparty/nohumans_control_*.csv, one row per host per day carrying the
   (all_402 | all_fail | mixed) and the 402 share across every probe they ran that day. Probe
   COUNTS are deliberately absent from these files.
 OURS:   snapshots/<day>/observation.json, one daily sample per host: one to three
-  requests (GET, POST fallback, transport retry) taken inside a fixed hour, 04:17 to
-  about 05:05 UTC. Called "exactly ONE probe" here until 2026-09-13; that was the defect.
+  requests (GET, POST fallback, transport retry) taken inside one window of about three
+  minutes per day, at a time the scheduler sets and the manifest records (sweep_windows.py
+  lists them). Called "exactly ONE probe" here until 2026-09-13; that was the defect.
 
 WHY THEIR PROBE COUNTS ARE NOT NEEDED, AND WHAT IS. Expected landings is a function of the
 day's 402 share and OUR draw count, not of how many probes THEY ran; their counts would only put
 an error bar on each share, a second-order correction. What the model did need, and did not have
 until 2026-09-13, is our own draw count: the probe is a GET, then a POST when the GET produced
-no challenge, plus a transport retry, so one to three requests, and it runs inside a fixed hour.
-The one-draw model this script first shipped with was wrong on that, and osf showed it: 19 of 19
-against an expected 12.47. landing_model.py now brackets the draw count; the fixed hour needs the
-intraday share inside our window and is stated, not corrected.
+no challenge, plus a transport retry, so one to three requests, and it runs inside one window of
+about three minutes a day. The one-draw model this script first shipped with was wrong on that,
+and osf showed it: 19 of 19 against an expected 12.47. landing_model.py now brackets the draw
+count; the daily window needs the intraday share inside it and is stated, not corrected.
 
 WHAT EACH CONTROL IS FOR, in their words and confirmed against their own files:
   api.onesource.io          GENERALISATION. Sole host on its domain, and its mixed days sit at

@@ -57,7 +57,7 @@ PUBKEY = HERE / "index-pubkey.json"           # committed; how a stranger verifi
 # NEEDED: the census had been described as one probe per host per day, and a comparison against
 # an intraday instrument was built on that. The probe is a GET, then a POST when the GET does not
 # produce a challenge, plus one retry on transport failure, so it is one to three requests, and it
-# runs inside a fixed hour. Neither fact was recorded per row, so the true draw count behind any
+# runs in one window a day. Neither fact was recorded per row, so the true draw count behind any
 # historical verdict is unknowable. From this version it is written down.
 SCHEMA = "verity-index-observation/3"
 RAIL = "x402"
@@ -422,13 +422,16 @@ def build(date: str) -> dict:
                 "recorded and never treated as a state change. Retried rows say so on the row.",
                 "Verdicts are point-in-time. Comparing two dates measures the pair of "
                 "observations, not an operator's intent.",
-                "Each verdict is a FIXED-HOUR sample, not a uniform draw over the day: the "
-                "scheduler fires at 04:17 UTC and the sweep typically finishes by 05:05 UTC. It "
-                "is also one to three requests, not one (GET, POST fallback, transport retry), and "
-                "the row's `probe` object records which verb answered, how many requests it "
-                "took, and when. Against an instrument with intraday resolution, compare inside "
-                "that window and with that draw count; a whole-day rate is the wrong comparator "
-                "and will make this census look better than it is on a flapping host.",
+                "Each verdict is ONE sample from a window of about three minutes per day, not a "
+                "uniform draw over the day. The window is whenever the scheduler delivers the "
+                "04:17 UTC job, which it has done from half an hour to more than six hours late, "
+                "and it is recorded in this manifest as sweep_started_utc and sweep_ended_utc: "
+                "read those, never the schedule. Each verdict is also one to three requests, not "
+                "one (GET, POST fallback, transport retry), and the row's `probe` object records "
+                "which verb answered, how many requests it took, and when. Against an instrument "
+                "with intraday resolution, compare inside that window and with that draw count; a "
+                "whole-day rate is the wrong comparator and will make this census look better "
+                "than it is on a flapping host.",
                 "The target list is itself a snapshot of a live registry and shifts between runs.",
                 "manifest.signed_manifests is a SECOND sweep over a SMALLER, separately pinned "
                 "population (manifest_hosts.json), not over the target list above. Read its counts "

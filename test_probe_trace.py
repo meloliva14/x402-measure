@@ -15,6 +15,7 @@ import sys
 import preflight
 import snapshot
 import landing_model as lm
+import sweep_windows
 
 
 class _Script:
@@ -139,6 +140,14 @@ def main() -> int:
         check("verdict_line: inside at k-high -> names the confound, never agreement",
               "not anomalous at the k-high bound" in one_in and "not as agreement" in one_in
               and "consistent" not in one_in and "ANOMALOUS" not in one_in, one_in)
+
+        # 13. the sampling window is READ from the manifests, never assumed from the schedule
+        wins = sweep_windows.windows()
+        check("sweep_windows: one row per snapshot day, end after start, sweeps under ten minutes",
+              len(wins) >= 37 and all(r["sweep_ended_utc"] > r["sweep_started_utc"] and 0 < r["seconds"] < 600 for r in wins),
+              str(wins[:2]))
+        check("sweep_windows: the schedule is not the sample time (no start inside 04:17-04:20 UTC on 2026-09-13)",
+              not any(r["day"] == "2026-09-13" and r["sweep_started_utc"][11:16] in ("04:17", "04:18", "04:19") for r in wins))
     finally:
         preflight.fetch = real_fetch
 

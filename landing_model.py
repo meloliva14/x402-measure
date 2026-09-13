@@ -14,10 +14,15 @@ Two things in OUR instrument break the assumption, and neither is a fault in the
      challenge, plus one retry on transport failure, and it records a challenge if ANY of them saw
      one. k independent draws give 1-(1-p)^k, which on osf moves the expectation to 16.30 (k=2)
      or 17.76 (k=3). Before schema /3 the row did not record k, so for history k is a RANGE.
-  2. THE PROBE RUNS AT A FIXED HOUR (scheduled 04:17 UTC, finishing by about 05:05). A sample
-     taken at the same time every day is not a uniform draw over the day. If a host's failures
-     cluster elsewhere in the day, the sample systematically misses them. That cannot be corrected
-     from a whole-day share at all; it needs the intraday instrument's share INSIDE our window.
+  2. THE PROBE IS ONE WINDOW OF ABOUT THREE MINUTES PER DAY, at whatever time the scheduler
+     delivers the 04:17 UTC job. Through 2026-09-13 that has meant starts from 02:52 to 15:16
+     UTC, with 33 of 37 days in 04:24-05:47 (August) or 08:22-10:53 (from 08-30). Each day's
+     manifest records sweep_started_utc and sweep_ended_utc, and sweep_windows.py lists them. A
+     sample taken inside one narrow window is not a uniform draw over the day. If a host's
+     failures cluster elsewhere in the day, the sample systematically misses them. That cannot be
+     corrected from a whole-day share at all; it needs the intraday instrument's share INSIDE
+     the window. (First written here as "04:17 to 05:05 UTC" from the schedule rather than the
+     manifests, and corrected the same day. The record beats the schedule.)
   3. THE POST FALLBACK IS MODELLED AS A SECOND DRAW AT THE SAME SHARE. That assumes the day's
      402 share is not verb-specific. If a host gates one verb and not the other, or the intraday
      instrument probes with one verb only, the share is verb-specific and the bracket needs
@@ -26,8 +31,8 @@ Two things in OUR instrument break the assumption, and neither is a fault in the
 So this module gives an honest bracket instead of a false point: expected landings under the
 smallest and largest draw count a row could have had, and the z for each. A result that is
 anomalous under BOTH bounds is anomalous. A result inside 2 sd at the k-high bound is reported
-as "no contradiction the bracket can see", never as agreement, because the fixed sampling hour
-is not corrected and the verb assumption is unverified.
+as "no contradiction the bracket can see", never as agreement, because the daily sampling
+window is not corrected and the verb assumption is unverified.
 
 What history can and cannot say about k per row:
   - row has probe.requests (schema /3 onward): k is that number, exactly; 0 means no draw.
@@ -37,7 +42,9 @@ What history can and cannot say about k per row:
 """
 import math
 
-SAMPLING_WINDOW_UTC = ("04:17", "05:05")
+SAMPLING_WINDOW_NOTE = ("one window of about three minutes per day at a time the scheduler sets; "
+                        "take it from each manifest's sweep_started_utc and sweep_ended_utc, or "
+                        "from sweep_windows.py, never from the 04:17 UTC schedule")
 
 
 def k_bounds(row: dict) -> tuple[int, int]:
@@ -63,9 +70,9 @@ def summarise(mixed: list[dict]) -> dict:
     bracket, sd and z at both bounds, and the sampling-window caveat."""
     obs = sum(1 for m in mixed if m["our_served"])
     out = {"mixed_days": len(mixed), "observed": obs,
-           "sampling_window_utc": list(SAMPLING_WINDOW_UTC),
+           "sampling_window": SAMPLING_WINDOW_NOTE,
            "note": ("expectation is a bracket over the draw count k the instrument could have "
-                    "taken; the fixed sampling hour is NOT corrected here and needs the intraday "
+                    "taken; the daily sampling window is NOT corrected here and needs the intraday "
                     "share inside the window to address; the POST fallback is modelled as a "
                     "second draw at the same share, which assumes the share is not verb-specific")}
     for label, pick in (("k_lo", 0), ("k_hi", 1)):
@@ -88,7 +95,7 @@ def verdict_line(s: dict) -> str:
                 f"expectation bracket {s['expected_k_lo']}..{s['expected_k_hi']} (sd 0 at a bound)")
     both_out = min(abs(zl), abs(zh)) >= 2.0
     tag = "ANOMALOUS under every draw count the instrument could have taken" if both_out \
-        else ("not anomalous at the k-high bound (|z| < 2); the fixed sampling hour is uncorrected, "
+        else ("not anomalous at the k-high bound (|z| < 2); the daily sampling window is uncorrected, "
               "so read this as no contradiction the bracket can see, not as agreement")
     return (f"{s['observed']} of {s['mixed_days']} mixed days landed on a challenge; "
             f"expected {s['expected_k_lo']} (k low, z {zl:+.2f}) to {s['expected_k_hi']} "

@@ -21,11 +21,8 @@
    "landing_model_corrected": {
     "mixed_days": 12,
     "observed": 12,
-    "sampling_window_utc": [
-     "04:17",
-     "05:05"
-    ],
-    "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+    "sampling_window": "one window of about three minutes per day at a time the scheduler sets; take it from each manifest's sweep_started_utc and sweep_ended_utc, or from sweep_windows.py, never from the 04:17 UTC schedule",
+    "note": "expectation is a bracket over the draw count k the instrument could have taken; the daily sampling window is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
     "expected_k_lo": 11.9215,
     "sd_k_lo": 0.277,
     "z_k_lo": 0.2834,
@@ -422,11 +419,8 @@
    "landing_model_corrected": {
     "mixed_days": 19,
     "observed": 19,
-    "sampling_window_utc": [
-     "04:17",
-     "05:05"
-    ],
-    "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+    "sampling_window": "one window of about three minutes per day at a time the scheduler sets; take it from each manifest's sweep_started_utc and sweep_ended_utc, or from sweep_windows.py, never from the 04:17 UTC schedule",
+    "note": "expectation is a bracket over the draw count k the instrument could have taken; the daily sampling window is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
     "expected_k_lo": 12.4742,
     "sd_k_lo": 1.9571,
     "z_k_lo": 3.3344,
