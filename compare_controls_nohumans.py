@@ -46,6 +46,15 @@ against a 32.6 per cent share: expected 0.33 at one draw and 0.55 at two, so z +
 At n=1 that is not evidence in either direction. The 3.3 sd does not shrink under the revision, it
 loses its subject. A genuine flapper is still the open requirement.
 
+AND THE 18 IS NOT YET SETTLED. His distribution covers 08-11 to 08-23 and 08-26, which is 14 of
+the 19 days. It does not cover 08-08, 08-09, 08-10, 08-24 or 08-25. If the 1,500 no-status probes
+really sit inside the 19-day window, then after 08-26 takes 318 and the thirteen characterised
+days take at most 156, those five must carry roughly 1,030 to 1,170 between them, or about 205 to
+234 each. That is nowhere near his clean middle of 1 to 12 a day and is close to the 318 he calls
+genuinely mixed, which would make the split nearer 13/6 than 18/1. The alternative is that the
+1,500 spans more than the mixed window. Asked, not assumed, and the recount above is conditional
+on the answer.
+
 WHAT EACH CONTROL IS FOR, in their words and confirmed against their own files:
   api.onesource.io          GENERALISATION. Sole host on its domain, and its mixed days sit at
                             96 to 99.9 percent, so a daily sample lands on a challenge almost
@@ -135,6 +144,19 @@ def main() -> int:
             },
             "open_ask": ("08-26's 402 share recomputed under his new rule, with 429s neutral, "
                          "since that single day is now the whole landing test on this host"),
+            "unsettled": {
+                "what": ("the 18/1 split is not yet established: his distribution covers 08-11 to "
+                         "08-23 and 08-26, 14 of the 19 days, leaving 08-08, 08-09, 08-10, 08-24 "
+                         "and 08-25 uncharacterised"),
+                "arithmetic": ("if the 1,500 no-status probes sit inside the 19-day window, 08-26 "
+                               "takes 318 and the thirteen characterised days take at most 156, "
+                               "so those five must carry about 1,030 to 1,170 between them, "
+                               "roughly 205 to 234 each, against a stated clean middle of 1 to 12 "
+                               "a day and a genuinely-mixed 08-26 of 318"),
+                "consequence": ("either the 1,500 spans more than the mixed window, or those five "
+                                "days are not clean and the split is nearer 13/6 than 18/1; the "
+                                "effect_if_true recount is conditional on which"),
+            },
         },
         "controls": []}
 
