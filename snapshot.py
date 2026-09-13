@@ -51,7 +51,15 @@ PUBKEY = HERE / "index-pubkey.json"           # committed; how a stranger verifi
 # reader can ignore the new key, and every /1 file already published stays byte-identical and
 # still verifies. The version moves so that a reader diffing two dates can see WHY the shape
 # changed instead of guessing.
-SCHEMA = "verity-index-observation/2"
+# Bumped to /3 on 2026-09-13 when each observation row gained a `probe` object: which verb
+# produced the answer, how many requests it took, and the UTC time it was taken. Additive: a /2
+# reader can ignore the key, and every file already published stays byte-identical. WHY IT WAS
+# NEEDED: the census had been described as one probe per host per day, and a comparison against
+# an intraday instrument was built on that. The probe is a GET, then a POST when the GET does not
+# produce a challenge, plus one retry on transport failure, so it is one to three requests, and it
+# runs inside a fixed hour. Neither fact was recorded per row, so the true draw count behind any
+# historical verdict is unknowable. From this version it is written down.
+SCHEMA = "verity-index-observation/3"
 RAIL = "x402"
 WORKERS = 14
 
@@ -280,13 +288,17 @@ def signed_manifest_census() -> dict:
 
 
 def _probe(url: str):
-    """One attempt, exceptions folded into the UNREACHABLE shape classify_both already uses."""
+    """One attempt, exceptions folded into the UNREACHABLE shape classify_both already uses.
+    Returns the probe trace as a fifth element so the row can say what the attempt did."""
     try:
-        verdict, notes, _ch, v1, v1_notes = preflight.classify_both(url)
-        return verdict, list(notes), v1, list(v1_notes)
+        verdict, notes, _ch, v1, v1_notes, trace = preflight.classify_both_traced(url)
+        return verdict, list(notes), v1, list(v1_notes), dict(trace)
     except Exception as e:  # noqa: BLE001
+        # Raised past the fetch, inside decide()/v1_verdict(), so the request count is not
+        # recoverable here. None means "not recorded", never "zero".
         return ("UNREACHABLE", [f"{type(e).__name__} during classify"],
-                "V1_NO_BODY", [f"{type(e).__name__} during classify"])
+                "V1_NO_BODY", [f"{type(e).__name__} during classify"],
+                {"verb": None, "get_status": None, "requests": None})
 
 
 def observe(t: dict) -> dict:
@@ -311,18 +323,28 @@ def observe(t: dict) -> dict:
     2026-08-19: can the deprecated-but-installed x402-fetch 1.2.0 read the BODY. A host can be OK
     on one and unreadable on the other, which is the whole reason to record both.
     """
-    verdict, notes, v1, v1_notes = _probe(t["url"])
+    at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    verdict, notes, v1, v1_notes, trace = _probe(t["url"])
     if verdict == "UNREACHABLE" and not any(n.startswith("refused by prober policy") for n in notes):
         first = "; ".join(notes) or "no detail"
-        verdict, notes, v1, v1_notes = _probe(t["url"])
+        first_requests = trace.get("requests")
+        verdict, notes, v1, v1_notes, trace = _probe(t["url"])
         if verdict == "UNREACHABLE":
             notes = [f"unreachable on both attempts (first: {first})"] + notes
         else:
             notes = [f"first attempt unreachable ({first}); answered on immediate retry"] + notes
+        # The row's request count is the TOTAL across both attempts. Unknown on either side
+        # makes the total unknown; it is never silently treated as zero.
+        total = (None if first_requests is None or trace.get("requests") is None
+                 else first_requests + trace["requests"])
+        probe = {"verb": trace.get("verb"), "get_status": trace.get("get_status"),
+                 "requests": total, "at_utc": at, "attempts": 2}
         return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": notes,
-                "v1": v1, "v1_notes": v1_notes, "retried": True}
+                "v1": v1, "v1_notes": v1_notes, "retried": True, "probe": probe}
+    probe = {"verb": trace.get("verb"), "get_status": trace.get("get_status"),
+             "requests": trace.get("requests"), "at_utc": at, "attempts": 1}
     return {"host": t["host"], "url": t["url"], "verdict": verdict, "notes": notes,
-            "v1": v1, "v1_notes": v1_notes}
+            "v1": v1, "v1_notes": v1_notes, "probe": probe}
 
 
 def build(date: str) -> dict:
@@ -373,8 +395,9 @@ def build(date: str) -> dict:
             "vantage": vantage(),
             "sweep_started_utc": started.isoformat(),
             "sweep_ended_utc": ended.isoformat(),
-            "method": ("preflight.classify_both(url) — one unauthenticated request per host, GET "
-                       "with a POST fallback, plus one immediate retry when the only thing the "
+            "method": ("preflight.classify_both(url) — one to three unauthenticated requests per "
+                       "host: a GET, then a POST when the GET did not produce a challenge, plus "
+                       "one immediate retry when the only thing the "
                        "first attempt observed was a transport failure. Nothing signed, nothing "
                        "paid. A verdict describes what the endpoint served at that moment and "
                        "nothing about the operator."),
@@ -399,6 +422,13 @@ def build(date: str) -> dict:
                 "recorded and never treated as a state change. Retried rows say so on the row.",
                 "Verdicts are point-in-time. Comparing two dates measures the pair of "
                 "observations, not an operator's intent.",
+                "Each verdict is a FIXED-HOUR sample, not a uniform draw over the day: the "
+                "scheduler fires at 04:17 UTC and the sweep typically finishes by 05:05 UTC. It "
+                "is also one to three requests, not one (GET, POST fallback, transport retry), and "
+                "the row's `probe` object records which verb answered, how many requests it "
+                "took, and when. Against an instrument with intraday resolution, compare inside "
+                "that window and with that draw count; a whole-day rate is the wrong comparator "
+                "and will make this census look better than it is on a flapping host.",
                 "The target list is itself a snapshot of a live registry and shifts between runs.",
                 "manifest.signed_manifests is a SECOND sweep over a SMALLER, separately pinned "
                 "population (manifest_hosts.json), not over the target list above. Read its counts "

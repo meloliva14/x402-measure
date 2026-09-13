@@ -165,10 +165,53 @@ def get_402(url):
     the population rate, so 1188/1298 and 1235/1349 are both 91.5%. The counts were wrong, the
     headline was not, and both statements need making rather than only the comfortable one.
     """
-    status, headers, body = fetch(url, "GET")
+    return get_402_traced(url)[:3]
+
+
+class ProbeTransportError(Exception):
+    """A fetch failed at the transport layer. Carries how many requests had been made by then,
+    so the caller can record the count honestly instead of guessing, and the original exception
+    so the existing UNREACHABLE note text (the exception's class name) is reproduced exactly."""
+
+    def __init__(self, cause: BaseException, requests: int) -> None:
+        super().__init__(type(cause).__name__)
+        self.cause = cause
+        self.requests = requests
+
+
+def get_402_traced(url):
+    """get_402, plus a record of what it took to get the answer.
+
+    WHY THIS EXISTS, 2026-09-13. The daily census was described, by us, as "one probe per host
+    per day", and a comparison against an intraday instrument was built on the assumption that
+    the probe is one draw. It is not. This function is a GET and then a POST when the GET does
+    not produce a challenge, and observe() adds a retry on transport failure, so a host that
+    flaps inside that window is sampled two or three times and recorded as gated if ANY of them
+    saw a challenge. On nohumans.directory's control host api.osf-master-server.com that bias was
+    large enough to measure: our sample saw a challenge on all 19 mixed days against an expected
+    12.47 under the one-draw model, 3.3 standard deviations out.
+
+    The fix is not to stop falling back to POST, which is a correct and published rule. The fix
+    is to RECORD which verb answered and how many requests it took, per row, so the next
+    comparison can use the true draw count instead of assuming one. The trace is additive; the
+    verdict and every existing note string are unchanged.
+    """
+    try:
+        status, headers, body = fetch(url, "GET")
+    except BlockedDestination:
+        raise
+    except Exception as e:  # noqa: BLE001
+        raise ProbeTransportError(e, 1) from e
+    trace = {"verb": "GET", "get_status": status, "requests": 1}
     if status != 402:
-        status, headers, body = fetch(url, "POST")
-    return status, headers, body
+        try:
+            status, headers, body = fetch(url, "POST")
+        except BlockedDestination:
+            raise
+        except Exception as e:  # noqa: BLE001
+            raise ProbeTransportError(e, 2) from e
+        trace = {"verb": "POST", "get_status": trace["get_status"], "requests": 2}
+    return status, headers, body, trace
 
 
 def parse_challenge(headers, body):
@@ -295,19 +338,34 @@ def classify_both(url):
     on the network. Doubling 1,521 probes to add a field would be a real cost to the hosts we
     measure, and we are the ones publishing that they should not be surprised by traffic.
     """
+    return classify_both_traced(url)[:5]
+
+
+_NO_TRACE = {"verb": None, "get_status": None, "requests": 0}
+
+
+def classify_both_traced(url):
+    """classify_both, plus the probe trace as a sixth element: {verb, get_status, requests}.
+
+    The five existing elements and every note string are byte-identical to classify_both, which
+    now delegates here. A policy refusal made zero requests; a transport failure reports how many
+    it had made; a normal answer reports the verb that produced it.
+    """
     try:
-        status, headers, body = get_402(url)
+        status, headers, body, trace = get_402_traced(url)
     except BlockedDestination as e:
         return ("UNREACHABLE", [f"refused by prober policy: {e}"], None,
-                "V1_NO_BODY", ["not fetched: refused by prober policy"])
-    except Exception as e:  # noqa: BLE001
-        return ("UNREACHABLE", [type(e).__name__], None,
-                "V1_NO_BODY", [f"not fetched: {type(e).__name__}"])
+                "V1_NO_BODY", ["not fetched: refused by prober policy"], dict(_NO_TRACE))
+    except ProbeTransportError as e:
+        name = type(e.cause).__name__
+        return ("UNREACHABLE", [name], None,
+                "V1_NO_BODY", [f"not fetched: {name}"],
+                {"verb": None, "get_status": None, "requests": e.requests})
     v2, notes, ch = decide(status, headers, body)
     if status != 402:
-        return v2, notes, ch, "V1_NO_BODY", [f"HTTP {status}, no challenge to read"]
+        return v2, notes, ch, "V1_NO_BODY", [f"HTTP {status}, no challenge to read"], trace
     v1, v1n = v1_verdict(body)
-    return v2, notes, ch, v1, v1n
+    return v2, notes, ch, v1, v1n, trace
 
 
 def decide(status, headers, body):

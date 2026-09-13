@@ -158,7 +158,13 @@ Stated up front rather than waiting to be asked.
 - **The Bazaar is one registry, not the whole network.** Sellers publishing only their own
   `/.well-known/x402` aren't in this sample, and spot checks suggest that population isn't
   small. This is the state of a named, reproducible sample — not "the state of x402".
-- **One request per host.** These scripts are not a crawler.
+- **One to three requests per host, once a day.** A GET, then a POST if the GET produced no
+  challenge, then one retry after a transport failure. These scripts are not a crawler. This
+  bullet said one request until 2026-09-13; that was wrong, and it mattered the day the census
+  was laid beside an intraday instrument. The sweep also runs at a fixed hour (04:17 UTC,
+  finished by about 05:05), so a daily verdict is a fixed-time sample, not a uniform draw over
+  the day. From schema /3 every row records which verb answered, how many requests it took, and
+  when.
 - **Nothing is signed and no payment is ever sent.**
 
 ---

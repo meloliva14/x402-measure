@@ -177,7 +177,13 @@ testnet produces signatures that fail verification with no useful error.
 
 ## Method, and what it does not cover
 
-- **One request per host.** These scripts are not a crawler.
+- **One to three requests per host, once a day.** A GET, then a POST if the GET produced no
+  challenge, then one retry after a transport failure. These scripts are not a crawler. This
+  bullet said one request until 2026-09-13; that was wrong, and it mattered the day the census
+  was laid beside an intraday instrument. The sweep also runs at a fixed hour (04:17 UTC,
+  finished by about 05:05), so a daily verdict is a fixed-time sample, not a uniform draw over
+  the day. From schema /3 every row records which verb answered, how many requests it took, and
+  when.
 - **Nothing is signed, and no payment is ever sent.** Every check runs against the free
   402 an endpoint already returns.
 - **A timeout is recorded `UNREACHABLE`, never "broken."** One retry is attempted first. That

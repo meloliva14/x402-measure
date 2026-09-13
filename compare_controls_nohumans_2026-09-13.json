@@ -18,6 +18,27 @@
    "expected": 11.9215,
    "sd": 0.277,
    "z": 0.2834,
+   "landing_model_corrected": {
+    "mixed_days": 12,
+    "observed": 12,
+    "sampling_window_utc": [
+     "04:17",
+     "05:05"
+    ],
+    "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+    "expected_k_lo": 11.9215,
+    "sd_k_lo": 0.277,
+    "z_k_lo": 0.2834,
+    "expected_k_hi": 11.9982,
+    "sd_k_hi": 0.0421,
+    "z_k_hi": 0.0421,
+    "k_range_used": [
+     [
+      1,
+      2
+     ]
+    ]
+   },
    "records": [
     {
      "day": "2026-08-09",
@@ -25,7 +46,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-10",
@@ -33,7 +58,11 @@
      "share": 0.9636,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-11",
@@ -41,7 +70,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-12",
@@ -49,7 +82,11 @@
      "share": 0.9965,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-13",
@@ -57,7 +94,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-14",
@@ -65,7 +106,11 @@
      "share": 0.9809,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-15",
@@ -73,7 +118,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-16",
@@ -81,7 +130,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-17",
@@ -89,7 +142,11 @@
      "share": 0.9983,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-18",
@@ -97,7 +154,11 @@
      "share": 0.9987,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-19",
@@ -105,7 +166,11 @@
      "share": 0.9967,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-20",
@@ -113,7 +178,11 @@
      "share": 0.9935,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-21",
@@ -121,7 +190,11 @@
      "share": 0.9983,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-22",
@@ -129,7 +202,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-23",
@@ -137,7 +214,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-24",
@@ -145,7 +226,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-25",
@@ -153,7 +238,11 @@
      "share": 0.9994,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-26",
@@ -161,7 +250,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-27",
@@ -169,7 +262,11 @@
      "share": 0.9971,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-28",
@@ -177,7 +274,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-29",
@@ -185,7 +286,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-30",
@@ -193,7 +298,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-31",
@@ -201,7 +310,11 @@
      "share": 0.9994,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-01",
@@ -209,7 +322,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-02",
@@ -217,7 +334,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-03",
@@ -225,7 +346,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-04",
@@ -233,7 +358,11 @@
      "share": 0.9991,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-05",
@@ -241,7 +370,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-06",
@@ -249,7 +382,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-07",
@@ -257,7 +394,11 @@
      "share": 1.0,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=5000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     }
    ]
   },
@@ -278,6 +419,27 @@
    "expected": 12.4742,
    "sd": 1.9571,
    "z": 3.3344,
+   "landing_model_corrected": {
+    "mixed_days": 19,
+    "observed": 19,
+    "sampling_window_utc": [
+     "04:17",
+     "05:05"
+    ],
+    "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+    "expected_k_lo": 12.4742,
+    "sd_k_lo": 1.9571,
+    "z_k_lo": 3.3344,
+    "expected_k_hi": 16.3044,
+    "sd_k_hi": 1.444,
+    "z_k_hi": 1.8668,
+    "k_range_used": [
+     [
+      1,
+      2
+     ]
+    ]
+   },
    "records": [
     {
      "day": "2026-08-08",
@@ -285,7 +447,11 @@
      "share": 0.9178,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-09",
@@ -293,7 +459,11 @@
      "share": 0.8787,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-10",
@@ -301,7 +471,11 @@
      "share": 0.9377,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-11",
@@ -309,7 +483,11 @@
      "share": 0.7647,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-12",
@@ -317,7 +495,11 @@
      "share": 0.6871,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-13",
@@ -325,7 +507,11 @@
      "share": 0.6628,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-14",
@@ -333,7 +519,11 @@
      "share": 0.5468,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-15",
@@ -341,7 +531,11 @@
      "share": 0.5383,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-16",
@@ -349,7 +543,11 @@
      "share": 0.5497,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-17",
@@ -357,7 +555,11 @@
      "share": 0.5612,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-18",
@@ -365,7 +567,11 @@
      "share": 0.4967,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-19",
@@ -373,7 +579,11 @@
      "share": 0.4695,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-20",
@@ -381,7 +591,11 @@
      "share": 0.5947,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-21",
@@ -389,7 +603,11 @@
      "share": 0.7733,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-22",
@@ -397,7 +615,11 @@
      "share": 0.6526,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-23",
@@ -405,7 +627,11 @@
      "share": 0.6659,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-24",
@@ -413,7 +639,11 @@
      "share": 0.7018,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-25",
@@ -421,7 +651,11 @@
      "share": 0.7494,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-26",
@@ -429,7 +663,11 @@
      "share": 0.3255,
      "our_verdict": "OK",
      "our_served": true,
-     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029"
+     "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+     "row": {
+      "retried": false,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-27",
@@ -437,7 +675,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-28",
@@ -445,7 +687,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-29",
@@ -453,7 +699,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-30",
@@ -461,7 +711,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-08-31",
@@ -469,7 +723,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-01",
@@ -477,7 +735,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-02",
@@ -485,7 +747,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-03",
@@ -493,7 +759,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: BadStatusLine)', 'Bad"
+     "our_note": "['unreachable on both attempts (first: BadStatusLine)', 'Bad",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-04",
@@ -501,7 +771,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-05",
@@ -509,7 +783,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-06",
@@ -517,7 +795,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     },
     {
      "day": "2026-09-07",
@@ -525,7 +807,11 @@
      "share": 0.0,
      "our_verdict": "UNREACHABLE",
      "our_served": false,
-     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError"
+     "our_note": "['unreachable on both attempts (first: URLError)', 'URLError",
+     "row": {
+      "retried": true,
+      "probe": null
+     }
     }
    ]
   }

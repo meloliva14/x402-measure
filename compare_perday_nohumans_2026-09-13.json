@@ -1,0 +1,2016 @@
+{
+ "source": "https://nohumans.directory/state/week-2026-09-09/perday-four-hosts.csv",
+ "license": "CC-BY-4.0",
+ "retrieved": "2026-09-12",
+ "note": "their columns are theirs; our_verdict is one daily sample (one to three requests) per host-day from our snapshots",
+ "compared": 124,
+ "missing": [],
+ "landing_model_corrected": {
+  "mixed_days": 18,
+  "observed": 16,
+  "sampling_window_utc": [
+   "04:17",
+   "05:05"
+  ],
+  "note": "expectation is a bracket over the draw count k the instrument could have taken; the fixed sampling hour is NOT corrected here and needs the intraday share inside the window to address; the POST fallback is modelled as a second draw at the same share, which assumes the share is not verb-specific",
+  "expected_k_lo": 14.6019,
+  "sd_k_lo": 1.1474,
+  "z_k_lo": 1.2185,
+  "expected_k_hi": 15.9184,
+  "sd_k_hi": 0.98,
+  "z_k_hi": 0.0833,
+  "k_range_used": [
+   [
+    1,
+    2
+   ]
+  ]
+ },
+ "note_on_model": "the one-draw model posted 2026-09-12 assumed one request per day taken independently of endpoint state; the probe is one to three requests at a fixed hour, so `landing_model_corrected` is the bracket to cite",
+ "records": [
+  {
+   "day": "2026-08-08",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 64,
+   "passes": 0,
+   "fails": 64,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-09",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 57,
+   "passes": 0,
+   "fails": 57,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-10",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 56,
+   "passes": 0,
+   "fails": 56,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-11",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 190,
+   "passes": 35,
+   "fails": 155,
+   "share_402": 0.18421052631578946,
+   "their_shape": "MIXED",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-12",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 81,
+   "passes": 80,
+   "fails": 1,
+   "share_402": 0.9876543209876543,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-13",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 71,
+   "passes": 71,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-14",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 66,
+   "passes": 66,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-15",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 64,
+   "passes": 64,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-16",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 63,
+   "passes": 63,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-17",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 58,
+   "passes": 58,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-18",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 38,
+   "passes": 38,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-19",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 23,
+   "passes": 23,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-20",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 52,
+   "passes": 52,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-21",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 54,
+   "passes": 54,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-22",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 55,
+   "passes": 55,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-23",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 53,
+   "passes": 53,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-24",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 56,
+   "passes": 55,
+   "fails": 1,
+   "share_402": 0.9821428571428571,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-25",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 86,
+   "passes": 33,
+   "fails": 53,
+   "share_402": 0.38372093023255816,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=30000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-26",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-27",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 502 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-28",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-29",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-30",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-31",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-01",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-02",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-03",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-04",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-05",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-06",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 11,
+   "passes": 0,
+   "fails": 11,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-07",
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "probes": 10,
+   "passes": 0,
+   "fails": 10,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-08",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 63,
+   "passes": 63,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-09",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 57,
+   "passes": 57,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-10",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 56,
+   "passes": 56,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-11",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 95,
+   "passes": 95,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-12",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 80,
+   "passes": 80,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-13",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 71,
+   "passes": 71,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-14",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 66,
+   "passes": 66,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-15",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 64,
+   "passes": 64,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-16",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 63,
+   "passes": 63,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-17",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 58,
+   "passes": 58,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-18",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 38,
+   "passes": 38,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-19",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 23,
+   "passes": 23,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-20",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 52,
+   "passes": 52,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-21",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 54,
+   "passes": 54,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-22",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 55,
+   "passes": 55,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-23",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 55,
+   "passes": 53,
+   "fails": 2,
+   "share_402": 0.9636363636363636,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-24",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 54,
+   "passes": 54,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-25",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 95,
+   "passes": 95,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-26",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 55,
+   "passes": 55,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-27",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 92,
+   "passes": 41,
+   "fails": 51,
+   "share_402": 0.44565217391304346,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=50000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-28",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-29",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-30",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-31",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-01",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-02",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-03",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-04",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-05",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-06",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 11,
+   "passes": 0,
+   "fails": 11,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-07",
+   "host": "binance-ticker24.hergertsynthora.com",
+   "probes": 10,
+   "passes": 0,
+   "fails": 10,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 410 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-08",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 63,
+   "passes": 0,
+   "fails": 63,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 404 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-09",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 57,
+   "passes": 0,
+   "fails": 57,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 404 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-10",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 56,
+   "passes": 0,
+   "fails": 56,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 404 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-11",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 187,
+   "passes": 35,
+   "fails": 152,
+   "share_402": 0.18716577540106952,
+   "their_shape": "MIXED",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 404 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-12",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 81,
+   "passes": 81,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-13",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 70,
+   "passes": 70,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-14",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 66,
+   "passes": 66,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-15",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 64,
+   "passes": 64,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-16",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 64,
+   "passes": 64,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-17",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 58,
+   "passes": 58,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-18",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 37,
+   "passes": 37,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-19",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 23,
+   "passes": 23,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-20",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 52,
+   "passes": 52,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-21",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 54,
+   "passes": 54,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-22",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 55,
+   "passes": 55,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-23",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 55,
+   "passes": 52,
+   "fails": 3,
+   "share_402": 0.9454545454545454,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-24",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 55,
+   "passes": 55,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-25",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 95,
+   "passes": 95,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-26",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 54,
+   "passes": 54,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-27",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 53,
+   "passes": 53,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-28",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 52,
+   "passes": 52,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-29",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 53,
+   "passes": 53,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-30",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 52,
+   "passes": 52,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-31",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 51,
+   "passes": 51,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-01",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 63,
+   "passes": 63,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-02",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 66,
+   "passes": 66,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-03",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 56,
+   "passes": 56,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-04",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 66,
+   "passes": 63,
+   "fails": 3,
+   "share_402": 0.9545454545454546,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-05",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 61,
+   "passes": 61,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-06",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 43,
+   "passes": 43,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-07",
+   "host": "dnsdomain.hergertsynthora.com",
+   "probes": 46,
+   "passes": 46,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=1000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA029",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-08",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 60,
+   "passes": 59,
+   "fails": 1,
+   "share_402": 0.9833333333333333,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-09",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 55,
+   "passes": 54,
+   "fails": 1,
+   "share_402": 0.9818181818181818,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-10",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 55,
+   "passes": 54,
+   "fails": 1,
+   "share_402": 0.9818181818181818,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-11",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 111,
+   "passes": 85,
+   "fails": 26,
+   "share_402": 0.7657657657657657,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-12",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 289,
+   "passes": 0,
+   "fails": 289,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-13",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 288,
+   "passes": 0,
+   "fails": 288,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-14",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 288,
+   "passes": 0,
+   "fails": 288,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-15",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 288,
+   "passes": 0,
+   "fails": 288,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-16",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 288,
+   "passes": 0,
+   "fails": 288,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-17",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 288,
+   "passes": 0,
+   "fails": 288,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-18",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 273,
+   "passes": 0,
+   "fails": 273,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-19",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 178,
+   "passes": 0,
+   "fails": 178,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-20",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-21",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-22",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-23",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-24",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-25",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-26",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-27",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-28",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-29",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-30",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 13,
+   "passes": 0,
+   "fails": 13,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-08-31",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 12,
+   "passes": 0,
+   "fails": 12,
+   "share_402": 0.0,
+   "their_shape": "ALL_FAIL",
+   "our_verdict": "NO_402",
+   "our_served": false,
+   "our_note": "['HTTP 503 - endpoint is not payment-gated right now']",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-01",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 73,
+   "passes": 72,
+   "fails": 1,
+   "share_402": 0.9863013698630136,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-02",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 67,
+   "passes": 65,
+   "fails": 2,
+   "share_402": 0.9701492537313433,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-03",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 57,
+   "passes": 56,
+   "fails": 1,
+   "share_402": 0.9824561403508771,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-04",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 63,
+   "passes": 63,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-05",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 60,
+   "passes": 60,
+   "fails": 0,
+   "share_402": 1.0,
+   "their_shape": "ALL_402",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-06",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 44,
+   "passes": 43,
+   "fails": 1,
+   "share_402": 0.9772727272727273,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  },
+  {
+   "day": "2026-09-07",
+   "host": "vape.juxtaposition1.deno.net",
+   "probes": 49,
+   "passes": 46,
+   "fails": 3,
+   "share_402": 0.9387755102040817,
+   "their_shape": "MIXED",
+   "our_verdict": "OK",
+   "our_served": true,
+   "our_note": "[\"amount=70000 asset=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02",
+   "row": {
+    "retried": false,
+    "probe": null
+   }
+  }
+ ]
+}
