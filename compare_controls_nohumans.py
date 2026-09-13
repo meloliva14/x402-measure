@@ -18,6 +18,17 @@ about three minutes a day. The one-draw model this script first shipped with was
 and osf showed it: 19 of 19 against an expected 12.47. landing_model.py now brackets the draw
 count; the daily window needs the intraday share inside it and is stated, not corrected.
 
+RETRACTED BY THE PUBLISHER, 2026-09-13, AFTER THIS SCRIPT FIRST RAN. jalcodev pulled the
+status codes behind osf's 19 "mixed" days and reports that they are not endpoint failures:
+3,008 of those probes returned HTTP 429 and 1,500 returned no status at all, which he
+attributes to his own scanner's request rate rather than to the endpoint. He states the real
+outage begins 2026-08-27. HIS NUMBERS AND HIS DIAGNOSIS, not measurements of mine. If he is
+right, osf's 19 mixed days were not mixed, the landing test on this host has no subject, and
+the z below is measuring his throttling. The figures are left standing rather than deleted
+because they were published, and are labelled instead. What this census can say from its own
+side: it recorded a readable 402 on all 19 of those days with no retry, and from 08-27 it has
+recorded UNREACHABLE on both attempts every day for 18 consecutive days through 09-13.
+
 WHAT EACH CONTROL IS FOR, in their words and confirmed against their own files:
   api.onesource.io          GENERALISATION. Sole host on its domain, and its mixed days sit at
                             96 to 99.9 percent, so a daily sample lands on a challenge almost
@@ -43,6 +54,15 @@ FILES = [
     ("api.osf-master-server.com", "thirdparty/nohumans_control_osf_2026-09-13.csv", "power"),
 ]
 SERVED = {"OK", "V1"}
+# A rate-limited day is not "saw no challenge"; it is "was not assessed". Such a host-day is
+# dropped from the landing test rather than counted on the wrong side of it. Both control files
+# and the four-host file contain none, so no published figure moves; the guard is for the next one.
+NOT_ASSESSED = {"RATE_LIMITED"}
+
+
+def verdict_is_unassessed(v) -> bool:
+    """A verdict the census declines to read as an answer either way."""
+    return v in NOT_ASSESSED
 
 
 def ours():
@@ -57,15 +77,33 @@ def ours():
 
 def main() -> int:
     mine = ours()
-    report = {"generated": "2026-09-13", "controls": []}
+    report = {
+        "generated": "2026-09-13",
+        "publisher_retraction_2026-09-13": {
+            "host": "api.osf-master-server.com",
+            "source": "jalcodev, #wg-domain-discovery, 2026-09-13",
+            "claim": ("the 19 mixed days are not endpoint failures: 3,008 probes returned HTTP "
+                      "429 and 1,500 returned no status at all, attributed by him to his own "
+                      "scanner's request rate; the genuine outage begins 2026-08-27"),
+            "status": "HIS claim about HIS instrument, carried here unverified by us",
+            "effect_if_true": ("those days were not mixed, so the landing test on this host has "
+                               "no subject and the z below describes his throttling"),
+            "what_our_own_rows_say": ("a readable 402 on all 19 days with no retry; UNREACHABLE "
+                                      "on both attempts every day from 2026-08-27 through "
+                                      "2026-09-13, 18 consecutive days"),
+        },
+        "controls": []}
 
     for host, rel, role in FILES:
         rows = list(csv.DictReader(open(os.path.join(BASE, rel), encoding="utf-8")))
-        recs, missing = [], []
+        recs, missing, skipped = [], [], []
         for r in rows:
             got = mine.get(host, {}).get(r["day"])
             if got is None:
                 missing.append(r["day"])
+                continue
+            if verdict_is_unassessed(got[0]):
+                skipped.append(r["day"])
                 continue
             verdict, note, orow = got
             recs.append(dict(day=r["day"], their_state=r["state"],
@@ -85,7 +123,8 @@ def main() -> int:
 
         print(f"\n{host}  ({role})")
         print(f"  their file: {len(rows)} days {rows[0]['day']}..{rows[-1]['day']}, {dict(shapes)}")
-        print(f"  compared {len(recs)}, no snapshot of ours for {len(missing)}")
+        print(f"  compared {len(recs)}, no snapshot of ours for {len(missing)}"
+              + (f", {len(skipped)} dropped as not assessed (rate-limited)" if skipped else ""))
         print(f"  UNMIXED days: {len(unmixed)}, disagreements {len(dis)}")
         for x in dis:
             print(f"    {x['day']} theirs={x['their_state']:8} ours={x['our_verdict']} {x['our_note'][:44]}")
@@ -101,6 +140,7 @@ def main() -> int:
             landing = None
         report["controls"].append(dict(
             host=host, role=role, source=rel, days=len(recs), missing=missing,
+            not_assessed_days=skipped,
             shapes=dict(shapes), unmixed=len(unmixed), unmixed_disagreements=len(dis),
             mixed=len(mixed), observed=obs, expected=round(exp, 4), sd=round(sd, 4),
             z=(round(z, 4) if z is not None else None),

@@ -17,4 +17,16 @@ His own caveats, carried here so nobody cites past them:
   api.osf-master-server.com - the power control. He says the shape is a DECLINE, not a flap:
                             high, falling, then twelve consecutive all-fail days. Not a genuine
                             flapper, and he had not found one he also pays from.
+RETRACTION BY THE PUBLISHER, same day, after we had run the files. He reports that osf's 19
+  "mixed" days are an artefact of his own scanner: 3,008 of the probes in that window returned
+  HTTP 429 and 1,500 returned no status at all, which he attributes to his request rate rather
+  than to the endpoint, and he places the genuine outage at 2026-08-27. He also reports the
+  mechanism is not confined to osf (a 429 counted toward a fail streak, and his scheduler gave
+  failing listings priority) and says he is publishing a correction and a per-host request cap.
+  ALL OF THAT IS HIS ACCOUNT OF HIS OWN INSTRUMENT. We cannot verify it and do not assert it.
+  What our own rows say, independently: a readable 402 on all 19 of those days with no retry,
+  and UNREACHABLE on both attempts every day from 08-27 through 09-13.
+  The CSVs are left exactly as published. The osf file should not now be cited as evidence
+  about that endpoint's intraday behaviour before 08-27.
+
 NOT OURS. Never edit. Any number derived from these is theirs and is labelled theirs.

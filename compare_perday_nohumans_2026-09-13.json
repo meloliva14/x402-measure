@@ -5,6 +5,7 @@
  "note": "their columns are theirs; our_verdict is one daily sample (one to three requests) per host-day from our snapshots",
  "compared": 124,
  "missing": [],
+ "not_assessed": [],
  "landing_model_corrected": {
   "mixed_days": 18,
   "observed": 16,

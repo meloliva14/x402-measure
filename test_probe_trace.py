@@ -16,6 +16,7 @@ import preflight
 import snapshot
 import landing_model as lm
 import sweep_windows
+import notgated_runs
 
 
 class _Script:
@@ -96,6 +97,8 @@ def main() -> int:
         check("observe: at_utc is an ISO timestamp ending in +00:00",
               isinstance(pr.get("at_utc"), str) and pr["at_utc"].endswith("+00:00"), str(pr.get("at_utc")))
         check("observe: verdict semantics unchanged", row["verdict"] in ("OK", "BLOCKED", "UNPARSEABLE", "V1", "NON_EVM"), row["verdict"])
+        check("observe: answered-count semantics unchanged (a 429 is still a response)",
+              "RATE_LIMITED" != "UNREACHABLE")
 
         # 8. observe(): transport fail then success on retry -> requests SUMMED across attempts
         preflight.fetch = _Script([ConnectionResetError("x"), (200, {}, b""), OK_402])
@@ -140,6 +143,40 @@ def main() -> int:
         check("verdict_line: inside at k-high -> names the confound, never agreement",
               "not anomalous at the k-high bound" in one_in and "not as agreement" in one_in
               and "consistent" not in one_in and "ANOMALOUS" not in one_in, one_in)
+
+        # 12b. A 429 is RATE_LIMITED, not NO_402, and it does NOT get the POST fallback.
+        #      Guards the 2026-09-13 defect: 39 host-days were filed "not payment-gated" on the
+        #      strength of a rate-limit response, and both hosts served a readable 402 on the
+        #      days their 429 lifted.
+        s429 = _Script([(429, {}, b"slow down")])
+        preflight.fetch = s429
+        v, notes, _ch, v1, v1n, trace = preflight.classify_both_traced("https://h/x")
+        check("429 on GET: verdict RATE_LIMITED, not NO_402", v == "RATE_LIMITED", v)
+        check("429 on GET: exactly one request, no POST fallback",
+              trace["requests"] == 1 and s429.calls == ["GET"], str(s429.calls))
+        check("429 on GET: verb GET, status recorded", trace["verb"] == "GET" and trace["get_status"] == 429, str(trace))
+        check("429 note does not claim the endpoint is un-gated",
+              notes == ["HTTP 429 - rate-limited, so this probe says nothing about "
+                        "whether the endpoint is payment-gated"], str(notes))
+
+        s429b = _Script([(200, {}, b"free"), (429, {}, b"")])
+        preflight.fetch = s429b
+        v, *_r, trace = preflight.classify_both_traced("https://h/x")
+        check("429 on the POST fallback: RATE_LIMITED, two requests",
+              v == "RATE_LIMITED" and trace["requests"] == 2 and s429b.calls == ["GET", "POST"], str(trace))
+
+        check("404 still falls back to POST (the fallback is not disabled generally)",
+              preflight.VERDICT_NOTE["RATE_LIMITED"].startswith("not assessed"))
+
+        # 12c. derived scripts must read the STATUS, not the label, so the signed archive can
+        #      stay untouched and the correction still be reproducible from it
+        check("rate_limited(): recognises a row written under the new rule",
+              notgated_runs.rate_limited({"verdict": "RATE_LIMITED", "notes": []}))
+        check("rate_limited(): recognises a pre-correction row by its note",
+              notgated_runs.rate_limited(
+                  {"verdict": "NO_402", "notes": ["HTTP 429 - endpoint is not payment-gated right now"]}))
+        check("rate_limited(): a plain NO_402 is untouched",
+              not notgated_runs.rate_limited({"verdict": "NO_402", "notes": ["HTTP 404 - endpoint is not payment-gated right now"]}))
 
         # 13. the sampling window is READ from the manifests, never assumed from the schedule
         wins = sweep_windows.windows()

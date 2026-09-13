@@ -23,6 +23,10 @@ CSV  = os.path.join(BASE, "thirdparty", "nohumans_perday_four_hosts_2026-08-08_0
 SNAP = os.path.join(BASE, "snapshots")
 # Verdicts that mean "this host served a payment challenge on our probe that day".
 SERVED = {"OK", "V1"}
+# A rate-limited day is not "saw no challenge"; it is "was not assessed". Such a host-day is
+# dropped from the landing test rather than counted on the wrong side of it. Both control files
+# and the four-host file contain none, so no published figure moves; the guard is for the next one.
+NOT_ASSESSED = {"RATE_LIMITED"}
 
 def ours():
     """host -> day -> (verdict, note, row-bits). One daily sample per host-day."""
@@ -41,7 +45,7 @@ def ours():
 def main():
     theirs = list(csv.DictReader(open(CSV, encoding="utf-8")))
     mine = ours()
-    recs, missing = [], []
+    recs, missing, not_assessed = [], [], []
     for r in theirs:
         host, day = r["host"], r["day"]
         probes = int(r["probes"]); passes = int(r["pass_402"])
@@ -50,12 +54,15 @@ def main():
         got = mine.get(host, {}).get(day)
         if got is None:
             missing.append((host, day)); continue
+        if got[0] in NOT_ASSESSED:
+            not_assessed.append((host, day)); continue
         verdict, note, orow = got
         served = verdict in SERVED
         recs.append(dict(day=day, host=host, probes=probes, passes=passes, fails=fails,
                          share_402=passes / probes if probes else None, their_shape=shape,
                          our_verdict=verdict, our_served=served, our_note=note[:60], row=orow))
-    print(f"compared {len(recs)} host-days; {len(missing)} of their rows have no snapshot of ours")
+    print(f"compared {len(recs)} host-days; {len(missing)} of their rows have no snapshot of ours"
+          + (f"; {len(not_assessed)} dropped as not assessed (rate-limited)" if not_assessed else ""))
 
     by_shape = collections.Counter(x["their_shape"] for x in recs)
     print("\nTHEIR day shape (their file):", dict(by_shape))
@@ -102,7 +109,7 @@ def main():
         source="https://nohumans.directory/state/week-2026-09-09/perday-four-hosts.csv",
         license="CC-BY-4.0", retrieved="2026-09-12",
         note="their columns are theirs; our_verdict is one daily sample (one to three requests) per host-day from our snapshots",
-        compared=len(recs), missing=missing,
+        compared=len(recs), missing=missing, not_assessed=not_assessed,
         landing_model_corrected=landing,
         note_on_model=("the one-draw model posted 2026-09-12 assumed one request per day taken "
                        "independently of endpoint state; the probe is one to three requests inside "

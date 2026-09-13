@@ -203,7 +203,14 @@ def get_402_traced(url):
     except Exception as e:  # noqa: BLE001
         raise ProbeTransportError(e, 1) from e
     trace = {"verb": "GET", "get_status": status, "requests": 1}
-    if status != 402:
+    # 429 does not get the POST fallback. The fallback exists because some hosts gate POST and
+    # not GET, so a GET-only probe misreads them; it has nothing to say about a host that has
+    # just told us we are asking too often, and sending it doubles the ask on exactly the host
+    # that complained. Added 2026-09-13 after nohumans.directory traced a whole class of their
+    # own "endpoint failed" rows to their probe rate. Ours is one request a day and still drew
+    # 429s, so ours are host policy toward anonymous callers rather than our rate, but the
+    # courtesy is the same and the second request buys nothing either way.
+    if status not in (402, 429):
         try:
             status, headers, body = fetch(url, "POST")
         except BlockedDestination:
@@ -370,6 +377,14 @@ def classify_both_traced(url):
 
 def decide(status, headers, body):
     """The pure decision half of classify(), over an already-fetched response."""
+    if status == 429:
+        # NOT NO_402. A rate-limit response is a fact about the conversation, not about whether
+        # the endpoint sells anything, and filing it as "not payment-gated" states the opposite
+        # of what is known. Across 2026-08-08..09-13 this census filed 39 host-days that way on
+        # two hosts, and both served a readable 402 on the days their 429 lifted, so the label
+        # was wrong on the only days there was independent evidence either way.
+        return "RATE_LIMITED", ["HTTP 429 - rate-limited, so this probe says nothing about "
+                                "whether the endpoint is payment-gated"], None
     if status != 402:
         return "NO_402", [f"HTTP {status} - endpoint is not payment-gated right now"], None
 
@@ -437,6 +452,7 @@ VERDICT_NOTE = {
     "V1": "v1 challenge - a v2 client cannot read it at all",
     "NON_EVM": "not assessed",
     "NO_402": "not payment-gated",
+    "RATE_LIMITED": "not assessed - the probe was rate-limited",
     "UNPARSEABLE": "402 with no readable challenge",
     "UNREACHABLE": "no response",
     "UNKNOWN_NETWORK": "unrecognised network id",
@@ -461,7 +477,7 @@ def main(argv):
     bad = 0
     for u in urls:
         verdict, notes, _ = classify(u)
-        if verdict not in ("OK", "WARN", "NON_EVM", "NO_402"):
+        if verdict not in ("OK", "WARN", "NON_EVM", "NO_402", "RATE_LIMITED"):
             bad += 1
         label = u if len(u) <= 62 else u[:59] + "..."
         print(f"  {label}")

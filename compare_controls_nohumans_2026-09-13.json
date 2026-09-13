@@ -1,5 +1,13 @@
 {
  "generated": "2026-09-13",
+ "publisher_retraction_2026-09-13": {
+  "host": "api.osf-master-server.com",
+  "source": "jalcodev, #wg-domain-discovery, 2026-09-13",
+  "claim": "the 19 mixed days are not endpoint failures: 3,008 probes returned HTTP 429 and 1,500 returned no status at all, attributed by him to his own scanner's request rate; the genuine outage begins 2026-08-27",
+  "status": "HIS claim about HIS instrument, carried here unverified by us",
+  "effect_if_true": "those days were not mixed, so the landing test on this host has no subject and the z below describes his throttling",
+  "what_our_own_rows_say": "a readable 402 on all 19 days with no retry; UNREACHABLE on both attempts every day from 2026-08-27 through 2026-09-13, 18 consecutive days"
+ },
  "controls": [
   {
    "host": "api.onesource.io",
@@ -7,6 +15,7 @@
    "source": "thirdparty/nohumans_control_onesource_2026-09-13.csv",
    "days": 30,
    "missing": [],
+   "not_assessed_days": [],
    "shapes": {
     "all_402": 18,
     "mixed": 12
@@ -405,6 +414,7 @@
    "source": "thirdparty/nohumans_control_osf_2026-09-13.csv",
    "days": 31,
    "missing": [],
+   "not_assessed_days": [],
    "shapes": {
     "mixed": 19,
     "all_fail": 12

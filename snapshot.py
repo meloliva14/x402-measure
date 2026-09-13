@@ -432,6 +432,14 @@ def build(date: str) -> dict:
                 "with intraday resolution, compare inside that window and with that draw count; a "
                 "whole-day rate is the wrong comparator and will make this census look better "
                 "than it is on a flapping host.",
+                "An HTTP 429 is recorded RATE_LIMITED and is NOT counted as not-payment-gated. "
+                "A rate-limit response describes the conversation, not whether the endpoint "
+                "sells anything. Before 2026-09-13 it was filed NO_402: 39 host-days on two "
+                "hosts, both of which served a readable 402 on the days their 429 lifted. The "
+                "signed files are never rewritten, so those rows still read NO_402 and carry "
+                "the status in the note; rate_limited_history.py lists them and derived scripts "
+                "read the status rather than the label. From 2026-09-13 a 429 on the GET also "
+                "stops the POST fallback, so a host that says slow down is asked once, not twice.",
                 "The target list is itself a snapshot of a live registry and shifts between runs.",
                 "manifest.signed_manifests is a SECOND sweep over a SMALLER, separately pinned "
                 "population (manifest_hosts.json), not over the target list above. Read its counts "

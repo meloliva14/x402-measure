@@ -8,6 +8,15 @@ serve a 402 again. A run is consecutive NO_402 verdicts only; a day the prober c
 reach the host (UNREACHABLE) ends the run without being an answer, so hosts whose runs
 ended that way are listed but flagged not-recovered.
 
+RATE-LIMITED DAYS ARE NEUTRAL, AND THAT IS A CORRECTION. Until 2026-09-13 an HTTP 429 was
+filed NO_402, so a host that rate-limited the prober read as a host that had stopped serving
+payment challenges. It is not the same thing, and on both hosts it happened to the 429 lifted
+on some days and a readable 402 was served underneath. The snapshots are signed and are never
+rewritten; instead this script reads the recorded status back out of the row and treats a 429
+day as neutral, exactly like UNREACHABLE: it ends a run without being an answer. Every figure
+here is therefore reproducible from the published snapshots under the corrected rule. The
+figure this changes is agent-proxy.alchemy.com, whose entire 26-day run was 429s.
+
 Censoring, stated so nobody cites past it: a run that begins on the first snapshot day is
 left-censored (its true length is at least what is recorded), and the window itself bounds
 what any rule longer than the window can be tested against.
@@ -24,12 +33,22 @@ GATED = {"OK", "WARN", "V1", "NON_EVM", "BLOCKED"}
 NEED = 14
 
 
+def rate_limited(row: dict) -> bool:
+    """True if this observation was a rate-limit response, under either era's labelling.
+
+    Rows written from 2026-09-13 carry the verdict; earlier rows carry NO_402 with the status
+    in the note, which is why the note is read as well. Reading the evidence rather than the
+    label is what makes the correction derivable from the signed archive."""
+    return (row.get("verdict") == "RATE_LIMITED"
+            or any("HTTP 429" in n for n in (row.get("notes") or [])))
+
+
 def main() -> None:
     days = sorted(p.name for p in SNAPSHOTS.iterdir())
     V = {}
     for d in days:
         obs = json.load(open(SNAPSHOTS / d / "observation.json", encoding="utf-8"))["observations"]
-        V[d] = {r["host"]: r["verdict"] for r in obs}
+        V[d] = {r["host"]: ("RATE_LIMITED" if rate_limited(r) else r["verdict"]) for r in obs}
     hosts = list(V[days[-1]])
 
     rows = []
@@ -82,7 +101,10 @@ def main() -> None:
         "runs": rows,
     }
     dest = HERE / f"notgated_runs_{days[-1]}.json"
-    json.dump(out, open(dest, "w"), indent=1)
+    # newline is pinned: this repo is `* -text` because third parties hash these bytes, and
+    # Python text mode on Windows would emit CRLF and change every digest.
+    with open(dest, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(out, f, indent=1)
     s = out["summary"]
     print(f"{len(days)} days {days[0]}..{days[-1]}, population {len(hosts)}")
     print(f"ever>= {NEED}: {s['ever_hit_run']}  in-run: {s['in_run_at_latest']}  "

@@ -186,6 +186,14 @@ testnet produces signatures that fail verification with no useful error.
   fixed-time sample, not a uniform draw over the day. Each day's manifest records
   sweep_started_utc and sweep_ended_utc, and from schema /3 every row records which verb
   answered, how many requests it took, and when.
+- **An HTTP 429 is recorded `RATE_LIMITED`, never "not payment-gated."** A rate-limit response
+  is a fact about the conversation, not about whether the endpoint sells anything, and from
+  2026-09-13 a 429 on the GET also stops the POST fallback rather than asking a complaining
+  host twice. Before that date it was filed `NO_402`: 39 host-days on two hosts, and both
+  served a readable 402 on the days their 429 lifted, so the label was contradicted by this
+  census itself. Signed snapshots are never rewritten, so those rows still read `NO_402` and
+  carry the status in the note; `rate_limited_history.py` lists every one of them and derived
+  scripts read the status rather than the label.
 - **Nothing is signed, and no payment is ever sent.** Every check runs against the free
   402 an endpoint already returns.
 - **A timeout is recorded `UNREACHABLE`, never "broken."** One retry is attempted first. That

@@ -15,7 +15,10 @@ Results that have been posted to the x402 working-group record:
 
 Usage: python get_only_pass.py [YYYY-MM-DD]   (defaults to the latest snapshot)
 A live re-probe drifts with the network; the pinned part is the denominator,
-which is the snapshot's gated set (verdicts OK, WARN, V1, NON_EVM, BLOCKED).
+which is the snapshot's gated set (verdicts OK, WARN, V1, NON_EVM, BLOCKED). A host the
+census could not assess because it was rate-limited (RATE_LIMITED, from 2026-09-13) is in
+neither the gated set nor its complement, so it leaves the denominator rather than padding
+the wrong side of it.
 """
 import json
 import sys
