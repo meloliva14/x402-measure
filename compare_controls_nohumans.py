@@ -21,13 +21,30 @@ count; the daily window needs the intraday share inside it and is stated, not co
 RETRACTED BY THE PUBLISHER, 2026-09-13, AFTER THIS SCRIPT FIRST RAN. jalcodev pulled the
 status codes behind osf's 19 "mixed" days and reports that they are not endpoint failures:
 3,008 of those probes returned HTTP 429 and 1,500 returned no status at all, which he
-attributes to his own scanner's request rate rather than to the endpoint. He states the real
-outage begins 2026-08-27. HIS NUMBERS AND HIS DIAGNOSIS, not measurements of mine. If he is
+attributes to his own scanner's request rate rather than to the endpoint. He first placed the
+real outage at 2026-08-27 and then, later the same day, corrected himself to 2026-08-26 and split
+the 19 days 18/1: the 1,500 no-status probes average 5,000 to 5,500 ms, which is his timeout
+ceiling, so they are genuine transport timeouts; they run 1 to 12 a day against 84 to 273
+rate-limits from 08-11 to 08-23, invert on 08-26 to 318 timeouts against 57 rate-limits, and from
+08-27 are the only failure mode. So 18 of the 19 were his throttling and 08-26 was genuinely
+mixed, part his rate and part the host beginning to fail. HIS NUMBERS AND HIS DIAGNOSIS, not
+measurements of mine. If he is
 right, osf's 19 mixed days were not mixed, the landing test on this host has no subject, and
 the z below is measuring his throttling. The figures are left standing rather than deleted
 because they were published, and are labelled instead. What this census can say from its own
 side: it recorded a readable 402 on all 19 of those days with no retry, and from 08-27 it has
-recorded UNREACHABLE on both attempts every day for 18 consecutive days through 09-13.
+recorded UNREACHABLE on both attempts every day for 18 consecutive days through 09-13. His revised
+date is also visible in his OWN published share column without reference to his status codes:
+08-26 reads 32.6 per cent against a minimum of 46.9 per cent across the other 18 days, a cliff of
+14 points, and it is the only day in the file that sits below that floor.
+
+WHAT THE REVISION DOES TO THIS COMPARISON, if it holds. The 18 days stop being a landing test and
+become ordinary unmixed agreement, which this census already matches on all 18, so osf contributes
+30 agreeing unmixed days rather than 12 and the two controls together give 48 rather than 30. The
+landing test on this host is then a single day, 08-26, where one sample landed on a challenge
+against a 32.6 per cent share: expected 0.33 at one draw and 0.55 at two, so z +1.44 and +0.91.
+At n=1 that is not evidence in either direction. The 3.3 sd does not shrink under the revision, it
+loses its subject. A genuine flapper is still the open requirement.
 
 WHAT EACH CONTROL IS FOR, in their words and confirmed against their own files:
   api.onesource.io          GENERALISATION. Sole host on its domain, and its mixed days sit at
@@ -80,6 +97,7 @@ def main() -> int:
     report = {
         "generated": "2026-09-13",
         "publisher_retraction_2026-09-13": {
+            "superseded_by": "publisher_revision_2026-09-13_second, later the same day",
             "host": "api.osf-master-server.com",
             "source": "jalcodev, #wg-domain-discovery, 2026-09-13",
             "claim": ("the 19 mixed days are not endpoint failures: 3,008 probes returned HTTP "
@@ -91,6 +109,32 @@ def main() -> int:
             "what_our_own_rows_say": ("a readable 402 on all 19 days with no retry; UNREACHABLE "
                                       "on both attempts every day from 2026-08-27 through "
                                       "2026-09-13, 18 consecutive days"),
+        },
+        "publisher_revision_2026-09-13_second": {
+            "host": "api.osf-master-server.com",
+            "source": "jalcodev, #wg-domain-discovery, 2026-09-13, after the retraction above",
+            "claim": ("the 1,500 no-status probes average 5,000-5,500 ms, his timeout ceiling, so "
+                      "they are genuine transport timeouts and not a second throttling mechanism; "
+                      "1-12 a day against 84-273 rate-limits from 08-11 to 08-23, inverting on "
+                      "08-26 to 318 timeouts against 57 rate-limits, and the only failure mode "
+                      "from 08-27. Therefore 18 of the 19 mixed days were his throttling and were "
+                      "effectively clean, 08-26 was genuinely mixed, and the outage starts 08-26 "
+                      "rather than the 08-27 he first gave"),
+            "status": "HIS claim about HIS instrument, carried here unverified by us",
+            "independent_support_from_his_own_published_column": (
+                "08-26 reads 32.6% against a 46.9% minimum across the other 18 mixed days, a "
+                "14-point cliff and the only day below that floor, so the revised date follows "
+                "from his share column alone without his status codes"),
+            "effect_if_true": {
+                "osf_unmixed_days": "12 -> 30, and this census agrees with all 30",
+                "unmixed_days_across_both_controls": "30 -> 48, all agreeing",
+                "landing_test_on_osf": ("one day, 08-26: observed 1 against expected 0.3255 at "
+                                        "k=1 (z +1.44) and 0.5450 at k=2 (z +0.91); no evidence "
+                                        "either way at n=1"),
+                "the_3_3_sd": "loses its subject rather than shrinking",
+            },
+            "open_ask": ("08-26's 402 share recomputed under his new rule, with 429s neutral, "
+                         "since that single day is now the whole landing test on this host"),
         },
         "controls": []}
 

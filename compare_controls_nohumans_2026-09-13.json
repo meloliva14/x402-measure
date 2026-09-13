@@ -1,12 +1,27 @@
 {
  "generated": "2026-09-13",
  "publisher_retraction_2026-09-13": {
+  "superseded_by": "publisher_revision_2026-09-13_second, later the same day",
   "host": "api.osf-master-server.com",
   "source": "jalcodev, #wg-domain-discovery, 2026-09-13",
   "claim": "the 19 mixed days are not endpoint failures: 3,008 probes returned HTTP 429 and 1,500 returned no status at all, attributed by him to his own scanner's request rate; the genuine outage begins 2026-08-27",
   "status": "HIS claim about HIS instrument, carried here unverified by us",
   "effect_if_true": "those days were not mixed, so the landing test on this host has no subject and the z below describes his throttling",
   "what_our_own_rows_say": "a readable 402 on all 19 days with no retry; UNREACHABLE on both attempts every day from 2026-08-27 through 2026-09-13, 18 consecutive days"
+ },
+ "publisher_revision_2026-09-13_second": {
+  "host": "api.osf-master-server.com",
+  "source": "jalcodev, #wg-domain-discovery, 2026-09-13, after the retraction above",
+  "claim": "the 1,500 no-status probes average 5,000-5,500 ms, his timeout ceiling, so they are genuine transport timeouts and not a second throttling mechanism; 1-12 a day against 84-273 rate-limits from 08-11 to 08-23, inverting on 08-26 to 318 timeouts against 57 rate-limits, and the only failure mode from 08-27. Therefore 18 of the 19 mixed days were his throttling and were effectively clean, 08-26 was genuinely mixed, and the outage starts 08-26 rather than the 08-27 he first gave",
+  "status": "HIS claim about HIS instrument, carried here unverified by us",
+  "independent_support_from_his_own_published_column": "08-26 reads 32.6% against a 46.9% minimum across the other 18 mixed days, a 14-point cliff and the only day below that floor, so the revised date follows from his share column alone without his status codes",
+  "effect_if_true": {
+   "osf_unmixed_days": "12 -> 30, and this census agrees with all 30",
+   "unmixed_days_across_both_controls": "30 -> 48, all agreeing",
+   "landing_test_on_osf": "one day, 08-26: observed 1 against expected 0.3255 at k=1 (z +1.44) and 0.5450 at k=2 (z +0.91); no evidence either way at n=1",
+   "the_3_3_sd": "loses its subject rather than shrinking"
+  },
+  "open_ask": "08-26's 402 share recomputed under his new rule, with 429s neutral, since that single day is now the whole landing test on this host"
  },
  "controls": [
   {

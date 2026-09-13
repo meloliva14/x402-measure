@@ -20,13 +20,19 @@ His own caveats, carried here so nobody cites past them:
 RETRACTION BY THE PUBLISHER, same day, after we had run the files. He reports that osf's 19
   "mixed" days are an artefact of his own scanner: 3,008 of the probes in that window returned
   HTTP 429 and 1,500 returned no status at all, which he attributes to his request rate rather
-  than to the endpoint, and he places the genuine outage at 2026-08-27. He also reports the
+  than to the endpoint. He first placed the genuine outage at 2026-08-27 and then corrected
+  himself later the same day to 2026-08-26, splitting the 19 days 18/1: the no-status probes are
+  genuine transport timeouts at his 5,000-5,500 ms ceiling, negligible beside the rate-limits
+  until 08-26, when they invert. So by his account 18 of the 19 were his throttling and only
+  08-26 was genuinely mixed. He also reports the
   mechanism is not confined to osf (a 429 counted toward a fail streak, and his scheduler gave
   failing listings priority) and says he is publishing a correction and a per-host request cap.
   ALL OF THAT IS HIS ACCOUNT OF HIS OWN INSTRUMENT. We cannot verify it and do not assert it.
   What our own rows say, independently: a readable 402 on all 19 of those days with no retry,
   and UNREACHABLE on both attempts every day from 08-27 through 09-13.
   The CSVs are left exactly as published. The osf file should not now be cited as evidence
-  about that endpoint's intraday behaviour before 08-27.
+  about that endpoint's intraday behaviour before 08-26. Note that his revised date is independently
+  visible in his own share column: 08-26 reads 32.6% against a 46.9% minimum across the other 18
+  mixed days.
 
 NOT OURS. Never edit. Any number derived from these is theirs and is labelled theirs.
