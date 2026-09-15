@@ -39,8 +39,9 @@
   }
  },
  "notgated_runs_rule_days": 14,
- "notgated_runs_as_published": 172,
- "notgated_runs_if_origin_errors_excluded": 157,
+ "basis": "429 rows are neutralised here exactly as notgated_runs.py does, so notgated_runs_as_published matches the published census on the same window",
+ "notgated_runs_as_published": 171,
+ "notgated_runs_if_origin_errors_excluded": 156,
  "hosts_that_would_drop": [
   {
    "host": "api.intelica.dev",

@@ -41,6 +41,17 @@ def status_of(row: dict) -> str:
     return ""
 
 
+def rate_limited(row: dict) -> bool:
+    """A 429 row, under either era's labelling. MUST be applied here for the same reason
+    notgated_runs.py applies it: the published 14-day census counts a rate-limit as a
+    non-answer, so a comparison that skips this step silently reports a PRE-correction basis
+    and overstates the count by the hosts the 429 fix already removed. Missing it here on
+    2026-09-14 printed 172/157 where the published basis is 171/156, the one host being
+    agent-proxy.alchemy.com."""
+    return (row.get("verdict") == "RATE_LIMITED"
+            or any("HTTP 429" in n for n in (row.get("notes") or [])))
+
+
 def origin_error(row: dict) -> bool:
     """True when the row's NO_402 came from the origin failing rather than answering."""
     return row.get("verdict") == "NO_402" and status_of(row).startswith("5")
@@ -52,7 +63,7 @@ def load():
     for d in days:
         with open(SNAPSHOTS / d / "observation.json", encoding="utf-8") as f:
             rows = json.load(f)["observations"]
-        V[d] = {r["host"]: r["verdict"] for r in rows}
+        V[d] = {r["host"]: ("RATE_LIMITED" if rate_limited(r) else r["verdict"]) for r in rows}
         S[d] = {r["host"]: status_of(r) for r in rows}
     return days, V, S
 
@@ -119,6 +130,8 @@ def main() -> int:
             "hosts_affected": len(allhosts),
             "by_status": {k: {"host_days": v, "hosts": len(hosts[k])} for k, v in sorted(per.items())},
             "notgated_runs_rule_days": NEED,
+            "basis": ("429 rows are neutralised here exactly as notgated_runs.py does, so "
+                      "notgated_runs_as_published matches the published census on the same window"),
             "notgated_runs_as_published": len(a),
             "notgated_runs_if_origin_errors_excluded": len(b),
             "hosts_that_would_drop": detail,
