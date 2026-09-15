@@ -385,6 +385,17 @@ def decide(status, headers, body):
         # was wrong on the only days there was independent evidence either way.
         return "RATE_LIMITED", ["HTTP 429 - rate-limited, so this probe says nothing about "
                                 "whether the endpoint is payment-gated"], None
+    if 500 <= status < 600:
+        # The origin failed. NO_402 is still the right verdict, because this probe did not obtain
+        # a payment challenge and that is what the verdict asserts. The old NOTE asserted more
+        # than that: it said the endpoint is not payment-gated, which is a claim about how the
+        # operator configured a route, from a response that only shows their server erroring.
+        # Corrected 2026-09-14 after Mancy (Paddock) reported the same shape on their side, one
+        # reason code spanning 429, 503, 504 and a genuinely ungated 200 under the gloss "it
+        # answered, but never asked for payment". On this census it was 731 host-days over 85
+        # hosts, Cloudflare 52x and 530 among them, where the edge never reached the origin at all.
+        return "NO_402", [f"HTTP {status} - the origin failed, so this probe cannot say whether "
+                          "the endpoint is payment-gated"], None
     if status != 402:
         return "NO_402", [f"HTTP {status} - endpoint is not payment-gated right now"], None
 

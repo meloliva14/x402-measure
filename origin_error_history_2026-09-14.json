@@ -1,0 +1,136 @@
+{
+ "generated": "2026-09-14",
+ "window": {
+  "first": "2026-08-08",
+  "last": "2026-09-14",
+  "days": 38
+ },
+ "rule": "verdict is unchanged: a 5xx stays NO_402 because the probe obtained no payment challenge. From 2026-09-14 the note says the origin failed rather than that the endpoint is not payment-gated. Earlier rows carry the old note and are separated here by reading the status out of it.",
+ "host_days_5xx_as_no_402": 731,
+ "hosts_affected": 85,
+ "by_status": {
+  "500": {
+   "host_days": 58,
+   "hosts": 11
+  },
+  "501": {
+   "host_days": 9,
+   "hosts": 1
+  },
+  "502": {
+   "host_days": 113,
+   "hosts": 21
+  },
+  "503": {
+   "host_days": 287,
+   "hosts": 27
+  },
+  "522": {
+   "host_days": 11,
+   "hosts": 2
+  },
+  "525": {
+   "host_days": 38,
+   "hosts": 1
+  },
+  "530": {
+   "host_days": 215,
+   "hosts": 26
+  }
+ },
+ "notgated_runs_rule_days": 14,
+ "notgated_runs_as_published": 172,
+ "notgated_runs_if_origin_errors_excluded": 157,
+ "hosts_that_would_drop": [
+  {
+   "host": "api.intelica.dev",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "api.ownedforever.com",
+   "no_402_days": 28,
+   "of_which_5xx": 28,
+   "every_day_5xx": false
+  },
+  {
+   "host": "api.santosautomation.com",
+   "no_402_days": 17,
+   "of_which_5xx": 17,
+   "every_day_5xx": false
+  },
+  {
+   "host": "api.veradata.dev",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "api.wrathproductions.com",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "ecosystem-intelligence.onrender.com",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "nad.payflowagent.net",
+   "no_402_days": 34,
+   "of_which_5xx": 34,
+   "every_day_5xx": false
+  },
+  {
+   "host": "oracle.inspectmyads.com",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "payflowagent.net",
+   "no_402_days": 34,
+   "of_which_5xx": 34,
+   "every_day_5xx": false
+  },
+  {
+   "host": "public.zapper.xyz",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  },
+  {
+   "host": "store.nosub.club",
+   "no_402_days": 25,
+   "of_which_5xx": 25,
+   "every_day_5xx": false
+  },
+  {
+   "host": "tradeos.tech",
+   "no_402_days": 19,
+   "of_which_5xx": 17,
+   "every_day_5xx": false
+  },
+  {
+   "host": "uat-api.certaindata.ai",
+   "no_402_days": 18,
+   "of_which_5xx": 18,
+   "every_day_5xx": false
+  },
+  {
+   "host": "vape.juxtaposition1.deno.net",
+   "no_402_days": 20,
+   "of_which_5xx": 20,
+   "every_day_5xx": false
+  },
+  {
+   "host": "x402.bakdupoffroad.com",
+   "no_402_days": 38,
+   "of_which_5xx": 38,
+   "every_day_5xx": true
+  }
+ ]
+}

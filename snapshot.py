@@ -432,6 +432,13 @@ def build(date: str) -> dict:
                 "with intraday resolution, compare inside that window and with that draw count; a "
                 "whole-day rate is the wrong comparator and will make this census look better "
                 "than it is on a flapping host.",
+                "A 5xx is recorded NO_402, because the probe obtained no payment challenge, "
+                "but its note says the origin failed rather than that the endpoint is not "
+                "payment-gated: a server erroring says nothing about how a route is configured. "
+                "Corrected 2026-09-14; before that date those rows carry the old note. Read the "
+                "status out of the note to separate them, and see origin_error_history.py, which "
+                "reports the 14-day not-gated census both ways. The verdict is deliberately "
+                "unchanged, so no published count moves.",
                 "An HTTP 429 is recorded RATE_LIMITED and is NOT counted as not-payment-gated. "
                 "A rate-limit response describes the conversation, not whether the endpoint "
                 "sells anything. Before 2026-09-13 it was filed NO_402: 39 host-days on two "
