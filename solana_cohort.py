@@ -85,7 +85,14 @@ def main() -> int:
         row = {"host": h, "url": url[h], "network_named": net[h],
                "first_non_evm_day": ds[0], "last_non_evm_day": ds[-1],
                "non_evm_days": len(ds), "window_days": len(days),
-               "every_day_of_window": len(ds) == len(days)}
+               "every_day_of_window": len(ds) == len(days),
+               # The full per-day series, because a count is not the rows. nohumans.directory
+               # asked for daily NON_EVM rows to intersect against their catalogue, and a
+               # first/last/count triple hides a gap in the middle. Derivable from the public
+               # snapshots either way; shipping it saves them re-deriving it.
+               "non_evm_days_list": ds,
+               "gaps_inside_span": sorted(
+                   set(days[days.index(ds[0]):days.index(ds[-1]) + 1]) - set(ds))}
         row.update(payto(url[h]) if probe else {"probe": "skipped"})
         rows.append(row)
 
