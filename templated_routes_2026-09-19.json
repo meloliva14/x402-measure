@@ -1,0 +1,954 @@
+{
+ "generated": "2026-09-19",
+ "window": {
+  "first": "2026-08-08",
+  "last": "2026-09-19",
+  "days": 43
+ },
+ "rule": "templated = any path segment starts with ':'",
+ "pinned_hosts": 1521,
+ "pinned_url_changes_in_window": 0,
+ "other_template_shapes_found": {},
+ "templated_hosts": 68,
+ "templated_that_served_a_402_on_some_day": 31,
+ "templated_that_never_served_a_402": 37,
+ "templated_never_served_and_every_no_402_day_was_404": 21,
+ "basis": "429 rows neutralised exactly as notgated_runs.py does, via origin_error_history's helpers, so the as-published count matches the published census on the same window",
+ "notgated_runs_as_published": 182,
+ "of_which_templated": 35,
+ "of_which_templated_and_never_served_a_402": 32,
+ "of_which_templated_and_served_a_402_on_some_day": 3,
+ "notgated_runs_as_published_excluding_never_served_templated": 150,
+ "notgated_runs_if_origin_errors_excluded": 162,
+ "of_which_templated_under_that_reading": 33,
+ "of_which_templated_and_never_served_under_that_reading": 32,
+ "notgated_runs_excluding_origin_errors_and_never_served_templated": 130,
+ "reading_note": "the artifact class is templated AND never served a 402 in the window; a templated host that served one on any day, before or after its dark run, shows the literal path can be answered with a challenge, so its run is a real transition",
+ "templated_hosts_detail": [
+  {
+   "host": "agent-carwash.agentfetcher.workers.dev",
+   "path": "/hub/jobs/:id/fulfill",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "agent-proxy.alchemy.com",
+   "path": "/v1/x402-testnet/11488ccf8e53b480/lookup/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 5,
+    "RATE_LIMITED": 38
+   },
+   "served_a_402_on_days": 5,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "agents.chain.link",
+   "path": "/v1/operations/:workflowName",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "401": 11,
+    "404": 32
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "agents.gedx402.com",
+   "path": "/v1/agents/:action",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "agents.suedeai.ai",
+   "path": "/api/agents/:id/run",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "path": "/v1/us/announcements/:ticker",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 18,
+    "OK": 25
+   },
+   "served_a_402_on_days": 25,
+   "no_402_statuses": {
+    "503": 18
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.apify.com",
+   "path": "/v2/acts/:actorId/runs",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 11,
+    "OK": 32
+   },
+   "served_a_402_on_days": 32,
+   "no_402_statuses": {
+    "401": 11
+   },
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.certaindata.ai",
+   "path": "/:id/country-lookup/US",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "api.craigmbrown.com",
+   "path": "/v1/reputation/:agent_id",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 42,
+    "UNREACHABLE": 1
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "405": 42
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "api.curatoria.dev",
+   "path": "/packs/:id/download",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "api.devdrops.run",
+   "path": "/api/predictions/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 10,
+    "UNREACHABLE": 33
+   },
+   "served_a_402_on_days": 10,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.gocreativeai.com",
+   "path": "/v1/ai/eco/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.mintverdict.com",
+   "path": "/v1/mint/:mint/risk",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.osf-master-server.com",
+   "path": "/x402/sample/:record_id",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 19,
+    "UNREACHABLE": 24
+   },
+   "served_a_402_on_days": 19,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.x402.printmoneylab.com",
+   "path": "/api/v1/buyers/:address/profile",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "api.x402passport.xyz",
+   "path": "/v1/x402/passport/:wallet",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "403": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "api.zaroniacalculator.co.za",
+   "path": "/v1/index/:date",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "app.distro.media",
+   "path": "/api/public/news/by-slug/:pubSlug/:storySlug",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "astatelypleasuredome.com",
+   "path": "/api/poem/char/:i",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "b20check.com",
+   "path": "/v1/verify/:address",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "b20check.fly.dev",
+   "path": "/v1/verify/:address",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "brdata.thomenz.me",
+   "path": "/cep/:cep",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "btcnode.uk",
+   "path": "/api/reddit/hot/:subreddit",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "200": 10,
+    "404": 32,
+    "502": 1
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "conway-address-intel-production.up.railway.app",
+   "path": "/report/:address",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "curatoria.dev",
+   "path": "/packs/:id/download",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "data.crestsystems.ai",
+   "path": "/data/defi/:chain",
+   "days_observed": 43,
+   "verdicts": {
+    "UNREACHABLE": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "data.japanagent.dev",
+   "path": "/vuln/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "diet.agentic-jp.com",
+   "path": "/members/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "400": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "enrich.gocreativeai.com",
+   "path": "/v1/search/web/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "ephemeris.561.group",
+   "path": "/v1/ephemeris/moment/:date",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 35,
+    "UNREACHABLE": 8
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 15,
+    "405": 4,
+    "422": 11,
+    "503": 5
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "fishing-returns-orlando-innovation.trycloudflare.com",
+   "path": "/v1/verify/:address",
+   "days_observed": 43,
+   "verdicts": {
+    "UNREACHABLE": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "gateway.hillguava.xyz",
+   "path": "/weather/forecast/:city",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 16,
+    "UNREACHABLE": 27
+   },
+   "served_a_402_on_days": 16,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "image.gedx402.com",
+   "path": "/v1/image/:model",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "india-news.hillguava.xyz",
+   "path": "/news/ticker/:symbol",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 16,
+    "UNREACHABLE": 27
+   },
+   "served_a_402_on_days": 16,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "instagram.use.x402atlas.com",
+   "path": "/posts/:username",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 42,
+    "UNREACHABLE": 1
+   },
+   "served_a_402_on_days": 42,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "intel.twzrd.xyz",
+   "path": "/v1/intel/trust/:pubkey",
+   "days_observed": 43,
+   "verdicts": {
+    "NON_EVM": 13,
+    "NO_402": 30
+   },
+   "served_a_402_on_days": 13,
+   "no_402_statuses": {
+    "405": 30
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "jobs.gedx402.com",
+   "path": "/v1/jobs/:action",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "llm.gedx402.com",
+   "path": "/v1/llm/:model",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "logigrain.net",
+   "path": "/api/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "mail.cusethejuice.com",
+   "path": "/admin-api/machine/mailboxes/:email/quota",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 23,
+    "UNREACHABLE": 20
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 23
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "mcp.onchaindiligence.com",
+   "path": "/x402/screen/:address",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 7,
+    "OK": 36
+   },
+   "served_a_402_on_days": 36,
+   "no_402_statuses": {
+    "400": 7
+   },
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "mearef.dev",
+   "path": "/v1/:country/:series",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "media.gedx402.com",
+   "path": "/v1/tts/:model",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "meryol-agenticmarket-x402.hf.space",
+   "path": "/gas/now/:chain",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "negbit.com",
+   "path": "/api/market/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "405": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "nichedata.dev",
+   "path": "/v1/niche/:keyword",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "200": 37,
+    "307": 6
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "nwb-vending.com",
+   "path": "/2nd-pages/materials-factory/tools/ai-task-fit/full/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 12,
+    "OK": 30,
+    "UNREACHABLE": 1
+   },
+   "served_a_402_on_days": 30,
+   "no_402_statuses": {
+    "404": 12
+   },
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "omnicall.gocreativeai.com",
+   "path": "/v1/research/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "orisha-data.com",
+   "path": "/c1/price/:pair",
+   "days_observed": 43,
+   "verdicts": {
+    "UNREACHABLE": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "oussapi.duckdns.org",
+   "path": "/api/v1/price/:symbol",
+   "days_observed": 43,
+   "verdicts": {
+    "UNREACHABLE": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "payflowagent.net",
+   "path": "/v1/token/:addr/summary",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 39,
+    "OK": 4
+   },
+   "served_a_402_on_days": 4,
+   "no_402_statuses": {
+    "502": 1,
+    "530": 38
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "prance-mounting-watch.ngrok-free.dev",
+   "path": "/v1/token/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "readx.sh",
+   "path": "/api/:name",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "roger-tomfoolish-liam.ngrok-free.dev",
+   "path": "/v1/token/:addr/summary",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "rpc.satelink.network",
+   "path": "/rpc/:var1",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "403": 42,
+    "404": 1
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "safetyincidents.org",
+   "path": "/api/x402/incident/:id",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "scry.solanahub.de",
+   "path": "/x402/wallet/:address/forensics",
+   "days_observed": 43,
+   "verdicts": {
+    "NON_EVM": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "sentedge.ai",
+   "path": "/api/ideas/:slug/full",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 3,
+    "OK": 40
+   },
+   "served_a_402_on_days": 40,
+   "no_402_statuses": {
+    "403": 3
+   },
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "sgpropertydata.com",
+   "path": "/private/hdb/towns/:town/stats",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "staging.miven.dev",
+   "path": "/pay/:slug",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 11,
+    "UNREACHABLE": 32
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "522": 11
+   },
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "stockapi.hillguava.xyz",
+   "path": "/stock/:symbol",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 16,
+    "UNREACHABLE": 27
+   },
+   "served_a_402_on_days": 16,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "storage.gedx402.com",
+   "path": "/v1/objects/:key",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "tenjin.blog",
+   "path": "/api/read/:handle/:slug",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "url-extractor.x402.paysponge.com",
+   "path": "/url/:domain",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  },
+  {
+   "host": "verifyapi.hillguava.xyz",
+   "path": "/verify/ifsc/:code",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 16,
+    "UNREACHABLE": 27
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "405": 16
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "www.buywith402.com",
+   "path": "/products/:id/purchase",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "403": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "x402-factory.mizcoltd.workers.dev",
+   "path": "/corp/lei/:lei",
+   "days_observed": 43,
+   "verdicts": {
+    "NO_402": 43
+   },
+   "served_a_402_on_days": 0,
+   "no_402_statuses": {
+    "404": 43
+   },
+   "in_notgated_as_published": true,
+   "in_notgated_if_origin_errors_excluded": true
+  },
+  {
+   "host": "x402scan-git-router-117-merit-systems.vercel.app",
+   "path": "/api/x402/wallets/:address/stats",
+   "days_observed": 43,
+   "verdicts": {
+    "OK": 43
+   },
+   "served_a_402_on_days": 43,
+   "no_402_statuses": {},
+   "in_notgated_as_published": false,
+   "in_notgated_if_origin_errors_excluded": false
+  }
+ ]
+}
