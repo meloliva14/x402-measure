@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-09-19",
-    "days": 43
+    "last": "2026-09-20",
+    "days": 44
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 75,
-  "distinct_hosts": 53,
-  "false_transitions_minted": 150,
+  "flap_events": 92,
+  "distinct_hosts": 69,
+  "false_transitions_minted": 184,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -306,9 +306,16 @@
     {
       "window": "2026-09-18->2026-09-19",
       "raw": 20,
-      "from_detected_flap": 0,
+      "from_detected_flap": 17,
       "involving_unreachable": 18,
       "excluding_unreachable": 2
+    },
+    {
+      "window": "2026-09-19->2026-09-20",
+      "raw": 25,
+      "from_detected_flap": 17,
+      "involving_unreachable": 18,
+      "excluding_unreachable": 7
     }
   ],
   "flaps": [
@@ -836,6 +843,125 @@
       "verdict": "OK",
       "window_in": "2026-09-16->2026-09-17",
       "window_out": "2026-09-17->2026-09-18"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "ads.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "agentworld.me",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "api.clawinabox.xyz",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "api.sumvid.app",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "api.wallettriage.com",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "crypto.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "edgar.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "evm-gas.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "gas.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "news.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "reddit.apitoll.cloud",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "srv1334799.hstgr.cloud",
+      "verdict": "NO_402",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "staging.miven.dev",
+      "verdict": "NO_402",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "store.cryptotradecalc.com",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "vibesprings.net",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "x402.devvizion.com",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
+    },
+    {
+      "date": "2026-09-19",
+      "host": "x402toll.com",
+      "verdict": "OK",
+      "window_in": "2026-09-18->2026-09-19",
+      "window_out": "2026-09-19->2026-09-20"
     }
   ]
 }
