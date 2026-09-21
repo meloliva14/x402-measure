@@ -1,0 +1,194 @@
+{
+ "generated_utc": "2026-09-21T00:50:10Z",
+ "source": {
+  "file": "dns_census.json",
+  "observedAt": "2026-08-23T17:14:48Z",
+  "names_queried": 1971,
+  "x402_record": 7
+ },
+ "rows": [
+  {
+   "spelling": "bare URL",
+   "records": 1,
+   "names": [
+    "auor.io"
+   ],
+   "distinct_record_bodies": 1,
+   "registrable_domains": [
+    "auor.io"
+   ]
+  },
+  {
+   "spelling": "v=x4021;descriptor=...;url=",
+   "records": 3,
+   "names": [
+    "api.posttosource.com",
+    "api.telemost.io",
+    "posttosource.com"
+   ],
+   "distinct_record_bodies": 2,
+   "registrable_domains": [
+    "posttosource.com",
+    "telemost.io"
+   ]
+  },
+  {
+   "spelling": "v=x4021;url=",
+   "records": 0,
+   "names": [],
+   "distinct_record_bodies": 0,
+   "registrable_domains": []
+  },
+  {
+   "spelling": "x402-manifest=",
+   "records": 1,
+   "names": [
+    "vibesprings.net"
+   ],
+   "distinct_record_bodies": 1,
+   "registrable_domains": [
+    "vibesprings.net"
+   ]
+  },
+  {
+   "spelling": "v=x402-1 (conforming)",
+   "records": 2,
+   "names": [
+    "api.sirenic.eu",
+    "sirenic.eu"
+   ],
+   "distinct_record_bodies": 1,
+   "registrable_domains": [
+    "sirenic.eu"
+   ]
+  }
+ ],
+ "units_over_all_records": {
+  "names": 7,
+  "distinct_record_bodies": 5,
+  "registrable_domains": 5
+ },
+ "names_sharing_a_byte_identical_record": [
+  [
+   "api.posttosource.com",
+   "posttosource.com"
+  ],
+  [
+   "api.sirenic.eu",
+   "sirenic.eu"
+  ]
+ ],
+ "note": "Every count here is derived from the census file. Pick the unit the sentence means and read it from this file, so the table and the prose move together on the next re-run.",
+ "delegation_check": {
+  "why": "zone boundaries are not in the census; this is a separate live observation",
+  "checked_utc": "2026-09-21T00:50:10Z",
+  "resolver": "https://dns.google/resolve",
+  "names": {
+   "_x402.api.posttosource.com": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "posttosource.com"
+   },
+   "_x402.api.sirenic.eu": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "sirenic.eu"
+   },
+   "_x402.api.telemost.io": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "telemost.io"
+   },
+   "_x402.auor.io": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "auor.io"
+   },
+   "_x402.posttosource.com": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "posttosource.com"
+   },
+   "_x402.sirenic.eu": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "sirenic.eu"
+   },
+   "_x402.vibesprings.net": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "vibesprings.net"
+   },
+   "api.posttosource.com": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "posttosource.com"
+   },
+   "api.sirenic.eu": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "sirenic.eu"
+   },
+   "api.telemost.io": {
+    "soa_at_this_name": false,
+    "ns_set_at_this_name": [],
+    "is_zone_apex": false,
+    "enclosing_registrable_domain": "telemost.io"
+   },
+   "auor.io": {
+    "soa_at_this_name": true,
+    "ns_set_at_this_name": [
+     "dns1.registrar-servers.com.",
+     "dns2.registrar-servers.com."
+    ],
+    "is_zone_apex": true,
+    "enclosing_registrable_domain": "auor.io"
+   },
+   "posttosource.com": {
+    "soa_at_this_name": true,
+    "ns_set_at_this_name": [
+     "curitiba.ns.porkbun.com.",
+     "fortaleza.ns.porkbun.com.",
+     "maceio.ns.porkbun.com.",
+     "salvador.ns.porkbun.com."
+    ],
+    "is_zone_apex": true,
+    "enclosing_registrable_domain": "posttosource.com"
+   },
+   "sirenic.eu": {
+    "soa_at_this_name": true,
+    "ns_set_at_this_name": [
+     "dns106.ovh.net.",
+     "ns106.ovh.net."
+    ],
+    "is_zone_apex": true,
+    "enclosing_registrable_domain": "sirenic.eu"
+   },
+   "vibesprings.net": {
+    "soa_at_this_name": true,
+    "ns_set_at_this_name": [
+     "ns1.dns-parking.com.",
+     "ns2.dns-parking.com."
+    ],
+    "is_zone_apex": true,
+    "enclosing_registrable_domain": "vibesprings.net"
+   }
+  },
+  "zones_holding_the_records": [
+   "auor.io",
+   "posttosource.com",
+   "sirenic.eu",
+   "telemost.io",
+   "vibesprings.net"
+  ]
+ }
+}
