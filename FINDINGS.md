@@ -175,6 +175,19 @@ Stated up front rather than waiting to be asked.
   census itself. Signed snapshots are never rewritten, so those rows still read `NO_402` and
   carry the status in the note; `rate_limited_history.py` lists every one of them and derived
   scripts read the status rather than the label.
+- **A route template in a pinned URL is not a closed shop.** 68 of the 1,521 pinned URLs carry
+  an Express-style path segment (`/:id`), and 31 of those hosts served a 402 on that literal
+  path on some day, because plenty of servers gate payment before they route. So a template
+  alone is not an artifact. The uninformative class is templated *and* never answered with a
+  challenge on any day, and 32 such hosts sit inside the count of hosts with a
+  14-consecutive-day `NO_402` run (`notgated_runs.py`). Over 2026-08-08..09-14 that count reads
+  171 as published and 139 with those 32 set aside; over 2026-08-08..09-19, 182 and 150. If
+  origin failures are excluded as well, the same two windows read 156 and 124, then 162 and
+  130. 21 of the 37 templated hosts that never served a challenge returned 404 on every one of
+  their no-402 days. "No challenge was served" stays true for all 32 of them; "this host
+  stopped charging" does not follow. `templated_routes.py` (commit `8b5513d`) prints the split
+  and the per-host detail on the same 429-neutral basis the published census uses. Recorded
+  2026-09-20.
 - **Nothing is signed and no payment is ever sent.**
 
 ---
