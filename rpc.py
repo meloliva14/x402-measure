@@ -5,9 +5,15 @@ Read-only. Nothing here signs, spends, or needs a key.
 import json
 import urllib.request
 
-# Public endpoints. Both are rate-limited; the fallback matters on long sweeps.
+# Public endpoints, ordered by what they actually serve, measured 2026-09-20 rather than assumed.
+# mainnet.base.org now answers eth_getLogs with HTTP 413 above a small range, drpc caps the range
+# at 10 blocks for public callers, and base-rpc.publicnode.com serves only recent blocks and calls
+# anything older an "archive request" needing a token. The Tenderly public gateway serves archive
+# depth at 1,000 blocks a call, so it leads; the others stay as fallbacks for the cheap methods
+# (eth_blockNumber, eth_call) they still answer.
 RPCS = {
-    "base": ["https://mainnet.base.org", "https://base.drpc.org"],
+    "base": ["https://base.gateway.tenderly.co", "https://base-rpc.publicnode.com",
+             "https://mainnet.base.org", "https://base.drpc.org"],
     "base-sepolia": ["https://sepolia.base.org"],
 }
 
@@ -17,7 +23,7 @@ USDC_BASE_SEPOLIA = "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
 TRANSFER = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
 
 BLOCK_SECONDS = 2       # Base
-MAX_RANGE = 9_000       # public RPCs cap eth_getLogs well under 10k blocks
+MAX_RANGE = 1_000       # measured 2026-09-20: the archive-capable public gateway caps here
 
 
 def rpc(method, params, chain="base"):
