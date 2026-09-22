@@ -446,31 +446,8 @@
   },
   {
    "host": "agent-data-hub-thebrandbard.replit.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "contact",
-    "description",
-    "endpoints",
-    "freeEndpoints",
-    "mcp",
-    "name",
-    "openapi",
-    "openapiYaml"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": "base",
-    "asset": "USDC",
-    "amount": "$0.01",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "agent-data-toolkit.onrender.com",
@@ -529,27 +506,8 @@
   },
   {
    "host": "agent-production-1daa.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "facilitator",
-    "homepage",
-    "llms_txt",
-    "openapi_url",
-    "provider",
-    "resources",
-    "x402Version"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "50000",
-    "payTo": "0x77c947f8534E5dC79B4a41280D597eC210BCD93c"
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "agent-proxy.alchemy.com",
@@ -591,33 +549,33 @@
   },
   {
    "host": "agent-toll.agentfetcher.workers.dev",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "version+resources",
-   "top_keys": [
-    "client",
-    "copilot",
-    "description",
-    "docs",
-    "free",
-    "name",
-    "probeFee",
-    "resources"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "agent-treats-production.up.railway.app",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+accepts",
+   "top_keys": [
+    "accepts",
+    "discovery",
+    "resources",
+    "service",
+    "url",
+    "x402Version"
+   ],
+   "payable": "partial",
+   "missing": [
+    "amount"
+   ],
+   "evidence": {
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": null,
+    "payTo": "0xBD65c2d2aC9D3df9CE77e5e2579B5b38eFEe36f0"
+   },
+   "peers": null
   },
   {
    "host": "agent-trust-layer.agent-trust-layer.workers.dev",
@@ -822,8 +780,22 @@
   },
   {
    "host": "agentguard.hergertsynthora.com",
-   "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "resources",
+    "x402Version"
+   ],
+   "payable": "payable",
+   "missing": [],
+   "evidence": {
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": "5000",
+    "payTo": "0xEf879BFD6C4AccB8F795136de90246e1EC245e06"
+   },
+   "peers": null
   },
   {
    "host": "agenticinsights.com",
@@ -883,7 +855,7 @@
   {
    "host": "agentpmt-webapp.vercel.app",
    "served": false,
-   "error": "HTTP 404"
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "agentproof-murex.vercel.app",
@@ -1027,28 +999,8 @@
   },
   {
    "host": "agents.freederia.com",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "notice",
-    "pricing_unit",
-    "protocol",
-    "public_html",
-    "service",
-    "version",
-    "x402"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "agents.gedx402.com",
@@ -1113,8 +1065,8 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "90000",
-    "payTo": "0xb5a05466712fd5bcdf2883f43cC6B1799428032d"
+    "amount": "50000",
+    "payTo": "0x10ff767043a1723e0bb5b9207bc37d3442cc9e4f"
    },
    "peers": null
   },
@@ -1149,32 +1101,8 @@
   },
   {
    "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "description",
-    "disclaimer",
-    "markets",
-    "openapi",
-    "payment",
-    "pricing",
-    "resources",
-    "service"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "USDC",
-    "amount": null,
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 503"
   },
   {
    "host": "agenttoll.dev",
@@ -1235,10 +1163,10 @@
     "description",
     "endpoints",
     "facilitator",
+    "facilitator_supported",
     "name",
     "network",
-    "token",
-    "treasury"
+    "token"
    ],
    "payable": "none",
    "missing": [
@@ -1263,7 +1191,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -1300,22 +1229,8 @@
   },
   {
    "host": "ai-summarizer.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "ai.stable-jack.com",
@@ -1406,22 +1321,8 @@
   },
   {
    "host": "airdrop-checker.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "airdroppulse.theaslangroupllc.com",
@@ -1450,7 +1351,7 @@
   {
    "host": "almanac.locomot.io",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
     "resources",
@@ -1477,9 +1378,9 @@
     "description",
     "disclaimer",
     "empirical_profiles",
+    "line_item_trajectory",
     "mcp",
-    "preview",
-    "resources"
+    "preview"
    ],
    "payable": "partial",
    "missing": [
@@ -1620,10 +1521,10 @@
     "apexAlpha",
     "apiPath",
     "available",
+    "bellwetherResidentMarketPulse",
     "compatibilityWitness",
     "contentDigest",
-    "crawlerInstructions",
-    "generatedAt"
+    "crawlerInstructions"
    ],
    "payable": "partial",
    "missing": [
@@ -1633,7 +1534,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.25",
+    "amount": "$0.01",
     "payTo": null
    },
    "peers": null
@@ -1761,28 +1662,8 @@
   },
   {
    "host": "api.agenticweb.nl",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+none",
-   "top_keys": [
-    "agentCard",
-    "description",
-    "items",
-    "llmsTxt",
-    "mcp",
-    "name",
-    "openapi",
-    "privacyPolicy"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 503"
   },
   {
    "host": "api.agentinternetruntime.com",
@@ -1907,24 +1788,8 @@
   },
   {
    "host": "api.arkm.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 405"
   },
   {
    "host": "api.atms.nathanlidurin.com",
@@ -2007,6 +1872,7 @@
    "top_keys": [
     "accuracy",
     "asset",
+    "coverage",
     "network",
     "networks",
     "resources",
@@ -2068,24 +1934,8 @@
   },
   {
    "host": "api.borisinc.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+none",
-   "top_keys": [
-    "discovery",
-    "items",
-    "provider",
-    "x402Version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 530"
   },
   {
    "host": "api.brazilayer.com",
@@ -2296,6 +2146,7 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
+    "resourcesDetailed",
     "version"
    ],
    "payable": "none",
@@ -2421,32 +2272,8 @@
   },
   {
    "host": "api.devdrops.run",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+endpoints",
-   "top_keys": [
-    "baseUrl",
-    "description",
-    "endpoints",
-    "links",
-    "name",
-    "pricing",
-    "tags",
-    "version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": "USDC",
-    "amount": "0.01",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "api.doc2json.de",
@@ -2534,22 +2361,8 @@
   },
   {
    "host": "api.freaks.one",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+none",
-   "top_keys": [
-    "items",
-    "x402Version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "api.getanyapi.com",
@@ -2620,8 +2433,28 @@
   },
   {
    "host": "api.glianalabs.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "description",
+    "documentation",
+    "freeTier",
+    "image",
+    "instructions",
+    "name",
+    "openapi",
+    "resourceDetails"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.gmfarcaster.com",
@@ -2631,7 +2464,7 @@
   {
    "host": "api.gocreativeai.com",
    "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "error": "HTTP 502"
   },
   {
    "host": "api.govparse.io",
@@ -2672,7 +2505,7 @@
   {
    "host": "api.immuta.app",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+endpoints",
    "top_keys": [
     "description",
@@ -2751,7 +2584,7 @@
   {
    "host": "api.ipintel.ai",
    "served": false,
-   "error": "HTTP 521"
+   "error": "HTTP 525"
   },
   {
    "host": "api.ishtar.numetal.xyz",
@@ -2820,7 +2653,7 @@
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "1000000000",
-    "payTo": "0xEfB3d3b26b31982293bE31bDf389e7b5F3b4DcDE"
+    "payTo": "0x0C926035c8C3b8c2237b9D4EFE30C54A6B709C4E"
    },
    "peers": null
   },
@@ -2848,7 +2681,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "1000",
+    "amount": "5000",
     "payTo": "0xc529edd6d47c60923902514c7c0b3993ae42c2ec"
    },
    "peers": null
@@ -2859,7 +2692,11 @@
    "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
+    "description",
+    "documentation",
+    "name",
     "resources",
+    "url",
     "version",
     "x402"
    ],
@@ -3107,7 +2944,7 @@
   {
    "host": "api.molty.cash",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "api.munition.io",
@@ -3249,7 +3086,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "USDC",
-    "amount": "100000",
+    "amount": "50000",
     "payTo": "0x306c8148a5E433CEDdF184a0b0Db4A6631E74E51"
    },
    "peers": null
@@ -3322,7 +3159,7 @@
   {
    "host": "api.omninexu.com",
    "served": false,
-   "error": "URLError"
+   "error": "HTTP 404"
   },
   {
    "host": "api.onesource.io",
@@ -3377,58 +3214,18 @@
   },
   {
    "host": "api.osf-master-server.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "contact",
-    "data_categories",
-    "data_guarantees",
-    "description",
-    "documentation",
-    "mcp_endpoints",
-    "name",
-    "path_parameters"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "50000",
-    "payTo": "0x72f62dE8b70d6CFa8Cc2dF6f21F243f289F3396c"
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "api.ownedforever.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "no-version+services",
-   "top_keys": [
-    "human_payment",
-    "server",
-    "services",
-    "x402"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.01",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 502"
   },
   {
    "host": "api.ozdreamtools.de",
    "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "error": "HTTP 404"
   },
   {
    "host": "api.pak-labs.com",
@@ -3438,7 +3235,7 @@
   {
    "host": "api.palmai.tech",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "api.paysponge.com",
@@ -3452,8 +3249,27 @@
   },
   {
    "host": "api.phoneagent.xyz",
-   "served": false,
-   "error": "URLError"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "asset",
+    "network",
+    "openapi",
+    "payTo",
+    "resources",
+    "scheme",
+    "version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.pixo.tools",
@@ -3476,7 +3292,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "$0.20",
+    "amount": "$0.05",
     "payTo": "0x7b13107779CfDA1bEba3289d0Fbe27310436f3E3"
    },
    "peers": null
@@ -3628,16 +3444,16 @@
    "host": "api.robinx.io",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "version+resources",
+   "family": "x402Version+resources",
    "top_keys": [
     "base_url",
     "contact",
     "description",
+    "disclaimer",
     "free_endpoints",
+    "items",
     "name",
-    "openapi",
-    "ownershipProofs",
-    "resources"
+    "openapi"
    ],
    "payable": "none",
    "missing": [
@@ -3836,9 +3652,15 @@
    "host": "api.sirenic.eu",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "x402Version+none",
+   "family": "x402Version+resources",
    "top_keys": [
+    "contact",
+    "description",
+    "docs",
     "items",
+    "kind",
+    "name",
+    "resources",
     "x402Version"
    ],
    "payable": "none",
@@ -3905,12 +3727,32 @@
   {
    "host": "api.sourcestrand.com",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "api.stacktr.ee",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "items",
+    "openapi",
+    "ownershipProofs",
+    "pagination",
+    "resources",
+    "serviceRecord",
+    "website",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.stakedbots.com",
@@ -3943,8 +3785,28 @@
   },
   {
    "host": "api.stocktrends.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "no-version+resources",
+   "top_keys": [
+    "acquisition_evaluation",
+    "canonical_url",
+    "compatibility_aliases",
+    "complete",
+    "discovery_exceptions",
+    "membership",
+    "payment_architecture",
+    "request_lifecycle"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "api.strale.io",
@@ -4047,7 +3909,7 @@
   {
    "host": "api.syntaxrate.com",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 530"
   },
   {
    "host": "api.tcgapi.dev",
@@ -4193,24 +4055,8 @@
   },
   {
    "host": "api.utilia.ink",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "instructions",
-    "ownershipProofs",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "api.vaults.fyi",
@@ -4232,9 +4078,10 @@
     "description",
     "endpoints",
     "free_tools",
+    "kind",
     "name",
     "trial",
-    "x402Version"
+    "updated"
    ],
    "payable": "payable",
    "missing": [],
@@ -4379,7 +4226,7 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.02",
+    "amount": "$0.003001",
     "payTo": null
    },
    "peers": null
@@ -4431,23 +4278,8 @@
   },
   {
    "host": "api.x402agentic.ai",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "provider",
-    "resources",
-    "x402Version"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "$0.10",
-    "payTo": "0xc23C4aFA42cbaBbc03D04Bc87ecB769Fc82F1f43"
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "api.x402dataapi.com",
@@ -4470,7 +4302,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "$0.20",
+    "amount": "$0.05",
     "payTo": "0x7b13107779CfDA1bEba3289d0Fbe27310436f3E3"
    },
    "peers": null
@@ -4502,22 +4334,8 @@
   },
   {
    "host": "api.x402video.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "api.xona-agent.com",
@@ -4683,17 +4501,17 @@
     "assetSymbol",
     "category",
     "count",
+    "description",
     "generatedAt",
-    "network",
-    "payTo",
-    "resources"
+    "name",
+    "network"
    ],
    "payable": "payable",
    "missing": [],
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "1000",
+    "amount": "10000",
     "payTo": "0xDa2F35d283c42dd60B965322394bc658a5c1769F"
    },
    "peers": null
@@ -4736,7 +4554,7 @@
    "payable": "payable",
    "missing": [],
    "evidence": {
-    "network": "base",
+    "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": "500000",
     "payTo": "0x10FF767043A1723E0BB5B9207bC37D3442cC9E4F"
@@ -4896,8 +4714,28 @@
   },
   {
    "host": "asistent-crypto.vercel.app",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+endpoints",
+   "top_keys": [
+    "agentCard",
+    "baseUrl",
+    "base_url",
+    "category",
+    "contact",
+    "description",
+    "documentation",
+    "endpoints"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "asn-lookup.underscoredone.com",
@@ -5062,7 +4900,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.005",
+    "amount": "$0",
     "payTo": null
    },
    "peers": null
@@ -5142,13 +4980,14 @@
    "path": "/.well-known/x402.json",
    "family": "no-version+services",
    "top_keys": [
-    "capabilities",
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "tags",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -5158,7 +4997,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.00375",
+    "amount": "0.006125",
     "payTo": null
    },
    "peers": null
@@ -5220,22 +5059,8 @@
   },
   {
    "host": "barcode-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "base-block-metrics.hergertsynthora.com",
@@ -5284,7 +5109,7 @@
     "network": null,
     "asset": null,
     "amount": {
-     "amount": "5000",
+     "amount": "250000",
      "asset": "USDC",
      "assetAddress": "0x833589fCD6eDb6E08f4C7C32D4f71b54bdA02913",
      "network": "eip155:8453",
@@ -5311,22 +5136,8 @@
   },
   {
    "host": "base64-codec.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "basefeed-io.fly.dev",
@@ -5396,26 +5207,12 @@
   {
    "host": "binance-crypto-24h-stats.hergertsynthora.com",
    "served": false,
-   "error": "HTTP 502"
+   "error": "HTTP 410"
   },
   {
    "host": "binance-ticker24.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "bio.memoryapi.org",
@@ -5562,50 +5359,58 @@
    "host": "blockrun-web-vbsbhh7lea-uc.a.run.app",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "x402Version+resources",
+   "family": "x402Version+endpoints",
    "top_keys": [
     "apiVersion",
     "description",
     "documentation",
+    "endpoints",
     "extensions",
     "instructions",
     "name",
-    "network",
-    "resource"
+    "network"
    ],
-   "payable": "none",
+   "payable": "partial",
    "missing": [
     "network",
     "asset",
-    "amount",
     "payTo"
    ],
-   "evidence": {},
+   "evidence": {
+    "network": null,
+    "asset": null,
+    "amount": "$0.0001-$5.000",
+    "payTo": null
+   },
    "peers": null
   },
   {
    "host": "blockrun.ai",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "x402Version+resources",
+   "family": "x402Version+endpoints",
    "top_keys": [
     "apiVersion",
     "description",
     "documentation",
+    "endpoints",
     "extensions",
     "instructions",
     "name",
-    "network",
-    "resource"
+    "network"
    ],
-   "payable": "none",
+   "payable": "partial",
    "missing": [
     "network",
     "asset",
-    "amount",
     "payTo"
    ],
-   "evidence": {},
+   "evidence": {
+    "network": null,
+    "asset": null,
+    "amount": "$0.0001-$5.000",
+    "payTo": null
+   },
    "peers": null
   },
   {
@@ -5711,22 +5516,8 @@
   },
   {
    "host": "bridge-routes.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "bridgerisk.hergertsynthora.com",
@@ -5755,12 +5546,12 @@
    "top_keys": [
     "billing",
     "chain",
+    "free_resources",
     "network",
     "networks",
     "note",
     "pay_to",
-    "resources",
-    "service"
+    "resources"
    ],
    "payable": "partial",
    "missing": [
@@ -5771,7 +5562,7 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.01",
+    "amount": "$0.05",
     "payTo": null
    },
    "peers": null
@@ -5818,8 +5609,28 @@
   },
   {
    "host": "btcnode.uk",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "asset",
+    "default_price_usd",
+    "description",
+    "docs",
+    "free",
+    "name",
+    "network",
+    "resources"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "buildpulse-alpha.vercel.app",
@@ -5971,7 +5782,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -6118,7 +5930,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -6468,7 +6281,7 @@
   {
    "host": "clonecho.builda.company",
    "served": false,
-   "error": "unparseable JSON (JSONDecodeError)"
+   "error": "URLError"
   },
   {
    "host": "cloud.hyrule.host",
@@ -6529,24 +6342,8 @@
   },
   {
    "host": "coil.trade",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "docs",
-    "openapi",
-    "resources",
-    "x402Version"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "250000",
-    "payTo": "0x7B53524d5c5D29EfB8C1d128C56F62FE38Cd9476"
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "coinflip402.vercel.app",
@@ -6622,66 +6419,18 @@
   },
   {
    "host": "color-palette.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "company-enrichment.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "company.payapi.market",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
@@ -6744,7 +6493,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -6813,7 +6563,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -6853,7 +6604,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -6949,22 +6701,8 @@
   },
   {
    "host": "cron-parser.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "cron.bip-rep.com",
@@ -6992,22 +6730,8 @@
   },
   {
    "host": "crontab-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "crownblock.lonestaroracle.xyz",
@@ -7017,7 +6741,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -7031,22 +6756,8 @@
   },
   {
    "host": "crypto-news.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "crypto-trending.hergertsynthora.com",
@@ -7202,22 +6913,8 @@
   },
   {
    "host": "csv-to-json.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "curatoria.dev",
@@ -7251,22 +6948,8 @@
   },
   {
    "host": "currency-converter.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "cyberpulse-six.vercel.app",
@@ -7324,7 +7007,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -7434,8 +7118,28 @@
   },
   {
    "host": "data.lagoontechsystems.com",
-   "served": false,
-   "error": "TimeoutError"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+endpoints",
+   "top_keys": [
+    "description",
+    "endpoints",
+    "name",
+    "version"
+   ],
+   "payable": "partial",
+   "missing": [
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {
+    "network": "eip155:8453",
+    "asset": "USDC",
+    "amount": null,
+    "payTo": null
+   },
+   "peers": null
   },
   {
    "host": "datasourcepulse.com",
@@ -7621,10 +7325,13 @@
    "family": "no-version+services",
    "top_keys": [
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -7634,7 +7341,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.0075",
+    "amount": "0.00875",
     "payTo": null
    },
    "peers": null
@@ -7665,22 +7372,8 @@
   },
   {
    "host": "defi-yields.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "defi.hugen.tokyo",
@@ -7710,7 +7403,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -7926,22 +7620,8 @@
   },
   {
    "host": "diff-checker.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "disruption.forgemesh.io",
@@ -7998,22 +7678,8 @@
   },
   {
    "host": "dns-lookup.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "dns-whois-lookup.underscoredone.com",
@@ -8041,22 +7707,8 @@
   },
   {
    "host": "dns.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "dnsdomain.hergertsynthora.com",
@@ -8100,22 +7752,8 @@
   },
   {
    "host": "docparse.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "domain-age-checker.underscoredone.com",
@@ -8129,22 +7767,8 @@
   },
   {
    "host": "domain-intelligence.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "domain.hugen.tokyo",
@@ -8243,7 +7867,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -8259,27 +7884,26 @@
    "host": "earth.x402.press",
    "served": true,
    "path": "/.well-known/x402.json",
-   "family": "no-version+endpoints",
+   "family": "no-version+services",
    "top_keys": [
-    "capabilities",
-    "data_sources",
     "description",
-    "endpoints",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
-    "tags",
-    "type"
+    "services",
+    "tools"
    ],
    "payable": "partial",
    "missing": [
-    "network",
     "asset",
     "payTo"
    ],
    "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.10",
+    "network": "base",
+    "asset": "USDC",
+    "amount": "0.106125",
     "payTo": null
    },
    "peers": null
@@ -8508,60 +8132,18 @@
   },
   {
    "host": "email-deliverability.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "email-finder.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "email-send.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "embed.gedx402.com",
@@ -8640,7 +8222,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "usdc:eip155:8453:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-    "amount": 10000,
+    "amount": 1000,
     "payTo": "0xe602344ef3944497a72981e36066c62e7a99f599"
    },
    "peers": null
@@ -8652,28 +8234,8 @@
   },
   {
    "host": "enrich.gocreativeai.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+accepts",
-   "top_keys": [
-    "accepts",
-    "asset",
-    "contact",
-    "count",
-    "currency",
-    "description",
-    "docs",
-    "endpoints"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "$0.01",
-    "payTo": "0xbAf55b24CA99bd7393B6e627093b13c6628b53Cc"
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 502"
   },
   {
    "host": "enrichx402.com",
@@ -8700,22 +8262,8 @@
   },
   {
    "host": "ens-resolver.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "ens-resolver.underscoredone.com",
@@ -8726,27 +8274,26 @@
    "host": "entertainment.x402.press",
    "served": true,
    "path": "/.well-known/x402.json",
-   "family": "no-version+endpoints",
+   "family": "no-version+services",
    "top_keys": [
-    "accepted_assets",
-    "capabilities",
-    "data_sources",
     "description",
-    "endpoints",
-    "facilitators",
+    "display_name",
     "name",
-    "payment_scheme"
+    "operations",
+    "persona",
+    "pricing",
+    "services",
+    "tools"
    ],
    "payable": "partial",
    "missing": [
-    "network",
     "asset",
     "payTo"
    ],
    "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.25",
+    "network": "base",
+    "asset": "USDC",
+    "amount": "0.256125",
     "payTo": null
    },
    "peers": null
@@ -8819,7 +8366,7 @@
   {
    "host": "ephemeris.561.group",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "epsteinisland.club",
@@ -8834,7 +8381,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -8949,22 +8497,8 @@
   },
   {
    "host": "exchange-rates.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "execbox.xyz",
@@ -9015,22 +8549,8 @@
   },
   {
    "host": "fact-checker.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "fanfare.run",
@@ -9232,28 +8752,8 @@
   },
   {
    "host": "finance.payapi.market",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "finance.toon.haus",
@@ -9439,7 +8939,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "992300",
+    "amount": "1446100",
     "payTo": "0xfdA5a8DC19e814A7880515fEB88308BbEE625D6D"
    },
    "peers": null
@@ -9528,22 +9028,8 @@
   },
   {
    "host": "forex-latest.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "fortune.fulinlabs.com",
@@ -9647,22 +9133,8 @@
   },
   {
    "host": "funding-rates.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "funding-rates.hergertsynthora.com",
@@ -9691,7 +9163,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -9732,22 +9205,8 @@
   },
   {
    "host": "fx-rates.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "gamemaxxing.baes.so",
@@ -9809,22 +9268,8 @@
   },
   {
    "host": "gas-estimator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "gas.apitoll.cloud",
@@ -9950,22 +9395,8 @@
   },
   {
    "host": "gateway.hillguava.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "gateway.sanfoundation.com",
@@ -10064,13 +9495,13 @@
    "family": "version+endpoints",
    "top_keys": [
     "attestationSample",
+    "attestor",
     "chain",
     "chainId",
     "contact",
     "contract",
     "currency",
-    "currencyAddress",
-    "docs"
+    "currencyAddress"
    ],
    "payable": "partial",
    "missing": [
@@ -10107,22 +9538,8 @@
   },
   {
    "host": "gdpr-scanner.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "geo.lonestaroracle.xyz",
@@ -10132,7 +9549,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -10369,7 +9787,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -10518,7 +9937,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -10605,22 +10025,8 @@
   },
   {
    "host": "guard.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "h1dr4.dev",
@@ -10664,27 +10070,21 @@
    "host": "hars.cryptotavern.xyz",
    "served": true,
    "path": "/.well-known/x402",
-   "family": "x402Version+accepts",
+   "family": "version+none",
    "top_keys": [
-    "accepts",
     "description",
-    "free_endpoints",
-    "generated_at",
-    "homepage",
     "name",
-    "resources",
-    "x402Version"
+    "products",
+    "version"
    ],
-   "payable": "partial",
+   "payable": "none",
    "missing": [
-    "amount"
+    "network",
+    "asset",
+    "amount",
+    "payTo"
    ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": null,
-    "payTo": "0xa1ae67b4F4F5e22dBA4b97be55fa221c11367e17"
-   },
+   "evidence": {},
    "peers": null
   },
   {
@@ -10737,22 +10137,8 @@
   },
   {
    "host": "hash-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "hash-hmac.underscoredone.com",
@@ -10925,22 +10311,8 @@
   },
   {
    "host": "hl-portfolio.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "hl-tool.darren-pi.workers.dev",
@@ -10949,27 +10321,13 @@
   },
   {
    "host": "hl-vaults.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "hmo.payapi.market",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+endpoints",
    "top_keys": [
     "endpoints",
@@ -11020,22 +10378,8 @@
   },
   {
    "host": "holidays.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "homepulse-seven.vercel.app",
@@ -11143,22 +10487,8 @@
   },
   {
    "host": "html-to-markdown.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "http-header-checker.underscoredone.com",
@@ -11167,22 +10497,8 @@
   },
   {
    "host": "http-headers.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "http-status-checker.underscoredone.com",
@@ -11215,22 +10531,8 @@
   },
   {
    "host": "hyperliquid-data.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "hyperliquid-predict.use.x402atlas.com",
@@ -11253,22 +10555,8 @@
   },
   {
    "host": "hyperliquid-whales.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "hyperliquid.use.x402atlas.com",
@@ -11377,22 +10665,8 @@
   },
   {
    "host": "image-resize.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "image.gedx402.com",
@@ -11554,22 +10828,8 @@
   },
   {
    "host": "india-news.hillguava.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "induction.aarei.ai",
@@ -11608,7 +10868,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -11718,45 +10979,29 @@
    "path": "/.well-known/x402",
    "family": "no-version+resources",
    "top_keys": [
+    "first_paid_hop",
     "free_resources",
     "paid_resources",
     "payment",
     "proof",
     "receipt",
     "resources",
-    "service",
-    "x402_version"
+    "service"
    ],
-   "payable": "partial",
-   "missing": [
-    "asset"
-   ],
+   "payable": "payable",
+   "missing": [],
    "evidence": {
-    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
-    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-    "amount": "50000",
-    "payTo": "GFpLvocNdEjnSsLH3VJQL6wGcjGxTbUBrj6fqN3Qe1Gs"
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": "1000",
+    "payTo": "0xfB9819456bd9248A9D3c9E12F4cb7bBda5fc2578"
    },
    "peers": null
   },
   {
    "host": "ip-geolocation.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "ip402.xyz",
@@ -11859,22 +11104,8 @@
   },
   {
    "host": "json-validator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "jsonrecon.com",
@@ -11917,27 +11148,13 @@
   },
   {
    "host": "jupiter-quotes.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "jurat.dev",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
     "description",
@@ -11964,22 +11181,8 @@
   },
   {
    "host": "jwt-decoder.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "kaisha-api.hp-vladic.workers.dev",
@@ -12009,8 +11212,25 @@
   },
   {
    "host": "kari.mayim-mayim.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "description",
+    "ownershipProofs",
+    "resources",
+    "taskOfferRegistrationContracts",
+    "version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "kenoodl.com",
@@ -12063,22 +11283,8 @@
   },
   {
    "host": "keyword-research.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "kleros-ipfs-gateway.fly.dev",
@@ -12107,27 +11313,8 @@
   },
   {
    "host": "kr-intel-agent-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "network",
-    "payTo",
-    "price",
-    "product",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "kronos-x402.vercel.app",
@@ -12138,11 +11325,11 @@
     "description",
     "disclaimer",
     "endpoints",
+    "endpoints_by_asset",
     "mcp",
     "openapi",
     "openapi_31",
-    "serviceName",
-    "stats"
+    "serviceName"
    ],
    "payable": "partial",
    "missing": [
@@ -12165,11 +11352,11 @@
     "description",
     "disclaimer",
     "endpoints",
+    "endpoints_by_asset",
     "mcp",
     "openapi",
     "openapi_31",
-    "serviceName",
-    "stats"
+    "serviceName"
    ],
    "payable": "partial",
    "missing": [
@@ -12191,7 +11378,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12210,22 +11398,8 @@
   },
   {
    "host": "language-detector.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "laso.finance",
@@ -12254,7 +11428,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12269,7 +11444,7 @@
   {
    "host": "latamref.dev",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
     "description",
@@ -12298,7 +11473,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12328,7 +11504,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12472,7 +11649,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12505,22 +11683,8 @@
   },
   {
    "host": "liquidation-oracle.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "liquidation-risk-mcp.mtree.workers.dev",
@@ -12585,7 +11749,7 @@
   {
    "host": "llm402.ai",
    "served": false,
-   "error": "HTTP 403"
+   "error": "URLError"
   },
   {
    "host": "logigrain.net",
@@ -12667,22 +11831,8 @@
   },
   {
    "host": "lorem-ipsum.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "losbeto-production-dd7c.up.railway.app",
@@ -12707,8 +11857,24 @@
   },
   {
    "host": "lst-health.naber-research.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "resources",
+    "x402Version"
+   ],
+   "payable": "partial",
+   "missing": [
+    "asset"
+   ],
+   "evidence": {
+    "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "amount": "10000",
+    "payTo": "HFWs4p4n9vGDRRpnxtsTATsnvoaub5tu76VUaLeExyfH"
+   },
+   "peers": null
   },
   {
    "host": "lunar-api-production-cba9.up.railway.app",
@@ -12723,7 +11889,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -12791,26 +11958,12 @@
   {
    "host": "mail.cusethejuice.com",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "mailcheck.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "mailpulse.theaslangroupllc.com",
@@ -12842,6 +11995,7 @@
    "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
+    "ownershipProofs",
     "resources",
     "version"
    ],
@@ -12859,68 +12013,39 @@
    "host": "marine.x402.press",
    "served": true,
    "path": "/.well-known/x402.json",
-   "family": "no-version+endpoints",
+   "family": "no-version+services",
    "top_keys": [
-    "accepted_assets",
-    "capabilities",
-    "data_sources",
     "description",
-    "endpoints",
-    "facilitators",
+    "display_name",
     "name",
-    "payment_scheme"
+    "operations",
+    "persona",
+    "pricing",
+    "services",
+    "tools"
    ],
    "payable": "partial",
    "missing": [
-    "network",
     "asset",
     "payTo"
    ],
    "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.00375",
+    "network": "base",
+    "asset": "USDC",
+    "amount": "0.006125",
     "payTo": null
    },
    "peers": null
   },
   {
    "host": "markdown-renderer.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "markdown-to-html.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "market-dominance.hergertsynthora.com",
@@ -13067,8 +12192,28 @@
   },
   {
    "host": "mcp.onchaindiligence.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "attestation",
+    "contact",
+    "description",
+    "docs",
+    "kind",
+    "name",
+    "resources",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mcp.stg.yield.xyz",
@@ -13103,14 +12248,14 @@
    "path": "/.well-known/x402",
    "family": "no-version+routes",
    "top_keys": [
+    "adoption",
     "buyer_skill",
     "gateway",
     "independent_evidence",
     "intro_pricing",
     "llms_txt",
-    "quickstart",
-    "routes",
-    "spec_version"
+    "manifest",
+    "openapi"
    ],
    "payable": "none",
    "missing": [
@@ -13257,7 +12402,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.005",
+    "amount": "$0",
     "payTo": null
    },
    "peers": null
@@ -13331,7 +12476,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -13365,7 +12511,7 @@
   {
    "host": "micropay-test-suite.netlify.app",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 503"
   },
   {
    "host": "midway.lol",
@@ -13374,8 +12520,25 @@
   },
   {
    "host": "mimirapi.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+none",
+   "top_keys": [
+    "items",
+    "origin",
+    "pagination",
+    "service",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "mindpulse-lilac.vercel.app",
@@ -13433,7 +12596,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -13516,7 +12680,7 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.002",
+    "amount": "$0.003",
     "payTo": null
    },
    "peers": null
@@ -13595,7 +12759,7 @@
    "evidence": {
     "network": "base",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "350000000",
+    "amount": "450000000",
     "payTo": "0x53598173ce7c26025bab0520d9e9d0c28fbcf7de"
    },
    "peers": null
@@ -13612,10 +12776,13 @@
    "family": "no-version+services",
    "top_keys": [
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -13625,7 +12792,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.10375",
+    "amount": "0.106125",
     "payTo": null
    },
    "peers": null
@@ -13642,32 +12809,8 @@
   },
   {
    "host": "nad.payflowagent.net",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "asset",
-    "assetSymbol",
-    "baseUrl",
-    "description",
-    "endpoints",
-    "facilitator",
-    "freeTrial",
-    "llmsTxt"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": 0.1,
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 530"
   },
   {
    "host": "nba-odds-gap.relayhop.workers.dev",
@@ -13696,7 +12839,7 @@
   {
    "host": "nectar-tools.fly.dev",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "negbit.com",
@@ -13813,7 +12956,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -13832,10 +12976,13 @@
    "family": "no-version+services",
    "top_keys": [
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -13845,7 +12992,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.25375",
+    "amount": "0.256125",
     "payTo": null
    },
    "peers": null
@@ -13882,41 +13029,13 @@
   },
   {
    "host": "nft-floor.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "nft-metadata.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "nichedata.dev",
@@ -14011,19 +13130,21 @@
     "callback_registry_url",
     "catalog_url",
     "discoverable",
+    "documentation_url",
     "endpoints",
     "extensions",
-    "free_tier",
-    "id"
+    "free_tier"
    ],
-   "payable": "none",
+   "payable": "partial",
    "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
+    "amount"
    ],
-   "evidence": {},
+   "evidence": {
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": null,
+    "payTo": "0xfAB07d26F7627fc4cE459ecf90d7E015F7eEcE71"
+   },
    "peers": null
   },
   {
@@ -14054,7 +13175,7 @@
   {
    "host": "nut402.codenut.xyz",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "nutripulse.theaslangroupllc.com",
@@ -14138,22 +13259,8 @@
   },
   {
    "host": "ocr-extract.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "ocr.underscoredone.com",
@@ -14231,7 +13338,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -14250,28 +13358,8 @@
   },
   {
    "host": "omnicall.gocreativeai.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+accepts",
-   "top_keys": [
-    "accepts",
-    "asset",
-    "contact",
-    "count",
-    "currency",
-    "description",
-    "docs",
-    "endpoints"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "$0.02",
-    "payTo": "0xbAf55b24CA99bd7393B6e627093b13c6628b53Cc"
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 502"
   },
   {
    "host": "omniterminal.app",
@@ -14427,32 +13515,8 @@
   },
   {
    "host": "opportunity-api-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "contact",
-    "data_handling",
-    "description",
-    "mcp",
-    "name",
-    "payment",
-    "resources",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": 0.01,
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "options.lonestaroracle.xyz",
@@ -14462,7 +13526,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -14580,22 +13645,8 @@
   },
   {
    "host": "orderbook-depth.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "orderbook-liquidity.hergertsynthora.com",
@@ -14618,32 +13669,8 @@
   },
   {
    "host": "orionkr.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "acceptsNetwork",
-    "acp",
-    "buy_now_manifest",
-    "cint_first_call_flow",
-    "compact_catalog_url",
-    "contact",
-    "description",
-    "discovery_strategy"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.03",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 502"
   },
   {
    "host": "orisha-data.com",
@@ -14711,7 +13738,7 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.25",
+    "amount": "$0.03",
     "payTo": null
    },
    "peers": null
@@ -14728,6 +13755,7 @@
     "name",
     "openapi",
     "resources",
+    "terms",
     "x402Version"
    ],
    "payable": "payable",
@@ -14754,7 +13782,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "10000",
+    "amount": "250000",
     "payTo": "0x153AA87807D8f6deb65Bd53B137Cee7AD2dacCDb"
    },
    "peers": null
@@ -14829,22 +13857,8 @@
   },
   {
    "host": "password-strength.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "pastebin.0000402.xyz",
@@ -14965,28 +13979,8 @@
   },
   {
    "host": "payflowagent.net",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+none",
-   "top_keys": [
-    "catalog",
-    "description",
-    "llmsTxt",
-    "mcp",
-    "name",
-    "products",
-    "updates",
-    "website"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 530"
   },
   {
    "host": "paygent.obsmetrics.com",
@@ -15072,22 +14066,8 @@
   },
   {
    "host": "person-enrichment.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "persona-mcp-server.onrender.com",
@@ -15144,22 +14124,8 @@
   },
   {
    "host": "phone-validation.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "pitchiq-mcp-production.up.railway.app",
@@ -15213,7 +14179,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.005",
+    "amount": "$0.015",
     "payTo": "0xcb9b3F94387389e38EF2A7b3C0B851FB8325d7e9"
    },
    "peers": null
@@ -15226,7 +14192,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -15346,22 +14313,8 @@
   },
   {
    "host": "port-scanner.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "port-scanner.underscoredone.com",
@@ -15376,7 +14329,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -15546,7 +14500,7 @@
   {
    "host": "property.payapi.market",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+endpoints",
    "top_keys": [
     "endpoints",
@@ -15666,31 +14620,8 @@
   },
   {
    "host": "prospex.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "routes",
-    "version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": {
-     "amount": "0.50",
-     "currency": "USDC",
-     "network": "base"
-    },
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "protocol-health-oracle-production.up.railway.app",
@@ -15840,22 +14771,8 @@
   },
   {
    "host": "qr.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "quantum-artificer.surewhynot.app",
@@ -15910,12 +14827,14 @@
    "path": "/.well-known/x402.json",
    "family": "no-version+services",
    "top_keys": [
-    "capabilities",
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -15925,7 +14844,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.25375",
+    "amount": "0.256125",
     "payTo": null
    },
    "peers": null
@@ -16055,7 +14974,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -16185,22 +15105,8 @@
   },
   {
    "host": "regex-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "regime.nsgoods.org",
@@ -16334,22 +15240,8 @@
   },
   {
    "host": "research-report.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "research.appliedidentities.com",
@@ -16621,174 +15513,48 @@
   },
   {
    "host": "rpc-balance.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-code.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-contract.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-ens.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-erc20-balance.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-network.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-proxy.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-receipt.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc-tx.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "rpc.nodeflare.app",
@@ -16797,8 +15563,32 @@
   },
   {
    "host": "rpc.satelink.network",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "no-version+routes",
+   "top_keys": [
+    "asset",
+    "docs",
+    "manifest_url",
+    "network",
+    "pay_to",
+    "routes",
+    "schema_version",
+    "service"
+   ],
+   "payable": "partial",
+   "missing": [
+    "network",
+    "asset",
+    "payTo"
+   ],
+   "evidence": {
+    "network": null,
+    "asset": null,
+    "amount": "$0.10 = 1,000 calls",
+    "payTo": null
+   },
+   "peers": null
   },
   {
    "host": "rubric-protocol.com",
@@ -16809,11 +15599,11 @@
     "contact",
     "description",
     "docs",
+    "iconUrl",
     "items",
     "lastUpdated",
     "llmsTxt",
-    "name",
-    "openapi"
+    "name"
    ],
    "payable": "none",
    "missing": [
@@ -16843,7 +15633,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -16928,7 +15719,7 @@
   {
    "host": "safetyincidents.org",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 403"
   },
   {
    "host": "sanctions-screening.xplowdiaka.workers.dev",
@@ -17015,23 +15806,8 @@
   },
   {
    "host": "scan.madhousewallet.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "scentpulse-xi.vercel.app",
@@ -17240,32 +16016,8 @@
   },
   {
    "host": "scry.moreright.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "attestation_pubkey_b64",
-    "base_url",
-    "free_endpoints",
-    "issuer",
-    "resources",
-    "scope",
-    "service",
-    "sig_alg"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {
-    "network": "eip155:4663",
-    "asset": null,
-    "amount": null,
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "scry.solanahub.de",
@@ -17274,28 +16026,8 @@
   },
   {
    "host": "scvd.store",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "a2a",
-    "anchor_log",
-    "catalog",
-    "description",
-    "did",
-    "liveness",
-    "name",
-    "network"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "search.gedx402.com",
@@ -17324,24 +16056,8 @@
   },
   {
    "host": "search.reversesandbox.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "sec-regcf-tracker.xplowdiaka.workers.dev",
@@ -17369,24 +16085,24 @@
   {
    "host": "sec.multyplylabs.com",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
+    "instructions",
+    "items",
     "name",
     "resources",
+    "version",
     "x402Version"
    ],
-   "payable": "partial",
+   "payable": "none",
    "missing": [
+    "network",
     "asset",
+    "amount",
     "payTo"
    ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": null,
-    "amount": "$0.01",
-    "payTo": null
-   },
+   "evidence": {},
    "peers": null
   },
   {
@@ -17432,7 +16148,7 @@
   {
    "host": "selun.sagitta.systems",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
     "resources",
@@ -17527,22 +16243,8 @@
   },
   {
    "host": "seo-analyzer.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "seo-data-extractor.underscoredone.com",
@@ -17627,31 +16329,8 @@
   },
   {
    "host": "shopifyagentdata.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "contact",
-    "description",
-    "endpoints",
-    "freeEndpoints",
-    "mcp",
-    "name",
-    "openapi",
-    "openapiYaml"
-   ],
-   "payable": "partial",
-   "missing": [
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": "base",
-    "asset": "USDC",
-    "amount": "$0.01",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "shopperpulse.theaslangroupllc.com",
@@ -17753,8 +16432,24 @@
   },
   {
    "host": "skim402.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+resources",
+   "top_keys": [
+    "ownershipProofs",
+    "resources",
+    "version",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "slamlink-ai-main-50fbb45.d2.zuplo.dev",
@@ -17763,8 +16458,26 @@
   },
   {
    "host": "slidingbox.ai",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+accepts",
+   "top_keys": [
+    "accepts",
+    "description",
+    "links",
+    "note",
+    "resource",
+    "x402Version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "slippage.hergertsynthora.com",
@@ -17787,41 +16500,13 @@
   },
   {
    "host": "slug-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "sms-validator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "social.gedx402.com",
@@ -17880,26 +16565,12 @@
   {
    "host": "sol.phoneagent.xyz",
    "served": false,
-   "error": "URLError"
+   "error": "HTTP 404"
   },
   {
    "host": "solana-pools.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "solar.nsgoods.org",
@@ -17990,27 +16661,26 @@
    "host": "space.x402.press",
    "served": true,
    "path": "/.well-known/x402.json",
-   "family": "no-version+endpoints",
+   "family": "no-version+services",
    "top_keys": [
-    "accepted_assets",
-    "capabilities",
-    "data_sources",
     "description",
-    "endpoints",
-    "facilitators",
+    "display_name",
     "name",
-    "payment_scheme"
+    "operations",
+    "persona",
+    "pricing",
+    "services",
+    "tools"
    ],
    "payable": "partial",
    "missing": [
-    "network",
     "asset",
     "payTo"
    ],
    "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "$0.10",
+    "network": "base",
+    "asset": "USDC",
+    "amount": "0.106125",
     "payTo": null
    },
    "peers": null
@@ -18053,22 +16723,8 @@
   },
   {
    "host": "ssl-checker.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "stable-browser-git-ben-test-agentcash-rout-1850e3-merit-systems.vercel.app",
@@ -19036,25 +17692,8 @@
   },
   {
    "host": "stable-travel-git-migrate-stabletravel-router-140-merit-systems.vercel.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "mppResources",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "stable-travel-hkd3tku0j-merit-systems.vercel.app",
@@ -19091,7 +17730,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -19506,7 +18146,7 @@
   {
    "host": "staging.agenticinsights.com",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "staging.miven.dev",
@@ -19526,7 +18166,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -19627,10 +18268,13 @@
    "family": "no-version+services",
    "top_keys": [
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -19640,48 +18284,20 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.25375",
+    "amount": "0.256125",
     "payTo": null
    },
    "peers": null
   },
   {
    "host": "stock-price.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "stockapi.hillguava.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "storage.gedx402.com",
@@ -19741,7 +18357,7 @@
   {
    "host": "store.nosub.club",
    "served": false,
-   "error": "HTTP 404"
+   "error": "URLError"
   },
   {
    "host": "straits.live",
@@ -19777,7 +18393,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -19802,7 +18419,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -19965,22 +18583,8 @@
   },
   {
    "host": "tech-enrichment.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "tee.papers.tech",
@@ -20042,22 +18646,8 @@
   },
   {
    "host": "tensorfeed.ai",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "test.alexwlex143.workers.dev",
@@ -20071,60 +18661,18 @@
   },
   {
    "host": "text-classifier.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "text-to-speech.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "text-translator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "the-stall.intuitek.ai",
@@ -20146,7 +18694,7 @@
     "amount"
    ],
    "evidence": {
-    "network": "base",
+    "network": "eip155:8453",
     "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
     "amount": null,
     "payTo": "0x03d773c52B67993e60Ecb3134b17436fE03B584c"
@@ -20205,8 +18753,23 @@
   },
   {
    "host": "tick.hugen.tokyo",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "instructions",
+    "resources",
+    "version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "timecapsule.0000402.xyz",
@@ -20215,22 +18778,8 @@
   },
   {
    "host": "timezone-converter.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "timezone-toolkit.agishub.com",
@@ -20239,89 +18788,23 @@
   },
   {
    "host": "token-api.x402hub.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+endpoints",
-   "top_keys": [
-    "description",
-    "discoverable",
-    "endpoints",
-    "facilitatorUrl",
-    "name",
-    "network",
-    "payTo",
-    "supported_networks"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001\n",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "token-holders.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "token-ohlcv.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "token-price.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "token-risk.com",
@@ -20330,22 +18813,8 @@
   },
   {
    "host": "token-safety.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "token.lonestaroracle.xyz",
@@ -20355,7 +18824,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -20667,7 +19137,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -20682,7 +19153,7 @@
   {
    "host": "tradeos.tech",
    "served": false,
-   "error": "HTTP 530"
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "tradepulse.theaslangroupllc.com",
@@ -20944,30 +19415,8 @@
   },
   {
    "host": "trust402.aztecbeacon.uk",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "capabilities",
-    "categories",
-    "category",
-    "defaultMode",
-    "description",
-    "endpoints",
-    "instructions",
-    "llms"
-   ],
-   "payable": "partial",
-   "missing": [
-    "amount"
-   ],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": null,
-    "payTo": "0x3f4CEE4c6bad04FcCA3138dFFDEE579ddf17049B"
-   },
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "trust402.vercel.app",
@@ -21022,28 +19471,8 @@
   },
   {
    "host": "try.madhousewallet.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+resources",
-   "top_keys": [
-    "apiVersion",
-    "description",
-    "documentation",
-    "flow",
-    "instructions",
-    "keywords",
-    "name",
-    "payment"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "tts-service-production-e8a7.up.railway.app",
@@ -21062,22 +19491,8 @@
   },
   {
    "host": "twitter-scraper.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "txintent.hergertsynthora.com",
@@ -21146,22 +19561,8 @@
   },
   {
    "host": "unit-converter.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "unwrap.use.x402atlas.com",
@@ -21189,22 +19590,8 @@
   },
   {
    "host": "url-shortener.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "url-uptime-checker.underscoredone.com",
@@ -21237,41 +19624,13 @@
   },
   {
    "host": "user-agent-parser.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "uuid-generator.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "vaaya.ai",
@@ -21305,22 +19664,8 @@
   },
   {
    "host": "vat-validate.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "vealth.net",
@@ -21353,22 +19698,8 @@
   },
   {
    "host": "vector-search.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "vectorcache-production.up.railway.app",
@@ -21425,28 +19756,8 @@
   },
   {
    "host": "vehicle.payapi.market",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "vending-machine-seven.vercel.app",
@@ -21558,22 +19869,8 @@
   },
   {
    "host": "verifyapi.hillguava.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "verity-bzw7.onrender.com",
@@ -21585,9 +19882,10 @@
     "description",
     "endpoints",
     "free_tools",
+    "kind",
     "name",
     "trial",
-    "x402Version"
+    "updated"
    ],
    "payable": "payable",
    "missing": [],
@@ -21602,13 +19900,15 @@
   {
    "host": "verity-suite.onrender.com",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+endpoints",
    "top_keys": [
     "contact",
     "description",
     "endpoints",
+    "kind",
     "name",
+    "updated",
     "x402Version"
    ],
    "payable": "partial",
@@ -21626,7 +19926,7 @@
   {
    "host": "verza.dev",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
     "description",
@@ -21767,22 +20067,8 @@
   },
   {
    "host": "vin-decode.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "visibility.vevang.com",
@@ -21805,22 +20091,8 @@
   },
   {
    "host": "visionex.x402tools.xyz",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "visual.hugen.tokyo",
@@ -21889,8 +20161,28 @@
   },
   {
    "host": "vps.phoneagent.xyz",
-   "served": false,
-   "error": "URLError"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+resources",
+   "top_keys": [
+    "asset",
+    "network",
+    "openapi",
+    "payTo",
+    "paymentFailures",
+    "resources",
+    "scheme",
+    "version"
+   ],
+   "payable": "none",
+   "missing": [
+    "network",
+    "asset",
+    "amount",
+    "payTo"
+   ],
+   "evidence": {},
+   "peers": null
   },
   {
    "host": "vu.velvetdao.xyz",
@@ -21992,7 +20284,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -22146,22 +20439,8 @@
   },
   {
    "host": "weather-api.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "weather.agentic-jp.com",
@@ -22218,7 +20497,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -22232,28 +20512,8 @@
   },
   {
    "host": "weather.payapi.market",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "weather.x402.press",
@@ -22262,10 +20522,13 @@
    "family": "no-version+services",
    "top_keys": [
     "description",
+    "display_name",
     "name",
+    "operations",
+    "persona",
     "pricing",
     "services",
-    "type"
+    "tools"
    ],
    "payable": "partial",
    "missing": [
@@ -22275,7 +20538,7 @@
    "evidence": {
     "network": "base",
     "asset": "USDC",
-    "amount": "0.00375",
+    "amount": "0.006125",
     "payTo": null
    },
    "peers": null
@@ -22283,7 +20546,7 @@
   {
    "host": "web-production-18a32.up.railway.app",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+endpoints",
    "top_keys": [
     "endpoints",
@@ -22327,41 +20590,13 @@
   },
   {
    "host": "web-scraper.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "web-search.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "web3-signals-api-production.up.railway.app",
@@ -22384,22 +20619,8 @@
   },
   {
    "host": "webhook-tester.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "websearch.hergertsynthora.com",
@@ -22476,22 +20697,8 @@
   },
   {
    "host": "whale-alert.api.klymax402.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "URLError"
   },
   {
    "host": "whale.hugen.tokyo",
@@ -22521,7 +20728,8 @@
    "top_keys": [
     "ownershipProofs",
     "resources",
-    "version"
+    "version",
+    "x-x402-proof"
    ],
    "payable": "none",
    "missing": [
@@ -22535,22 +20743,8 @@
   },
   {
    "host": "wiki-summary.hergertsynthora.com",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "wiki.use.x402atlas.com",
@@ -22722,7 +20916,7 @@
   {
    "host": "www.jurat.dev",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
     "description",
@@ -22934,7 +21128,7 @@
   {
    "host": "x402-ai-starter.vercel.app",
    "served": false,
-   "error": "HTTP 402"
+   "error": "HTTP 404"
   },
   {
    "host": "x402-api-production-000d.up.railway.app",
@@ -22968,28 +21162,8 @@
   },
   {
    "host": "x402-company-api-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "x402-crypto-data.vercel.app",
@@ -23200,35 +21374,15 @@
    "evidence": {
     "network": null,
     "asset": null,
-    "amount": "$0.02",
+    "amount": "$0.003001",
     "payTo": null
    },
    "peers": null
   },
   {
    "host": "x402-finance-api-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "x402-gateway-omega.vercel.app",
@@ -23237,28 +21391,8 @@
   },
   {
    "host": "x402-gateway-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+services",
-   "top_keys": [
-    "baseUrl",
-    "categories",
-    "hint",
-    "important",
-    "mcp",
-    "name",
-    "networks",
-    "routes"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "15000",
-    "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629"
-   },
-   "peers": null
+   "served": false,
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "x402-hono-api.inraby.workers.dev",
@@ -23291,14 +21425,14 @@
    "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
+    "agent_card",
+    "agentic_market",
+    "agents",
+    "asset",
     "base_url",
     "challenge_header",
     "docs",
-    "mcp",
-    "networks",
-    "payment_header",
-    "receipt_header",
-    "resource_details"
+    "funding"
    ],
    "payable": "none",
    "missing": [
@@ -23317,8 +21451,34 @@
   },
   {
    "host": "x402-paid-service.iholt.workers.dev",
-   "served": false,
-   "error": "HTTP 403"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "version+endpoints",
+   "top_keys": [
+    "alchemy",
+    "asset",
+    "canton",
+    "discovery",
+    "endpoints",
+    "ethEnabled",
+    "facilitator",
+    "network"
+   ],
+   "payable": "partial",
+   "missing": [
+    "asset"
+   ],
+   "evidence": {
+    "network": "eip155:8453",
+    "asset": null,
+    "amount": {
+     "amount": "10000",
+     "currency": "USDC",
+     "decimals": 6
+    },
+    "payTo": "0x60C4499870f115664d7FfD8411b023DBEf3377d9"
+   },
+   "peers": null
   },
   {
    "host": "x402-pay.vercel.app",
@@ -23463,28 +21623,8 @@
   },
   {
    "host": "x402-vehicle-api-production.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "x402-watcher-api-main.jpgame-intel.workers.dev",
@@ -23493,28 +21633,8 @@
   },
   {
    "host": "x402-weather-api-production-04c4.up.railway.app",
-   "served": true,
-   "path": "/.well-known/x402.json",
-   "family": "x402Version+endpoints",
-   "top_keys": [
-    "endpoints",
-    "payment",
-    "service",
-    "x402Version"
-   ],
-   "payable": "partial",
-   "missing": [
-    "network",
-    "asset",
-    "payTo"
-   ],
-   "evidence": {
-    "network": null,
-    "asset": null,
-    "amount": "0.001",
-    "payTo": null
-   },
-   "peers": null
+   "served": false,
+   "error": "HTTP 404"
   },
   {
    "host": "x402.911fund.io",
@@ -23653,7 +21773,7 @@
    "evidence": {
     "network": "eip155:8453",
     "asset": null,
-    "amount": "$0.005",
+    "amount": "$0.015",
     "payTo": "0xcb9b3F94387389e38EF2A7b3C0B851FB8325d7e9"
    },
    "peers": null
@@ -23735,8 +21855,35 @@
   },
   {
    "host": "x402.cloudpulsepoint.com",
-   "served": false,
-   "error": "HTTP 404"
+   "served": true,
+   "path": "/.well-known/x402",
+   "family": "x402Version+endpoints",
+   "top_keys": [
+    "asset",
+    "endpoints",
+    "free",
+    "network",
+    "notes",
+    "payTo",
+    "pricing",
+    "protocol"
+   ],
+   "payable": "partial",
+   "missing": [
+    "network",
+    "asset",
+    "payTo"
+   ],
+   "evidence": {
+    "network": null,
+    "asset": null,
+    "amount": {
+     "usdc": "0.01",
+     "atomic": "10000"
+    },
+    "payTo": null
+   },
+   "peers": null
   },
   {
    "host": "x402.coinopai.com",
@@ -23868,7 +22015,7 @@
   {
    "host": "x402.dellbot.win",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 502"
   },
   {
    "host": "x402.devvizion.com",
@@ -24012,6 +22159,7 @@
    "path": "/.well-known/x402",
    "family": "x402Version+none",
    "top_keys": [
+    "docs",
     "documentation",
     "items",
     "skill",
@@ -24040,6 +22188,7 @@
    "top_keys": [
     "description",
     "mcp",
+    "mpp",
     "resources",
     "service",
     "website",
@@ -24192,7 +22341,7 @@
     "network": null,
     "asset": null,
     "amount": {
-     "amount": "0.02",
+     "amount": "0.03",
      "description": "Token safety & rug-pull/honeypot risk check \u2014 follows the proxy and scans the bytecode that actually runs, plus ownership, on Base/Ethereum"
     },
     "payTo": null
@@ -24345,28 +22494,8 @@
   },
   {
    "host": "x402engine.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "x402Version+services",
-   "top_keys": [
-    "baseUrl",
-    "categories",
-    "hint",
-    "important",
-    "mcp",
-    "name",
-    "networks",
-    "routes"
-   ],
-   "payable": "payable",
-   "missing": [],
-   "evidence": {
-    "network": "eip155:8453",
-    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-    "amount": "15000",
-    "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629"
-   },
-   "peers": null
+   "served": false,
+   "error": "unparseable JSON (JSONDecodeError)"
   },
   {
    "host": "x402factory.ai",
@@ -24419,25 +22548,8 @@
   },
   {
    "host": "x402scan-e11utvi3p-merit-systems.vercel.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "ownershipProofs",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "x402scan-git-router-117-merit-systems.vercel.app",
@@ -24446,30 +22558,13 @@
   },
   {
    "host": "x402scan-hnqp3auxm-merit-systems.vercel.app",
-   "served": true,
-   "path": "/.well-known/x402",
-   "family": "version+resources",
-   "top_keys": [
-    "description",
-    "instructions",
-    "ownershipProofs",
-    "resources",
-    "version"
-   ],
-   "payable": "none",
-   "missing": [
-    "network",
-    "asset",
-    "amount",
-    "payTo"
-   ],
-   "evidence": {},
-   "peers": null
+   "served": false,
+   "error": "HTTP 410"
   },
   {
    "host": "x402scan-j55w7ornb-merit-systems.vercel.app",
    "served": false,
-   "error": "HTTP 410"
+   "error": "HTTP 404"
   },
   {
    "host": "x402stock.vercel.app",
@@ -24644,7 +22739,7 @@
   {
    "host": "ylk.one",
    "served": false,
-   "error": "HTTP 404"
+   "error": "HTTP 502"
   },
   {
    "host": "youtube.use.x402atlas.com",
@@ -24668,7 +22763,7 @@
   {
    "host": "zaref.dev",
    "served": true,
-   "path": "/.well-known/x402.json",
+   "path": "/.well-known/x402",
    "family": "x402Version+resources",
    "top_keys": [
     "answers",
@@ -24737,7 +22832,11 @@
    "path": "/.well-known/x402",
    "family": "version+resources",
    "top_keys": [
+    "description",
+    "documentation",
+    "name",
     "resources",
+    "url",
     "version",
     "x402"
    ],

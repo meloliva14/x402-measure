@@ -51,7 +51,7 @@ is unpayable.
 
 What the 205 partial manifests are missing, by field:
 
-Every figure on this page is the 2026-08-02 sweep. The probe was re-run on 2026-08-11 and the committed `manifests.json` is that later draw: 972 hosts serving a manifest rather than 982, 198 partial rather than 205, `asset` missing on 182 and `payTo` on 140. Nothing here is withdrawn and neither draw is wrong; they are nine days apart. Both ran over 1,521 hosts, but the population was only pinned on 2026-08-09 and the host list the 08-02 sweep used is not published, so the two are not strictly comparable host for host and the difference cannot be attributed to publisher edits alone. Quote a figure from here with its date, or re-run `manifests.py` and quote yours with its own.
+Every figure on this page is the 2026-08-02 sweep. The probe has been re-run twice since, and the committed `manifests.json` is always the latest draw. On 2026-08-11 it read 972 hosts serving a manifest, 198 partial, `asset` missing on 182 and `payTo` on 140. On 2026-09-22, over the same pinned 1,521, it reads 841 serving a manifest (786 at the bare path, 55 only at `.json`), 75 payable, 184 partial and 582 with no payment terms, with `asset` missing on 168 of the partial ones and `payTo` on 125. Nothing here is withdrawn and no draw is wrong. Only the 09-22 draw is verified to have run over the population pinned on 2026-08-09: its input list matches that day's signed snapshot host for host. The earlier two report the same 1,521 count, but the lists they used are not published, so a difference across draws is not attributable to publisher edits alone. Quote a figure from here with its date, or re-run `manifests.py` and quote yours with its own.
 
 | missing | hosts |
 |---|---:|
