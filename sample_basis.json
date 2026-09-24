@@ -1,0 +1,52 @@
+{
+ "generated_utc": "2026-09-20T04:51:37Z",
+ "window": {
+  "start": "2026-08-21T04:36:27Z",
+  "end": "2026-09-20T04:36:27Z",
+  "days": 30,
+  "start_block": 50248820,
+  "end_block": 51544820
+ },
+ "lookback_days": 30,
+ "lookback_start_block": 50248820,
+ "first_seen_boundary_block": 51242875,
+ "first_seen_check": {
+  "candidates_in_window": 22,
+  "eliminated_by_earlier_payment": 22,
+  "survivors": 0,
+  "deeper_scan": "parity_firstseen.json",
+  "deeper_scan_lookback_days": 90,
+  "deeper_scan_start_block": 47657098,
+  "deeper_scan_fully_covered": true,
+  "note": "a candidate survives only if the scan of the days before the window found no payment to it at all; absence is established no further back than that scan's start block"
+ },
+ "chain": "eip155:8453",
+ "rows": 20,
+ "bucket_counts": {
+  "most_distinct_payers": 10,
+  "exactly_one_payer": 10,
+  "first_seen_last_7_days": 0
+ },
+ "bucket_of": {
+  "0x52e29e0d2aa49bfbfc548c0a9f2196f4aa51f3ea": "most_distinct_payers",
+  "0x480cd46e6fade651a0437deadda53d5c8e7d846a": "most_distinct_payers",
+  "0x159be9e316bc5fac8ce05aec4eaae46e8f8a4908": "most_distinct_payers",
+  "0xe9030014f5dae217d0a152f02a043567b16c1abf": "most_distinct_payers",
+  "0x29322ea7ecb34aa6164cb2ddeb9ce650902e4f60": "most_distinct_payers",
+  "0x325bdf6f7efab24a2210c48c1b64cab2eae1d430": "most_distinct_payers",
+  "0x0e84ddedaae6a779c462c22a59f301ec31b6b808": "most_distinct_payers",
+  "0xabf4fabd7c416fb67202e5f9002389fc75e2a9d0": "most_distinct_payers",
+  "0x6d6e695b09861467c7d462f5aaf31cf3540b9192": "most_distinct_payers",
+  "0x93053f1e7a5efeda532fe69cbbe43cbec3a0f13f": "most_distinct_payers",
+  "0xec7051578c9ce20ea27eed1052f8b4c584aee2b3": "exactly_one_payer",
+  "0x01686365833733f8c9fbe956a43afb07fc6be518": "exactly_one_payer",
+  "0xa12d480b17797f2401949130becbec24c754ed30": "exactly_one_payer",
+  "0x7bebee9f4c1694e18fd9bf3bf0f113d7fb2d6bb3": "exactly_one_payer",
+  "0xb445f611cc899b623462f07c11bfeacfd20d3c70": "exactly_one_payer",
+  "0x9e6a0ce78bb2915d0758cc6a1ce8ea77f1b71770": "exactly_one_payer",
+  "0xdbbc87e7947201eacc9a7521dda4801e99994566": "exactly_one_payer",
+  "0x26bbf0f6bc7a6492e4029327f2ef7c1363f9b4f6": "exactly_one_payer",
+  "0xba61c06e3534bf80dfe85c79982dfba5d3f7258a": "exactly_one_payer",
+  "0x1664530dc2a1ca350b1dbad1fc1f1a70c90fe4de": "exactly_one_payer"
+ }
+}
