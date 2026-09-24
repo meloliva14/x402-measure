@@ -21,11 +21,20 @@ nobody has classified is reported as UNCLASSIFIED and the run fails, so "I did n
 one" stops being available. Each entry says which instrument owns the figure:
 
   OURS            reproducible from an artifact in this repo; the value is recomputed and compared.
-  OURS-UNPUBLISHED  our measurement, but no published artifact reproduces it. Reported, never green.
+  OURS-POSTED     our measurement, published in a dated comment of ours rather than in an artifact.
+                  The comment is fetched and must be ours and carry every figure; it passes on that,
+                  and the summary still counts it apart, because nothing here re-runs it.
+  OURS-UNPUBLISHED  our measurement, published nowhere. Reported, never green.
   THEIRS          another instrument's figure, named, so it is never silently treated as ours.
   PROSE           a structural number (a cap, a section number, a port, an RFC), not a measurement.
 
-Read-only. Network: the spec itself, from the PR head.
+BEFORE ANYTHING IS CLASSED OURS-UNPUBLISHED, SEARCH OUR OWN POSTED COMMENTS, not only this repo.
+The 260/139 figure was classed unpublished here and said so in the thread, and it had been posted
+by us on 2026-08-06 (x402#2979, issuecomment-5199553316), where it is the reason `x402Version`
+stayed normative. Taking our word for it, the spec relabelled it "unpublished operator telemetry"
+without the credit. Since 3b6d778 the footnote cites that comment, and it is classed OURS-POSTED below.
+
+Read-only. Network: the spec itself from the PR head, and any comment an OURS-POSTED entry cites.
 
 Usage: python spec_audit.py [--pr 2979]
 """
@@ -79,6 +88,17 @@ def platform_class(host, classes):
     return None
 
 
+def posted(cid, figures):
+    """A figure of ours that lives in a comment: fetch it, and confirm it is ours and carries them."""
+    c = json.loads(subprocess.run(["gh", "api", f"repos/x402-foundation/x402/issues/comments/{cid}"],
+                                  capture_output=True, text=True, encoding="utf-8").stdout or "{}")
+    who, body = (c.get("user") or {}).get("login"), c.get("body") or ""
+    found = [n for n in figures if re.search(rf"(?<![\d,.]){n}(?![\d,])", body)]
+    return {"ok": who == "meloliva14" and len(found) == len(figures),
+            "detail": f"issuecomment-{cid} by {who} on {(c.get('created_at') or '')[:10]} carries "
+                      f"{found}; no artifact here re-runs it"}
+
+
 def facts():
     """Everything this repo can say, recomputed now rather than remembered."""
     hosts, day = pinned_hosts()
@@ -93,6 +113,12 @@ def facts():
     published = (HERE / "MANIFESTS.md").read_text(encoding="utf-8")
     partial = [r for r in manifests if r.get("payable") == "partial"]
     pmiss = collections.Counter(f for r in partial for f in (r.get("missing") or []))
+    # The v=x4021 rows in their own units: names, distinct bodies, and the zones that publish them,
+    # read from the live delegation check rather than guessed from the names.
+    x4021 = [r for r in spellings["rows"] if r["spelling"] == "v=x4021;descriptor=...;url="][0]
+    zone_of = {n: v["enclosing_registrable_domain"] for n, v in spellings["delegation_check"]["names"].items()}
+    run_app = [h for h in hosts if platform_class(h, SPEC_TEN) == "run.app"]
+    platform_hosts = [h for h in hosts if platform_class(h, OURS_PLATFORM)]
     return {
         "day": day,
         "pinned": len(hosts),
@@ -104,6 +130,14 @@ def facts():
         "row_names": {r["spelling"]: r["names"] for r in spellings["rows"]},
         "distinct_bodies": spellings["units_over_all_records"]["distinct_record_bodies"],
         "zones": len(spellings["delegation_check"]["zones_holding_the_records"]),
+        "x4021_names": x4021["names"],
+        "x4021_bodies": x4021["distinct_record_bodies"],
+        "x4021_zones": sorted({zone_of[n] for n in x4021["names"]}),
+        "identical_pairs": spellings["names_sharing_a_byte_identical_record"],
+        "run_app_all_under_a": bool(run_app) and all(h.endswith(".a.run.app") for h in run_app),
+        # what a last-two-labels rule would make of the platform hosts, computed rather than inferred
+        "last_two_buckets": len({".".join(h.split(".")[-2:]) for h in platform_hosts}),
+        "posted_0806": posted(5199553316, ("260", "139")),
         "ten_class_counts": dict(ten),
         "ten_class_total": sum(ten.values()),
         "our_platform_total": sum(ours.values()),
@@ -123,6 +157,10 @@ def claims(f):
     """(quote, kind, verdict, detail). The quote must appear in the spec or the entry is stale."""
     ten = f["ten_class_counts"]
     tail_ours = f["ten_class_total"] - sum(ten[k] for k in ("vercel.app", "workers.dev", "up.railway.app", "onrender.com"))
+    # The spec names the Cloud Run class `a.run.app`; this census files it under run.app and
+    # checks separately that every one of those hosts really sits under a.run.app.
+    tail = {"fly.dev": 12, "replit.app": 4, "netlify.app": 3, "run.app": 3, "sslip.io": 3, "nip.io": 1}
+    n_classes = len(ten) + len(f["classes_outside_the_ten"])
     return [
         ("1,971 names", "OURS", f["census_names"] == 1971, f"census queried {f['census_names']}"),
         ("7 records across 5 operators", "OURS", f["records"] == 7 and f["operators"] == 5,
@@ -134,24 +172,43 @@ def claims(f):
         ("(`vibesprings.net`)", "OURS", f["rows"]["x402-manifest="] == 1, f"manifest-pointer rows: {f['rows']['x402-manifest=']}"),
         ("(`sirenic.eu`, `api.sirenic.eu`)", "OURS", f["rows"]["v=x402-1 (conforming)"] == 2,
          f"conforming rows: {f['rows']['v=x402-1 (conforming)']}"),
-        ("The two `v=x4021` records", "OURS", False,
-         f"UNIT UNNAMED: the same rows are 3 names, {f['distinct_bodies'] - 3} distinct bodies among them, 2 zones. "
-         "A bare count here cannot be checked against the table above it"),
+        # Since 3b6d778 the sentence names its units: names, zones and bodies are each checked here.
+        ("The three `v=x4021` records across two publishing zones", "OURS",
+         len(f["x4021_names"]) == 3 and len(f["x4021_zones"]) == 2,
+         f"{len(f['x4021_names'])} names in {len(f['x4021_zones'])} zones {f['x4021_zones']}"),
+        ("(Two publishing zones publish three such names", "OURS",
+         len(f["x4021_zones"]) == 2 and len(f["x4021_names"]) == 3,
+         f"names {f['x4021_names']}"),
+        ("with the first two carrying byte-identical record bodies", "OURS",
+         ["api.posttosource.com", "posttosource.com"] in f["identical_pairs"] and f["x4021_bodies"] == 2,
+         f"{f['x4021_bodies']} distinct bodies over the three; identical pairs {f['identical_pairs']} "
+         "(the spec lists api.posttosource.com and posttosource.com first)"),
         ("four single-operator domains each hold 32 or more hosts", "OURS", len(f["fleets_32_plus"]) == 4,
          f"{len(f['fleets_32_plus'])} domains hold 32+: {f['fleets_32_plus']}"),
-        ("394 of the 1,521 hosts sit directly under shared-platform", "OURS",
-         f["ten_class_total"] == 394,
-         f"the spec's own ten classes count {f['ten_class_total']} here, not 394; "
-         f"this census counts {f['our_platform_total']} over {len(ten) + len(f['classes_outside_the_ten'])} classes"),
+        ("401 of the 1,521 hosts sit directly under shared-platform", "OURS",
+         f["our_platform_total"] == 401 and f["pinned"] == 1521,
+         f"this census counts {f['our_platform_total']} platform hosts of {f['pinned']}, over {n_classes} classes"),
+        ("393 across the ten primary platforms", "OURS", f["ten_class_total"] == 393,
+         f"the spec's ten classes hold {f['ten_class_total']} here"),
         ("`vercel.app` 202, `workers.dev` 72, `up.railway.app` 66", "OURS",
          (ten["vercel.app"], ten["workers.dev"], ten["up.railway.app"]) == (202, 72, 66),
          f"vercel {ten['vercel.app']}, workers.dev {ten['workers.dev']}, up.railway.app {ten['up.railway.app']}"),
         ("`onrender.com` 27", "OURS", ten["onrender.com"] == 27, f"onrender.com {ten['onrender.com']}"),
-        ("collapses those 394 operators into ten buckets", "OURS", tail_ours == 394 - 367,
-         f"the six unnamed classes of the ten hold {tail_ours} here against the {394 - 367} the sentence implies"),
-        ("Ten boundaries cover every platform host in the census today", "OURS",
-         not f["classes_outside_the_ten"],
-         f"platform hosts outside those ten: {f['classes_outside_the_ten']}"),
+        ("the remaining 26 across `fly.dev` 12, `replit.app` 4, `netlify.app` 3, `a.run.app` 3, `sslip.io` 3, `nip.io` 1",
+         "OURS", tail_ours == 26 and all(ten.get(k, 0) == v for k, v in tail.items()) and f["run_app_all_under_a"],
+         f"tail {tail_ours}: " + ", ".join(f"{k} {ten.get(k, 0)}" for k in tail)
+         + f"; every run.app host under a.run.app: {f['run_app_all_under_a']}"),
+        ("`hf.space` 5 and `trycloudflare.com` 3", "OURS",
+         f["classes_outside_the_ten"] == {"hf.space": 5, "trycloudflare.com": 3},
+         f"platform hosts outside the ten: {f['classes_outside_the_ten']}"),
+        ("collapses those 401 operators into twelve buckets", "OURS",
+         f["our_platform_total"] == 401 and f["last_two_buckets"] == 12,
+         f"a last-two-labels rule makes {f['last_two_buckets']} buckets of {f['our_platform_total']} hosts"),
+        ("Twelve boundaries cover every platform host in the census today (the ten primary platforms "
+         "covering 393 hosts, plus `hf.space` 5 and `trycloudflare.com` 3 closing the 401 total)", "OURS",
+         n_classes == 12 and f["ten_class_total"] == 393 and f["our_platform_total"] == 401,
+         f"{n_classes} non-empty classes of the {len(OURS_PLATFORM)} this census knows; "
+         f"{f['ten_class_total']} + {sum(f['classes_outside_the_ten'].values())} = {f['our_platform_total']}"),
         # These cite MANIFESTS.md, which is dated 2026-08-02 on its face. The committed artifact is
         # the 08-11 re-run, so the published page is the right comparand and the later draw is a note.
         ("Of 205 manifests observed", "OURS", f["published_partial"] == 205,
@@ -161,8 +218,13 @@ def claims(f):
          (f["published_missing"].get("asset"), f["published_missing"].get("payTo")) == (188, 144),
          f"published page: asset {f['published_missing'].get('asset')}, payTo {f['published_missing'].get('payTo')}; "
          f"08-11 re-run: asset {f['partial_missing_now'].get('asset')}, payTo {f['partial_missing_now'].get('payTo')}"),
-        ("A census of 260 live payment-gated hosts found 139 readable 402", "OURS-UNPUBLISHED", False,
-         "no artifact in this repo reproduces 260 or 139; it predates the pinned series and was never published"),
+        ("A census of 260 live payment-gated hosts found 139 readable 402", "OURS-POSTED",
+         f["posted_0806"]["ok"], f["posted_0806"]["detail"]),
+        ("The 260-host / 139-challenge figure in §2.1 is from probe measurements by [@meloliva14]"
+         "(https://github.com/meloliva14) reported in [#2979 (comment)](https://github.com/x402-foundation/"
+         "x402/pull/2979#issuecomment-5199553316)", "OURS-POSTED", f["posted_0806"]["ok"],
+         "the footnote cites that comment; its §2.1 names no section, the headings are unnumbered "
+         "(raised by minia2auk on 2026-09-24)"),
         ("three of the seven\n> live", "OURS", len(f["records_not_pinned"]) == 3,
          f"record names that are not themselves pinned hosts: {f['records_not_pinned']}"),
         ("1,619 catalogued hosts, 380 of", "THEIRS", True, "not this census: the manifest survey here is 1,521 hosts"),
@@ -199,11 +261,14 @@ def main() -> int:
     bad = []
     for quote, kind, good, detail in rows:
         mark = {"THEIRS": "THEIRS ", "OURS-UNPUBLISHED": "UNPUBL "}.get(kind, "PASS   " if good else "FAIL   ")
-        if kind == "OURS" and not good:
+        if kind == "OURS-POSTED":
+            mark = "POSTED " if good else "FAIL   "
+        if kind in ("OURS", "OURS-POSTED") and not good:
             bad.append(quote)
         if kind == "OURS-UNPUBLISHED":
             bad.append(quote)
         print(f"  {mark} {quote[:58]:<58} {detail}")
+    n_posted = sum(1 for _, kind, good, _ in rows if kind == "OURS-POSTED" and good)
 
     # Nothing may be skipped: every numeric token has to be claimed by a line above.
     claimed = " ".join(q for q, *_ in rows)
@@ -223,7 +288,8 @@ def main() -> int:
 
     if stale:
         print("\n  STALE ENTRIES, the quote is no longer in the document:", stale)
-    print(f"\n  {len(rows) - len(bad)} of {len(rows)} attributed claims reproduce; "
+    print(f"\n  {len(rows) - len(bad)} of {len(rows)} attributed claims reproduce "
+          f"({n_posted} of them only from a posted comment of ours); "
           f"{len(bad)} do not; {len(unclaimed)} numbers unclassified; {len(stale)} stale entries")
     return 1 if (bad or unclaimed or stale) else 0
 
