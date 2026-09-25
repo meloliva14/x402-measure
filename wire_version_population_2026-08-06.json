@@ -1,0 +1,1313 @@
+{
+ "what": "The 260 hosts the 2026-08-06 wire-version run read (x402#2979, issuecomment-5199553316).",
+ "basis": "the first 260 rows with verdict OK or V1 in sweep_results.json, in file order",
+ "selection_rule": "[r for r in rows if r['verdict'] in ('OK', 'V1')][:260]",
+ "source_file": "sweep_results.json",
+ "source_sha256": "34f586b330a5c52802133e355286271bed61327bcfd12cd2e021443c7699c659",
+ "source_last_written_utc": "2026-07-26T15:06:43Z",
+ "source_rows": 1521,
+ "source_matches_snapshot": "2026-08-08: same 1,521 hosts, same order, same URLs",
+ "why_pinned": "sweep_results.json is ignored here as generated data, and the sweep that wrote it cannot be re-run against the network as it was, so the selection it fed is committed instead",
+ "hosts": [
+  {
+   "host": "2s-3cpr6qm6j-alleyford.vercel.app",
+   "url": "https://2s-3cpr6qm6j-alleyford.vercel.app/api/convert/unit",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "2s-jwnd2jdga-alleyford.vercel.app",
+   "url": "https://2s-jwnd2jdga-alleyford.vercel.app/api/climate/station-near",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "2s.io",
+   "url": "https://2s.io/api/geo/ip",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "31-172-70-14.nip.io",
+   "url": "https://31-172-70-14.nip.io/flow",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "401-chi.vercel.app",
+   "url": "https://401-chi.vercel.app/api/v1/symbol",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "402.com.tr",
+   "url": "https://402.com.tr/api/x402/deep-dd",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "402atlas.com",
+   "url": "https://402atlas.com/api/verified",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "402timezones.vercel.app",
+   "url": "https://402timezones.vercel.app/api/convert-timezone",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "402utils.com",
+   "url": "https://402utils.com/v1/qr",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "5.75.142.199.sslip.io",
+   "url": "https://5.75.142.199.sslip.io/paid/x402/attest/4",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "action402.vercel.app",
+   "url": "https://action402.vercel.app/api/execute/webhook",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "address-risk.hergertsynthora.com",
+   "url": "https://address-risk.hergertsynthora.com/service",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "address.agentic-jp.com",
+   "url": "https://address.agentic-jp.com/parse",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ads.apitoll.cloud",
+   "url": "https://ads.apitoll.cloud/v1/ads/tiktok/top",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ads.forgemesh.io",
+   "url": "https://ads.forgemesh.io/api/network/stats",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ads.gitlawb.com",
+   "url": "https://ads.gitlawb.com/api/ads/fund/5",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "aeml-x402.zeabur.app",
+   "url": "https://aeml-x402.zeabur.app/gauge",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "afriref.dev",
+   "url": "https://afriref.dev/v1/all",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "url": "https://agent-a2a-payment-mk77y.ondigitalocean.app/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-budget-guard.onrender.com",
+   "url": "https://agent-budget-guard.onrender.com/api/budget/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-compression-biz-production.up.railway.app",
+   "url": "https://agent-compression-biz-production.up.railway.app/v1/fetch",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-data-hub-thebrandbard.replit.app",
+   "url": "https://agent-data-hub-thebrandbard.replit.app/api/stores/7",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-data-toolkit.onrender.com",
+   "url": "https://agent-data-toolkit.onrender.com/csv",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "agent-id-x402-production.up.railway.app",
+   "url": "https://agent-id-x402-production.up.railway.app/register",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "url": "https://agent-inbound-content-bpyht.ondigitalocean.app/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-offers-api-replitzip.replit.app",
+   "url": "https://agent-offers-api-replitzip.replit.app/v1/banks/ICBC/offers/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "url": "https://agent-outbound-action-ljoeb.ondigitalocean.app/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-paycheck.onrender.com",
+   "url": "https://agent-paycheck.onrender.com/v1/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-production-1daa.up.railway.app",
+   "url": "https://agent-production-1daa.up.railway.app/v1/embeddings",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-ready.dev",
+   "url": "https://agent-ready.dev/api/x402/scan",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "url": "https://agent-secret-leak-lrbu6.ondigitalocean.app/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-sop-compiler-production.up.railway.app",
+   "url": "https://agent-sop-compiler-production.up.railway.app/v1/compile",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-treats-production.up.railway.app",
+   "url": "https://agent-treats-production.up.railway.app/api/fortune",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-trust-layer.agent-trust-layer.workers.dev",
+   "url": "https://agent-trust-layer.agent-trust-layer.workers.dev/route",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent-vending-machine.avm-7301.workers.dev",
+   "url": "https://agent-vending-machine.avm-7301.workers.dev/pdf",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent.api.0x.org",
+   "url": "https://agent.api.0x.org/v1/x402/swap-allowance-holder-quote/",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent.memoryapi.org",
+   "url": "https://agent.memoryapi.org/x402/erc8004/browse",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent.soliduscapital.io",
+   "url": "https://agent.soliduscapital.io/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agent402.tools",
+   "url": "https://agent402.tools/api/qr",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "url": "https://agentaegis-mcp-production.up.railway.app/x402/cve-lookup",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "agentattest.hergertsynthora.com",
+   "url": "https://agentattest.hergertsynthora.com/service",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentbodega.store",
+   "url": "https://agentbodega.store/api/name/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentcard.hergertsynthora.com",
+   "url": "https://agentcard.hergertsynthora.com/service",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentcash-fortune-demo-six.vercel.app",
+   "url": "https://agentcash-fortune-demo-six.vercel.app/api/fortune",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentcash-fortune-demo3.vercel.app",
+   "url": "https://agentcash-fortune-demo3.vercel.app/api/fortune",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentcrush.xyz",
+   "url": "https://agentcrush.xyz/api/agent/crewai/verification-status",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentdata-api.sander-van-aard.workers.dev",
+   "url": "https://agentdata-api.sander-van-aard.workers.dev/eu/lei",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentdataapi.onrender.com",
+   "url": "https://agentdataapi.onrender.com/events",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentgate-production-eb21.up.railway.app",
+   "url": "https://agentgate-production-eb21.up.railway.app/quote",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentguard.hergertsynthora.com",
+   "url": "https://agentguard.hergertsynthora.com/service",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agenticinsights.com",
+   "url": "https://agenticinsights.com/api/x402/agentic-market/validate",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentkit0.com",
+   "url": "https://agentkit0.com/api/web/scrape",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentpay.tools",
+   "url": "https://agentpay.tools/v1/session/create",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentpmt-webapp.vercel.app",
+   "url": "https://agentpmt-webapp.vercel.app/api/external/tools/ai-writing-quality-check/actions/check_for_banned_phrases/invoke",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentproof-murex.vercel.app",
+   "url": "https://agentproof-murex.vercel.app/json/repair",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentres.dev",
+   "url": "https://agentres.dev/api/book",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.ai-rook.com",
+   "url": "https://agents.ai-rook.com/api/classify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.datalegion.ai",
+   "url": "https://agents.datalegion.ai/person/base",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.driftflight.com",
+   "url": "https://agents.driftflight.com/v1/images/generate",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.dyoeway.org",
+   "url": "https://agents.dyoeway.org/fx",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.freederia.com",
+   "url": "https://agents.freederia.com/v1/posts/614983",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.sayerandstone.com",
+   "url": "https://agents.sayerandstone.com/purchase",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.withzero.xyz",
+   "url": "https://agents.withzero.xyz/api/v1/pixelart/canvas",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agents.x402stock.xyz",
+   "url": "https://agents.x402stock.xyz/api/v1/fda",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentspec-one.vercel.app",
+   "url": "https://agentspec-one.vercel.app/inspect/mcp",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "url": "https://agentstack-research-3bnlllaboa-ts.a.run.app/v1/us/announcements/:ticker",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agenttrust.uk",
+   "url": "https://agenttrust.uk/v1/scan",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agentworld.me",
+   "url": "https://agentworld.me/api/mlb/trends",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agi.apify.com",
+   "url": "https://agi.apify.com/protocols/x402/prepaid-tokens",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "agri.lonestaroracle.xyz",
+   "url": "https://agri.lonestaroracle.xyz/report",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ai-agent-payment-safety-stack.onrender.com",
+   "url": "https://ai-agent-payment-safety-stack.onrender.com/api/counterparty-invoice/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ai-summarizer.api.klymax402.com",
+   "url": "https://ai-summarizer.api.klymax402.com/api/summarize",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "ai.tureka.com",
+   "url": "https://ai.tureka.com/api/x402/visibility-score",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "aiact-api.com",
+   "url": "https://aiact-api.com/articles/006",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "aiagentoracle.ai",
+   "url": "https://aiagentoracle.ai/api/v1/tokens",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "airdrop-checker.api.klymax402.com",
+   "url": "https://airdrop-checker.api.klymax402.com/api/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "airdroppulse.theaslangroupllc.com",
+   "url": "https://airdroppulse.theaslangroupllc.com/api/lp/il-forecast",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "almanac.locomot.io",
+   "url": "https://almanac.locomot.io/sky",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "alpha402x.com",
+   "url": "https://alpha402x.com/profiles/100x-floor",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "alphapulse-omega.vercel.app",
+   "url": "https://alphapulse-omega.vercel.app/api/alpha/ea",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "alphapulse.theaslangroupllc.com",
+   "url": "https://alphapulse.theaslangroupllc.com/api/alpha/ea",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "amlscreen.hergertsynthora.com",
+   "url": "https://amlscreen.hergertsynthora.com/service",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "anicca-x402-discovery-production.up.railway.app",
+   "url": "https://anicca-x402-discovery-production.up.railway.app/prompt-sanitizer",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "anomaly.forgemesh.io",
+   "url": "https://anomaly.forgemesh.io/api/token-scan",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "apexrunner.ai",
+   "url": "https://apexrunner.ai/signals/regime",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api-dev-v2.ixs.finance",
+   "url": "https://api-dev-v2.ixs.finance/x402/vaults",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api-dev.agents.skillfulai.io",
+   "url": "https://api-dev.agents.skillfulai.io/api/x402/demo/mainnet/premium",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api-dev.cueframe.ai",
+   "url": "https://api-dev.cueframe.ai/v1/media",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api-onchain.optimai.network",
+   "url": "https://api-onchain.optimai.network/external/v1/x402/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api-production-17e1.up.railway.app",
+   "url": "https://api-production-17e1.up.railway.app/news",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api-production-54bd.up.railway.app",
+   "url": "https://api-production-54bd.up.railway.app/v1/fvg",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api-v2.ixs.finance",
+   "url": "https://api-v2.ixs.finance/x402/vaults",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentfeeds.jp",
+   "url": "https://api.agentfeeds.jp/v1/dex/twap",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agenticweb.nl",
+   "url": "https://api.agenticweb.nl/api/v1/ping",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentinternetruntime.com",
+   "url": "https://api.agentinternetruntime.com/v1/sdk/capabilities",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentphone.ai",
+   "url": "https://api.agentphone.ai/x402/v1/numbers",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentstools.dev",
+   "url": "https://api.agentstools.dev/tx",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentwonderland.com",
+   "url": "https://api.agentwonderland.com/x402/endpoints/twitterx-search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.agentx402.ai",
+   "url": "https://api.agentx402.ai/v1/scout/read",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.aiapi.ch",
+   "url": "https://api.aiapi.ch/v1/analyze",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.aidress.ai",
+   "url": "https://api.aidress.ai/pay/agent_exa_ai",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.aitrailblazer.net",
+   "url": "https://api.aitrailblazer.net/v1/top-stressed",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.algovault.com",
+   "url": "https://api.algovault.com/x402/scan_trade_calls",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.anchor-x402.com",
+   "url": "https://api.anchor-x402.com/v1/roll",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.apex-db.org",
+   "url": "https://api.apex-db.org/v1/apex",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.arkm.com",
+   "url": "https://api.arkm.com/x402/tx",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.atms.nathanlidurin.com",
+   "url": "https://api.atms.nathanlidurin.com/x402/challenge",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.auor.io",
+   "url": "https://api.auor.io/tavily/v1/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.aventtech.com",
+   "url": "https://api.aventtech.com/fx",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.babyblueviper.com",
+   "url": "https://api.babyblueviper.com/regime",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.basefeed.io",
+   "url": "https://api.basefeed.io/v1/ping",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.biotechcatalystsentinel.com",
+   "url": "https://api.biotechcatalystsentinel.com/v1/events",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.bitrefill.com",
+   "url": "https://api.bitrefill.com/x402/invoice/pay",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.boonprotocol.com",
+   "url": "https://api.boonprotocol.com/api/v1/score",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.borisinc.com",
+   "url": "https://api.borisinc.com/paid/ping",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.brazilayer.com",
+   "url": "https://api.brazilayer.com/v1/cnpj/busca",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.brokenkeyremapper.xyz",
+   "url": "https://api.brokenkeyremapper.xyz/api/brokenkeyremapperlink",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.businesschanges.dev",
+   "url": "https://api.businesschanges.dev/v1/events/evidence",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "url": "https://api.carbon-cashmere.de/v1/btc-derivatives/fee-curve",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.clawfetch.ai",
+   "url": "https://api.clawfetch.ai/fetch",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.clawinabox.xyz",
+   "url": "https://api.clawinabox.xyz/paid/v1/guard/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.cn402.com",
+   "url": "https://api.cn402.com/lunar",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.commodities.sh",
+   "url": "https://api.commodities.sh/v1/price/CL",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.compatify.io",
+   "url": "https://api.compatify.io/v1/query",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.cryptoetfsentinel.com",
+   "url": "https://api.cryptoetfsentinel.com/v1/events",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.cueframe.ai",
+   "url": "https://api.cueframe.ai/v1/me",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.curb.numetal.xyz",
+   "url": "https://api.curb.numetal.xyz/v1/matches/match_mrerora1_ef4aa28e/pay",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.devdrops.run",
+   "url": "https://api.devdrops.run/api/predictions/:var1",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.doc2json.de",
+   "url": "https://api.doc2json.de/v1/extract",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.dripmetrics.ai",
+   "url": "https://api.dripmetrics.ai/metrics/cvd",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.dyor.network",
+   "url": "https://api.dyor.network/api/sparql",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.exa.ai",
+   "url": "https://api.exa.ai/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.forum-labs.com",
+   "url": "https://api.forum-labs.com/v1/trust/report",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.freaks.one",
+   "url": "https://api.freaks.one/v2/tools/run/freaks-v2-719-sniper",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.getplexa.com",
+   "url": "https://api.getplexa.com/v1/quote",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.getsly.ai",
+   "url": "https://api.getsly.ai/x402/demo/test",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.gitbeacon.dev",
+   "url": "https://api.gitbeacon.dev/v1/repos",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.glianalabs.com",
+   "url": "https://api.glianalabs.com/x402/v6",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.gmfarcaster.com",
+   "url": "https://api.gmfarcaster.com/v1/query",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.gocreativeai.com",
+   "url": "https://api.gocreativeai.com/v1/ai/eco/:var1",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.govparse.io",
+   "url": "https://api.govparse.io/v1/health",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.healthparse.io",
+   "url": "https://api.healthparse.io/v1/screen",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.hookfindr.com",
+   "url": "https://api.hookfindr.com/api/x402/transcribe",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.hyperextend.xyz",
+   "url": "https://api.hyperextend.xyz/v1/trades/BTC",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.immuta.app",
+   "url": "https://api.immuta.app/seal",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.influship.com",
+   "url": "https://api.influship.com/v1/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.instahuman.com",
+   "url": "https://api.instahuman.com/x402/feedback",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.intelica.dev",
+   "url": "https://api.intelica.dev/intel",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.interzoid.com",
+   "url": "https://api.interzoid.com/getxlast3",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.invoket.com",
+   "url": "https://api.invoket.com/legal/diff",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.ipintel.ai",
+   "url": "https://api.ipintel.ai/x402v2",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.isocast.dev",
+   "url": "https://api.isocast.dev/v1/spot",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.jamton.network",
+   "url": "https://api.jamton.network/v1/purchases/xauh/requests/x402",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.jarvisclaw.ai",
+   "url": "https://api.jarvisclaw.ai/v1/embeddings",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.jubjubapp.com",
+   "url": "https://api.jubjubapp.com/v2/paid/get_publish_recommendations",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.justaname.id",
+   "url": "https://api.justaname.id/ens/v2/reverse",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.kadec0.xyz",
+   "url": "https://api.kadec0.xyz/v1/cve",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.kakerapetit.dev",
+   "url": "https://api.kakerapetit.dev/v2/calendar",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.lastlookdata.com",
+   "url": "https://api.lastlookdata.com/api/date",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.linkedpanda.com",
+   "url": "https://api.linkedpanda.com/agent/v1/geo-id",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.locus.report",
+   "url": "https://api.locus.report/api/locus-zoning",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.losbeto.xyz",
+   "url": "https://api.losbeto.xyz/pyth-price",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.loyalspark.online",
+   "url": "https://api.loyalspark.online/x402-gateway/earn",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.mcx-ventures.com",
+   "url": "https://api.mcx-ventures.com/v2/forensics",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.melvea.com",
+   "url": "https://api.melvea.com/v1/catalog",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.memoryapi.org",
+   "url": "https://api.memoryapi.org/x402/memory",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.messari.io",
+   "url": "https://api.messari.io/funding/v1/rounds",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.metalend.tech",
+   "url": "https://api.metalend.tech/v1/services",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.mintverdict.com",
+   "url": "https://api.mintverdict.com/v1/mint/:mint/risk",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.moltalyzer.xyz",
+   "url": "https://api.moltalyzer.xyz/api/moltbook/digests",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.munition.io",
+   "url": "https://api.munition.io/v1/uploads",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.myceliasignal.com",
+   "url": "https://api.myceliasignal.com/oracle/gas/base",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.n0brains.com",
+   "url": "https://api.n0brains.com/x402/macro",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.nameintel.io",
+   "url": "https://api.nameintel.io/api/v1/score",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.nansen.ai",
+   "url": "https://api.nansen.ai/api/v1/tgm/flows",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.nativebtc.org",
+   "url": "https://api.nativebtc.org/v1/bitcoin/insight",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.nimatron.com",
+   "url": "https://api.nimatron.com/v1/cot/moves",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.node4all.com",
+   "url": "https://api.node4all.com/v1/x402-test",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.northeastdealintel.com",
+   "url": "https://api.northeastdealintel.com/v1/agent/search",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.octodamus.com",
+   "url": "https://api.octodamus.com/v2/arcus/perp",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.omninexu.com",
+   "url": "https://api.omninexu.com/v1/company/pulse",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.onesource.io",
+   "url": "https://api.onesource.io/api/chain/call",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.orcatrace.dev",
+   "url": "https://api.orcatrace.dev/v1/latest",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.osf-master-server.com",
+   "url": "https://api.osf-master-server.com/x402/sample/:record_id",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.ownedforever.com",
+   "url": "https://api.ownedforever.com/brief",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.pak-labs.com",
+   "url": "https://api.pak-labs.com/v1/catalysts",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.palmai.tech",
+   "url": "https://api.palmai.tech/token-intel",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.paysponge.com",
+   "url": "https://api.paysponge.com/x402/purchase/svc_d6kszbre4qwg5n4n4/text",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.paytoll.io",
+   "url": "https://api.paytoll.io/v1/twitter/user",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.pixo.tools",
+   "url": "https://api.pixo.tools/v1/pdf/ocr",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.polym.uk",
+   "url": "https://api.polym.uk/screener",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.predictionmarketdata.io",
+   "url": "https://api.predictionmarketdata.io/market-news",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.printmoneylab.com",
+   "url": "https://api.printmoneylab.com/api/v1/fx-rate",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.proxyllm.ai",
+   "url": "https://api.proxyllm.ai/x402/llm-cost-scout",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.qonoro.ai",
+   "url": "https://api.qonoro.ai/v1/kyb/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.querylines.com",
+   "url": "https://api.querylines.com/v1/rates",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.recallradar.dev",
+   "url": "https://api.recallradar.dev/v1/recalls",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.regressionincoming.fyi",
+   "url": "https://api.regressionincoming.fyi/v1/draft-board/half-ppr/test",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.reloadpi.com",
+   "url": "https://api.reloadpi.com/api/catalog/esims/offers",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.remix.live",
+   "url": "https://api.remix.live/mcp/x402-http/compile",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.robinx.io",
+   "url": "https://api.robinx.io/callers",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.robotsshop.io",
+   "url": "https://api.robotsshop.io/v0/top",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.romny.dpdns.org",
+   "url": "https://api.romny.dpdns.org/v1/panel/snapshot",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.rtkmotion.io",
+   "url": "https://api.rtkmotion.io/paid/mocap",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.run402.com",
+   "url": "https://api.run402.com/tiers/v1/prototype",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.rxatlas.dev",
+   "url": "https://api.rxatlas.dev/v1/drugs",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.santosautomation.com",
+   "url": "https://api.santosautomation.com/api/audit",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.scoop.sundaebar.ai",
+   "url": "https://api.scoop.sundaebar.ai/x402/find-email",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.seerium.xyz",
+   "url": "https://api.seerium.xyz/v1/dex/funding-heat",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.seneschal.space",
+   "url": "https://api.seneschal.space/v1/q/base-fee",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.signalfuse.co",
+   "url": "https://api.signalfuse.co/v1/regime",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.signalis.dev",
+   "url": "https://api.signalis.dev/v1/pulse/digests",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.sirenic.eu",
+   "url": "https://api.sirenic.eu/v1/recherche",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.slamai.dev",
+   "url": "https://api.slamai.dev/token/price",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.socialfetch.dev",
+   "url": "https://api.socialfetch.dev/v1/web/ask",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.solprobe.xyz",
+   "url": "https://api.solprobe.xyz/exit/check",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.sourcestrand.com",
+   "url": "https://api.sourcestrand.com/v1/paid/crypto/workbench/market-regime-digest",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.stacktr.ee",
+   "url": "https://api.stacktr.ee/publish",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.stakedbots.com",
+   "url": "https://api.stakedbots.com/leaderboard",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.stelardigital.com",
+   "url": "https://api.stelardigital.com/risk",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.stocktrends.com",
+   "url": "https://api.stocktrends.com/v1/stim/latest",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.strale.io",
+   "url": "https://api.strale.io/x402/seo-audit",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.sumvid.app",
+   "url": "https://api.sumvid.app/v1/summarize",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.svgsmith.dev",
+   "url": "https://api.svgsmith.dev/v1/convert",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.sygnliq.com",
+   "url": "https://api.sygnliq.com/v1/regime/current",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.syntaxrate.com",
+   "url": "https://api.syntaxrate.com/analyze",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.tcgapi.dev",
+   "url": "https://api.tcgapi.dev/v1/sets",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.telemost.io",
+   "url": "https://api.telemost.io/v1/data/post",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.terradeed.co.uk",
+   "url": "https://api.terradeed.co.uk/scrape",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.the402.ai",
+   "url": "https://api.the402.ai/v1/jobs",
+   "verdict_in_source": "V1"
+  },
+  {
+   "host": "api.tickersfeed.net",
+   "url": "https://api.tickersfeed.net/gas",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.trialbase-db.org",
+   "url": "https://api.trialbase-db.org/v1/trials",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.trustboost.dev",
+   "url": "https://api.trustboost.dev/sanitize",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.trustsource.cc",
+   "url": "https://api.trustsource.cc/robots",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.useatelier.ai",
+   "url": "https://api.useatelier.ai/api/x402/pay/svc_1780812536114_y6pg8e7aw",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.utilia.ink",
+   "url": "https://api.utilia.ink/base/v1/token/risk",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.vaults.fyi",
+   "url": "https://api.vaults.fyi/v2/tags",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.veradata.dev",
+   "url": "https://api.veradata.dev/sanctions",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.veritylayer.dev",
+   "url": "https://api.veritylayer.dev/verify",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.vetpulse.theaslangroupllc.com",
+   "url": "https://api.vetpulse.theaslangroupllc.com/api/vet/tdiu",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.vevang.com",
+   "url": "https://api.vevang.com/render/short",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.vindexapi.dev",
+   "url": "https://api.vindexapi.dev/v1/decode",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.wallettriage.com",
+   "url": "https://api.wallettriage.com/scan",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.webbersites.com",
+   "url": "https://api.webbersites.com/api/qr",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.wrathproductions.com",
+   "url": "https://api.wrathproductions.com/v1/truth-filter",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.writer.place",
+   "url": "https://api.writer.place/x402/factory/create",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x-402.online",
+   "url": "https://api.x-402.online/v1/dns",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x402.printmoneylab.com",
+   "url": "https://api.x402.printmoneylab.com/api/v1/buyers/:address/profile",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x402agentic.ai",
+   "url": "https://api.x402agentic.ai/screen",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x402dataapi.com",
+   "url": "https://api.x402dataapi.com/v1/tls-report",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x402intel.uk",
+   "url": "https://api.x402intel.uk/x402-market",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.x402node.dev",
+   "url": "https://api.x402node.dev/r",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api.xona-agent.com",
+   "url": "https://api.xona-agent.com/base-main/image/flux-2-pro",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "api2ls.com",
+   "url": "https://api2ls.com/api/gas",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "url": "https://apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app/api/actors/apimaestro/linkedin-profile-detail/call",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "url": "https://apify-api-git-br-better-actor-pay-merit-systems.vercel.app/api/actors/apify/instagram-scraper/call",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "apiwitchcraft.duckdns.org",
+   "url": "https://apiwitchcraft.duckdns.org/fx",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "app-443.hdgregory.com",
+   "url": "https://app-443.hdgregory.com/run",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "app-446.hdgregory.com",
+   "url": "https://app-446.hdgregory.com/run",
+   "verdict_in_source": "OK"
+  },
+  {
+   "host": "app-production-23b4.up.railway.app",
+   "url": "https://app-production-23b4.up.railway.app/v1/matches/live",
+   "verdict_in_source": "OK"
+  }
+ ]
+}

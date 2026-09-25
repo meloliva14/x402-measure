@@ -1,0 +1,3195 @@
+{
+ "generated_utc": "2026-09-25T00:44:26Z",
+ "finished_utc": "2026-09-25T00:44:58Z",
+ "method": "2026-08-06",
+ "method_note": "one POST with body {} (Content-Type application/json); header first, then body",
+ "population": "2026-08-06",
+ "population_basis": "the first 260 rows with verdict OK or V1 in sweep_results.json, in file order",
+ "version_keys_checked": [
+  "x402Version",
+  "version",
+  "x402_version",
+  "protocolVersion"
+ ],
+ "typed_means": "a JSON integer; a boolean is not one",
+ "summary": {
+  "hosts": 260,
+  "answered_402": 124,
+  "readable_challenges": 124,
+  "no_402": 127,
+  "transport_or_blocked": 9,
+  "read_from": {
+   "header": 115,
+   "body": 9
+  },
+  "version_key": {
+   "x402Version": 124
+  },
+  "json_type": {
+   "int": 124
+  },
+  "value": {
+   "2": 116,
+   "1": 8
+  },
+  "more_than_one_version_key": 0,
+  "with_accepts": 124,
+  "version_key_where_accepts_present": {
+   "x402Version": 124
+  },
+  "version_key_where_accepts_absent": {},
+  "dual_dialect_body_key": {
+   "x402Version": 59,
+   "(none)": 51
+  }
+ },
+ "rows": [
+  {
+   "host": "2s-3cpr6qm6j-alleyford.vercel.app",
+   "url": "https://2s-3cpr6qm6j-alleyford.vercel.app/api/convert/unit",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "2s-jwnd2jdga-alleyford.vercel.app",
+   "url": "https://2s-jwnd2jdga-alleyford.vercel.app/api/climate/station-near",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "2s.io",
+   "url": "https://2s.io/api/geo/ip",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "31-172-70-14.nip.io",
+   "url": "https://31-172-70-14.nip.io/flow",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "401-chi.vercel.app",
+   "url": "https://401-chi.vercel.app/api/v1/symbol",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "402.com.tr",
+   "url": "https://402.com.tr/api/x402/deep-dd",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "402atlas.com",
+   "url": "https://402atlas.com/api/verified",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "402timezones.vercel.app",
+   "url": "https://402timezones.vercel.app/api/convert-timezone",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "402utils.com",
+   "url": "https://402utils.com/v1/qr",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "5.75.142.199.sslip.io",
+   "url": "https://5.75.142.199.sslip.io/paid/x402/attest/4",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "action402.vercel.app",
+   "url": "https://action402.vercel.app/api/execute/webhook",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "address-risk.hergertsynthora.com",
+   "url": "https://address-risk.hergertsynthora.com/service",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "address.agentic-jp.com",
+   "url": "https://address.agentic-jp.com/parse",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "ads.apitoll.cloud",
+   "url": "https://ads.apitoll.cloud/v1/ads/tiktok/top",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "ads.forgemesh.io",
+   "url": "https://ads.forgemesh.io/api/network/stats",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "ads.gitlawb.com",
+   "url": "https://ads.gitlawb.com/api/ads/fund/5",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "aeml-x402.zeabur.app",
+   "url": "https://aeml-x402.zeabur.app/gauge",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "afriref.dev",
+   "url": "https://afriref.dev/v1/all",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "url": "https://agent-a2a-payment-mk77y.ondigitalocean.app/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-budget-guard.onrender.com",
+   "url": "https://agent-budget-guard.onrender.com/api/budget/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agent-compression-biz-production.up.railway.app",
+   "url": "https://agent-compression-biz-production.up.railway.app/v1/fetch",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-data-hub-thebrandbard.replit.app",
+   "url": "https://agent-data-hub-thebrandbard.replit.app/api/stores/7",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-data-toolkit.onrender.com",
+   "url": "https://agent-data-toolkit.onrender.com/csv",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-id-x402-production.up.railway.app",
+   "url": "https://agent-id-x402-production.up.railway.app/register",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "url": "https://agent-inbound-content-bpyht.ondigitalocean.app/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-offers-api-replitzip.replit.app",
+   "url": "https://agent-offers-api-replitzip.replit.app/v1/banks/ICBC/offers/search",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "url": "https://agent-outbound-action-ljoeb.ondigitalocean.app/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-paycheck.onrender.com",
+   "url": "https://agent-paycheck.onrender.com/v1/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-production-1daa.up.railway.app",
+   "url": "https://agent-production-1daa.up.railway.app/v1/embeddings",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-ready.dev",
+   "url": "https://agent-ready.dev/api/x402/scan",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "url": "https://agent-secret-leak-lrbu6.ondigitalocean.app/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-sop-compiler-production.up.railway.app",
+   "url": "https://agent-sop-compiler-production.up.railway.app/v1/compile",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-treats-production.up.railway.app",
+   "url": "https://agent-treats-production.up.railway.app/api/fortune",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent-trust-layer.agent-trust-layer.workers.dev",
+   "url": "https://agent-trust-layer.agent-trust-layer.workers.dev/route",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent-vending-machine.avm-7301.workers.dev",
+   "url": "https://agent-vending-machine.avm-7301.workers.dev/pdf",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent.api.0x.org",
+   "url": "https://agent.api.0x.org/v1/x402/swap-allowance-holder-quote/",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agent.memoryapi.org",
+   "url": "https://agent.memoryapi.org/x402/erc8004/browse",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agent.soliduscapital.io",
+   "url": "https://agent.soliduscapital.io/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agent402.tools",
+   "url": "https://agent402.tools/api/qr",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "url": "https://agentaegis-mcp-production.up.railway.app/x402/cve-lookup",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "agentattest.hergertsynthora.com",
+   "url": "https://agentattest.hergertsynthora.com/service",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentbodega.store",
+   "url": "https://agentbodega.store/api/name/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentcard.hergertsynthora.com",
+   "url": "https://agentcard.hergertsynthora.com/service",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentcash-fortune-demo-six.vercel.app",
+   "url": "https://agentcash-fortune-demo-six.vercel.app/api/fortune",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "agentcash-fortune-demo3.vercel.app",
+   "url": "https://agentcash-fortune-demo3.vercel.app/api/fortune",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "agentcrush.xyz",
+   "url": "https://agentcrush.xyz/api/agent/crewai/verification-status",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agentdata-api.sander-van-aard.workers.dev",
+   "url": "https://agentdata-api.sander-van-aard.workers.dev/eu/lei",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentdataapi.onrender.com",
+   "url": "https://agentdataapi.onrender.com/events",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentgate-production-eb21.up.railway.app",
+   "url": "https://agentgate-production-eb21.up.railway.app/quote",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentguard.hergertsynthora.com",
+   "url": "https://agentguard.hergertsynthora.com/service",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agenticinsights.com",
+   "url": "https://agenticinsights.com/api/x402/agentic-market/validate",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentkit0.com",
+   "url": "https://agentkit0.com/api/web/scrape",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agentpay.tools",
+   "url": "https://agentpay.tools/v1/session/create",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentpmt-webapp.vercel.app",
+   "url": "https://agentpmt-webapp.vercel.app/api/external/tools/ai-writing-quality-check/actions/check_for_banned_phrases/invoke",
+   "status": 401,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentproof-murex.vercel.app",
+   "url": "https://agentproof-murex.vercel.app/json/repair",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentres.dev",
+   "url": "https://agentres.dev/api/book",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agents.ai-rook.com",
+   "url": "https://agents.ai-rook.com/api/classify",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agents.datalegion.ai",
+   "url": "https://agents.datalegion.ai/person/base",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agents.driftflight.com",
+   "url": "https://agents.driftflight.com/v1/images/generate",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agents.dyoeway.org",
+   "url": "https://agents.dyoeway.org/fx",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agents.freederia.com",
+   "url": "https://agents.freederia.com/v1/posts/614983",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agents.sayerandstone.com",
+   "url": "https://agents.sayerandstone.com/purchase",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agents.withzero.xyz",
+   "url": "https://agents.withzero.xyz/api/v1/pixelart/canvas",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agents.x402stock.xyz",
+   "url": "https://agents.x402stock.xyz/api/v1/fda",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agentspec-one.vercel.app",
+   "url": "https://agentspec-one.vercel.app/inspect/mcp",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "url": "https://agentstack-research-3bnlllaboa-ts.a.run.app/v1/us/announcements/:ticker",
+   "status": 503,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "agenttrust.uk",
+   "url": "https://agenttrust.uk/v1/scan",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "agentworld.me",
+   "url": "https://agentworld.me/api/mlb/trends",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agi.apify.com",
+   "url": "https://agi.apify.com/protocols/x402/prepaid-tokens",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "agri.lonestaroracle.xyz",
+   "url": "https://agri.lonestaroracle.xyz/report",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "ai-agent-payment-safety-stack.onrender.com",
+   "url": "https://ai-agent-payment-safety-stack.onrender.com/api/counterparty-invoice/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "ai-summarizer.api.klymax402.com",
+   "url": "https://ai-summarizer.api.klymax402.com/api/summarize",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "ai.tureka.com",
+   "url": "https://ai.tureka.com/api/x402/visibility-score",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "aiact-api.com",
+   "url": "https://aiact-api.com/articles/006",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "aiagentoracle.ai",
+   "url": "https://aiagentoracle.ai/api/v1/tokens",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "airdrop-checker.api.klymax402.com",
+   "url": "https://airdrop-checker.api.klymax402.com/api/check",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "airdroppulse.theaslangroupllc.com",
+   "url": "https://airdroppulse.theaslangroupllc.com/api/lp/il-forecast",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "almanac.locomot.io",
+   "url": "https://almanac.locomot.io/sky",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "alpha402x.com",
+   "url": "https://alpha402x.com/profiles/100x-floor",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "alphapulse-omega.vercel.app",
+   "url": "https://alphapulse-omega.vercel.app/api/alpha/ea",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "alphapulse.theaslangroupllc.com",
+   "url": "https://alphapulse.theaslangroupllc.com/api/alpha/ea",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "amlscreen.hergertsynthora.com",
+   "url": "https://amlscreen.hergertsynthora.com/service",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "anicca-x402-discovery-production.up.railway.app",
+   "url": "https://anicca-x402-discovery-production.up.railway.app/prompt-sanitizer",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "anomaly.forgemesh.io",
+   "url": "https://anomaly.forgemesh.io/api/token-scan",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "apexrunner.ai",
+   "url": "https://apexrunner.ai/signals/regime",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api-dev-v2.ixs.finance",
+   "url": "https://api-dev-v2.ixs.finance/x402/vaults",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api-dev.agents.skillfulai.io",
+   "url": "https://api-dev.agents.skillfulai.io/api/x402/demo/mainnet/premium",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api-dev.cueframe.ai",
+   "url": "https://api-dev.cueframe.ai/v1/media",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api-onchain.optimai.network",
+   "url": "https://api-onchain.optimai.network/external/v1/x402/search",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api-production-17e1.up.railway.app",
+   "url": "https://api-production-17e1.up.railway.app/news",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api-production-54bd.up.railway.app",
+   "url": "https://api-production-54bd.up.railway.app/v1/fvg",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api-v2.ixs.finance",
+   "url": "https://api-v2.ixs.finance/x402/vaults",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.agentfeeds.jp",
+   "url": "https://api.agentfeeds.jp/v1/dex/twap",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.agenticweb.nl",
+   "url": "https://api.agenticweb.nl/api/v1/ping",
+   "status": 503,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.agentinternetruntime.com",
+   "url": "https://api.agentinternetruntime.com/v1/sdk/capabilities",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.agentphone.ai",
+   "url": "https://api.agentphone.ai/x402/v1/numbers",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.agentstools.dev",
+   "url": "https://api.agentstools.dev/tx",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.agentwonderland.com",
+   "url": "https://api.agentwonderland.com/x402/endpoints/twitterx-search",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.agentx402.ai",
+   "url": "https://api.agentx402.ai/v1/scout/read",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.aiapi.ch",
+   "url": "https://api.aiapi.ch/v1/analyze",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.aidress.ai",
+   "url": "https://api.aidress.ai/pay/agent_exa_ai",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.aitrailblazer.net",
+   "url": "https://api.aitrailblazer.net/v1/top-stressed",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.algovault.com",
+   "url": "https://api.algovault.com/x402/scan_trade_calls",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.anchor-x402.com",
+   "url": "https://api.anchor-x402.com/v1/roll",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.apex-db.org",
+   "url": "https://api.apex-db.org/v1/apex",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.arkm.com",
+   "url": "https://api.arkm.com/x402/tx",
+   "status": 403,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.atms.nathanlidurin.com",
+   "url": "https://api.atms.nathanlidurin.com/x402/challenge",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.auor.io",
+   "url": "https://api.auor.io/tavily/v1/search",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.aventtech.com",
+   "url": "https://api.aventtech.com/fx",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.babyblueviper.com",
+   "url": "https://api.babyblueviper.com/regime",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.basefeed.io",
+   "url": "https://api.basefeed.io/v1/ping",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.biotechcatalystsentinel.com",
+   "url": "https://api.biotechcatalystsentinel.com/v1/events",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.bitrefill.com",
+   "url": "https://api.bitrefill.com/x402/invoice/pay",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.boonprotocol.com",
+   "url": "https://api.boonprotocol.com/api/v1/score",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.borisinc.com",
+   "url": "https://api.borisinc.com/paid/ping",
+   "status": 530,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.brazilayer.com",
+   "url": "https://api.brazilayer.com/v1/cnpj/busca",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.brokenkeyremapper.xyz",
+   "url": "https://api.brokenkeyremapper.xyz/api/brokenkeyremapperlink",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.businesschanges.dev",
+   "url": "https://api.businesschanges.dev/v1/events/evidence",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "url": "https://api.carbon-cashmere.de/v1/btc-derivatives/fee-curve",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.clawfetch.ai",
+   "url": "https://api.clawfetch.ai/fetch",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.clawinabox.xyz",
+   "url": "https://api.clawinabox.xyz/paid/v1/guard/check",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.cn402.com",
+   "url": "https://api.cn402.com/lunar",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.commodities.sh",
+   "url": "https://api.commodities.sh/v1/price/CL",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.compatify.io",
+   "url": "https://api.compatify.io/v1/query",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.cryptoetfsentinel.com",
+   "url": "https://api.cryptoetfsentinel.com/v1/events",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.cueframe.ai",
+   "url": "https://api.cueframe.ai/v1/me",
+   "status": 401,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.curb.numetal.xyz",
+   "url": "https://api.curb.numetal.xyz/v1/matches/match_mrerora1_ef4aa28e/pay",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.devdrops.run",
+   "url": "https://api.devdrops.run/api/predictions/:var1",
+   "status": null,
+   "error": "gaierror"
+  },
+  {
+   "host": "api.doc2json.de",
+   "url": "https://api.doc2json.de/v1/extract",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.dripmetrics.ai",
+   "url": "https://api.dripmetrics.ai/metrics/cvd",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.dyor.network",
+   "url": "https://api.dyor.network/api/sparql",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.exa.ai",
+   "url": "https://api.exa.ai/search",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.forum-labs.com",
+   "url": "https://api.forum-labs.com/v1/trust/report",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.freaks.one",
+   "url": "https://api.freaks.one/v2/tools/run/freaks-v2-719-sniper",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.getplexa.com",
+   "url": "https://api.getplexa.com/v1/quote",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.getsly.ai",
+   "url": "https://api.getsly.ai/x402/demo/test",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.gitbeacon.dev",
+   "url": "https://api.gitbeacon.dev/v1/repos",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.glianalabs.com",
+   "url": "https://api.glianalabs.com/x402/v6",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.gmfarcaster.com",
+   "url": "https://api.gmfarcaster.com/v1/query",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.gocreativeai.com",
+   "url": "https://api.gocreativeai.com/v1/ai/eco/:var1",
+   "status": 502,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.govparse.io",
+   "url": "https://api.govparse.io/v1/health",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.healthparse.io",
+   "url": "https://api.healthparse.io/v1/screen",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.hookfindr.com",
+   "url": "https://api.hookfindr.com/api/x402/transcribe",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.hyperextend.xyz",
+   "url": "https://api.hyperextend.xyz/v1/trades/BTC",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.immuta.app",
+   "url": "https://api.immuta.app/seal",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.influship.com",
+   "url": "https://api.influship.com/v1/search",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.instahuman.com",
+   "url": "https://api.instahuman.com/x402/feedback",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.intelica.dev",
+   "url": "https://api.intelica.dev/intel",
+   "status": 503,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.interzoid.com",
+   "url": "https://api.interzoid.com/getxlast3",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.invoket.com",
+   "url": "https://api.invoket.com/legal/diff",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.ipintel.ai",
+   "url": "https://api.ipintel.ai/x402v2",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.isocast.dev",
+   "url": "https://api.isocast.dev/v1/spot",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.jamton.network",
+   "url": "https://api.jamton.network/v1/purchases/xauh/requests/x402",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.jarvisclaw.ai",
+   "url": "https://api.jarvisclaw.ai/v1/embeddings",
+   "status": 400,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.jubjubapp.com",
+   "url": "https://api.jubjubapp.com/v2/paid/get_publish_recommendations",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.justaname.id",
+   "url": "https://api.justaname.id/ens/v2/reverse",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.kadec0.xyz",
+   "url": "https://api.kadec0.xyz/v1/cve",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.kakerapetit.dev",
+   "url": "https://api.kakerapetit.dev/v2/calendar",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.lastlookdata.com",
+   "url": "https://api.lastlookdata.com/api/date",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.linkedpanda.com",
+   "url": "https://api.linkedpanda.com/agent/v1/geo-id",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.locus.report",
+   "url": "https://api.locus.report/api/locus-zoning",
+   "status": 200,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.losbeto.xyz",
+   "url": "https://api.losbeto.xyz/pyth-price",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.loyalspark.online",
+   "url": "https://api.loyalspark.online/x402-gateway/earn",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.mcx-ventures.com",
+   "url": "https://api.mcx-ventures.com/v2/forensics",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.melvea.com",
+   "url": "https://api.melvea.com/v1/catalog",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.memoryapi.org",
+   "url": "https://api.memoryapi.org/x402/memory",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.messari.io",
+   "url": "https://api.messari.io/funding/v1/rounds",
+   "status": 403,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.metalend.tech",
+   "url": "https://api.metalend.tech/v1/services",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.mintverdict.com",
+   "url": "https://api.mintverdict.com/v1/mint/:mint/risk",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.moltalyzer.xyz",
+   "url": "https://api.moltalyzer.xyz/api/moltbook/digests",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.munition.io",
+   "url": "https://api.munition.io/v1/uploads",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.myceliasignal.com",
+   "url": "https://api.myceliasignal.com/oracle/gas/base",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.n0brains.com",
+   "url": "https://api.n0brains.com/x402/macro",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.nameintel.io",
+   "url": "https://api.nameintel.io/api/v1/score",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.nansen.ai",
+   "url": "https://api.nansen.ai/api/v1/tgm/flows",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.nativebtc.org",
+   "url": "https://api.nativebtc.org/v1/bitcoin/insight",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.nimatron.com",
+   "url": "https://api.nimatron.com/v1/cot/moves",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.node4all.com",
+   "url": "https://api.node4all.com/v1/x402-test",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.northeastdealintel.com",
+   "url": "https://api.northeastdealintel.com/v1/agent/search",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.octodamus.com",
+   "url": "https://api.octodamus.com/v2/arcus/perp",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.omninexu.com",
+   "url": "https://api.omninexu.com/v1/company/pulse",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.onesource.io",
+   "url": "https://api.onesource.io/api/chain/call",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.orcatrace.dev",
+   "url": "https://api.orcatrace.dev/v1/latest",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.osf-master-server.com",
+   "url": "https://api.osf-master-server.com/x402/sample/:record_id",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "api.ownedforever.com",
+   "url": "https://api.ownedforever.com/brief",
+   "status": 502,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.pak-labs.com",
+   "url": "https://api.pak-labs.com/v1/catalysts",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.palmai.tech",
+   "url": "https://api.palmai.tech/token-intel",
+   "status": null,
+   "error": "gaierror"
+  },
+  {
+   "host": "api.paysponge.com",
+   "url": "https://api.paysponge.com/x402/purchase/svc_d6kszbre4qwg5n4n4/text",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.paytoll.io",
+   "url": "https://api.paytoll.io/v1/twitter/user",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.pixo.tools",
+   "url": "https://api.pixo.tools/v1/pdf/ocr",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.polym.uk",
+   "url": "https://api.polym.uk/screener",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.predictionmarketdata.io",
+   "url": "https://api.predictionmarketdata.io/market-news",
+   "status": 403,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.printmoneylab.com",
+   "url": "https://api.printmoneylab.com/api/v1/fx-rate",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.proxyllm.ai",
+   "url": "https://api.proxyllm.ai/x402/llm-cost-scout",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.qonoro.ai",
+   "url": "https://api.qonoro.ai/v1/kyb/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.querylines.com",
+   "url": "https://api.querylines.com/v1/rates",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.recallradar.dev",
+   "url": "https://api.recallradar.dev/v1/recalls",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.regressionincoming.fyi",
+   "url": "https://api.regressionincoming.fyi/v1/draft-board/half-ppr/test",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.reloadpi.com",
+   "url": "https://api.reloadpi.com/api/catalog/esims/offers",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.remix.live",
+   "url": "https://api.remix.live/mcp/x402-http/compile",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.robinx.io",
+   "url": "https://api.robinx.io/callers",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.robotsshop.io",
+   "url": "https://api.robotsshop.io/v0/top",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.romny.dpdns.org",
+   "url": "https://api.romny.dpdns.org/v1/panel/snapshot",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.rtkmotion.io",
+   "url": "https://api.rtkmotion.io/paid/mocap",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.run402.com",
+   "url": "https://api.run402.com/tiers/v1/prototype",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.rxatlas.dev",
+   "url": "https://api.rxatlas.dev/v1/drugs",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.santosautomation.com",
+   "url": "https://api.santosautomation.com/api/audit",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.scoop.sundaebar.ai",
+   "url": "https://api.scoop.sundaebar.ai/x402/find-email",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.seerium.xyz",
+   "url": "https://api.seerium.xyz/v1/dex/funding-heat",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.seneschal.space",
+   "url": "https://api.seneschal.space/v1/q/base-fee",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.signalfuse.co",
+   "url": "https://api.signalfuse.co/v1/regime",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.signalis.dev",
+   "url": "https://api.signalis.dev/v1/pulse/digests",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.sirenic.eu",
+   "url": "https://api.sirenic.eu/v1/recherche",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.slamai.dev",
+   "url": "https://api.slamai.dev/token/price",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.socialfetch.dev",
+   "url": "https://api.socialfetch.dev/v1/web/ask",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.solprobe.xyz",
+   "url": "https://api.solprobe.xyz/exit/check",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "api.sourcestrand.com",
+   "url": "https://api.sourcestrand.com/v1/paid/crypto/workbench/market-regime-digest",
+   "status": null,
+   "error": "gaierror"
+  },
+  {
+   "host": "api.stacktr.ee",
+   "url": "https://api.stacktr.ee/publish",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.stakedbots.com",
+   "url": "https://api.stakedbots.com/leaderboard",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.stelardigital.com",
+   "url": "https://api.stelardigital.com/risk",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.stocktrends.com",
+   "url": "https://api.stocktrends.com/v1/stim/latest",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.strale.io",
+   "url": "https://api.strale.io/x402/seo-audit",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "body",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 1,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "api.sumvid.app",
+   "url": "https://api.sumvid.app/v1/summarize",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.svgsmith.dev",
+   "url": "https://api.svgsmith.dev/v1/convert",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.sygnliq.com",
+   "url": "https://api.sygnliq.com/v1/regime/current",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.syntaxrate.com",
+   "url": "https://api.syntaxrate.com/analyze",
+   "status": 530,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.tcgapi.dev",
+   "url": "https://api.tcgapi.dev/v1/sets",
+   "status": 401,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.telemost.io",
+   "url": "https://api.telemost.io/v1/data/post",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.terradeed.co.uk",
+   "url": "https://api.terradeed.co.uk/scrape",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.the402.ai",
+   "url": "https://api.the402.ai/v1/jobs",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.tickersfeed.net",
+   "url": "https://api.tickersfeed.net/gas",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.trialbase-db.org",
+   "url": "https://api.trialbase-db.org/v1/trials",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.trustboost.dev",
+   "url": "https://api.trustboost.dev/sanitize",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.trustsource.cc",
+   "url": "https://api.trustsource.cc/robots",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.useatelier.ai",
+   "url": "https://api.useatelier.ai/api/x402/pay/svc_1780812536114_y6pg8e7aw",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.utilia.ink",
+   "url": "https://api.utilia.ink/base/v1/token/risk",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "api.vaults.fyi",
+   "url": "https://api.vaults.fyi/v2/tags",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.veradata.dev",
+   "url": "https://api.veradata.dev/sanctions",
+   "status": 503,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.veritylayer.dev",
+   "url": "https://api.veritylayer.dev/verify",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.vetpulse.theaslangroupllc.com",
+   "url": "https://api.vetpulse.theaslangroupllc.com/api/vet/tdiu",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.vevang.com",
+   "url": "https://api.vevang.com/render/short",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.vindexapi.dev",
+   "url": "https://api.vindexapi.dev/v1/decode",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.wallettriage.com",
+   "url": "https://api.wallettriage.com/scan",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.webbersites.com",
+   "url": "https://api.webbersites.com/api/qr",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.wrathproductions.com",
+   "url": "https://api.wrathproductions.com/v1/truth-filter",
+   "status": 502,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.writer.place",
+   "url": "https://api.writer.place/x402/factory/create",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.x-402.online",
+   "url": "https://api.x-402.online/v1/dns",
+   "status": 410,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.x402.printmoneylab.com",
+   "url": "https://api.x402.printmoneylab.com/api/v1/buyers/:address/profile",
+   "status": 405,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.x402agentic.ai",
+   "url": "https://api.x402agentic.ai/screen",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "api.x402dataapi.com",
+   "url": "https://api.x402dataapi.com/v1/tls-report",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api.x402intel.uk",
+   "url": "https://api.x402intel.uk/x402-market",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.x402node.dev",
+   "url": "https://api.x402node.dev/r",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "api.xona-agent.com",
+   "url": "https://api.xona-agent.com/base-main/image/flux-2-pro",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": "x402Version",
+   "body_json_type": "int"
+  },
+  {
+   "host": "api2ls.com",
+   "url": "https://api2ls.com/api/gas",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  },
+  {
+   "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "url": "https://apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app/api/actors/apimaestro/linkedin-profile-detail/call",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "url": "https://apify-api-git-br-better-actor-pay-merit-systems.vercel.app/api/actors/apify/instagram-scraper/call",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true
+  },
+  {
+   "host": "apiwitchcraft.duckdns.org",
+   "url": "https://apiwitchcraft.duckdns.org/fx",
+   "status": null,
+   "error": "URLError"
+  },
+  {
+   "host": "app-443.hdgregory.com",
+   "url": "https://app-443.hdgregory.com/run",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "app-446.hdgregory.com",
+   "url": "https://app-446.hdgregory.com/run",
+   "status": 402,
+   "verb": "POST",
+   "requests": 1,
+   "readable": true,
+   "where": "header",
+   "key": "x402Version",
+   "keys_present": [
+    "x402Version"
+   ],
+   "value": 2,
+   "json_type": "int",
+   "has_accepts": true,
+   "body_key": null,
+   "body_json_type": null
+  },
+  {
+   "host": "app-production-23b4.up.railway.app",
+   "url": "https://app-production-23b4.up.railway.app/v1/matches/live",
+   "status": 404,
+   "verb": "POST",
+   "requests": 1
+  }
+ ]
+}
