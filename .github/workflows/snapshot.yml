@@ -32,7 +32,9 @@ permissions:
 
 jobs:
   snapshot:
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: that label moves to Ubuntu 26 from 2026-10-19 (runner-images#14748),
+    # and the probe's TLS stack comes with the image. Moving the instrument must be a decision.
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
