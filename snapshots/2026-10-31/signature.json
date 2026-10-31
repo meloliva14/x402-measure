@@ -1,0 +1,12 @@
+{
+ "schema": "verity-index-signature/1",
+ "signs": "observation.json",
+ "payload_sha256": "5e18b624a45636391641a5ba2bbeed6435779b853ef3f34d0d445fcaa5f752f9",
+ "payload_bytes": 724096,
+ "algorithm": "Ed25519",
+ "key_id": "ed25519:5d99c600ea396f4e",
+ "public_key_hex": "a1abd423f60c2158e824f3c64254854af942c09f310131267c20226e2541c90d",
+ "signature_hex": "4b69c466e2db24982c0136f216df2cfb45228dc8cfd835e6fa40bc1ddc310c488fa24e417b17e37a9a1a6d4b34382589f314ad00962a1a4c5991339476ac150e",
+ "signed_at_utc": "2026-10-31T10:27:44.289025+00:00",
+ "verify": "python verify_snapshot.py 2026-10-31"
+}
