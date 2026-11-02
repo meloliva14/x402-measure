@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-11-01",
-    "days": 86
+    "last": "2026-11-02",
+    "days": 87
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 145,
-  "distinct_hosts": 88,
-  "false_transitions_minted": 290,
+  "flap_events": 148,
+  "distinct_hosts": 89,
+  "false_transitions_minted": 296,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -607,9 +607,16 @@
     {
       "window": "2026-10-31->2026-11-01",
       "raw": 17,
-      "from_detected_flap": 0,
+      "from_detected_flap": 3,
       "involving_unreachable": 7,
       "excluding_unreachable": 10
+    },
+    {
+      "window": "2026-11-01->2026-11-02",
+      "raw": 14,
+      "from_detected_flap": 3,
+      "involving_unreachable": 8,
+      "excluding_unreachable": 6
     }
   ],
   "flaps": [
@@ -1627,6 +1634,27 @@
       "verdict": "OK",
       "window_in": "2026-10-27->2026-10-28",
       "window_out": "2026-10-28->2026-10-29"
+    },
+    {
+      "date": "2026-11-01",
+      "host": "chain-analyzer.com",
+      "verdict": "OK",
+      "window_in": "2026-10-31->2026-11-01",
+      "window_out": "2026-11-01->2026-11-02"
+    },
+    {
+      "date": "2026-11-01",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-10-31->2026-11-01",
+      "window_out": "2026-11-01->2026-11-02"
+    },
+    {
+      "date": "2026-11-01",
+      "host": "franklin1.tail7a0ba4.ts.net",
+      "verdict": "NO_402",
+      "window_in": "2026-10-31->2026-11-01",
+      "window_out": "2026-11-01->2026-11-02"
     }
   ]
 }
