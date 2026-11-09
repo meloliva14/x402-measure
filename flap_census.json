@@ -2,15 +2,15 @@
   "schema": "x402-measure/flap-census/1",
   "series": {
     "first": "2026-08-08",
-    "last": "2026-11-08",
-    "days": 93
+    "last": "2026-11-09",
+    "days": 94
   },
   "definition": "host reads UNREACHABLE on day D and the same non-UNREACHABLE verdict on D-1 and D+1; each such flap mints two transitions that are not state changes, one in each adjacent window",
   "cause_is_not_determined": "the pattern is equally consistent with a transient prober failure and with the host being down only at the probe instant; the transition is unreal under either reading",
   "is_a_lower_bound": "gaps two or more days wide, flaps on the first or last day, and flaps straddling a real state change are all undetected",
-  "flap_events": 151,
+  "flap_events": 153,
   "distinct_hosts": 89,
-  "false_transitions_minted": 302,
+  "false_transitions_minted": 306,
   "worst_day": {
     "date": "2026-08-10",
     "events": 23
@@ -656,9 +656,16 @@
     {
       "window": "2026-11-07->2026-11-08",
       "raw": 11,
-      "from_detected_flap": 1,
+      "from_detected_flap": 3,
       "involving_unreachable": 5,
       "excluding_unreachable": 6
+    },
+    {
+      "window": "2026-11-08->2026-11-09",
+      "raw": 9,
+      "from_detected_flap": 2,
+      "involving_unreachable": 4,
+      "excluding_unreachable": 5
     }
   ],
   "flaps": [
@@ -1718,6 +1725,20 @@
       "verdict": "OK",
       "window_in": "2026-11-06->2026-11-07",
       "window_out": "2026-11-07->2026-11-08"
+    },
+    {
+      "date": "2026-11-08",
+      "host": "delta.rursus.app",
+      "verdict": "OK",
+      "window_in": "2026-11-07->2026-11-08",
+      "window_out": "2026-11-08->2026-11-09"
+    },
+    {
+      "date": "2026-11-08",
+      "host": "jp-calendar-x402.onrender.com",
+      "verdict": "V1",
+      "window_in": "2026-11-07->2026-11-08",
+      "window_out": "2026-11-08->2026-11-09"
     }
   ]
 }
