@@ -1,0 +1,2272 @@
+{
+ "schema": "x402-measure/survival/1",
+ "window": {
+  "cohort_day": "2026-08-19",
+  "end": "2026-11-17",
+  "days": 91,
+  "settled_through": "2026-11-04",
+  "quiet_days": 14
+ },
+ "population": {
+  "hosts_in_census": 1521,
+  "target_list_sha256": "b449e0099bec6702bafe4f9b5346c46425ed72d7fddc951a4432c9a8ede2150f",
+  "source": "CDP Bazaar discovery listings, deduplicated to one probe URL per host",
+  "collected_on": "2026-07-26"
+ },
+ "verification": {
+  "days_verified": 91,
+  "public_key_hex": "a1abd423f60c2158e824f3c64254854af942c09f310131267c20226e2541c90d",
+  "rule": "same checks as monthly_report.verified(): payload hash, published key, Ed25519 signature, date and row count"
+ },
+ "classifier": {
+  "generations_in_window": 3,
+  "changed_on": [
+   "2026-09-14",
+   "2026-09-15"
+  ],
+  "hosts_changing_gated_status_on_change_days": {
+   "2026-09-14": 3,
+   "2026-09-15": 6
+  },
+  "median_hosts_changing_gated_status_other_days": 9,
+  "cohort_day_flips_vs_day_before": 54
+ },
+ "operators_rule": {
+  "public_suffix_list_version": "2026-11-16_22-30-55_UTC",
+  "public_suffix_list_sha256": "76918ba7c5f7501785558708be861152377f962643844828a7a3cb7f3ae864c5",
+  "public_suffix_list_release_date": "2026-11-16",
+  "rule": "registrable domain (public suffix plus one label); an operator stopped when every one of its cohort hosts stopped"
+ },
+ "threshold_check": {
+  "silences_observed": 654,
+  "silences_ending_in_a_comeback": 327,
+  "silences_of_quiet_days_or_more": 295,
+  "of_those_ending_in_a_comeback": 9,
+  "of_those_comeback_pct": 3.1,
+  "longest_silence_ending_in_a_comeback_days": 53
+ },
+ "cohort": {
+  "hosts": 1348,
+  "operators": 866,
+  "operators_with_more_than_one_host": 63,
+  "hosts_on_those_operators": 545,
+  "largest_operator_hosts": 78,
+  "vercel_preview_hosts": 54,
+  "vercel_preview_teams": {
+   "merit-systems.vercel.app previews": 51,
+   "alleyford.vercel.app previews": 2
+  }
+ },
+ "end": {
+  "hosts_payment_gated": 1021,
+  "hosts_payment_gated_pct": 75.7,
+  "hosts_stopped": 286,
+  "hosts_stopped_pct": 21.2,
+  "hosts_unsettled": 41,
+  "operators_with_a_gated_host": 724,
+  "operators_with_a_gated_host_pct": 83.6,
+  "operators_stopped": 125,
+  "operators_stopped_pct": 14.4
+ },
+ "periods": [
+  {
+   "start": "2026-08-19",
+   "end": "2026-09-17",
+   "days": 30,
+   "hosts_selling_at_start": 1348,
+   "hosts_stopped": 66,
+   "hosts_stopped_pct": 4.9,
+   "operators_selling_at_start": 866,
+   "operators_stopped": 45,
+   "operators_stopped_pct": 5.2
+  },
+  {
+   "start": "2026-09-18",
+   "end": "2026-10-17",
+   "days": 30,
+   "hosts_selling_at_start": 1282,
+   "hosts_stopped": 133,
+   "hosts_stopped_pct": 10.4,
+   "operators_selling_at_start": 821,
+   "operators_stopped": 39,
+   "operators_stopped_pct": 4.8
+  },
+  {
+   "start": "2026-10-18",
+   "end": "2026-11-04",
+   "days": 18,
+   "hosts_selling_at_start": 1149,
+   "hosts_stopped": 87,
+   "hosts_stopped_pct": 7.6,
+   "operators_selling_at_start": 782,
+   "operators_stopped": 41,
+   "operators_stopped_pct": 5.2
+  }
+ ],
+ "largest_single_day": {
+  "stop_date": "2026-09-18",
+  "hosts": 77,
+  "by_operator": [
+   {
+    "operator": "klymax402.com",
+    "hosts": 77
+   }
+  ]
+ },
+ "largest_stopped_operators": [
+  {
+   "operator": "klymax402.com",
+   "hosts": 78,
+   "stop_date": "2026-09-18"
+  },
+  {
+   "operator": "x402tools.xyz",
+   "hosts": 6,
+   "stop_date": "2026-08-25"
+  },
+  {
+   "operator": "hillguava.xyz",
+   "hosts": 3,
+   "stop_date": "2026-08-24"
+  },
+  {
+   "operator": "gocreativeai.com",
+   "hosts": 3,
+   "stop_date": "2026-09-20"
+  },
+  {
+   "operator": "madhousewallet.com",
+   "hosts": 2,
+   "stop_date": "2026-09-12"
+  }
+ ],
+ "two_operators_with_most_stopped_hosts": {
+  "operators": [
+   {
+    "operator": "klymax402.com",
+    "stopped_hosts": 78,
+    "first_stop": "2026-09-03",
+    "last_stop": "2026-09-18",
+    "most_on_one_day": 77,
+    "most_on_one_day_date": "2026-09-18"
+   },
+   {
+    "operator": "merit-systems.vercel.app previews",
+    "stopped_hosts": 44,
+    "first_stop": "2026-09-01",
+    "last_stop": "2026-11-04",
+    "most_on_one_day": 17,
+    "most_on_one_day_date": "2026-10-29"
+   }
+  ],
+  "stopped_hosts": 122,
+  "share_of_all_stopped_hosts_pct": 42.7
+ },
+ "how_stopped_hosts_answer_on_end_day": {
+  "no_answer": 139,
+  "not_found_404_410": 104,
+  "server_error_5xx": 19,
+  "other_status": 12,
+  "refused_401_403": 7,
+  "answers_2xx_without_charging": 3,
+  "redirect_3xx": 2
+ },
+ "definitions": {
+  "payment_gated": "verdict in OK, WARN, V1, NON_EVM, BLOCKED on the day",
+  "cohort": "hosts payment-gated on 2026-08-19",
+  "stopped": "no payment-gated verdict on any of the last 14 days of the window",
+  "stop_date": "the day after the host's last payment-gated day",
+  "not_found_statuses": [
+   404,
+   410
+  ],
+  "unsettled": "not payment-gated on the last day, but payment-gated on one of the last 14",
+  "silence": "a run of consecutive days on which a cohort host was not payment-gated",
+  "period_stopped": "hosts (or operators) whose stop date falls in the period, out of those that had not stopped before it; the last period ends on settled_through"
+ },
+ "stopped_hosts": [
+  {
+   "host": "2s-3cpr6qm6j-alleyford.vercel.app",
+   "operator": "alleyford.vercel.app previews",
+   "last_payment_gated": "2026-10-13",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "2s-jwnd2jdga-alleyford.vercel.app",
+   "operator": "alleyford.vercel.app previews",
+   "last_payment_gated": "2026-10-13",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "402utils.com",
+   "operator": "402utils.com",
+   "last_payment_gated": "2026-10-06",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "5.75.142.199.sslip.io",
+   "operator": "sslip.io",
+   "last_payment_gated": "2026-09-23",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "operator": "agent-a2a-payment-mk77y.ondigitalocean.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "agent-id-x402-production.up.railway.app",
+   "operator": "agent-id-x402-production.up.railway.app",
+   "last_payment_gated": "2026-10-14",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "operator": "agent-inbound-content-bpyht.ondigitalocean.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "operator": "agent-outbound-action-ljoeb.ondigitalocean.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "operator": "agent-secret-leak-lrbu6.ondigitalocean.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "agentaegis-mcp-production.up.railway.app",
+   "operator": "agentaegis-mcp-production.up.railway.app",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "agentpmt-webapp.vercel.app",
+   "operator": "agentpmt-webapp.vercel.app",
+   "last_payment_gated": "2026-08-31",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "agents.ai-rook.com",
+   "operator": "ai-rook.com",
+   "last_payment_gated": "2026-08-28",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "agents.allium.so",
+   "operator": "allium.so",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "agents.datalegion.ai",
+   "operator": "datalegion.ai",
+   "last_payment_gated": "2026-10-06",
+   "end_day_state": "redirect_3xx"
+  },
+  {
+   "host": "agents.driftflight.com",
+   "operator": "driftflight.com",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "agents.freederia.com",
+   "operator": "freederia.com",
+   "last_payment_gated": "2026-09-01",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "agents.sayerandstone.com",
+   "operator": "sayerandstone.com",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "operator": "agentstack-research-3bnlllaboa-ts.a.run.app",
+   "last_payment_gated": "2026-09-01",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "ai-summarizer.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "aicomglobal.com",
+   "operator": "aicomglobal.com",
+   "last_payment_gated": "2026-09-29",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "airdrop-checker.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api-dev.agents.skillfulai.io",
+   "operator": "skillfulai.io",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api-production-54bd.up.railway.app",
+   "operator": "api-production-54bd.up.railway.app",
+   "last_payment_gated": "2026-10-14",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "api.agenticweb.nl",
+   "operator": "agenticweb.nl",
+   "last_payment_gated": "2026-09-10",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "api.agentwonderland.com",
+   "operator": "agentwonderland.com",
+   "last_payment_gated": "2026-10-22",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "api.aiapi.ch",
+   "operator": "aiapi.ch",
+   "last_payment_gated": "2026-10-06",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.aitrailblazer.net",
+   "operator": "aitrailblazer.net",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "api.foreverbetter.xyz",
+   "operator": "foreverbetter.xyz",
+   "last_payment_gated": "2026-10-02",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "api.freaks.one",
+   "operator": "freaks.one",
+   "last_payment_gated": "2026-11-01",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "api.gocreativeai.com",
+   "operator": "gocreativeai.com",
+   "last_payment_gated": "2026-09-19",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "api.hookfindr.com",
+   "operator": "hookfindr.com",
+   "last_payment_gated": "2026-08-25",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "api.invoket.com",
+   "operator": "invoket.com",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.jarvisclaw.ai",
+   "operator": "jarvisclaw.ai",
+   "last_payment_gated": "2026-08-21",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "api.mintverdict.com",
+   "operator": "mintverdict.com",
+   "last_payment_gated": "2026-10-18",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.molty.cash",
+   "operator": "molty.cash",
+   "last_payment_gated": "2026-09-21",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.osf-master-server.com",
+   "operator": "osf-master-server.com",
+   "last_payment_gated": "2026-08-26",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.palmai.tech",
+   "operator": "palmai.tech",
+   "last_payment_gated": "2026-09-05",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.robotsshop.io",
+   "operator": "robotsshop.io",
+   "last_payment_gated": "2026-09-05",
+   "end_day_state": "answers_2xx_without_charging"
+  },
+  {
+   "host": "api.romny.dpdns.org",
+   "operator": "romny.dpdns.org",
+   "last_payment_gated": "2026-09-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "api.sourcestrand.com",
+   "operator": "sourcestrand.com",
+   "last_payment_gated": "2026-09-10",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "api.sygnliq.com",
+   "operator": "sygnliq.com",
+   "last_payment_gated": "2026-10-19",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "api.syndicatelinks.co",
+   "operator": "syndicatelinks.co",
+   "last_payment_gated": "2026-10-21",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "api.utilia.ink",
+   "operator": "utilia.ink",
+   "last_payment_gated": "2026-09-05",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-25",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-25",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "app-production-23b4.up.railway.app",
+   "operator": "app-production-23b4.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "app-production-3fbff.up.railway.app",
+   "operator": "app-production-3fbff.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "app-production-cd86.up.railway.app",
+   "operator": "app-production-cd86.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "app.wellnizz.com",
+   "operator": "wellnizz.com",
+   "last_payment_gated": "2026-10-02",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "assay.nominal-labs.com",
+   "operator": "nominal-labs.com",
+   "last_payment_gated": "2026-10-26",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "attester.dev",
+   "operator": "attester.dev",
+   "last_payment_gated": "2026-11-01",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "aviation.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "barcode-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "base64-codec.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "bazaar-gateway.vercel.app",
+   "operator": "bazaar-gateway.vercel.app",
+   "last_payment_gated": "2026-09-27",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "binance-crypto-24h-stats.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-08-25",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "binance-ticker24.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "bittensorman.xyz",
+   "operator": "bittensorman.xyz",
+   "last_payment_gated": "2026-10-04",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "blockrun-web-vbsbhh7lea-uc.a.run.app",
+   "operator": "blockrun-web-vbsbhh7lea-uc.a.run.app",
+   "last_payment_gated": "2026-09-05",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "bounty.btnomb.com",
+   "operator": "btnomb.com",
+   "last_payment_gated": "2026-10-13",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "bridge-routes.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "brmarket.thomenz.me",
+   "operator": "thomenz.me",
+   "last_payment_gated": "2026-09-07",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "broker-sync-api-production.up.railway.app",
+   "operator": "broker-sync-api-production.up.railway.app",
+   "last_payment_gated": "2026-10-14",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "cdo-production.up.railway.app",
+   "operator": "cdo-production.up.railway.app",
+   "last_payment_gated": "2026-09-04",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "cdo-staging.up.railway.app",
+   "operator": "cdo-staging.up.railway.app",
+   "last_payment_gated": "2026-10-05",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "chatrip.app",
+   "operator": "chatrip.app",
+   "last_payment_gated": "2026-10-15",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "clonecho.builda.company",
+   "operator": "builda.company",
+   "last_payment_gated": "2026-09-10",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "color-palette.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "company-enrichment.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "company.payapi.market",
+   "operator": "payapi.market",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
+   "operator": "compliance-verifier-agent-6fe6y.ondigitalocean.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "cron-parser.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "crontab-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "crypto-news.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "csv-to-json.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "currency-converter.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "defi-yields.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "demo.aiapi.ch",
+   "operator": "aiapi.ch",
+   "last_payment_gated": "2026-10-06",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "diff-checker.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "dns-lookup.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "dns.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "docparse.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "domain-intelligence.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "earth.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "eleven.tokens.fun",
+   "operator": "tokens.fun",
+   "last_payment_gated": "2026-09-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "email-deliverability.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "email-finder.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "email-send.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-02",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "enrich.gocreativeai.com",
+   "operator": "gocreativeai.com",
+   "last_payment_gated": "2026-09-19",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "ens-resolver.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "entertainment.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "epsteinisland.club",
+   "operator": "epsteinisland.club",
+   "last_payment_gated": "2026-10-25",
+   "end_day_state": "answers_2xx_without_charging"
+  },
+  {
+   "host": "fact-checker.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "finance.payapi.market",
+   "operator": "payapi.market",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "finance.toon.haus",
+   "operator": "toon.haus",
+   "last_payment_gated": "2026-10-21",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "finance.toonhaus.dev",
+   "operator": "toonhaus.dev",
+   "last_payment_gated": "2026-10-21",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "football-pulse-x402-production.up.railway.app",
+   "operator": "football-pulse-x402-production.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "forex-latest.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "fortune.fulinlabs.com",
+   "operator": "fulinlabs.com",
+   "last_payment_gated": "2026-10-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "franklin1.tail7a0ba4.ts.net",
+   "operator": "tail7a0ba4.ts.net",
+   "last_payment_gated": "2026-09-09",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "funding-rates.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "gas-estimator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "gateway.apiosk.com",
+   "operator": "apiosk.com",
+   "last_payment_gated": "2026-09-06",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "gateway.gedx402.com",
+   "operator": "gedx402.com",
+   "last_payment_gated": "2026-10-27",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "gateway.hillguava.xyz",
+   "operator": "hillguava.xyz",
+   "last_payment_gated": "2026-08-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "gateway.sanfoundation.com",
+   "operator": "sanfoundation.com",
+   "last_payment_gated": "2026-10-04",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "gateway.stride20k.com",
+   "operator": "stride20k.com",
+   "last_payment_gated": "2026-10-03",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "gblin-sentinel.vercel.app",
+   "operator": "gblin-sentinel.vercel.app",
+   "last_payment_gated": "2026-09-27",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "gblin.digital",
+   "operator": "gblin.digital",
+   "last_payment_gated": "2026-09-27",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "gdpr-scanner.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "guard.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hars.cryptotavern.xyz",
+   "operator": "cryptotavern.xyz",
+   "last_payment_gated": "2026-10-19",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hash-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hl-portfolio.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hl-vaults.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "html-to-markdown.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "http-headers.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "human.twin3.ai",
+   "operator": "twin3.ai",
+   "last_payment_gated": "2026-10-21",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hyperliquid-data.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "hyperliquid-whales.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "image-resize.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "india-news.hillguava.xyz",
+   "operator": "hillguava.xyz",
+   "last_payment_gated": "2026-08-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "ip-geolocation.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "json-validator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "jtifhcvbgxqwlywugvjv.supabase.co",
+   "operator": "jtifhcvbgxqwlywugvjv.supabase.co",
+   "last_payment_gated": "2026-10-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "jupiter-quotes.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "jwt-decoder.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "kari.mayim-mayim.com",
+   "operator": "mayim-mayim.com",
+   "last_payment_gated": "2026-11-03",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "kenoodl.com",
+   "operator": "kenoodl.com",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "keyword-research.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "language-detector.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "liquidation-oracle.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "llm402.ai",
+   "operator": "llm402.ai",
+   "last_payment_gated": "2026-08-22",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "logigrain.net",
+   "operator": "logigrain.net",
+   "last_payment_gated": "2026-10-19",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "lorem-ipsum.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "lunar-api-production-cba9.up.railway.app",
+   "operator": "lunar-api-production-cba9.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "mailcheck.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "marine.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "markdown-renderer.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "markdown-to-html.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "mcp.onchaindiligence.com",
+   "operator": "onchaindiligence.com",
+   "last_payment_gated": "2026-09-12",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "music.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "myagenticoverlord.com",
+   "operator": "myagenticoverlord.com",
+   "last_payment_gated": "2026-10-15",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "nectar-tools.fly.dev",
+   "operator": "nectar-tools.fly.dev",
+   "last_payment_gated": "2026-09-22",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "news.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "nft-floor.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "nft-metadata.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "nolawealthfinancial.com",
+   "operator": "nolawealthfinancial.com",
+   "last_payment_gated": "2026-10-02",
+   "end_day_state": "redirect_3xx"
+  },
+  {
+   "host": "nut402.codenut.xyz",
+   "operator": "codenut.xyz",
+   "last_payment_gated": "2026-08-31",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "nwb-vending.com",
+   "operator": "nwb-vending.com",
+   "last_payment_gated": "2026-09-07",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "ocr-extract.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "omnicall.gocreativeai.com",
+   "operator": "gocreativeai.com",
+   "last_payment_gated": "2026-09-19",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "opportunity-api-production.up.railway.app",
+   "operator": "opportunity-api-production.up.railway.app",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "oracle.the-undesirables.com",
+   "operator": "the-undesirables.com",
+   "last_payment_gated": "2026-10-02",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "orderbook-depth.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "orionkr.xyz",
+   "operator": "orionkr.xyz",
+   "last_payment_gated": "2026-09-04",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "password-strength.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "paygent.obsmetrics.com",
+   "operator": "obsmetrics.com",
+   "last_payment_gated": "2026-10-13",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "person-enrichment.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "phone-validation.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "port-scanner.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "project-formatter-production.up.railway.app",
+   "operator": "project-formatter-production.up.railway.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "projectx402-production.up.railway.app",
+   "operator": "projectx402-production.up.railway.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "prospex.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "protocol-health-oracle-production.up.railway.app",
+   "operator": "protocol-health-oracle-production.up.railway.app",
+   "last_payment_gated": "2026-10-14",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "qr.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "quickpoll.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "quokkapix.com",
+   "operator": "quokkapix.com",
+   "last_payment_gated": "2026-10-26",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "quotesheet.panmediatech.workers.dev",
+   "operator": "panmediatech.workers.dev",
+   "last_payment_gated": "2026-10-17",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "regex-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "research-report.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "risk-graph-gx7v4.ondigitalocean.app",
+   "operator": "risk-graph-gx7v4.ondigitalocean.app",
+   "last_payment_gated": "2026-10-22",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "rpc-ens.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "scan.madhousewallet.com",
+   "operator": "madhousewallet.com",
+   "last_payment_gated": "2026-09-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "schemafetch.panmediatech.workers.dev",
+   "operator": "panmediatech.workers.dev",
+   "last_payment_gated": "2026-10-17",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "scry.moreright.xyz",
+   "operator": "moreright.xyz",
+   "last_payment_gated": "2026-08-20",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "scvd.store",
+   "operator": "scvd.store",
+   "last_payment_gated": "2026-08-19",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "search.reversesandbox.com",
+   "operator": "reversesandbox.com",
+   "last_payment_gated": "2026-09-18",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "second-opinion-production.up.railway.app",
+   "operator": "second-opinion-production.up.railway.app",
+   "last_payment_gated": "2026-10-04",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "secondopinionx402.com",
+   "operator": "secondopinionx402.com",
+   "last_payment_gated": "2026-10-04",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "seo-analyzer.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "slidingbox.ai",
+   "operator": "slidingbox.ai",
+   "last_payment_gated": "2026-09-21",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "slug-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "sms-validator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "solana-pools.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "space.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "spendguard.panmediatech.workers.dev",
+   "operator": "panmediatech.workers.dev",
+   "last_payment_gated": "2026-10-17",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "ssl-checker.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "stable-browser-git-ben-test-agentcash-rout-1850e3-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-browser-git-shafu-stablebrowser-410-220925-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-browser-git-shafu-stablebrowser-han-020dc6-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-domains-git-ben-upgrade-agentcash-r-bb6a65-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-20",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-fix-stableenrich-exa-api-schema-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-fix-stableenrich-exa-leg-547ea8-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-fix-fullenrich-nbsp-enums-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-fullenrich-search-pricing-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-merchant-health-sc-efad26-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-pdl-not-found-200-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-pdl-people-enrich-25cca0-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stabledomains-pork-25b57c-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-compa-a1ba99-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-exa-b-f22424-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-fulle-a23f83-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-nearb-74cfdf-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-pdl-p-274589-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-peopl-60ba0c-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-peopl-a13b22-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-enrich-git-shafu-stableenrich-valid-89fbcd-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-default-act-9e0365-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-default-recency-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-location-guidance-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-jobs-git-fix-stablejobs-pricing-sch-7bfb9c-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-212-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-227-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-media-git-ben-test-agentcash-router-pr-241-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-29",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-media-git-ben-upgrade-agentcash-rou-02e093-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-20",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-people-data-git-ben-test-agentcash-dfcfa3-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-11-01",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-people-data-git-pdl-signoz-usage-alarms-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-people-data-git-shafu-merchant-heal-bd8263-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-people-data-git-shafu-pdl-api-settl-95fdf9-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-social-5jshn0wk0-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-30",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-studio-git-mason-migrate-off-prices-map-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-travel-git-migrate-stabletravel-router-140-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-10-21",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "stable-upload-git-mason-1140-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-11-03",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "staging.402utils.com",
+   "operator": "402utils.com",
+   "last_payment_gated": "2026-10-06",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "staging.agenticinsights.com",
+   "operator": "agenticinsights.com",
+   "last_payment_gated": "2026-08-26",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "stem.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "stock-price.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "stockapi.hillguava.xyz",
+   "operator": "hillguava.xyz",
+   "last_payment_gated": "2026-08-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "tech-enrichment.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "tee.papers.tech",
+   "operator": "papers.tech",
+   "last_payment_gated": "2026-10-27",
+   "end_day_state": "answers_2xx_without_charging"
+  },
+  {
+   "host": "text-classifier.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "text-to-speech.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "text-translator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "theideamachine.dev",
+   "operator": "theideamachine.dev",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "timezone-converter.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "token-holders.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "token-ohlcv.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "token-price.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "token-safety.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "transit402.dev",
+   "operator": "transit402.dev",
+   "last_payment_gated": "2026-10-02",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "trust402.aztecbeacon.uk",
+   "operator": "aztecbeacon.uk",
+   "last_payment_gated": "2026-09-20",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "try.madhousewallet.com",
+   "operator": "madhousewallet.com",
+   "last_payment_gated": "2026-09-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "tts-service-production-e8a7.up.railway.app",
+   "operator": "tts-service-production-e8a7.up.railway.app",
+   "last_payment_gated": "2026-09-27",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "twitter-scraper.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "txintent.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-10-05",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "uat-api.certaindata.ai",
+   "operator": "certaindata.ai",
+   "last_payment_gated": "2026-08-27",
+   "end_day_state": "refused_401_403"
+  },
+  {
+   "host": "unit-converter.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "url-shortener.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "user-agent-parser.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "uuid-generator.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "vape-x402.vapex402.workers.dev",
+   "operator": "vapex402.workers.dev",
+   "last_payment_gated": "2026-10-28",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "vector-search.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "vehicle.payapi.market",
+   "operator": "payapi.market",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "verify.inferenceview.com",
+   "operator": "inferenceview.com",
+   "last_payment_gated": "2026-10-19",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "visionex.x402tools.xyz",
+   "operator": "x402tools.xyz",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "vn-gold-fx-x402-production.up.railway.app",
+   "operator": "vn-gold-fx-x402-production.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "weather-api.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "weather.payapi.market",
+   "operator": "payapi.market",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "weather.x402.press",
+   "operator": "x402.press",
+   "last_payment_gated": "2026-10-11",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "web-production-2d1051.up.railway.app",
+   "operator": "web-production-2d1051.up.railway.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "web-production-78e17.up.railway.app",
+   "operator": "web-production-78e17.up.railway.app",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "web-production-7ca5d.up.railway.app",
+   "operator": "web-production-7ca5d.up.railway.app",
+   "last_payment_gated": "2026-08-24",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "web-scraper.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "web-search.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "webhook-tester.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "websearch.hergertsynthora.com",
+   "operator": "hergertsynthora.com",
+   "last_payment_gated": "2026-10-05",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "whale-alert.api.klymax402.com",
+   "operator": "klymax402.com",
+   "last_payment_gated": "2026-09-17",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "www.pontor.io",
+   "operator": "pontor.io",
+   "last_payment_gated": "2026-10-31",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "x402-company-api-production.up.railway.app",
+   "operator": "x402-company-api-production.up.railway.app",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402-finance-api-production.up.railway.app",
+   "operator": "x402-finance-api-production.up.railway.app",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402-research.up.railway.app",
+   "operator": "x402-research.up.railway.app",
+   "last_payment_gated": "2026-09-05",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402-vehicle-api-production.up.railway.app",
+   "operator": "x402-vehicle-api-production.up.railway.app",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402-weather-api-production-04c4.up.railway.app",
+   "operator": "x402-weather-api-production-04c4.up.railway.app",
+   "last_payment_gated": "2026-09-15",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402.cloudpulsepoint.com",
+   "operator": "cloudpulsepoint.com",
+   "last_payment_gated": "2026-10-26",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "x402.miroshark.xyz",
+   "operator": "miroshark.xyz",
+   "last_payment_gated": "2026-10-19",
+   "end_day_state": "other_status"
+  },
+  {
+   "host": "x402.servicesmax.xyz",
+   "operator": "servicesmax.xyz",
+   "last_payment_gated": "2026-10-05",
+   "end_day_state": "server_error_5xx"
+  },
+  {
+   "host": "x402.tradesnack.com",
+   "operator": "tradesnack.com",
+   "last_payment_gated": "2026-10-23",
+   "end_day_state": "no_answer"
+  },
+  {
+   "host": "x402scan-e11utvi3p-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-08-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "x402scan-hnqp3auxm-merit-systems.vercel.app",
+   "operator": "merit-systems.vercel.app previews",
+   "last_payment_gated": "2026-08-31",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "xpensli.app",
+   "operator": "xpensli.app",
+   "last_payment_gated": "2026-08-25",
+   "end_day_state": "not_found_404_410"
+  },
+  {
+   "host": "ylk.one",
+   "operator": "ylk.one",
+   "last_payment_gated": "2026-09-08",
+   "end_day_state": "server_error_5xx"
+  }
+ ],
+ "inputs": [
+  {
+   "date": "2026-08-19",
+   "payload_sha256": "69658ac4ad91e1a660077a60e3bc8f9ac25b25af761f4b6633d60239d3e4c716"
+  },
+  {
+   "date": "2026-08-20",
+   "payload_sha256": "defb105ec3b166be2d0e26a915642aa9b7da2454a04860b81d2ee1aefdd12132"
+  },
+  {
+   "date": "2026-08-21",
+   "payload_sha256": "ebdde44bede5daef364cef4cd21e6d4b2585b6fb90b22bf1536daff42447ac19"
+  },
+  {
+   "date": "2026-08-22",
+   "payload_sha256": "106a344d68f03fa6f6d91b8a72bdf446227e4ee829d976d92bb62796f7f47c65"
+  },
+  {
+   "date": "2026-08-23",
+   "payload_sha256": "d7223804df312daf76decca6253b8d7c035a427d442907e07a70669f6826fa5c"
+  },
+  {
+   "date": "2026-08-24",
+   "payload_sha256": "81fbedc27b98fd7927badded34e57642969d6b39c065703f32989cf2b8c9343e"
+  },
+  {
+   "date": "2026-08-25",
+   "payload_sha256": "6002b3b96bcbdbc96856a5fdacbf475d95920b4b5e75d274e5125d79bd13aaf3"
+  },
+  {
+   "date": "2026-08-26",
+   "payload_sha256": "a350b1d26835f85ee2d4ed0ddda0fa1df7ba0912aa8cc1928d841a7bac7a9678"
+  },
+  {
+   "date": "2026-08-27",
+   "payload_sha256": "b7e1f6b0dca4966e3b61e8b345313738197e05e84c936c501124cbab16c25e45"
+  },
+  {
+   "date": "2026-08-28",
+   "payload_sha256": "f4bf402508b8add80599480ab34b8ae0752baa137762c1365c58fb5752f17a6c"
+  },
+  {
+   "date": "2026-08-29",
+   "payload_sha256": "e0e4465aa626cf149c1639365da22c66b0228b18291c8f25b954c2a62b6ccd25"
+  },
+  {
+   "date": "2026-08-30",
+   "payload_sha256": "16778ad5145a43db489498479faebe846b2ebcdf762cf84e23c3a7009482acea"
+  },
+  {
+   "date": "2026-08-31",
+   "payload_sha256": "b4ab37cdb1ac06f9496cd5c74a13610dffe837b5c0d402309482a8d729d659fe"
+  },
+  {
+   "date": "2026-09-01",
+   "payload_sha256": "2f2fcd1cf141661338b785f18522d451f32632e844dba3b212ffee7a6cc672cc"
+  },
+  {
+   "date": "2026-09-02",
+   "payload_sha256": "4dab19c90a371935e8b40f07d2209393833cb3a2fc1cb7a3d6fe412afb7e5eaa"
+  },
+  {
+   "date": "2026-09-03",
+   "payload_sha256": "cf514cabb4de3310f11b4df0146cb61a5f4fbc9593fd9b201ab9471f817ad27d"
+  },
+  {
+   "date": "2026-09-04",
+   "payload_sha256": "be32a1caecce2e01f89e5bcf30727cb249aa3125b4bd14c3206c6b6256727500"
+  },
+  {
+   "date": "2026-09-05",
+   "payload_sha256": "05ec60a0df6d4f0aef5aacc852589e0410633605f6cb2a0c80ec7e88d8be0417"
+  },
+  {
+   "date": "2026-09-06",
+   "payload_sha256": "2880ad27cd744a7e26e794d60d125d9bc15716b31add9372fb4c27f67ef97e54"
+  },
+  {
+   "date": "2026-09-07",
+   "payload_sha256": "060c9e012fbbd90ac396f8b9b71148dcf1b39d0a530a21766bb2469adcd6ff53"
+  },
+  {
+   "date": "2026-09-08",
+   "payload_sha256": "6a1718f273ec91633bf5b64d153be8148a62143663403f1fef84287bd3c15e8e"
+  },
+  {
+   "date": "2026-09-09",
+   "payload_sha256": "9ea661f415bcbad6dcd3d4b7ad81a4886b32df608be0b33825a49dafdabe72f0"
+  },
+  {
+   "date": "2026-09-10",
+   "payload_sha256": "1fe630b691bb78c80fccb6b3f87d0fdd2af44a335b61a728d671a48aa88c7ae2"
+  },
+  {
+   "date": "2026-09-11",
+   "payload_sha256": "51363f22213334963c4904e0f9c1a8e16ec3107eb3d9f7dab23f3549d397e6ae"
+  },
+  {
+   "date": "2026-09-12",
+   "payload_sha256": "dc441ee2b8ae63f22e6cfdfe83c4ee835eb945cd60f30d81b2043c8816e6e960"
+  },
+  {
+   "date": "2026-09-13",
+   "payload_sha256": "64a9d929dd3474e8b6f42397e4f8bdc6d09d43235c00b99b64d8a45531510d48"
+  },
+  {
+   "date": "2026-09-14",
+   "payload_sha256": "f38bcac9071e80117dcf1926337362447579f8e778ff37b5ad6d07bdf77b449d"
+  },
+  {
+   "date": "2026-09-15",
+   "payload_sha256": "5ac2e119e7f887481a14c717dbbdc9a480c25ffb859f67ec216fba5752d5a7f2"
+  },
+  {
+   "date": "2026-09-16",
+   "payload_sha256": "4b7628314edbc1d68730cf7d856d65b62f3d5507b45cd49d107cf1440024ba13"
+  },
+  {
+   "date": "2026-09-17",
+   "payload_sha256": "c59a835d57c8310314c6e2b158ec17e1694d6267f084962b6b6bd4c0b5ee4478"
+  },
+  {
+   "date": "2026-09-18",
+   "payload_sha256": "10de466f3fab39dc268ee729195350db1c073330d1f34b76bcdb9d6cc65f604f"
+  },
+  {
+   "date": "2026-09-19",
+   "payload_sha256": "5cb1dd0a77fdf12ad8af8e03abf01c8b4291540c58c22e31f93330e69cd9b348"
+  },
+  {
+   "date": "2026-09-20",
+   "payload_sha256": "3929b77016e4dc6dab3cd37db619d0656d0cba681c7971b6eaa8514ec5fe1f86"
+  },
+  {
+   "date": "2026-09-21",
+   "payload_sha256": "a5e4321f03fd938de104c4cc744374f9a120fd19578ff4d9f15652dcd6fe0494"
+  },
+  {
+   "date": "2026-09-22",
+   "payload_sha256": "db8988723d93fe31818aec6e69c790ea7de2a0201a99e9cfd3f48c4c947de0a5"
+  },
+  {
+   "date": "2026-09-23",
+   "payload_sha256": "414d1dd48fe320554f07d5b44f5b415e2c1c6819f8d434bccfb914c8c4e93998"
+  },
+  {
+   "date": "2026-09-24",
+   "payload_sha256": "04487d498ee8823b2ba7772e5c6899cad1dbde5360eb53583b832e69847ac13d"
+  },
+  {
+   "date": "2026-09-25",
+   "payload_sha256": "49e1b8136a2980c7baf528d694c7e6d97b16df39d078ff492e83dd0db87bb5cf"
+  },
+  {
+   "date": "2026-09-26",
+   "payload_sha256": "74aa23fa3971dfcbfa96a8d06d481e111a2b96820acd81f0e8f8b9cdbad8083c"
+  },
+  {
+   "date": "2026-09-27",
+   "payload_sha256": "47340c8b03d8804b4bcadaab4ad39e3a7142f5b0e4c2a0be8e9110f20b7997e9"
+  },
+  {
+   "date": "2026-09-28",
+   "payload_sha256": "33ac78548d8dfe3ceb8b73c0f8db0d810d356cbad231f4b1e3fc696ef74bb474"
+  },
+  {
+   "date": "2026-09-29",
+   "payload_sha256": "cc99e41e88f1369908f3333c791178139e79dfa5a40164d936072a19eb389fea"
+  },
+  {
+   "date": "2026-09-30",
+   "payload_sha256": "1b8fd8c874c413b425b047fd2695c28b50529758866ea43d37a8c1389690660e"
+  },
+  {
+   "date": "2026-10-01",
+   "payload_sha256": "bcdd3dfdf7f0309e5c80cb319bf982b3a09934bb79ea075c0aa1f85b01f4d4a7"
+  },
+  {
+   "date": "2026-10-02",
+   "payload_sha256": "904a5751614bf96aacb5db0788b278795aa610a85657ff88c8ff2ece06f13c17"
+  },
+  {
+   "date": "2026-10-03",
+   "payload_sha256": "5ab6287f4391d9e0707535fb394921ed469b4205fb5d862ae214f94f086f0666"
+  },
+  {
+   "date": "2026-10-04",
+   "payload_sha256": "57ee063585ee51e3598dbf78cfccd1705a553fa7998af71b15abc10211b9f447"
+  },
+  {
+   "date": "2026-10-05",
+   "payload_sha256": "47b84c41fcfa06bd08280cdffe4c3a9660e4ade6e6499073efccd34ead864134"
+  },
+  {
+   "date": "2026-10-06",
+   "payload_sha256": "9a540dc0640a6bbc7ad519303978552001aeedf21e589db6f029ab27a88e6f13"
+  },
+  {
+   "date": "2026-10-07",
+   "payload_sha256": "81bff9889a3fd839bfe43f92feb33657f01bb07c5704e8fa93453738eae25dec"
+  },
+  {
+   "date": "2026-10-08",
+   "payload_sha256": "90c81892a552d9d4efe7f976b5aa276f576ae1a226380e424b753256f81c0454"
+  },
+  {
+   "date": "2026-10-09",
+   "payload_sha256": "f924107c7f01d530f548e229af9732b37f5e7a8336274d3f4ed621e8496c6998"
+  },
+  {
+   "date": "2026-10-10",
+   "payload_sha256": "415f69311d20734f7fda52672b1b9f0760920920a041f3137bdfee90b2592599"
+  },
+  {
+   "date": "2026-10-11",
+   "payload_sha256": "44f543ea64daa06a503fd99c7956bd13712a0516df01ca298f8607ea4cfac456"
+  },
+  {
+   "date": "2026-10-12",
+   "payload_sha256": "02049059b9fc4ce27f00cd965a883daa3f18d662be4d8cbb766ab56b0dabaa90"
+  },
+  {
+   "date": "2026-10-13",
+   "payload_sha256": "cc19a5210551da51b195b434c1aacb1b1b12132859ea308ec1c0d6496c02a635"
+  },
+  {
+   "date": "2026-10-14",
+   "payload_sha256": "b170249fbbd6a9727a9d347642bb94c24aa63066d655404d40c4c349abad08ef"
+  },
+  {
+   "date": "2026-10-15",
+   "payload_sha256": "f9e9e578c676a753cac83cc59320b9fdbbb4d409db54db29e8e8b8468b31e7bf"
+  },
+  {
+   "date": "2026-10-16",
+   "payload_sha256": "882e990f762e06f5fa6b909369347d36cc806f1d04ba0e6fe094a1a0418e6cb4"
+  },
+  {
+   "date": "2026-10-17",
+   "payload_sha256": "a4cf98dc1be9076fc28aae962adab1312b4eccaa5b525f20cc0ac857f470ffa7"
+  },
+  {
+   "date": "2026-10-18",
+   "payload_sha256": "41a1e1a482f9e564f39df6ba4c6a113bc649c9a4b890f8638d90701680e27e34"
+  },
+  {
+   "date": "2026-10-19",
+   "payload_sha256": "cd9e3a5b656937832b23fd0610a51d8c5ebc8817c4f72067c02f81159c1ca448"
+  },
+  {
+   "date": "2026-10-20",
+   "payload_sha256": "ee1cfe7f726e3011794e5b37b85d6b979d03b42e9e0d57c5b76a2b44def5df09"
+  },
+  {
+   "date": "2026-10-21",
+   "payload_sha256": "e160bdee569f77a7737c7f41cf881c562e949f7b1d3e76d1d9bcb50c215ceb93"
+  },
+  {
+   "date": "2026-10-22",
+   "payload_sha256": "7b32598cee49759d852e2415f91fc39c79c8e40f2aba5e5c06298dfbd030689e"
+  },
+  {
+   "date": "2026-10-23",
+   "payload_sha256": "50b9447bd29c2be0a5961e4c0943c442afcf219488cc29f07ea58d87f9ef8fed"
+  },
+  {
+   "date": "2026-10-24",
+   "payload_sha256": "a238e6f7f5b310487047905176c2faf5c141d0ad81cf1b19443bc9a04075ae95"
+  },
+  {
+   "date": "2026-10-25",
+   "payload_sha256": "3c5c5cb4d305d185998b8afa4896e055746de087566d0fae56d534f85c3732d7"
+  },
+  {
+   "date": "2026-10-26",
+   "payload_sha256": "37b1ee9292accdabfe24c183b1739c936af0dbc25ec84c9399338481c0ea0a87"
+  },
+  {
+   "date": "2026-10-27",
+   "payload_sha256": "01ef444c1174b8aa69a0707fb017bec7faac89d5acf9abbdbab6e3a8eb460bce"
+  },
+  {
+   "date": "2026-10-28",
+   "payload_sha256": "858a7b31209e9707cc9549774887cca47724adbbe46d831dc0bd82ed4f5aee13"
+  },
+  {
+   "date": "2026-10-29",
+   "payload_sha256": "a7a86328db7abcfd8da58cbf8409b71eba23eb63c489ccb2e48f5ec7aa4d5df8"
+  },
+  {
+   "date": "2026-10-30",
+   "payload_sha256": "3cf963cad4fd987ba5a940ae856b41849ccec66073bb29fa015b49e0dab5f0b3"
+  },
+  {
+   "date": "2026-10-31",
+   "payload_sha256": "5e18b624a45636391641a5ba2bbeed6435779b853ef3f34d0d445fcaa5f752f9"
+  },
+  {
+   "date": "2026-11-01",
+   "payload_sha256": "249e8b3726fa022e4650426c41f118d673f8b8ed2311091dde4cc1d52625611b"
+  },
+  {
+   "date": "2026-11-02",
+   "payload_sha256": "f73f1612b2623417d1fa2defcfe71cd9d5d7404e26ba794834474d8d86edf3f9"
+  },
+  {
+   "date": "2026-11-03",
+   "payload_sha256": "78e50843421ffde0dcebba127c2d848ec9255b2d3bafaf0d0a3dfacbfe192f1e"
+  },
+  {
+   "date": "2026-11-04",
+   "payload_sha256": "587b9ae74d14194f33a5322f9791a858d1b354ea14ba22c878d5b18e606b2458"
+  },
+  {
+   "date": "2026-11-05",
+   "payload_sha256": "9918a26a40e883e1a8cbef26ed9190d98b53f3081f6bc7a9ebc2399d71b46788"
+  },
+  {
+   "date": "2026-11-06",
+   "payload_sha256": "3df232ca05faff2fc3c4e9c35d1159633b52f86520f8725b2f1a924c801ab061"
+  },
+  {
+   "date": "2026-11-07",
+   "payload_sha256": "9279c2839aee262648f56a81aa6844d0db5b48e00b0f6bd04c873879e089c36e"
+  },
+  {
+   "date": "2026-11-08",
+   "payload_sha256": "5696395c50a571fd3841e6f8edfc6d761b330cb77527cb70011bdb652ca9af56"
+  },
+  {
+   "date": "2026-11-09",
+   "payload_sha256": "fbad809a97755328f087eb2b21e9387e5014c305d363088ab6c5f696af783872"
+  },
+  {
+   "date": "2026-11-10",
+   "payload_sha256": "1b548e01656fa6f7f7b35686d67cdecd306397eed49e42ab585e3a56451b4ac2"
+  },
+  {
+   "date": "2026-11-11",
+   "payload_sha256": "f06e62281275841a55f6cef7b721892e57c7aace35fd2c5f8367f70cbff14ae4"
+  },
+  {
+   "date": "2026-11-12",
+   "payload_sha256": "847c4153615e01f57c5c60174f559a63f3a41435cc5397e7fbdcbbf17d26e46b"
+  },
+  {
+   "date": "2026-11-13",
+   "payload_sha256": "b925305e1e5a0934a1f0747c95ef6bdd7a68a57598921355883bf690f69e01f4"
+  },
+  {
+   "date": "2026-11-14",
+   "payload_sha256": "bd9492b26c74b367b252ef8138b8e09f13f8b73cd8f8def3eacd39fe0515e7fb"
+  },
+  {
+   "date": "2026-11-15",
+   "payload_sha256": "a4f43e6c128e29d1dba5929462b0bf63bbdb8af6880be9d3c1444ae15a22078a"
+  },
+  {
+   "date": "2026-11-16",
+   "payload_sha256": "1ff4ad46d1b98bc127169e12d79ca88736ad251aa4d35004ede4a026062329e1"
+  },
+  {
+   "date": "2026-11-17",
+   "payload_sha256": "665a5845e8847781b25392099e7af405660041a1defc701e98d12d91a4d21fdf"
+  }
+ ],
+ "how_stopped_other_states": 21
+}

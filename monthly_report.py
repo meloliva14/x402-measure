@@ -60,6 +60,7 @@ SNAPSHOTS = HERE / "snapshots"
 PUBKEY = HERE / "index-pubkey.json"
 
 SCHEMA = "x402-measure/monthly-report/1"
+COHORT_DAY = "2026-08-19"          # survival.py's cohort, quoted from the 2026-12 issue on
 FIRST_ISSUE = "2026-11"            # issue numbers count from here, so issue N is derivable
 GATED = ("OK", "WARN", "V1", "NON_EVM", "BLOCKED")
 USDC_DECIMALS = 6                  # same constant demand_sweep.py and rpc.py divide by
@@ -328,6 +329,11 @@ def render(F: dict) -> str:
         f"a signature document: {n(F['manifest_signatures']['window_max'])} on every day of the month, and "
         f"{n(F['manifest_signatures']['prior_window_max'])} in the month before.",
         "",
+        *([f"9. **Still selling from the August cohort: {n(F['cohort']['still_gated'])} of "
+           f"{n(F['cohort']['hosts'])} hosts** that were payment-gated on {F['cohort']['day']} were "
+           f"payment-gated on {c['date']} ({F['cohort']['still_gated_pct']}%). The survival study "
+           f"(survival.py) follows this cohort day by day, by host and by operator.", ""]
+          if "cohort" in F else []),
         "## What this does not show",
         "",
         "- Wallets. The snapshots do not record payTo, so nothing here says whether a payout address moved "
@@ -487,6 +493,17 @@ def main(argv=None) -> int:
         "rate_limit_status": 429,
         "inputs": [{"date": d, "payload_sha256": docs[d]["_payload_sha256"]} for d in days],
     }
+
+    if issue >= "2026-12":
+        # the survival study's cohort (survival.COHORT_DAY), read from its own signed file
+        c0 = verified(COHORT_DAY, snaps, pub_hex)
+        if c0["manifest"].get("target_list_sha256") not in lists:
+            sys.exit("  REFUSING: the cohort day is a different population. Nothing written.")
+        g0 = {r["host"] for r in c0["observations"] if r["verdict"] in GATED}
+        g1 = {r["host"] for r in docs[cur[-1]]["observations"] if r["verdict"] in GATED}
+        F["cohort"] = {"day": COHORT_DAY, "payload_sha256": c0["_payload_sha256"], "hosts": len(g0),
+                       "still_gated": len(g0 & g1), "still_gated_pct": pct(len(g0 & g1), len(g0)),
+                       "definition": "payment-gated on the cohort day and on the last day of the window"}
 
     now, then = F["state"]["window_end"], F["state"]["prior_window_end"]
     F["change_vs_prior_window_end"] = {

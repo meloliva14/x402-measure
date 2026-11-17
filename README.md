@@ -17,6 +17,9 @@ on-chain. Python standard library only, nothing to install.
 - [measurement_card.json](measurement_card.json): this census's own definitions (unit, population,
   probe, verdicts, and where the payment terms are read), checked against the code by
   `test_measurement_card.py`.
+- [How long do x402 sellers last?](survival_2026-11-17.md): a survival study of the 1,348 hosts selling
+  on 2026-08-19, followed for 91 signed days, by host and by operator. It rebuilds with
+  `python survival.py --end 2026-11-17`, and `test_survival.py` recomputes its headline figures.
 
 A new monthly report is built on the 17th from the window ending on the 16th, held 48 hours for
 review, and published on the 19th (`monthly_publish.py`, run by `.github/workflows/monthly.yml`).
