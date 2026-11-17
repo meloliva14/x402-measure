@@ -8,6 +8,13 @@ on-chain. Python standard library only, nothing to install.
 
 ---
 
+## Reports
+
+- [State of x402 deployments, 2026-11](state_of_x402_2026-11.md): the monthly report, built only from the
+  signed snapshots. It rebuilds byte for byte with `python monthly_report.py --end 2026-11-16`.
+- [Where x402 measurements agree, and where they don't](agreement_2026-11.md): figures from ten x402
+  measurement publishers, this one included, lined up by what each one actually counts.
+
 ## What this has found
 
 Every figure below is dated and recomputable from files committed in this repo. None of it
