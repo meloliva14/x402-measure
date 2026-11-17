@@ -11,6 +11,12 @@ on:
     - cron: "43 5 * * *"
     - cron: "37 17 * * *"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run the full census into a scratch folder and commit nothing"
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: settlement
@@ -44,6 +50,11 @@ jobs:
         shell: bash
         run: |
           DAY=$(date -u +%F)
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python settlement.py --out-dir "$RUNNER_TEMP/settlement" | tee -a "$GITHUB_STEP_SUMMARY"
+            python recheck_settlement.py "$RUNNER_TEMP/settlement/settlement_${DAY}.json" | tail -3 | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
           if [ -f "settlement/settlement_${DAY}.json" ]; then
             echo "settlement for ${DAY} already recorded"
             exit 0
