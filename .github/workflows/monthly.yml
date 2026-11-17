@@ -1,0 +1,84 @@
+# Monthly State of x402 report, with a 48-hour hold the owner can cancel.
+#
+# On the 17th: build the report for the window ending on the 16th, keep its full text in a DRAFT
+# release (only people who can write to this repo can open a draft), and open an issue saying when
+# it publishes. GitHub emails the owner about the new issue. Closing the issue cancels the publish.
+# On the 19th: if that issue is still open, rebuild the report, require it to match the reviewed
+# draft byte for byte, commit it, publish the release, and close the issue with the links.
+#
+# monthly_report.py refuses on a missing day, a bad signature, a changed host list, a number the
+# text carries that the data does not, or a dash in the text. A refusal fails the run, nothing is
+# published, and GitHub emails the owner. Every step is safe to repeat, so three tries a day
+# (same reason as snapshot.yml: scheduled runs can be dropped) cannot publish twice.
+name: monthly-report
+
+on:
+  schedule:
+    - cron: "41 6 17,19 * *"
+    - cron: "47 14 17,19 * *"
+    - cron: "53 22 17,19 * *"
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "propose (17th) or publish (19th)"
+        required: true
+        type: choice
+        options: [propose, publish]
+      end:
+        description: "Last day of the window (YYYY-MM-DD). Blank = the 16th of this month."
+        required: false
+        type: string
+      dry_run:
+        description: "Read and build only; print every write instead of making it"
+        required: false
+        type: boolean
+        default: true
+
+# Its own group: sharing snapshot's group could let a queued snapshot run cancel a pending one
+# of these. The two never touch the same files, and the commit step rebases before pushing.
+concurrency:
+  group: monthly-report
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet cryptography
+
+      - name: Every script must compile
+        run: python -m compileall -q . && echo "all scripts compile"
+
+      - name: Decision tests
+        run: python test_monthly_publish.py
+
+      # shell: bash adds pipefail, so a refusal piped through tee still fails the step.
+      - name: Run the stage
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            STAGE="${{ inputs.stage }}"
+            [ "${{ inputs.dry_run }}" = "true" ] && DRY="--dry-run" || DRY=""
+            [ -n "${{ inputs.end }}" ] && END="--end ${{ inputs.end }}" || END=""
+          else
+            case "$(date -u +%d)" in
+              17) STAGE=propose ;;
+              19) STAGE=publish ;;
+              *) echo "not a report day"; exit 0 ;;
+            esac
+            DRY=""; END=""
+          fi
+          python monthly_publish.py "$STAGE" $END $DRY | tee -a "$GITHUB_STEP_SUMMARY"
