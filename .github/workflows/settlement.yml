@@ -1,0 +1,69 @@
+# Daily settlement census: can a payment built from each CDP Bazaar listing actually reach the seller?
+#
+# Reads the Bazaar listing and public chain state only. No key, no signature, no payment. Each
+# failing verdict carries the block or Solana slot it was read at, so anyone can recheck it.
+# Two schedules at odd minutes, because GitHub can delay or drop a scheduled run (see snapshot.yml);
+# the second is a no-op once the day's file exists. A day's file is never overwritten.
+name: settlement
+
+on:
+  schedule:
+    - cron: "43 5 * * *"
+    - cron: "37 17 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: settlement
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  settlement:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet cryptography
+
+      - name: Every script must compile
+        run: python -m compileall -q . && echo "all scripts compile"
+
+      - name: Settlement checks (offline)
+        run: python test_settlement.py
+
+      # shell: bash adds pipefail, so a refusal piped through tee still fails the step.
+      - name: Run today's census unless it is already recorded
+        id: run
+        shell: bash
+        run: |
+          DAY=$(date -u +%F)
+          if [ -f "settlement/settlement_${DAY}.json" ]; then
+            echo "settlement for ${DAY} already recorded"
+            exit 0
+          fi
+          python settlement.py --out-dir settlement | tee -a "$GITHUB_STEP_SUMMARY"
+          cat "settlement/settlement_${DAY}.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit
+        run: |
+          if [ -z "$(git status --porcelain settlement/)" ]; then
+            echo "nothing new to commit"
+            exit 0
+          fi
+          git config user.name  "verity-index[bot]"
+          git config user.email "veritylayer@gmail.com"
+          git add settlement/
+          git commit -m "Settlement census $(date -u +%F)" -m "Recorded automatically by settlement.py. Every failing verdict carries the block or slot it was read at."
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push --quiet && exit 0
+            echo "push attempt $i failed, retrying"
+            sleep 5
+          done
+          exit 1

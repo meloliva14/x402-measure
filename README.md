@@ -20,6 +20,11 @@ on-chain. Python standard library only, nothing to install.
 - [How long do x402 sellers last?](survival_2026-11-17.md): a survival study of the 1,348 hosts selling
   on 2026-08-19, followed for 91 signed days, by host and by operator. It rebuilds with
   `python survival.py --end 2026-11-17`, and `test_survival.py` recomputes its headline figures.
+- [Can x402 payments land?](settlement/settlement_2026-11-17.md): a daily settlement census of every
+  payment option the CDP Bazaar lists, asking the chain whether a payment built from it could reach the
+  seller. Public chain data only: no key, no signature, no payment. `recheck_settlement.py` rereads the
+  chain for every failing verdict, and `.github/workflows/settlement.yml` adds a file to
+  [settlement/](settlement/) each day.
 
 A new monthly report is built on the 17th from the window ending on the 16th, held 48 hours for
 review, and published on the 19th (`monthly_publish.py`, run by `.github/workflows/monthly.yml`).
