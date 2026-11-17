@@ -66,12 +66,24 @@ jobs:
 
       # Verification is a separate step on purpose. If signing or continuity is broken, that must
       # fail the job loudly rather than be discovered on day seven when the series is needed.
+      #
+      # shell: bash adds pipefail. Without it this step could never fail: the default shell takes the
+      # exit status of tee, not of the verifier (found 2026-11-17, every day verified at the time).
+      # continue-on-error so a failure cannot cost today's observation: the day is still committed,
+      # its digest is withheld, and the last step turns the run red so the owner is emailed.
       - name: Verify every snapshot and the continuity of the series
+        id: verify
+        shell: bash
+        continue-on-error: true
         run: python verify_snapshot.py --all | tee -a "$GITHUB_STEP_SUMMARY"
 
       # Runs AFTER verification, never before: publishing a digest for a file that does not
       # verify would hand an anchoring counterparty a hash of something broken.
       - name: Publish digest lines and the day-digest
+        id: digests
+        if: steps.verify.outcome == 'success'
+        shell: bash
+        continue-on-error: true
         run: python digests.py | tee -a "$GITHUB_STEP_SUMMARY"
 
       # Derived entirely from snapshots/, so it goes stale the moment a day is added and nothing
@@ -105,4 +117,12 @@ jobs:
             echo "push attempt $i failed, retrying"
             sleep 5
           done
+          exit 1
+
+      # Runs after the commit, so the day is already saved when the run turns red.
+      - name: Fail loudly if verification or the digests failed
+        if: steps.verify.outcome == 'failure' || steps.digests.outcome == 'failure'
+        run: |
+          echo "::error::verify: ${{ steps.verify.outcome }}, digests: ${{ steps.digests.outcome }}."
+          echo "::error::Today's observation was committed; no digest was published for a failed verify."
           exit 1
