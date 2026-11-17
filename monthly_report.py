@@ -340,6 +340,8 @@ def render(F: dict) -> str:
         "",
         "Method and data: meloliva14/x402-measure",
         "",
+        *(["The census states its definitions (unit, population, probe, verdicts, and where the payment "
+           "terms are read) in measurement_card.json beside this file.", ""] if F["issue"] >= "2026-12" else []),
         "To reproduce, from a clone:",
         "",
         "```",

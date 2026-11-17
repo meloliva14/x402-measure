@@ -14,6 +14,9 @@ on-chain. Python standard library only, nothing to install.
   signed snapshots. It rebuilds byte for byte with `python monthly_report.py --end 2026-11-16`.
 - [Where x402 measurements agree, and where they don't](agreement_2026-11.md): figures from ten x402
   measurement publishers, this one included, lined up by what each one actually counts.
+- [measurement_card.json](measurement_card.json): this census's own definitions (unit, population,
+  probe, verdicts, and where the payment terms are read), checked against the code by
+  `test_measurement_card.py`.
 
 A new monthly report is built on the 17th from the window ending on the 16th, held 48 hours for
 review, and published on the 19th (`monthly_publish.py`, run by `.github/workflows/monthly.yml`).

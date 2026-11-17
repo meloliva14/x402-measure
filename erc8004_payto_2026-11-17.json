@@ -1,0 +1,421 @@
+{
+ "schema": "x402-measure/erc8004-payto/1",
+ "question": "How many census sellers are paid to a wallet that owns an ERC-8004 agent identity on Base?",
+ "roster": {
+  "snapshot": "2026-11-17",
+  "verdicts": [
+   "OK",
+   "V1"
+  ],
+  "hosts": 1008
+ },
+ "probed_utc": "2026-11-17T04:10:26+00:00",
+ "registry": {
+  "address": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "chain": "eip155:8453",
+  "block": 58491251,
+  "check": "name() == AgentIdentity and ownerOf(94639) == 0xabf4fabd7c416fb67202e5f9002389fc75e2a9d0"
+ },
+ "definition": "owns an identity = balanceOf(payTo) > 0 on the registry at the pinned block (owner of at least one agent NFT; metadata-only links not counted)",
+ "hosts_with_payto": 999,
+ "distinct_evm_wallets": 592,
+ "wallets_owning_an_identity": 32,
+ "hosts_paid_to_such_a_wallet": 195,
+ "agents_owned_by_those_wallets": 43,
+ "owners": [
+  {
+   "payTo": "0x50ab2018c06c6e4eaa9ba52057eb55ed284912fc",
+   "agents_owned": 1,
+   "hosts": [
+    "airdroppulse.theaslangroupllc.com",
+    "alphapulse-omega.vercel.app",
+    "alphapulse.theaslangroupllc.com",
+    "api.vetpulse.theaslangroupllc.com",
+    "arbipulse.theaslangroupllc.com",
+    "arbipulse.vercel.app",
+    "autopulse-navy.vercel.app",
+    "autopulse.theaslangroupllc.com",
+    "biopulse-nine.vercel.app",
+    "biopulse.theaslangroupllc.com",
+    "buildpulse-alpha.vercel.app",
+    "buildpulse.theaslangroupllc.com",
+    "careerpulse-steel.vercel.app",
+    "careerpulse.theaslangroupllc.com",
+    "chronicapulse.theaslangroupllc.com",
+    "chronicapulse.vercel.app",
+    "citepulse.theaslangroupllc.com",
+    "clear-care-pulse.vercel.app",
+    "clearcarepulse.theaslangroupllc.com",
+    "climatepulse-six.vercel.app",
+    "climatepulse.theaslangroupllc.com",
+    "clinicalintelpulse.theaslangroupllc.com",
+    "clinicalintelpulse.vercel.app",
+    "collectablespulse.theaslangroupllc.com",
+    "collectablespulse.vercel.app",
+    "compliancepulse-eight.vercel.app",
+    "compliancepulse.theaslangroupllc.com",
+    "cryptopulse-xi-five.vercel.app",
+    "cryptopulse.theaslangroupllc.com",
+    "cyberpulse-six.vercel.app",
+    "cyberpulse.theaslangroupllc.com",
+    "dealpulse-weld.vercel.app",
+    "dealpulse.theaslangroupllc.com",
+    "debtpulse.theaslangroupllc.com",
+    "debtpulse.vercel.app",
+    "econsignalpulse.theaslangroupllc.com",
+    "econsignalpulse.vercel.app",
+    "edupulse-xi-blond.vercel.app",
+    "edupulse.theaslangroupllc.com",
+    "esgpulse.theaslangroupllc.com",
+    "esgpulse.vercel.app",
+    "fanpulse-tau.vercel.app",
+    "fanpulse.theaslangroupllc.com",
+    "fieldpulse-tan.vercel.app",
+    "fieldpulse.theaslangroupllc.com",
+    "filingspulse.theaslangroupllc.com",
+    "filingspulse.vercel.app",
+    "findpulse-omega.vercel.app",
+    "findpulse.theaslangroupllc.com",
+    "fitpulse-vert.vercel.app",
+    "fitpulse.theaslangroupllc.com",
+    "footballpulse-six.vercel.app",
+    "footballpulse.theaslangroupllc.com",
+    "franchisepulse-six.vercel.app",
+    "franchisepulse.theaslangroupllc.com",
+    "gamepulse-zeta.vercel.app",
+    "gamepulse.theaslangroupllc.com",
+    "geopoliticalpulse.theaslangroupllc.com",
+    "geopoliticalpulse.vercel.app",
+    "glowpulse-nine.vercel.app",
+    "glowpulse.theaslangroupllc.com",
+    "govspendpulse.theaslangroupllc.com",
+    "govspendpulse.vercel.app",
+    "grantpulse-three.vercel.app",
+    "grantpulse.theaslangroupllc.com",
+    "gridpulse-amber.vercel.app",
+    "gridpulse.theaslangroupllc.com",
+    "harvestpulse.theaslangroupllc.com",
+    "harvestpulse.vercel.app",
+    "herbapulse.theaslangroupllc.com",
+    "herbapulse.vercel.app",
+    "homepulse-seven.vercel.app",
+    "homepulse.theaslangroupllc.com",
+    "immigrationpulse.theaslangroupllc.com",
+    "immigrationpulse.vercel.app",
+    "insurepulse.theaslangroupllc.com",
+    "insurepulse.vercel.app",
+    "legalpulse.theaslangroupllc.com",
+    "longevitypulse.theaslangroupllc.com",
+    "longevitypulse.vercel.app",
+    "macropulse-alpha.vercel.app",
+    "macropulse.theaslangroupllc.com",
+    "mailpulse.theaslangroupllc.com",
+    "marketpulse-brown.vercel.app",
+    "marketpulse.theaslangroupllc.com",
+    "mcp-pulsenetwork.vercel.app",
+    "mealpulse.theaslangroupllc.com",
+    "mealpulse.vercel.app",
+    "mindpulse-lilac.vercel.app",
+    "mindpulse.theaslangroupllc.com",
+    "nutripulse.theaslangroupllc.com",
+    "onchainpulse-nine.vercel.app",
+    "onchainpulse.theaslangroupllc.com",
+    "parentpulse-delta.vercel.app",
+    "parentpulse.theaslangroupllc.com",
+    "patentpulse-self.vercel.app",
+    "patentpulse.theaslangroupllc.com",
+    "petpulse-alpha.vercel.app",
+    "petpulse.theaslangroupllc.com",
+    "policypulse-ten.vercel.app",
+    "policypulse.theaslangroupllc.com",
+    "proppulse-gules.vercel.app",
+    "proppulse.theaslangroupllc.com",
+    "prospectpulse-pi.vercel.app",
+    "prospectpulse.theaslangroupllc.com",
+    "pulse.theaslangroupllc.com",
+    "racingpulse.theaslangroupllc.com",
+    "racingpulse.vercel.app",
+    "remittancepulse.theaslangroupllc.com",
+    "remittancepulse.vercel.app",
+    "riskpulse-five.vercel.app",
+    "riskpulse.theaslangroupllc.com",
+    "safepulse-xi.vercel.app",
+    "safepulse.theaslangroupllc.com",
+    "scentpulse-xi.vercel.app",
+    "scentpulse.theaslangroupllc.com",
+    "scholarpulse-bice.vercel.app",
+    "scholarpulse.theaslangroupllc.com",
+    "seniorpulse.theaslangroupllc.com",
+    "seniorpulse.vercel.app",
+    "shopperpulse.theaslangroupllc.com",
+    "signalpulse-peach.vercel.app",
+    "signalpulse.theaslangroupllc.com",
+    "stablecoinpulse.theaslangroupllc.com",
+    "stateedge.theaslangroupllc.com",
+    "stateedge.vercel.app",
+    "tablepulse.theaslangroupllc.com",
+    "tablepulse.vercel.app",
+    "talentpulse-six.vercel.app",
+    "talentpulse.theaslangroupllc.com",
+    "taxpulse-phi.vercel.app",
+    "taxpulse.theaslangroupllc.com",
+    "tradepulse.theaslangroupllc.com",
+    "transitpulse.theaslangroupllc.com",
+    "transitpulse.vercel.app",
+    "travelpulse-nu.vercel.app",
+    "travelpulse.theaslangroupllc.com",
+    "truthpulse.theaslangroupllc.com",
+    "venturepulse.theaslangroupllc.com",
+    "vetpulse-five.vercel.app",
+    "waterpulse-henna.vercel.app",
+    "waterpulse.theaslangroupllc.com",
+    "wealthpulse-phi.vercel.app",
+    "wealthpulse.theaslangroupllc.com"
+   ]
+  },
+  {
+   "payTo": "0x24facafeb49b4e3facf0b3e69604a2f4640c9bf2",
+   "agents_owned": 2,
+   "hosts": [
+    "agent.memoryapi.org",
+    "api.memoryapi.org",
+    "api.northeastdealintel.com",
+    "bio.memoryapi.org",
+    "clinical.memoryapi.org",
+    "econ.memoryapi.org",
+    "health.memoryapi.org",
+    "market.memoryapi.org",
+    "monitor.memoryapi.org",
+    "predict.memoryapi.org"
+   ]
+  },
+  {
+   "payTo": "0x1873366fb50c2e26eea2a02440e5d2af643dbfe4",
+   "agents_owned": 1,
+   "hosts": [
+    "gleif-entity.xplowdiaka.workers.dev",
+    "openfda-drug-safety.xplowdiaka.workers.dev",
+    "sanctions-screening.xplowdiaka.workers.dev",
+    "sec-regcf-tracker.xplowdiaka.workers.dev"
+   ]
+  },
+  {
+   "payTo": "0x5bcda55247b238a573a968b234f788a2d35664dd",
+   "agents_owned": 1,
+   "hosts": [
+    "eltociear-contract-guard.hf.space",
+    "eltociear-skill-audit.hf.space",
+    "eltociear-tokenguard.hf.space"
+   ]
+  },
+  {
+   "payTo": "0xb91504d6f77d36923376c302ccc0237df0efaa35",
+   "agents_owned": 1,
+   "hosts": [
+    "api.brokenkeyremapper.xyz",
+    "brokenkey-api-link-ruby.vercel.app",
+    "brokenkey-api-link-tau.vercel.app"
+   ]
+  },
+  {
+   "payTo": "0x4a82f147c8a4339409c9097adc1eedfd56e85bfe",
+   "agents_owned": 3,
+   "hosts": [
+    "bizintel-api.hahavoid0.workers.dev",
+    "codepulse-api.hahavoid0.workers.dev"
+   ]
+  },
+  {
+   "payTo": "0x6c0752c09e7f6fa6526fcdf40e456a159ebb5621",
+   "agents_owned": 3,
+   "hosts": [
+    "x402-deployer.x402-deployer.workers.dev",
+    "x402.agentutility.ai"
+   ]
+  },
+  {
+   "payTo": "0xc273630db49632ecd077c7df606b306e400a9882",
+   "agents_owned": 2,
+   "hosts": [
+    "convrgent.ai",
+    "scan.convrgent.ai"
+   ]
+  },
+  {
+   "payTo": "0xf121fbecec43e1b616d47285851c20d5fc64431b",
+   "agents_owned": 1,
+   "hosts": [
+    "api.boonprotocol.com",
+    "api.locus.report"
+   ]
+  },
+  {
+   "payTo": "0x08849082224d3b503a5384a693cbf7bc7ce154cd",
+   "agents_owned": 3,
+   "hosts": [
+    "research.appliedidentities.com"
+   ]
+  },
+  {
+   "payTo": "0x1c9923489cd7d75dd2f6735c48090b8bd4c7e5a9",
+   "agents_owned": 1,
+   "hosts": [
+    "x402toll.com"
+   ]
+  },
+  {
+   "payTo": "0x234864febc3ad18fc99620c576729bdebfb62bcb",
+   "agents_owned": 1,
+   "hosts": [
+    "x402.dellbot.win"
+   ]
+  },
+  {
+   "payTo": "0x237371f8b372a02b58fb430eb564b7c5cb936f75",
+   "agents_owned": 2,
+   "hosts": [
+    "mru-oracle.com"
+   ]
+  },
+  {
+   "payTo": "0x298a9c08075a684a5b43e6e128fc4db18d354780",
+   "agents_owned": 1,
+   "hosts": [
+    "agent.soliduscapital.io"
+   ]
+  },
+  {
+   "payTo": "0x39e10e5f431b26cae3d7d0a39aef86055d015d8c",
+   "agents_owned": 1,
+   "hosts": [
+    "econdash.org"
+   ]
+  },
+  {
+   "payTo": "0x400d65bb174c546ed92f5d61ce21fbde96b8bacc",
+   "agents_owned": 1,
+   "hosts": [
+    "aeonos.basechainlabs.com"
+   ]
+  },
+  {
+   "payTo": "0x4e024e356bd01853654b7b5196f2b85f67cc39ec",
+   "agents_owned": 2,
+   "hosts": [
+    "api.terradeed.co.uk"
+   ]
+  },
+  {
+   "payTo": "0x515e7bce44baa5f6e42d16d4b5f27768e7f2f8cc",
+   "agents_owned": 2,
+   "hosts": [
+    "api.xona-agent.com"
+   ]
+  },
+  {
+   "payTo": "0x538aa4800ae2bd8e90556899514376ab96113a8e",
+   "agents_owned": 1,
+   "hosts": [
+    "vealth.net"
+   ]
+  },
+  {
+   "payTo": "0x7e05d79f914fdac136812af82d304e8272b3dc20",
+   "agents_owned": 1,
+   "hosts": [
+    "receiptstamp.panmediatech.workers.dev"
+   ]
+  },
+  {
+   "payTo": "0x92cb873c2d114d6aa847eb110f721da22b5220f7",
+   "agents_owned": 1,
+   "hosts": [
+    "nico222222222-x402-trust-guard.hf.space"
+   ]
+  },
+  {
+   "payTo": "0xabf4fabd7c416fb67202e5f9002389fc75e2a9d0",
+   "agents_owned": 1,
+   "hosts": [
+    "agent402.tools"
+   ]
+  },
+  {
+   "payTo": "0xb1acd9e0269023546074400a434e703b646aabba",
+   "agents_owned": 1,
+   "hosts": [
+    "socialintel.dev"
+   ]
+  },
+  {
+   "payTo": "0xb445f611cc899b623462f07c11bfeacfd20d3c70",
+   "agents_owned": 1,
+   "hosts": [
+    "tradeos.tech"
+   ]
+  },
+  {
+   "payTo": "0xb5998e11e666fd1e7f3b8e8d9122a755eec1e9b7",
+   "agents_owned": 1,
+   "hosts": [
+    "mpp.hyreagent.fun"
+   ]
+  },
+  {
+   "payTo": "0xc9368b30bd620164fd1a05a5d99dcaf8ae754775",
+   "agents_owned": 1,
+   "hosts": [
+    "emc2ai.io"
+   ]
+  },
+  {
+   "payTo": "0xca758c922d8476c2cec49c6cc96a4eeba89fbf3b",
+   "agents_owned": 1,
+   "hosts": [
+    "api.402.coffee"
+   ]
+  },
+  {
+   "payTo": "0xcaada98159b82b80d7940cfb527f7ab44e650cc8",
+   "agents_owned": 1,
+   "hosts": [
+    "base-bookvs-movie.vercel.app"
+   ]
+  },
+  {
+   "payTo": "0xd8ca10c55296bd8ca1dd409ea2f0fa72fb0c643f",
+   "agents_owned": 1,
+   "hosts": [
+    "vu.velvetdao.xyz"
+   ]
+  },
+  {
+   "payTo": "0xf9d1d63f362bbf1ee08ab9acb36fe74afc48d5f1",
+   "agents_owned": 1,
+   "hosts": [
+    "www.capminal.ai"
+   ]
+  },
+  {
+   "payTo": "0xfbf218accbb0d57fc4e8fc3e2a885c910c4c9e94",
+   "agents_owned": 1,
+   "hosts": [
+    "www.tereno.xyz"
+   ]
+  },
+  {
+   "payTo": "0xfcafd9dac06a03f588d6f55b5336162dfd7202a6",
+   "agents_owned": 1,
+   "hosts": [
+    "shield.vainplex.dev"
+   ]
+  }
+ ],
+ "vet402": {
+  "source": "https://vet402.com/api/v1/observatory/state",
+  "checkedAt": "2026-11-17T04:00:18.666Z",
+  "matched_payto_base": 85,
+  "overlap_with_census_owner_wallets": 17,
+  "overlap_with_any_census_wallet": 17
+ }
+}

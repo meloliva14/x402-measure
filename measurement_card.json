@@ -1,0 +1,58 @@
+{
+ "schema": "x402-measure/measurement-card/1",
+ "what_this_is": "The five definitions any x402 measurement should state (see agreement_2026-11.md), for this census. test_measurement_card.py fails if this file and the census disagree.",
+ "unit": {
+  "counted": "host",
+  "detail": "one probe URL per host"
+ },
+ "population": {
+  "source": "CDP Bazaar discovery listings, deduplicated to one probe URL per host",
+  "collected_at_utc": "2026-07-26T15:18:30.895007+00:00",
+  "hosts": 1521,
+  "target_list_sha256": "b449e0099bec6702bafe4f9b5346c46425ed72d7fddc951a4432c9a8ede2150f",
+  "fixed": true,
+  "note": "The list is pinned. Hosts that joined the catalog after it was collected are not added."
+ },
+ "probe": {
+  "kind": "unpaid request",
+  "method": "preflight.classify_both(url) — one to three unauthenticated requests per host: a GET, then a POST when the GET did not produce a challenge, plus one immediate retry when the only thing the first attempt observed was a transport failure. Nothing signed, nothing paid. A verdict describes what the endpoint served at that moment and nothing about the operator.",
+  "retry_rule": "one immediate retry, UNREACHABLE first attempts only, never policy refusals, never answers; retried rows carry retried=true",
+  "cadence": "daily",
+  "signed": {
+   "algorithm": "Ed25519",
+   "key_id": "ed25519:5d99c600ea396f4e",
+   "public_key": "index-pubkey.json",
+   "verify": "python verify_snapshot.py --all"
+  }
+ },
+ "broken": {
+  "term_used": "none. The census does not label hosts broken; it gives each host one verdict per day.",
+  "verdicts": {
+   "BLOCKED": "a stock v2 client CANNOT construct a payment",
+   "NON_EVM": "not assessed",
+   "NO_402": "not payment-gated",
+   "OK": "a stock v2 client can sign this",
+   "RATE_LIMITED": "not assessed - the probe was rate-limited",
+   "UNKNOWN_NETWORK": "unrecognised network id",
+   "UNPARSEABLE": "402 with no readable challenge",
+   "UNREACHABLE": "no response",
+   "V1": "v1 challenge - a v2 client cannot read it at all",
+   "WARN": "signable, with caveats"
+  },
+  "no_payment_challenge": [
+   "NO_402",
+   "UNREACHABLE"
+  ],
+  "no_response_at_all": [
+   "UNREACHABLE"
+  ]
+ },
+ "payment_terms_read_from": {
+  "v2_verdict": "the PAYMENT-REQUIRED header when it parses, otherwise the body",
+  "v1_verdict": "the body only, as a v1 client reads it",
+  "code": [
+   "preflight.decide",
+   "preflight.v1_verdict"
+  ]
+ }
+}

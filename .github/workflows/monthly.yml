@@ -60,8 +60,8 @@ jobs:
       - name: Every script must compile
         run: python -m compileall -q . && echo "all scripts compile"
 
-      - name: Decision tests
-        run: python test_monthly_publish.py
+      - name: Decision tests, and the measurement card still matches the census
+        run: python test_monthly_publish.py && python test_measurement_card.py
 
       # shell: bash adds pipefail, so a refusal piped through tee still fails the step.
       - name: Run the stage
