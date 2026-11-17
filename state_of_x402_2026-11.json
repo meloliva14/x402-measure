@@ -1,0 +1,869 @@
+{
+ "schema": "x402-measure/monthly-report/1",
+ "issue": "2026-11",
+ "issue_number": 1,
+ "window": {
+  "start": "2026-10-17",
+  "end": "2026-11-16",
+  "days": 31
+ },
+ "prior_window": {
+  "start": "2026-09-17",
+  "end": "2026-10-16",
+  "days": 30
+ },
+ "baseline_for_prior_churn": {
+  "start": "2026-08-17",
+  "end": "2026-09-16",
+  "days": 31
+ },
+ "population": {
+  "hosts": 1521,
+  "source": "CDP Bazaar discovery listings, deduplicated to one probe URL per host",
+  "collected_on": "2026-07-26",
+  "target_list_sha256": "b449e0099bec6702bafe4f9b5346c46425ed72d7fddc951a4432c9a8ede2150f",
+  "vantage": [
+   "ci-runner"
+  ]
+ },
+ "verification": {
+  "days_verified": 92,
+  "public_key_hex": "a1abd423f60c2158e824f3c64254854af942c09f310131267c20226e2541c90d",
+  "rule": "sha256 of observation.json equals the signed payload_sha256; the signing key equals index-pubkey.json; the Ed25519 signature verifies over those bytes; the file's date and row count match"
+ },
+ "classifier": {
+  "window_method_sha256": [
+   "2e9374647d59855e98fcc7d7cffd794c8151f447f18f852696c7b30401c2f504"
+  ],
+  "prior_window_method_sha256": [
+   "2e9374647d59855e98fcc7d7cffd794c8151f447f18f852696c7b30401c2f504"
+  ],
+  "baseline_method_sha256": [
+   "22088332de165b694d5d1ccdec6c8344e3f2e1fa3aa40f2412fe30a26b82ab38",
+   "29e0d2c5ca4b9343ad125cc00f9778c0be35a4632c4ffaa6400e885848860f90",
+   "2e9374647d59855e98fcc7d7cffd794c8151f447f18f852696c7b30401c2f504",
+   "41de140f3d03cfb38cd7be7304a5e2c50b685ef78f8f6df7fd032b03601ab7b9",
+   "e5f99ce85a5593f67fee7a6c4fd03a1db0ce788d73995d55cffc96832ae127d2"
+  ],
+  "baseline_method_versions": 5,
+  "identical_across_window_and_prior": true
+ },
+ "definitions": {
+  "payment_gated": "verdict in OK, WARN, V1, NON_EVM, BLOCKED on the day",
+  "signable": "verdict OK: a stock @x402/evm 2.x buyer can construct a payment from the challenge",
+  "blocked": "verdict BLOCKED: a v2 challenge a stock v2 client cannot sign",
+  "v1_only": "verdict V1: a v1 challenge in the body, unreadable to a v2 client",
+  "both_dialects": "verdict OK and v1 verdict V1_OK (x402-fetch 1.2.0 reads the body as well)",
+  "stopped": "served a payment-gated verdict on at least one day of the prior window and on no day of the window",
+  "stopped_answered_without_challenge": "of those, NO_402 with an HTTP status other than 429 or 5xx on at least one day of the window",
+  "stopped_no_usable_answer": "of those, every day of the window UNREACHABLE, 5xx or 429",
+  "started": "payment-gated on at least one day of the window and on no day of the prior window",
+  "price": "accepts[0].amount from an OK row's note, in atomic units of accepts[0].asset",
+  "more_than_one_price": "signable on at least two days of the window with one asset, and more than one amount among those days",
+  "median_price_base_usdc": "median accepts[0].amount over OK rows whose asset is 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913, divided by 10^6",
+  "signable_by_asset": "OK rows by accepts[0].asset: base_usdc 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913, base_sepolia_usdc 0x036CbD53842c5426634e7929541eC2318f3dCF7e, case-insensitive",
+  "manifest_answered_2xx": "signed_manifests.checked minus its unreachable and refused verdicts: a success status at /.well-known/x402, not a validated manifest",
+  "manifest_carrying_a_signature": "signed_manifests.carrying_a_signature"
+ },
+ "state": {
+  "window_end": {
+   "date": "2026-11-16",
+   "hosts_observed": 1521,
+   "answered": 1350,
+   "verdicts": {
+    "BLOCKED": 11,
+    "NON_EVM": 15,
+    "NO_402": 299,
+    "OK": 950,
+    "UNREACHABLE": 171,
+    "V1": 75
+   },
+   "payment_gated": 1051,
+   "signable": 950,
+   "signable_share_pct": 90.4,
+   "blocked": 11,
+   "signable_with_caveats": 0,
+   "v1_only": 75,
+   "both_dialects": 231,
+   "ok_rows_without_price_note": 0,
+   "signable_by_asset": {
+    "base_usdc": 934,
+    "base_sepolia_usdc": 14,
+    "other": 2
+   },
+   "other_assets": {
+    "0x779ded0c9e1022225f8e0630b35a9b54be713736": 2
+   },
+   "median_price_base_usdc": {
+    "hosts": 934,
+    "atomic": 20000.0,
+    "usdc": "0.02"
+   },
+   "manifest_population": 972,
+   "manifest_status": "ok",
+   "manifest_answered_2xx": 712,
+   "manifest_carrying_a_signature": 0
+  },
+  "prior_window_end": {
+   "date": "2026-10-16",
+   "hosts_observed": 1521,
+   "answered": 1398,
+   "verdicts": {
+    "BLOCKED": 6,
+    "NON_EVM": 15,
+    "NO_402": 235,
+    "OK": 1053,
+    "RATE_LIMITED": 1,
+    "UNREACHABLE": 123,
+    "V1": 87,
+    "WARN": 1
+   },
+   "payment_gated": 1162,
+   "signable": 1053,
+   "signable_share_pct": 90.6,
+   "blocked": 6,
+   "signable_with_caveats": 1,
+   "v1_only": 87,
+   "both_dialects": 239,
+   "ok_rows_without_price_note": 0,
+   "signable_by_asset": {
+    "base_usdc": 1037,
+    "base_sepolia_usdc": 13,
+    "other": 3
+   },
+   "other_assets": {
+    "0x779ded0c9e1022225f8e0630b35a9b54be713736": 3
+   },
+   "median_price_base_usdc": {
+    "hosts": 1037,
+    "atomic": 20000,
+    "usdc": "0.02"
+   },
+   "manifest_population": 972,
+   "manifest_status": "ok",
+   "manifest_answered_2xx": 768,
+   "manifest_carrying_a_signature": 0
+  }
+ },
+ "stopped_or_started": {
+  "window": {
+   "served_a_challenge_in_prior_window": 1315,
+   "served_a_challenge_in_window": 1168,
+   "stopped": 149,
+   "stopped_answered_without_challenge": 30,
+   "stopped_no_usable_answer": 119,
+   "started": 2,
+   "stopped_hosts": [
+    "2s-3cpr6qm6j-alleyford.vercel.app",
+    "2s-jwnd2jdga-alleyford.vercel.app",
+    "402utils.com",
+    "5.75.142.199.sslip.io",
+    "address-risk.hergertsynthora.com",
+    "agent-id-x402-production.up.railway.app",
+    "agentattest.hergertsynthora.com",
+    "agents.datalegion.ai",
+    "ai-summarizer.api.klymax402.com",
+    "aicomglobal.com",
+    "airdrop-checker.api.klymax402.com",
+    "api-production-54bd.up.railway.app",
+    "api.aiapi.ch",
+    "api.foreverbetter.xyz",
+    "api.gocreativeai.com",
+    "api.molty.cash",
+    "api.romny.dpdns.org",
+    "app.wellnizz.com",
+    "aviation.x402.press",
+    "barcode-generator.api.klymax402.com",
+    "base-block-metrics.hergertsynthora.com",
+    "base64-codec.api.klymax402.com",
+    "bazaar-gateway.vercel.app",
+    "biccheck.hergertsynthora.com",
+    "bittensorman.xyz",
+    "blockint.ai",
+    "bounty.btnomb.com",
+    "bridge-routes.api.klymax402.com",
+    "broker-sync-api-production.up.railway.app",
+    "cdo-staging.up.railway.app",
+    "chatrip.app",
+    "color-palette.api.klymax402.com",
+    "company-enrichment.api.klymax402.com",
+    "cron-parser.api.klymax402.com",
+    "crontab-generator.api.klymax402.com",
+    "crypto-news.api.klymax402.com",
+    "crypto-trending.hergertsynthora.com",
+    "csv-to-json.api.klymax402.com",
+    "currency-converter.api.klymax402.com",
+    "defi-yields.api.klymax402.com",
+    "defiverdict.hergertsynthora.com",
+    "demo.aiapi.ch",
+    "diff-checker.api.klymax402.com",
+    "dns-lookup.api.klymax402.com",
+    "domain-intelligence.api.klymax402.com",
+    "earth.x402.press",
+    "eleven.tokens.fun",
+    "email-deliverability.api.klymax402.com",
+    "email-finder.api.klymax402.com",
+    "enrich.gocreativeai.com",
+    "ens-resolver.api.klymax402.com",
+    "entertainment.x402.press",
+    "fact-checker.api.klymax402.com",
+    "funding-rates.api.klymax402.com",
+    "gas-estimator.api.klymax402.com",
+    "gasoracle.hergertsynthora.com",
+    "gateway.sanfoundation.com",
+    "gateway.stride20k.com",
+    "gblin-sentinel.vercel.app",
+    "gblin.digital",
+    "gdpr-scanner.api.klymax402.com",
+    "hash-generator.api.klymax402.com",
+    "hl-portfolio.api.klymax402.com",
+    "hl-vaults.api.klymax402.com",
+    "html-to-markdown.api.klymax402.com",
+    "http-headers.api.klymax402.com",
+    "hyperliquid-data.api.klymax402.com",
+    "hyperliquid-whales.api.klymax402.com",
+    "ics.hergertsynthora.com",
+    "image-resize.api.klymax402.com",
+    "ip-geolocation.api.klymax402.com",
+    "json-validator.api.klymax402.com",
+    "jtifhcvbgxqwlywugvjv.supabase.co",
+    "jupiter-quotes.api.klymax402.com",
+    "jwt-decoder.api.klymax402.com",
+    "keyword-research.api.klymax402.com",
+    "language-detector.api.klymax402.com",
+    "lei-lookup.hergertsynthora.com",
+    "liquidation-oracle.api.klymax402.com",
+    "lorem-ipsum.api.klymax402.com",
+    "marine.x402.press",
+    "markdown-renderer.api.klymax402.com",
+    "markdown-to-html.api.klymax402.com",
+    "mevdetector.hergertsynthora.com",
+    "music.x402.press",
+    "myagenticoverlord.com",
+    "nectar-tools.fly.dev",
+    "news.x402.press",
+    "nft-floor.api.klymax402.com",
+    "nft-metadata.api.klymax402.com",
+    "nolawealthfinancial.com",
+    "ocr-extract.api.klymax402.com",
+    "omnicall.gocreativeai.com",
+    "oracle.the-undesirables.com",
+    "orderbook-depth.api.klymax402.com",
+    "orderbook-liquidity.hergertsynthora.com",
+    "password-strength.api.klymax402.com",
+    "paygent.obsmetrics.com",
+    "person-enrichment.api.klymax402.com",
+    "phone-validation.api.klymax402.com",
+    "port-scanner.api.klymax402.com",
+    "presign.hergertsynthora.com",
+    "protocol-health-oracle-production.up.railway.app",
+    "quickpoll.x402.press",
+    "regex-generator.api.klymax402.com",
+    "research-report.api.klymax402.com",
+    "routingcheck.hergertsynthora.com",
+    "search.reversesandbox.com",
+    "second-opinion-production.up.railway.app",
+    "secondopinionx402.com",
+    "seo-analyzer.api.klymax402.com",
+    "slidingbox.ai",
+    "slug-generator.api.klymax402.com",
+    "sms-validator.api.klymax402.com",
+    "solana-pools.api.klymax402.com",
+    "space.x402.press",
+    "ssl-checker.api.klymax402.com",
+    "stablecoin-mcap.hergertsynthora.com",
+    "staging.402utils.com",
+    "stem.x402.press",
+    "stock-price.api.klymax402.com",
+    "tech-enrichment.api.klymax402.com",
+    "text-classifier.api.klymax402.com",
+    "text-to-speech.api.klymax402.com",
+    "text-translator.api.klymax402.com",
+    "timezone-converter.api.klymax402.com",
+    "token-holders.api.klymax402.com",
+    "token-ohlcv.api.klymax402.com",
+    "token-price.api.klymax402.com",
+    "token-safety.api.klymax402.com",
+    "transit402.dev",
+    "trust402.aztecbeacon.uk",
+    "tts-service-production-e8a7.up.railway.app",
+    "twitter-scraper.api.klymax402.com",
+    "txintent.hergertsynthora.com",
+    "unit-converter.api.klymax402.com",
+    "url-shortener.api.klymax402.com",
+    "user-agent-parser.api.klymax402.com",
+    "uuid-generator.api.klymax402.com",
+    "vector-search.api.klymax402.com",
+    "weather-api.api.klymax402.com",
+    "weather.x402.press",
+    "web-scraper.api.klymax402.com",
+    "web-search.api.klymax402.com",
+    "webhook-tester.api.klymax402.com",
+    "websearch.hergertsynthora.com",
+    "whale-alert.api.klymax402.com",
+    "x402.servicesmax.xyz",
+    "x402meta.hergertsynthora.com"
+   ],
+   "started_hosts": [
+    "agent-offers-api-replitzip.replit.app",
+    "mcp.viridisconservation.com"
+   ]
+  },
+  "prior_window": {
+   "served_a_challenge_in_prior_window": 1384,
+   "served_a_challenge_in_window": 1315,
+   "stopped": 74,
+   "stopped_answered_without_challenge": 51,
+   "stopped_no_usable_answer": 23,
+   "started": 5,
+   "stopped_hosts": [
+    "agent-data-hub-thebrandbard.replit.app",
+    "agent-offers-api-replitzip.replit.app",
+    "agent-sop-compiler-production.up.railway.app",
+    "agentpmt-webapp.vercel.app",
+    "agents.ai-rook.com",
+    "agents.freederia.com",
+    "agentstack-research-3bnlllaboa-ts.a.run.app",
+    "api.agenticweb.nl",
+    "api.devdrops.run",
+    "api.hookfindr.com",
+    "api.jarvisclaw.ai",
+    "api.osf-master-server.com",
+    "api.ownedforever.com",
+    "api.palmai.tech",
+    "api.robotsshop.io",
+    "api.sourcestrand.com",
+    "api.utilia.ink",
+    "app-production-23b4.up.railway.app",
+    "app-production-3fbff.up.railway.app",
+    "app-production-cd86.up.railway.app",
+    "binance-crypto-24h-stats.hergertsynthora.com",
+    "binance-ticker24.hergertsynthora.com",
+    "blockrun-web-vbsbhh7lea-uc.a.run.app",
+    "brmarket.thomenz.me",
+    "cdo-production.up.railway.app",
+    "clonecho.builda.company",
+    "company.payapi.market",
+    "dns.x402tools.xyz",
+    "docparse.x402tools.xyz",
+    "email-send.api.klymax402.com",
+    "finance.payapi.market",
+    "football-pulse-x402-production.up.railway.app",
+    "forex-latest.hergertsynthora.com",
+    "franklin1.tail7a0ba4.ts.net",
+    "gateway.apiosk.com",
+    "gateway.hillguava.xyz",
+    "guard.x402tools.xyz",
+    "india-news.hillguava.xyz",
+    "llm402.ai",
+    "lunar-api-production-cba9.up.railway.app",
+    "mailcheck.hergertsynthora.com",
+    "mcp.onchaindiligence.com",
+    "nut402.codenut.xyz",
+    "nwb-vending.com",
+    "opportunity-api-production.up.railway.app",
+    "orionkr.xyz",
+    "prospex.x402tools.xyz",
+    "qr.x402tools.xyz",
+    "rpc-ens.hergertsynthora.com",
+    "scan.madhousewallet.com",
+    "scry.moreright.xyz",
+    "scvd.store",
+    "shopifyagentdata.com",
+    "staging.agenticinsights.com",
+    "stockapi.hillguava.xyz",
+    "theideamachine.dev",
+    "timezone-toolkit.agishub.com",
+    "try.madhousewallet.com",
+    "uat-api.certaindata.ai",
+    "vehicle.payapi.market",
+    "visionex.x402tools.xyz",
+    "vn-gold-fx-x402-production.up.railway.app",
+    "weather.payapi.market",
+    "web-production-7ca5d.up.railway.app",
+    "web3-signals-api-production.up.railway.app",
+    "x402-company-api-production.up.railway.app",
+    "x402-finance-api-production.up.railway.app",
+    "x402-research.up.railway.app",
+    "x402-vehicle-api-production.up.railway.app",
+    "x402-weather-api-production-04c4.up.railway.app",
+    "x402scan-e11utvi3p-merit-systems.vercel.app",
+    "x402scan-hnqp3auxm-merit-systems.vercel.app",
+    "xpensli.app",
+    "ylk.one"
+   ],
+   "started_hosts": [
+    "blockint.ai",
+    "btcnode.uk",
+    "euroref.dev",
+    "gankdat.com",
+    "latamref.dev"
+   ]
+  }
+ },
+ "price_changes": {
+  "window": {
+   "hosts_read_on_two_or_more_days": 1063,
+   "asset_changed": 2,
+   "read_on_two_or_more_days_one_asset": 1061,
+   "more_than_one_price": 30,
+   "ended_higher": 12,
+   "ended_lower": 15,
+   "ended_where_it_started": 3,
+   "hosts": [
+    "api.babyblueviper.com",
+    "api.getanyapi.com",
+    "api.gmfarcaster.com",
+    "api.kadec0.xyz",
+    "api.losbeto.xyz",
+    "api.predictionmarketdata.io",
+    "app.r3p.xyz",
+    "btcnode.uk",
+    "deepseek.x402.press",
+    "dripstack.com",
+    "dripstack.xyz",
+    "embed.gedx402.com",
+    "euroref.dev",
+    "gateway.gedx402.com",
+    "imagegen.coinopai.com",
+    "images-api.gedx402.com",
+    "latamref.dev",
+    "mearef.dev",
+    "notary.forgemesh.io",
+    "orchard-data.letom1176.workers.dev",
+    "orchard-data.netlify.app",
+    "pro-api.coingecko.com",
+    "router.forgemesh.io",
+    "runwayoracle.com",
+    "travel.forgemesh.io",
+    "voice.forgemesh.io",
+    "www.tereno.xyz",
+    "x402-data-api.sigrunner.workers.dev",
+    "x402-seller.onrender.com",
+    "x402.swaphunt.dev"
+   ]
+  },
+  "prior_window": {
+   "hosts_read_on_two_or_more_days": 1128,
+   "asset_changed": 1,
+   "read_on_two_or_more_days_one_asset": 1127,
+   "more_than_one_price": 25,
+   "ended_higher": 18,
+   "ended_lower": 5,
+   "ended_where_it_started": 2,
+   "hosts": [
+    "amlscreen.hergertsynthora.com",
+    "api.aventtech.com",
+    "api.babyblueviper.com",
+    "api.losbeto.xyz",
+    "api.sumvid.app",
+    "asistent-crypto.vercel.app",
+    "avt-x402.ttsempelis.workers.dev",
+    "coil.trade",
+    "deepseek.x402.press",
+    "dripstack.com",
+    "dripstack.xyz",
+    "horrorstoryapi.vercel.app",
+    "induction.aarei.ai",
+    "ladyfortunalx402.vercel.app",
+    "law-mcp.toulaw.workers.dev",
+    "nft-alpha-x402.fly.dev",
+    "omniterminal.app",
+    "options.lonestaroracle.xyz",
+    "randomfactsx402.vercel.app",
+    "schemasure.com",
+    "tokenrisk.hergertsynthora.com",
+    "walletrep.hergertsynthora.com",
+    "x402-seller.onrender.com",
+    "x402.asterpay.io",
+    "x402.professorsausages.com"
+   ]
+  }
+ },
+ "manifest_signatures": {
+  "window_max": 0,
+  "prior_window_max": 0,
+  "window_days_status_ok": 31,
+  "prior_window_days_status_ok": 30
+ },
+ "rate_limit_status": 429,
+ "inputs": [
+  {
+   "date": "2026-08-17",
+   "payload_sha256": "652d882c3794ba749a0779ab56feb91a417d1151e27c4758abcb62c44e43b2ac"
+  },
+  {
+   "date": "2026-08-18",
+   "payload_sha256": "f229b3a426d44a87d9477780b928c587d0f4363dd4e0b7969f89773b5bcb28f6"
+  },
+  {
+   "date": "2026-08-19",
+   "payload_sha256": "69658ac4ad91e1a660077a60e3bc8f9ac25b25af761f4b6633d60239d3e4c716"
+  },
+  {
+   "date": "2026-08-20",
+   "payload_sha256": "defb105ec3b166be2d0e26a915642aa9b7da2454a04860b81d2ee1aefdd12132"
+  },
+  {
+   "date": "2026-08-21",
+   "payload_sha256": "ebdde44bede5daef364cef4cd21e6d4b2585b6fb90b22bf1536daff42447ac19"
+  },
+  {
+   "date": "2026-08-22",
+   "payload_sha256": "106a344d68f03fa6f6d91b8a72bdf446227e4ee829d976d92bb62796f7f47c65"
+  },
+  {
+   "date": "2026-08-23",
+   "payload_sha256": "d7223804df312daf76decca6253b8d7c035a427d442907e07a70669f6826fa5c"
+  },
+  {
+   "date": "2026-08-24",
+   "payload_sha256": "81fbedc27b98fd7927badded34e57642969d6b39c065703f32989cf2b8c9343e"
+  },
+  {
+   "date": "2026-08-25",
+   "payload_sha256": "6002b3b96bcbdbc96856a5fdacbf475d95920b4b5e75d274e5125d79bd13aaf3"
+  },
+  {
+   "date": "2026-08-26",
+   "payload_sha256": "a350b1d26835f85ee2d4ed0ddda0fa1df7ba0912aa8cc1928d841a7bac7a9678"
+  },
+  {
+   "date": "2026-08-27",
+   "payload_sha256": "b7e1f6b0dca4966e3b61e8b345313738197e05e84c936c501124cbab16c25e45"
+  },
+  {
+   "date": "2026-08-28",
+   "payload_sha256": "f4bf402508b8add80599480ab34b8ae0752baa137762c1365c58fb5752f17a6c"
+  },
+  {
+   "date": "2026-08-29",
+   "payload_sha256": "e0e4465aa626cf149c1639365da22c66b0228b18291c8f25b954c2a62b6ccd25"
+  },
+  {
+   "date": "2026-08-30",
+   "payload_sha256": "16778ad5145a43db489498479faebe846b2ebcdf762cf84e23c3a7009482acea"
+  },
+  {
+   "date": "2026-08-31",
+   "payload_sha256": "b4ab37cdb1ac06f9496cd5c74a13610dffe837b5c0d402309482a8d729d659fe"
+  },
+  {
+   "date": "2026-09-01",
+   "payload_sha256": "2f2fcd1cf141661338b785f18522d451f32632e844dba3b212ffee7a6cc672cc"
+  },
+  {
+   "date": "2026-09-02",
+   "payload_sha256": "4dab19c90a371935e8b40f07d2209393833cb3a2fc1cb7a3d6fe412afb7e5eaa"
+  },
+  {
+   "date": "2026-09-03",
+   "payload_sha256": "cf514cabb4de3310f11b4df0146cb61a5f4fbc9593fd9b201ab9471f817ad27d"
+  },
+  {
+   "date": "2026-09-04",
+   "payload_sha256": "be32a1caecce2e01f89e5bcf30727cb249aa3125b4bd14c3206c6b6256727500"
+  },
+  {
+   "date": "2026-09-05",
+   "payload_sha256": "05ec60a0df6d4f0aef5aacc852589e0410633605f6cb2a0c80ec7e88d8be0417"
+  },
+  {
+   "date": "2026-09-06",
+   "payload_sha256": "2880ad27cd744a7e26e794d60d125d9bc15716b31add9372fb4c27f67ef97e54"
+  },
+  {
+   "date": "2026-09-07",
+   "payload_sha256": "060c9e012fbbd90ac396f8b9b71148dcf1b39d0a530a21766bb2469adcd6ff53"
+  },
+  {
+   "date": "2026-09-08",
+   "payload_sha256": "6a1718f273ec91633bf5b64d153be8148a62143663403f1fef84287bd3c15e8e"
+  },
+  {
+   "date": "2026-09-09",
+   "payload_sha256": "9ea661f415bcbad6dcd3d4b7ad81a4886b32df608be0b33825a49dafdabe72f0"
+  },
+  {
+   "date": "2026-09-10",
+   "payload_sha256": "1fe630b691bb78c80fccb6b3f87d0fdd2af44a335b61a728d671a48aa88c7ae2"
+  },
+  {
+   "date": "2026-09-11",
+   "payload_sha256": "51363f22213334963c4904e0f9c1a8e16ec3107eb3d9f7dab23f3549d397e6ae"
+  },
+  {
+   "date": "2026-09-12",
+   "payload_sha256": "dc441ee2b8ae63f22e6cfdfe83c4ee835eb945cd60f30d81b2043c8816e6e960"
+  },
+  {
+   "date": "2026-09-13",
+   "payload_sha256": "64a9d929dd3474e8b6f42397e4f8bdc6d09d43235c00b99b64d8a45531510d48"
+  },
+  {
+   "date": "2026-09-14",
+   "payload_sha256": "f38bcac9071e80117dcf1926337362447579f8e778ff37b5ad6d07bdf77b449d"
+  },
+  {
+   "date": "2026-09-15",
+   "payload_sha256": "5ac2e119e7f887481a14c717dbbdc9a480c25ffb859f67ec216fba5752d5a7f2"
+  },
+  {
+   "date": "2026-09-16",
+   "payload_sha256": "4b7628314edbc1d68730cf7d856d65b62f3d5507b45cd49d107cf1440024ba13"
+  },
+  {
+   "date": "2026-09-17",
+   "payload_sha256": "c59a835d57c8310314c6e2b158ec17e1694d6267f084962b6b6bd4c0b5ee4478"
+  },
+  {
+   "date": "2026-09-18",
+   "payload_sha256": "10de466f3fab39dc268ee729195350db1c073330d1f34b76bcdb9d6cc65f604f"
+  },
+  {
+   "date": "2026-09-19",
+   "payload_sha256": "5cb1dd0a77fdf12ad8af8e03abf01c8b4291540c58c22e31f93330e69cd9b348"
+  },
+  {
+   "date": "2026-09-20",
+   "payload_sha256": "3929b77016e4dc6dab3cd37db619d0656d0cba681c7971b6eaa8514ec5fe1f86"
+  },
+  {
+   "date": "2026-09-21",
+   "payload_sha256": "a5e4321f03fd938de104c4cc744374f9a120fd19578ff4d9f15652dcd6fe0494"
+  },
+  {
+   "date": "2026-09-22",
+   "payload_sha256": "db8988723d93fe31818aec6e69c790ea7de2a0201a99e9cfd3f48c4c947de0a5"
+  },
+  {
+   "date": "2026-09-23",
+   "payload_sha256": "414d1dd48fe320554f07d5b44f5b415e2c1c6819f8d434bccfb914c8c4e93998"
+  },
+  {
+   "date": "2026-09-24",
+   "payload_sha256": "04487d498ee8823b2ba7772e5c6899cad1dbde5360eb53583b832e69847ac13d"
+  },
+  {
+   "date": "2026-09-25",
+   "payload_sha256": "49e1b8136a2980c7baf528d694c7e6d97b16df39d078ff492e83dd0db87bb5cf"
+  },
+  {
+   "date": "2026-09-26",
+   "payload_sha256": "74aa23fa3971dfcbfa96a8d06d481e111a2b96820acd81f0e8f8b9cdbad8083c"
+  },
+  {
+   "date": "2026-09-27",
+   "payload_sha256": "47340c8b03d8804b4bcadaab4ad39e3a7142f5b0e4c2a0be8e9110f20b7997e9"
+  },
+  {
+   "date": "2026-09-28",
+   "payload_sha256": "33ac78548d8dfe3ceb8b73c0f8db0d810d356cbad231f4b1e3fc696ef74bb474"
+  },
+  {
+   "date": "2026-09-29",
+   "payload_sha256": "cc99e41e88f1369908f3333c791178139e79dfa5a40164d936072a19eb389fea"
+  },
+  {
+   "date": "2026-09-30",
+   "payload_sha256": "1b8fd8c874c413b425b047fd2695c28b50529758866ea43d37a8c1389690660e"
+  },
+  {
+   "date": "2026-10-01",
+   "payload_sha256": "bcdd3dfdf7f0309e5c80cb319bf982b3a09934bb79ea075c0aa1f85b01f4d4a7"
+  },
+  {
+   "date": "2026-10-02",
+   "payload_sha256": "904a5751614bf96aacb5db0788b278795aa610a85657ff88c8ff2ece06f13c17"
+  },
+  {
+   "date": "2026-10-03",
+   "payload_sha256": "5ab6287f4391d9e0707535fb394921ed469b4205fb5d862ae214f94f086f0666"
+  },
+  {
+   "date": "2026-10-04",
+   "payload_sha256": "57ee063585ee51e3598dbf78cfccd1705a553fa7998af71b15abc10211b9f447"
+  },
+  {
+   "date": "2026-10-05",
+   "payload_sha256": "47b84c41fcfa06bd08280cdffe4c3a9660e4ade6e6499073efccd34ead864134"
+  },
+  {
+   "date": "2026-10-06",
+   "payload_sha256": "9a540dc0640a6bbc7ad519303978552001aeedf21e589db6f029ab27a88e6f13"
+  },
+  {
+   "date": "2026-10-07",
+   "payload_sha256": "81bff9889a3fd839bfe43f92feb33657f01bb07c5704e8fa93453738eae25dec"
+  },
+  {
+   "date": "2026-10-08",
+   "payload_sha256": "90c81892a552d9d4efe7f976b5aa276f576ae1a226380e424b753256f81c0454"
+  },
+  {
+   "date": "2026-10-09",
+   "payload_sha256": "f924107c7f01d530f548e229af9732b37f5e7a8336274d3f4ed621e8496c6998"
+  },
+  {
+   "date": "2026-10-10",
+   "payload_sha256": "415f69311d20734f7fda52672b1b9f0760920920a041f3137bdfee90b2592599"
+  },
+  {
+   "date": "2026-10-11",
+   "payload_sha256": "44f543ea64daa06a503fd99c7956bd13712a0516df01ca298f8607ea4cfac456"
+  },
+  {
+   "date": "2026-10-12",
+   "payload_sha256": "02049059b9fc4ce27f00cd965a883daa3f18d662be4d8cbb766ab56b0dabaa90"
+  },
+  {
+   "date": "2026-10-13",
+   "payload_sha256": "cc19a5210551da51b195b434c1aacb1b1b12132859ea308ec1c0d6496c02a635"
+  },
+  {
+   "date": "2026-10-14",
+   "payload_sha256": "b170249fbbd6a9727a9d347642bb94c24aa63066d655404d40c4c349abad08ef"
+  },
+  {
+   "date": "2026-10-15",
+   "payload_sha256": "f9e9e578c676a753cac83cc59320b9fdbbb4d409db54db29e8e8b8468b31e7bf"
+  },
+  {
+   "date": "2026-10-16",
+   "payload_sha256": "882e990f762e06f5fa6b909369347d36cc806f1d04ba0e6fe094a1a0418e6cb4"
+  },
+  {
+   "date": "2026-10-17",
+   "payload_sha256": "a4cf98dc1be9076fc28aae962adab1312b4eccaa5b525f20cc0ac857f470ffa7"
+  },
+  {
+   "date": "2026-10-18",
+   "payload_sha256": "41a1e1a482f9e564f39df6ba4c6a113bc649c9a4b890f8638d90701680e27e34"
+  },
+  {
+   "date": "2026-10-19",
+   "payload_sha256": "cd9e3a5b656937832b23fd0610a51d8c5ebc8817c4f72067c02f81159c1ca448"
+  },
+  {
+   "date": "2026-10-20",
+   "payload_sha256": "ee1cfe7f726e3011794e5b37b85d6b979d03b42e9e0d57c5b76a2b44def5df09"
+  },
+  {
+   "date": "2026-10-21",
+   "payload_sha256": "e160bdee569f77a7737c7f41cf881c562e949f7b1d3e76d1d9bcb50c215ceb93"
+  },
+  {
+   "date": "2026-10-22",
+   "payload_sha256": "7b32598cee49759d852e2415f91fc39c79c8e40f2aba5e5c06298dfbd030689e"
+  },
+  {
+   "date": "2026-10-23",
+   "payload_sha256": "50b9447bd29c2be0a5961e4c0943c442afcf219488cc29f07ea58d87f9ef8fed"
+  },
+  {
+   "date": "2026-10-24",
+   "payload_sha256": "a238e6f7f5b310487047905176c2faf5c141d0ad81cf1b19443bc9a04075ae95"
+  },
+  {
+   "date": "2026-10-25",
+   "payload_sha256": "3c5c5cb4d305d185998b8afa4896e055746de087566d0fae56d534f85c3732d7"
+  },
+  {
+   "date": "2026-10-26",
+   "payload_sha256": "37b1ee9292accdabfe24c183b1739c936af0dbc25ec84c9399338481c0ea0a87"
+  },
+  {
+   "date": "2026-10-27",
+   "payload_sha256": "01ef444c1174b8aa69a0707fb017bec7faac89d5acf9abbdbab6e3a8eb460bce"
+  },
+  {
+   "date": "2026-10-28",
+   "payload_sha256": "858a7b31209e9707cc9549774887cca47724adbbe46d831dc0bd82ed4f5aee13"
+  },
+  {
+   "date": "2026-10-29",
+   "payload_sha256": "a7a86328db7abcfd8da58cbf8409b71eba23eb63c489ccb2e48f5ec7aa4d5df8"
+  },
+  {
+   "date": "2026-10-30",
+   "payload_sha256": "3cf963cad4fd987ba5a940ae856b41849ccec66073bb29fa015b49e0dab5f0b3"
+  },
+  {
+   "date": "2026-10-31",
+   "payload_sha256": "5e18b624a45636391641a5ba2bbeed6435779b853ef3f34d0d445fcaa5f752f9"
+  },
+  {
+   "date": "2026-11-01",
+   "payload_sha256": "249e8b3726fa022e4650426c41f118d673f8b8ed2311091dde4cc1d52625611b"
+  },
+  {
+   "date": "2026-11-02",
+   "payload_sha256": "f73f1612b2623417d1fa2defcfe71cd9d5d7404e26ba794834474d8d86edf3f9"
+  },
+  {
+   "date": "2026-11-03",
+   "payload_sha256": "78e50843421ffde0dcebba127c2d848ec9255b2d3bafaf0d0a3dfacbfe192f1e"
+  },
+  {
+   "date": "2026-11-04",
+   "payload_sha256": "587b9ae74d14194f33a5322f9791a858d1b354ea14ba22c878d5b18e606b2458"
+  },
+  {
+   "date": "2026-11-05",
+   "payload_sha256": "9918a26a40e883e1a8cbef26ed9190d98b53f3081f6bc7a9ebc2399d71b46788"
+  },
+  {
+   "date": "2026-11-06",
+   "payload_sha256": "3df232ca05faff2fc3c4e9c35d1159633b52f86520f8725b2f1a924c801ab061"
+  },
+  {
+   "date": "2026-11-07",
+   "payload_sha256": "9279c2839aee262648f56a81aa6844d0db5b48e00b0f6bd04c873879e089c36e"
+  },
+  {
+   "date": "2026-11-08",
+   "payload_sha256": "5696395c50a571fd3841e6f8edfc6d761b330cb77527cb70011bdb652ca9af56"
+  },
+  {
+   "date": "2026-11-09",
+   "payload_sha256": "fbad809a97755328f087eb2b21e9387e5014c305d363088ab6c5f696af783872"
+  },
+  {
+   "date": "2026-11-10",
+   "payload_sha256": "1b548e01656fa6f7f7b35686d67cdecd306397eed49e42ab585e3a56451b4ac2"
+  },
+  {
+   "date": "2026-11-11",
+   "payload_sha256": "f06e62281275841a55f6cef7b721892e57c7aace35fd2c5f8367f70cbff14ae4"
+  },
+  {
+   "date": "2026-11-12",
+   "payload_sha256": "847c4153615e01f57c5c60174f559a63f3a41435cc5397e7fbdcbbf17d26e46b"
+  },
+  {
+   "date": "2026-11-13",
+   "payload_sha256": "b925305e1e5a0934a1f0747c95ef6bdd7a68a57598921355883bf690f69e01f4"
+  },
+  {
+   "date": "2026-11-14",
+   "payload_sha256": "bd9492b26c74b367b252ef8138b8e09f13f8b73cd8f8def3eacd39fe0515e7fb"
+  },
+  {
+   "date": "2026-11-15",
+   "payload_sha256": "a4f43e6c128e29d1dba5929462b0bf63bbdb8af6880be9d3c1444ae15a22078a"
+  },
+  {
+   "date": "2026-11-16",
+   "payload_sha256": "1ff4ad46d1b98bc127169e12d79ca88736ad251aa4d35004ede4a026062329e1"
+  }
+ ],
+ "change_vs_prior_window_end": {
+  "answered": -48,
+  "payment_gated": -111,
+  "signable": -103,
+  "blocked": 5,
+  "v1_only": -12,
+  "both_dialects": -8,
+  "manifest_answered_2xx": -56
+ }
+}
