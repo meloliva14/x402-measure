@@ -132,5 +132,32 @@ class RevertChain(ErrChain):
 
 check("a revert is read as absent", RevertChain().call(BASE_USDC, S.SEL["authorizationState"]) is None)
 
+# The head-block read must survive one RPC answering with an error object, and fail loudly if none answers.
+_post, _sleep, _rpcs = S.post, S.time.sleep, S.EVM_RPCS
+S.time.sleep = lambda s: None
+S.EVM_RPCS = {8453: ["a", "b"]}
+_heads = []
+
+
+def _fake_post(url, body):
+    if body["method"] == "eth_chainId":
+        return {"jsonrpc": "2.0", "id": 1, "result": hex(8453)}
+    _heads.append(url)
+    if len(_heads) == 1:
+        return {"jsonrpc": "2.0", "id": 1, "error": {"code": -32005, "message": "rate limited"}}
+    return {"jsonrpc": "2.0", "id": 1, "result": hex(1000)}
+
+
+S.post = _fake_post
+check("a rate-limited head-block read is retried on the next RPC", S.Evm(8453).block == hex(995) and _heads == ["a", "b"])
+S.post = lambda url, body: ({"jsonrpc": "2.0", "id": 1, "result": hex(8453)} if body["method"] == "eth_chainId"
+                            else {"jsonrpc": "2.0", "id": 1, "error": {"code": -32005, "message": "rate limited"}})
+try:
+    S.Evm(8453)
+    check("no RPC answering the head block ends the run loudly", False)
+except RuntimeError:
+    check("no RPC answering the head block ends the run loudly", True)
+S.post, S.time.sleep, S.EVM_RPCS = _post, _sleep, _rpcs
+
 print("ALL PASS" if ok else "SOME FAILED")
 sys.exit(0 if ok else 1)

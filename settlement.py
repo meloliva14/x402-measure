@@ -257,9 +257,22 @@ class Evm:
                 continue
         if self.urls:
             self.url = self.urls[0]
-            blk = post(self.url, {"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []})
+            # the head block, retried and rotated like every other read: a rate-limit error object
+            # from one RPC must not end the run, and no RPC answering at all must end it loudly
+            head, last = None, None
+            for attempt in range(8):
+                url = self.urls[attempt % len(self.urls)]
+                try:
+                    blk = post(url, {"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []})
+                    head = int(blk["result"], 16)
+                    break
+                except Exception as ex:  # noqa: BLE001 - error object, timeout or junk: back off, rotate
+                    last = ex if not isinstance(ex, KeyError) else str(blk.get("error"))[:160]
+                    time.sleep(min(8, 0.5 * (attempt + 1)))
+            if head is None:
+                raise RuntimeError(f"eth_blockNumber failed on chain {chain_id} at every RPC: {last}")
             # a few blocks behind the head, so a second RPC that lags slightly can serve the same block
-            self.block = hex(int(blk["result"], 16) - 5)
+            self.block = hex(head - 5)
 
     def rpc(self, method, params):
         key = (method, json.dumps(params))
