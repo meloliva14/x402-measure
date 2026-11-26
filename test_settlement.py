@@ -159,5 +159,15 @@ except RuntimeError:
     check("no RPC answering the head block ends the run loudly", True)
 S.post, S.time.sleep, S.EVM_RPCS = _post, _sleep, _rpcs
 
+# The report guard: a host name with hyphenated digits is a name, a stray number is still refused.
+from monthly_report import unbacked_numbers
+_F = {"hosts": 43, "share": 12.5}
+check("a host built from an IP address is not read as figures",
+      unbacked_numbers("- agents.204-168-199-108.sslip.io: 43 options", _F) == [])
+check("a host that starts with digits is not read as figures",
+      unbacked_numbers("- 204-168-199-108.sslip.io: 43 options", _F) == [])
+check("a number the JSON does not carry is still refused", unbacked_numbers("43 options on 168 hosts", _F) == ["168"])
+check("a decimal is still a figure", unbacked_numbers("12.5% and 12.6%", _F) == ["12.6"])
+
 print("ALL PASS" if ok else "SOME FAILED")
 sys.exit(0 if ok else 1)

@@ -390,6 +390,9 @@ def unbacked_numbers(md: str, figures: dict) -> list[str]:
         if not any(tok in s for s in strings):
             bad.append(tok)
     text = re.sub(r"\d{4}-\d{2}-\d{2}|\d{4}-\d{2}(?!\d)", " ", text)
+    # host names are names, even when a label is hyphenated digits (agents.204-168-199-108.sslip.io):
+    # dot-joined labels ending in a label that starts with a letter, so 12.5 stays a figure
+    text = re.sub(r"(?<![\w.-])(?:[A-Za-z0-9-]+\.)+[A-Za-z][A-Za-z0-9-]*", " ", text)
     text = re.sub(r"[A-Za-z@/_.]*[A-Za-z][\w.@/]*\d[\w.@/]*|\d+[A-Za-z][\w.]*", " ", text)
     for tok in re.findall(r"\d[\d,]*(?:\.\d+)?", text):
         if abs(Decimal(tok.replace(",", ""))) not in nums:
