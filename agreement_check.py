@@ -45,7 +45,15 @@ SRC = {
  "31,546": ("paycheck.html", "(31,546 endpoints)"), "49.1%": ("paycheck.html", "61,982 (49.1%)"),
  "126,291": ("paycheck.html", "Of 126,291 test attempts"), "86.1%": ("paycheck.html", "53,340 86.1%"),
  "0.87": ("paycheck.html", "0.87"),
+ "94": ("csoai_snapshot.json", '"challenge_402": 94,'), "100": ("csoai_snapshot.json", '"total": 100,'),
 }
+# CSOAI's row: every figure and the definition it states, read from its snapshot
+CSOAI_PROOFS = ['"challenge_402": 94,', '"alive_needs_input": 3,', '"template_no_reply": 3,',
+                '"dead_404_or_unreachable": 0,', '"total": 100,', '"as_of": "2026-10-24T04:53:29Z"',
+                '"population": "https://facilitator.payai.network/discovery/resources"', "One GET per row",
+                "15s timeout", "zero payment, zero signing"]
+for proof in CSOAI_PROOFS:
+    if proof not in page("csoai_snapshot.json"): fails.append(f"CSOAI snapshot lacks {proof!r}")
 # x402 List median: JSON field
 SRC_JSON = {"$0.01": [("x402list_stats.json", '"median_price_usd":0.01'), ("tanod_repo_stats.csv", "2026-10-27,79456,2760,0.01")]}
 for num, (f, proof) in SRC.items():
@@ -71,7 +79,8 @@ if O:
 # check the specific pairings in the draft
 for pair in ["| answered 404 | 96 | 6.3% |", "| no response at all | 171 | 11.2% |", "| answered 404 or 410 | 179 | 11.8% |",
              "| served no payment challenge of any kind | 470 | 30.9% |", "462 (48.6%)", "Of the 950 hosts", "| 934 hosts |",
-             "Of my 934 hosts, 439 (47%)", "the same 1,521 hosts"]:
+             "Of my 934 hosts, 439 (47%)", "the same 1,521 hosts",
+             "| 0 | a 404 or unreachable, on one unpaid GET with a 15 s timeout. 94 answered 402, counted by status code only, not checked against the x402 schema. 3 needed input and 3 template rows got no reply | 100 rows of the PayAI facilitator discovery list | CSOAI, Oct 24 |"]:
     if pair not in D: fails.append(f"draft lacks pairing {pair!r}")
 
 # context-only numbers (dates, list numbers, issue number, wording)

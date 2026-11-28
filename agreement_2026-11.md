@@ -33,6 +33,7 @@ I run one of these measurements myself, a daily signed census in meloliva14/x402
 | 17% | the listed URL returns 404 | 1,225 sellers, one URL each | ForgeMesh, Aug 19 |
 | a quarter | no reachable, correct 402 with a payment envelope | same | ForgeMesh, Aug 19 |
 | 43.4% on Oct 12, 32.1% on Oct 26, 2.7% on Nov 2 | marked down by 402 Index, read weekly. The 2.7% came after the index was pruned from 196,373 to 43,907 endpoints | endpoints | Feldspar, Oct 12 to Nov 2 |
+| 0 | a 404 or unreachable, on one unpaid GET with a 15 s timeout. 94 answered 402, counted by status code only, not checked against the x402 schema. 3 needed input and 3 template rows got no reply | 100 rows of the PayAI facilitator discovery list | CSOAI, Oct 24 |
 | 1,157 down, 12,460 unknown | marked down or not yet known | 52,572 endpoints across L402, x402 and MPP | 402 Index, Nov 17 |
 | 61% | do not answer at all | 175,331 probed endpoints | Settled, as reported by minia2a, Nov 14 |
 | 36% reachable | not reachable | 241,233 active endpoints | x402 Trust, Nov 17 |
@@ -82,6 +83,7 @@ These line up closely with the named check profiles proposed for a Measurement &
 ## Notes
 
 - Every figure was checked against its page on Nov 16 and 17 (UTC). Pages change, so each date is the one the page showed.
+- CSOAI's row was added on Nov 28 (UTC), after CSOAI confirmed it on x402-foundation/x402#4127, and checked against its snapshot that day. It uses CSOAI's stated definition. The snapshot's own headline says "correct 402 challenge", which CSOAI notes claims more than its method checked.
 - ForgeMesh's census was also cross-posted to dev.to. It's counted once here.
 - The Feldspar post says its author works on Lumière PayCheck, so those two aren't independent of each other.
 - Every publisher here, me included, runs x402 services or a directory.
@@ -101,4 +103,5 @@ These line up closely with the named check profiles proposed for a Measurement &
 - x402 Trust: https://x402-trust.com/trust/report
 - Feldspar: https://dev.to/feldsparaiagent/what-ai-agents-actually-paid-for-on-x402-october-2026-44cf
 - Lumière PayCheck: https://dev.to/book0feli/we-paid-x402-endpoints-45152-times-heres-what-we-found-mic
+- CSOAI (Council of AI), x402 catalog trust snapshot: https://councilof.ai/interop/x402-trust/20261024T045329Z.json, row confirmed by CSOAI at https://github.com/x402-foundation/x402/issues/4127#issuecomment-7210093608
 - My census: https://github.com/meloliva14/x402-measure
