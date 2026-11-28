@@ -1,0 +1,3039 @@
+{
+ "schema": "x402-measure/settlement/1",
+ "checked_utc": "2026-11-28T00:40:42+00:00",
+ "listing": {
+  "source": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources",
+  "resources": 91225,
+  "options": 233825,
+  "hosts": 3587,
+  "sha256_of_sorted_json": "8067736a02092e110cc2f188eb7a8b2cbab0fec36586ff15f50e340432c79dbc"
+ },
+ "pins": {
+  "evm": {
+   "1": {
+    "rpcs": [
+     "https://ethereum-rpc.publicnode.com",
+     "https://cloudflare-eth.com"
+    ],
+    "block": 26510195
+   },
+   "10": {
+    "rpcs": [
+     "https://optimism-rpc.publicnode.com",
+     "https://mainnet.optimism.io"
+    ],
+    "block": 160113860
+   },
+   "50": {
+    "rpcs": [
+     "https://erpc.xinfin.network",
+     "https://rpc.xinfin.network"
+    ],
+    "block": 109810000
+   },
+   "56": {
+    "rpcs": [
+     "https://bsc-rpc.publicnode.com",
+     "https://bsc-dataseed1.bnbchain.org"
+    ],
+    "block": 136136354
+   },
+   "130": {
+    "rpcs": [
+     "https://unichain-rpc.publicnode.com",
+     "https://mainnet.unichain.org"
+    ],
+    "block": 65078144
+   },
+   "137": {
+    "rpcs": [
+     "https://polygon-bor-rpc.publicnode.com",
+     "https://polygon.drpc.org"
+    ],
+    "block": 98080681
+   },
+   "143": {
+    "rpcs": [
+     "https://rpc.monad.xyz",
+     "https://monad-mainnet.drpc.org"
+    ],
+    "block": 126006807
+   },
+   "146": {
+    "rpcs": [
+     "https://sonic-rpc.publicnode.com",
+     "https://rpc.soniclabs.com"
+    ],
+    "block": 83228166
+   },
+   "196": {
+    "rpcs": [
+     "https://rpc.xlayer.tech",
+     "https://xlayerrpc.okx.com"
+    ],
+    "block": 77057467
+   },
+   "480": {
+    "rpcs": [
+     "https://worldchain-mainnet.g.alchemy.com/public",
+     "https://480.rpc.thirdweb.com"
+    ],
+    "block": 38245429
+   },
+   "999": {
+    "rpcs": [
+     "https://rpc.hyperliquid.xyz/evm",
+     "https://hyperliquid.drpc.org"
+    ],
+    "block": 52428979
+   },
+   "1329": {
+    "rpcs": [
+     "https://evm-rpc.sei-apis.com",
+     "https://sei-evm-rpc.publicnode.com"
+    ],
+    "block": 245740907
+   },
+   "1868": {
+    "rpcs": [
+     "https://rpc.soneium.org"
+    ],
+    "block": 31345873
+   },
+   "4326": {
+    "rpcs": [
+     "https://mainnet.megaeth.com/rpc"
+    ],
+    "block": 33029491
+   },
+   "4663": {
+    "rpcs": [
+     "https://robinhood-rpc.publicnode.com",
+     "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "block": 124656457
+   },
+   "5042": {
+    "rpcs": [
+     "https://rpc.mainnet.arc.io",
+     "https://rpc.drpc.mainnet.arc.io"
+    ],
+    "block": 33502493
+   },
+   "8217": {
+    "rpcs": [
+     "https://public-en.node.kaia.io"
+    ],
+    "block": 233621874
+   },
+   "8453": {
+    "rpcs": [
+     "https://base-rpc.publicnode.com",
+     "https://mainnet.base.org"
+    ],
+    "block": 63180660
+   },
+   "42161": {
+    "rpcs": [
+     "https://arbitrum-one-rpc.publicnode.com",
+     "https://arb1.arbitrum.io/rpc"
+    ],
+    "block": 528150576
+   },
+   "42220": {
+    "rpcs": [
+     "https://celo-rpc.publicnode.com",
+     "https://forno.celo.org"
+    ],
+    "block": 83925745
+   },
+   "42793": {
+    "rpcs": [
+     "https://node.mainnet.etherlink.com"
+    ],
+    "block": 59062405
+   },
+   "43114": {
+    "rpcs": [
+     "https://avalanche-c-chain-rpc.publicnode.com",
+     "https://api.avax.network/ext/bc/C/rpc"
+    ],
+    "block": 101587548
+   },
+   "57073": {
+    "rpcs": [
+     "https://rpc-gel.inkonchain.com",
+     "https://rpc-qnd.inkonchain.com"
+    ],
+    "block": 62328092
+   },
+   "84532": {
+    "rpcs": [
+     "https://base-sepolia-rpc.publicnode.com",
+     "https://sepolia.base.org"
+    ],
+    "block": 64523197
+   },
+   "1187947933": {
+    "rpcs": [
+     "https://skale-base.skalenodes.com/v1/base"
+    ],
+    "block": 3467989
+   }
+  },
+  "evm_without_reachable_rpc": [
+   46630,
+   5042002,
+   11142220
+  ],
+  "evm_chain_ids_listed": [
+   1,
+   10,
+   50,
+   56,
+   130,
+   137,
+   143,
+   146,
+   196,
+   480,
+   999,
+   1329,
+   1868,
+   4326,
+   4663,
+   5042,
+   8217,
+   8453,
+   42161,
+   42220,
+   42793,
+   43114,
+   46630,
+   57073,
+   84532,
+   5042002,
+   11142220,
+   1187947933
+  ],
+  "solana_min_slot": 474755669
+ },
+ "options": {
+  "checked": 223992,
+  "checked_pct_of_all": 95.8,
+  "receivable": 222671,
+  "unreceivable": 1321,
+  "unreceivable_pct_of_checked": 0.6,
+  "unchecked": 9833
+ },
+ "hosts": {
+  "checked": 3585,
+  "with_an_unreceivable_option": 172,
+  "with_an_unreceivable_option_pct_of_checked": 4.8
+ },
+ "resources": {
+  "checked": 88634,
+  "with_an_unreceivable_option": 1211,
+  "with_no_receivable_checked_option": 2,
+  "with_both_an_unreceivable_and_a_receivable_option": 1209,
+  "whose_first_listed_option_is_unreceivable": 21,
+  "with_no_receivable_checked_option_pct_of_checked": 0.0
+ },
+ "unreceivable_by_reason": {
+  "payto_zero_address": {
+   "options": 1,
+   "hosts": 1
+  },
+  "domain_fields_missing": {
+   "options": 7,
+   "hosts": 1
+  },
+  "token_lacks_eip3009": {
+   "options": 119,
+   "hosts": 3
+  },
+  "signing_domain_mismatch": {
+   "options": 102,
+   "hosts": 5
+  },
+  "permit2_not_deployed": {
+   "options": 1,
+   "hosts": 1
+  },
+  "asset_not_a_mint": {
+   "options": 3,
+   "hosts": 1
+  },
+  "no_token_account": {
+   "options": 1088,
+   "hosts": 161
+  }
+ },
+ "unreceivable_by_network": {
+  "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp": 1087,
+  "eip155:8453": 58,
+  "eip155:480": 57,
+  "eip155:137": 49,
+  "eip155:1187947933": 31,
+  "eip155:4326": 21,
+  "eip155:143": 13,
+  "solana": 4,
+  "eip155:42793": 1
+ },
+ "unreceivable_top_hosts": [
+  {
+   "host": "emc2ai.io",
+   "options": 235
+  },
+  {
+   "host": "agents.204-168-199-108.sslip.io",
+   "options": 107
+  },
+  {
+   "host": "archtools.dev",
+   "options": 98
+  },
+  {
+   "host": "rengi.dev",
+   "options": 77
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "options": 43
+  },
+  {
+   "host": "api.nuasense.com",
+   "options": 37
+  },
+  {
+   "host": "x402.asterpay.io",
+   "options": 31
+  },
+  {
+   "host": "x402.swaphunt.dev",
+   "options": 31
+  },
+  {
+   "host": "toolrail.dev",
+   "options": 29
+  },
+  {
+   "host": "x402atlas.xyz",
+   "options": 26
+  }
+ ],
+ "unchecked_by_reason": {
+  "network_not_covered": 4623,
+  "circle_gateway": 4315,
+  "scheme_not_covered": 549,
+  "network_not_recognized": 226,
+  "transfer_method_not_covered": 94,
+  "no_domain_separator": 23,
+  "no_public_rpc": 3
+ },
+ "stranded_resources": [
+  "https://api.cleave.fi/x402/gas",
+  "https://ownsite-aeo.logout3login-a74.workers.dev/buy/gemm-phi-irisxe-20261013"
+ ],
+ "failing": [
+  {
+   "host": "emc2ai.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3H8oRdbRf18b2aaMVBfgJVDhnjhiXjCVTP5ZnNmPuikb",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 235,
+   "resources": 198,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "AGPbCGUgcyo161EmHcS5LQscadvdkYSQP6P9Y8K5njWA",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "agents.204-168-199-108.sslip.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "BYkPYxzibHMQuvJcAMrKFe1FwnkuKcZr4tN8s4dvUEAN",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 107,
+   "resources": 107,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "6md8UhEyDfAbaKqNTVEuPH2qrFuXtxjHPnJN3kDBqZq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "rengi.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2nJv7581dGAQzKMyDwqM5DAjx57jyZozGyjNH5Qafkpg",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 77,
+   "resources": 77,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "9CtEpXNo9FCUYYaLMns6bb2w3opVcTozZ4or1ic4tTNz",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "archtools.dev",
+   "network": "eip155:137",
+   "asset": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+   "payTo": "0x2583aAc89f58a63D9CCbeDaa5e3BaF2196Aa967e",
+   "reason": "token_lacks_eip3009",
+   "scheme": "exact",
+   "options": 49,
+   "resources": 49,
+   "listed_extra": {
+    "name": "Tether USD",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 98080681
+   }
+  },
+  {
+   "host": "archtools.dev",
+   "network": "eip155:8453",
+   "asset": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+   "payTo": "0x2583aAc89f58a63D9CCbeDaa5e3BaF2196Aa967e",
+   "reason": "token_lacks_eip3009",
+   "scheme": "exact",
+   "options": 49,
+   "resources": 49,
+   "listed_extra": {
+    "name": "Tether USD",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 63180660
+   }
+  },
+  {
+   "host": "api.carbon-cashmere.de",
+   "network": "eip155:480",
+   "asset": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1",
+   "payTo": "0xf8b2dD46542175AD46e14e6133340E652665F2Ee",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 43,
+   "resources": 43,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 38245429,
+    "listed_name": "USD Coin",
+    "listed_version": "2",
+    "token_name": "USDC",
+    "token_domain_separator": "0x936533d5f85622a8261854e20bb87f4e849dde486f429bc1fb66202b7cde09ec",
+    "listed_domain_separator": "0xbcb74b8c8506a3621bd5cd975356328a6bb1f2888981eaefd611390c29a854e4"
+   }
+  },
+  {
+   "host": "api.nuasense.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4jxaY3peDwy4HCDBDm7BHNWEbJbDNhfvqYjUpGX2D2Ka",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 37,
+   "resources": 37,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "AzLaeKEMnE4MdSmCNNHNDKzifGTHbeasYhUvuC8gK9rt",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402.asterpay.io",
+   "network": "eip155:1187947933",
+   "asset": "0x85889c8c714505E0c94b30fcfcF64fE3Ac8FCb20",
+   "payTo": "0xd5f8481D8F25d3966d2010DBf9B47fFbdf745A9E",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 31,
+   "resources": 31,
+   "listed_extra": {
+    "name": "USDC",
+    "version": "1"
+   },
+   "evidence": {
+    "block": 3467989,
+    "listed_name": "USDC",
+    "listed_version": "1",
+    "token_name": "Bridged USDC (SKALE Bridge)",
+    "token_domain_separator": "0xe182bdd83730d37cc41c779b38c22661c4c347f647925627d97926ee54dd4044",
+    "listed_domain_separator": "0xcb325783bc76dfb1d20baa4ae90e8910db591d70fcd0017580e23b2331419366"
+   }
+  },
+  {
+   "host": "x402.swaphunt.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "J418iHcSHTNadqgVkyeia3PcB2LbjoQ26tsmnAj1HZ1U",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 31,
+   "resources": 31,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "FWocuLXPgBn4V3M5XnPb2rZ1vTXsY3xjU5qJXFEHxDzu",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "toolrail.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "7zBC8YJQAFszUV6qF2HPAR4kZtY1jsQivjY2tvFE8qCR",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 29,
+   "resources": 29,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5unEv3aJkiw672Q2cy1Q2PyNWyhdtQVdLkzbMxovRSqP",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402atlas.xyz",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "DPqdX99NMZL2XFcqwe2WUQ4EmUZgHnVNcmzfND9EEV8K",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 26,
+   "resources": 26,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Dypf2YjtEYJUgrGP22UbyypBcmjevz3ZFhUeFaambv5a",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "atlasdata.onrender.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "DPqdX99NMZL2XFcqwe2WUQ4EmUZgHnVNcmzfND9EEV8K",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 23,
+   "resources": 23,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Dypf2YjtEYJUgrGP22UbyypBcmjevz3ZFhUeFaambv5a",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "defillama.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 23,
+   "resources": 23,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "twitter.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 21,
+   "resources": 21,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "solana-pulse-gateway-1021990235790.us-central1.run.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Brpc8HoPo1d3Uiyo7kbERnjMqwLJJmbWxtwxHxzar6DU",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 19,
+   "resources": 19,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "GxTRDQ7G422gHbfSWYwrhxj5nQH28wyKFpmXVkjf7og4",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "marketdata.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 17,
+   "resources": 17,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402engine.app",
+   "network": "eip155:4326",
+   "asset": "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+   "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629",
+   "reason": "token_lacks_eip3009",
+   "scheme": "exact",
+   "options": 15,
+   "resources": 15,
+   "listed_extra": {
+    "name": "USDm",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 33029491
+   }
+  },
+  {
+   "host": "edge.goldsky.com",
+   "network": "eip155:143",
+   "asset": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+   "payTo": "0x87aB362fEF2106d24762289410a18e7c42304C68",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 13,
+   "resources": 13,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 126006807,
+    "listed_name": "USD Coin",
+    "listed_version": "2",
+    "token_name": "USDC",
+    "token_domain_separator": "0xfe22123edc0dd4aeb912eb7948c5f0e531592c2053b3067612f427db342c93c6",
+    "listed_domain_separator": "0xf93dcb08a5f2e93051151ee5283dbafe2ead80da317dad7005e2b780f73ebe70"
+   }
+  },
+  {
+   "host": "edge.goldsky.com",
+   "network": "eip155:480",
+   "asset": "0x79A02482A880bCe3F13E09da970dC34dB4cD24D1",
+   "payTo": "0x87aB362fEF2106d24762289410a18e7c42304C68",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 13,
+   "resources": 13,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 38245429,
+    "listed_name": "USD Coin",
+    "listed_version": "2",
+    "token_name": "USDC",
+    "token_domain_separator": "0x936533d5f85622a8261854e20bb87f4e849dde486f429bc1fb66202b7cde09ec",
+    "listed_domain_separator": "0xbcb74b8c8506a3621bd5cd975356328a6bb1f2888981eaefd611390c29a854e4"
+   }
+  },
+  {
+   "host": "sweetai.tiamatcrypto.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5bKseMEr9NjCRgLuoiGPDfkvcq9usgpRQtJg6rF4wnDc",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 13,
+   "resources": 13,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Fyzfi1YkEP4zpYC44YZmTKut4F28UNaEnUDYjScim6tq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.gentechlabs.net",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Hv2N2XJT9QXNZeo7FjtNZdL3Ms4iqj1mKy75dGCh57Ru",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 12,
+   "resources": 12,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "associated_token_account": "FACs1hcbALUqRTD7Rse8GYRurqniAyWev8eFqR7sK6w3",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.synairo.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "44nJi5JcrWdc6JHHYxnT2LXZhcX8FpRYSraW2LMW5ne5",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 11,
+   "resources": 7,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "4KQk4fpA7K4aDNJGwXkFdLqmKB7LppqTCwbLjV35XRut",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "compute-api-production-245d.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 11,
+   "resources": 11,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "facebook.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 10,
+   "resources": 10,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "instagram.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 10,
+   "resources": 10,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "synap402.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "VXbuAtfujvaARnzCv38PehXSHA9xccXiQGHvqUBg2YN",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 10,
+   "resources": 10,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "J89u6vQAenVovrcY96KroGkvm74z1GHwke1VA2LSKx3K",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "tiktok.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 10,
+   "resources": 10,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.gadgethumans.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "7RDNyur52XauoJhwWnkvYjxygUoUv3ZPiosv8Ek5Suau",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 9,
+   "resources": 9,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "associated_token_account": "HuWehkuWj8vyxmpwGdcNCbobJ8LjxyXWH2mFNoxjVyNs",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.munition.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "CawPXxATKM9iBPc2o6FRzu9LbvzZWcepD9akwZkbDyDo",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 9,
+   "resources": 9,
+   "listed_extra": {
+    "name": "USDC"
+   },
+   "evidence": {
+    "associated_token_account": "EMcrQ4HfieFF41S8pWBEnerLms9ABN6syta72hTkYsKi",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "apex-market-data.netlify.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4dRPdJh4yEiuVwwzYKTrQAGnXSA5uq6KALBBCUak7qkT",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 8,
+   "resources": 8,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "4q5nYjy9UGuYdgMebneWBvkQ4LA2pzLnxJ2yj9RWSP4i",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402-api-production-bd43.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 8,
+   "resources": 8,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "agent-arcade.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 7,
+   "resources": 7,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "fractalai.net.co",
+   "network": "eip155:8453",
+   "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+   "payTo": "0xC13789e82661635d9Cea38a53A0390CF9939ef4f",
+   "reason": "domain_fields_missing",
+   "scheme": "exact",
+   "options": 7,
+   "resources": 7,
+   "listed_extra": {
+    "name": "USDC"
+   },
+   "evidence": {}
+  },
+  {
+   "host": "tariffmonkee.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "EjwKsavtpL4MeboquZgFerQy6voUbKqJv5TyukEH8vPN",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 7,
+   "resources": 7,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "9r8bvm4jeKQJi43JZdrngGzPC4CFth8iNGnF63bLBj5G",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "us-spending.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 7,
+   "resources": 7,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "webhook-api-production-4378.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 7,
+   "resources": 7,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "agenttoll.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GyZ7jAevMGimwTL1SzBiPYCntHxQUjFpEsFYWRMbpDVL",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 6,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Fcpe3Df8kicABErvLfTGeU8tPtGPmEn4cBzCiGZRmavr",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.agent-payload-tools.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "6cBob4SADGcWdsMPxkSnJ9GYL5EvmENkJnjfeVPBTxfA",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 6,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "BETgqnv9c1LprKgfGYrzWp8Ehj7f6CzeELaAPTHHDiBP",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "coingecko.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 6,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "google-trends.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 6,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "store.agentexchange.work",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2147pBT4LxoszjvLeGRxyVzpRnMi986VH3FAoprSs8Ez",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 6,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "63H78uZ36PgudSj5zQjJM9uNtircfXuTwDPtkQDUEj6B",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402-gateway-production.up.railway.app",
+   "network": "eip155:4326",
+   "asset": "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+   "payTo": "0x7dd5Be069f2d2eAd75eC7C3423B116fF043c2629",
+   "reason": "token_lacks_eip3009",
+   "scheme": "exact",
+   "options": 6,
+   "resources": 2,
+   "listed_extra": {
+    "name": "USDm",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 33029491
+   }
+  },
+  {
+   "host": "agentbodega.store",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4tWJRwNyhGr88QTiV2yzMoGsaxZiCSRDepf9JTdBEgyi",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {
+    "name": "USDC",
+    "version": "spl"
+   },
+   "evidence": {
+    "associated_token_account": "GMpWyyi7UieinJ8P26UgwLLzqZ45QRK3NQRKk12G1Rfe",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "bizintel-api.hahavoid0.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Bs3oEYkvpbzdaLN8KuCHHATfaifmSp7iLUsKBCFQyvhL",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "G3A1T1DkM95Ao9CFV22hJHKwEABNbgsKk9mL1XxFGz2N",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "dns.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "hyperliquid.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "multichain-rpc.clankerceo.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "CTmExzd1k8DNcmmuWGVCGoxsBshNcwFFhCe65QG57Vhd",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "HhB8U6DQqPgVry5zmsDNh85qJxwTZFKbbeVWV7L9BuWr",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "rumble.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "scrapecheck.fly.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4HuSbgqgKkeUM5jEzAzLGpxtivCGda9eEtYc2Sp1fLpM",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 5,
+   "resources": 5,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "EaQfwngWApgUpUyeb8izn9NwjA5yxu2CFfbPWfmJW9as",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.eucompliance.tools",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "9N5TAHbtp9s8Ksrcn4b9Kig4uTRnevZC13bSsMnMAQ4c",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Fkuaz4EXFNFFvdo4C4XaQ8kt9GZoqQbvKByvCXJLdhzY",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api2ls.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "AifT6piHJ957oqgeRVLAiAmvm3dJ3rLnD2EVck6Msf7k",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5U1CAisaw58PVED8cRGPLadFk5AmUkzLGcZ11rGxK9kZ",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "app.heinrichstech.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "EDtPHNFA6ofGQZPb8NYUxdTkqVwCfkWJzRCg8vQXkYBL",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "8yCSSKGka74HZEaC9wsRq374p3oDxnkg1TXYr8CWyQSC",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "appstore.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "codepulse-api.hahavoid0.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Bs3oEYkvpbzdaLN8KuCHHATfaifmSp7iLUsKBCFQyvhL",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "G3A1T1DkM95Ao9CFV22hJHKwEABNbgsKk9mL1XxFGz2N",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "deepcounterfeit.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "CeW9yPqAin1o2NZYDTatF2AVBWM6fMgSUrp7KRFZdWhb",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "A5FsyhCMQYWgHL6KByebA3E8gwpArnSFTgohf6hntif2",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "hyperliquid-accounts.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "pinterest.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "places.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "resolve402.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "55qfRaRiSLUVVxqTi1thUCmh4U94JfcnMAC4AvUNbbkK",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "DFHZdPXZrsMTo8a1StJZ7MZsnwjL94SPK8kmY8QQ31nB",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "risk-api-production-af85.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "saylorinnovations.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "So11111111111111111111111111111111111111112",
+   "payTo": "7LSjfrJf8fNsB8VA9u7N3WEn25smQLpob3SvyUvXacy7",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "7d7Y7HwG8TuFRXdKfX6NS7pCeTeGx5hvSx31bfk8iGNC",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "valuation-api-production-1c7c.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "websearch.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402.quantumatlas.xyz",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "6wGApyQcn6kGXvB3uuQjaG4KyBmwYJXmC5Sc92P2QXfx",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 4,
+   "resources": 4,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "HWhzxUqFARpSmX66ArcvMteUHExbEFQ2cYipzFx4EYyt",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.govparse.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "BdcZbENFdEyEUMqv9pnRMUnn1Yyeyo2dCMbYXbJ3LmaB",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "CPayLCr2ppEnBM1aUTKzaX15EQvjLV7qDzehZjVsrxqw",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.nonsynthetic.net",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "87rrScEXuHqPt91UrGALLGdbL8dk53Nz771DB16avjCC",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5E2HKHE6v57PoirPpgvwZSAZoECiqd9vvsNDWTtAftkj",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "dartapi.ljaysk.com",
+   "network": "solana",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5xrtB5SFAb214aC2EmLiyMJGop2EVef1zWBdDpLF7s9y",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "2Q9v3HibfngFgSKCUBxeCQnxmfXhudXMGYbKVbBbioQ3",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "developers.ethos.network",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "CwVxxJGmLQPrMmGtyiGzKstPKufJHujzWUEE4upAHu5c",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "62XyYL2JHr5GY7c8MgovxMTsBUrm6uKYeeXGVqNMNRBw",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "google-ads.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "hotels.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "kwai.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "linkedin.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "margin-api-production-d413.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "perpsignals.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "pool.linkrra.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "VXbuAtfujvaARnzCv38PehXSHA9xccXiQGHvqUBg2YN",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "J89u6vQAenVovrcY96KroGkvm74z1GHwke1VA2LSKx3K",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "scan-api-production-e73f.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "sml-authority-engine.timothy-walton45.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdzLE1tvVBY7ojfGVumQZYaH9Ds6PeNmrp5qQmyF",
+   "payTo": "Hv4cEGpyyNJDvxvgBb3C8GkcwtouF1qUfPT13innuXty",
+   "reason": "asset_not_a_mint",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {}
+  },
+  {
+   "host": "stall-row-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "FeyyAfoCbn1psQ6x8gxN8YQbXZVpTSibZwP6mkXckXUJ",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "3D6xYiRLWboZkeDdqwHutQdYZY9ZXxRcjXUvGMzTNj9J",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "threads.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "tick.hugen.tokyo",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4du4AfkxFvtqEWaoRWrifoSXCknuMpAGh3BXrFPFvXFh",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "AxYKD4jz8tQkukzgSukWzy7RvfTW8tgPkMhBdtYcGAWW",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "tiktok-shop.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "token-verdict-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "FeyyAfoCbn1psQ6x8gxN8YQbXZVpTSibZwP6mkXckXUJ",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 3,
+   "resources": 3,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "3D6xYiRLWboZkeDdqwHutQdYZY9ZXxRcjXUvGMzTNj9J",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "agmm.co.uk",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "CsmSe96j3u68PRUhisjwxzgmgrLkWqqVU1van5gxmY6S",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "CQMZAxqnJ1jAPSV9DjbhJpxi1si5tZqbKUqtDw6jZxaM",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.monpham.work",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5vM2TYpN4Kk3cDFpgJtrm33F8iB3frU8KaDsMaacVbd2",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5cbi2Vnd85fxiy5f9T64D4LGDo5ycgMT4LL3BJrTrpuS",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "audit.152-53-82-29.sslip.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "EtmTq4WoUyKvh5aPpB4xXNDRQDQmPSYBzLGLKJprZHHd",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "9baYhQFunBngeEFjRvu1dH15WtNCCXMknxBy4QKvjUPY",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "blockchain-api.x402-chain-tools.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5vX2u7mkwhxpvQYNA7SqmauJjkcfnxETQ6tKVZphzKyM",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Eb7qjQdvgEs5ok38kNCVZgSTbv4QmFJuGAnGr5LwaMfn",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "bluesky.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "chainsscope.duckdns.org",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "yEx9WBP1NnzoTpDmi67F536bso3YNcQPBRhWRoswTBS",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H73ZzGvYoKgwukVpRhAQMd6C3TCwW8BaB3adTahkGjGL",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "concordancehq.duckdns.org",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "yEx9WBP1NnzoTpDmi67F536bso3YNcQPBRhWRoswTBS",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H73ZzGvYoKgwukVpRhAQMd6C3TCwW8BaB3adTahkGjGL",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "diet.agentic-jp.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2BTzdCAcCLaNA2SSZ1YjJvTtscNCpUMUEjLY3LyBpNMk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Gst6arjnR6FD6SSnYWtQqEkDyjwpjjXRHNAT29Nm8jmq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "facebook-ads.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "facebook-events.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "facebook-marketplace.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "factline.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "fyqifu7otDYanhqr84B9YzZfA5LwRTJ1uFLqDJinMTK",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "A1bU5r65djEKDMpaNGbSeR4gvoptN3kFDD8yG7PfzkiW",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "gdelt.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "github.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "google-patents.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "holidays.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "legible-check.ezealfa.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "BU68xE3VCAECR4QP7nG2FcKU8uKg7jqePGAYMFjkP6Qx",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {
+    "name": "USD Coin"
+   },
+   "evidence": {
+    "associated_token_account": "6b15u8dhrG262QPtBTW3uMx5dpteEmPPFJj2YTrYhXgK",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "linkedin-ads.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "merchant-production-c224.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Bj6xBpGcQavz8Uqr4Kofz6dTPpgLxCEXqJhkKQzF5EXg",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "GYfN2Kg7hJ5PF3EtQG94qjdJZ9T5ZwEqVWjEVHTbcmqb",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "rdap-api-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "tiktok-ads.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "transit.agentic-jp.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2BTzdCAcCLaNA2SSZ1YjJvTtscNCpUMUEjLY3LyBpNMk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Gst6arjnR6FD6SSnYWtQqEkDyjwpjjXRHNAT29Nm8jmq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "twitch.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "twitr.sh",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "4u4TLWUqr4296NFpUohqJELAfZLbkxThwX8UALxh6M7o",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "CBt5ohbUPx88HCF4ZktVMv7NW2aeShvvrzwkg6iCVVTp",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "verifiedx402.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "6Pt95picj6WLazjZqT6ofhPx5T7M6fD44HyuKqREmzQV",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "DMKoR5xcTk9DcoL87Kbav8QkoGELJeHLp71BNrpGm8GD",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "voidfeed.ai",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2VS2kvhZU5doNpweAQ34wxwXqPdVvEdR35K92CzsEoH1",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "53M77HYZhcd83CK9UgqYSEPFeWdEa32wjnFGgxEeG5f",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "web-access-gateway.mattskowronis.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Ekdf1gQA4y7w1w9GFSe9a6GuyQuKCof5wyYTTmyZLeJk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "GvwpvmNEpzoHJV8jznMJ6FRrp2fVo83dkqwcGJeUrhzG",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "wiki.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402-agent-store.rileycraig14.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2147pBT4LxoszjvLeGRxyVzpRnMi986VH3FAoprSs8Ez",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 2,
+   "resources": 2,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "63H78uZ36PgudSj5zQjJM9uNtircfXuTwDPtkQDUEj6B",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.3route.io",
+   "network": "eip155:42793",
+   "asset": "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
+   "payTo": "0x5D89060682fcE50eCaa7600aF6A5645Bd2b107Eb",
+   "reason": "permit2_not_deployed",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2",
+    "assetTransferMethod": "permit2"
+   },
+   "evidence": {
+    "block": 59062405,
+    "no_code_at": [
+     "0x402085c248eea27d92e8b30b2c58ed07f9e20001"
+    ]
+   }
+  },
+  {
+   "host": "api.3route.io",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "AZ59bSccJmQu8Ljic1c5zxhjZitVbbutUYjBNwKLqfyD",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "9MpCrPwQQjQn5yBQWegJpoa5xCRE6eHVFqvTCNt15tRP",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.aidress.ai",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2VS2kvhZU5doNpweAQ34wxwXqPdVvEdR35K92CzsEoH1",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "53M77HYZhcd83CK9UgqYSEPFeWdEa32wjnFGgxEeG5f",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.cleave.fi",
+   "network": "eip155:8453",
+   "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+   "payTo": "0x0000000000000000000000000000000000000000",
+   "reason": "payto_zero_address",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {}
+  },
+  {
+   "host": "api.ishtar.numetal.xyz",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2GvLgz2ovzNkrYEzJsZ1kRovXjVQnmm7WRWFd3vFzsma",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "E1Fmim9VHiVic4CEF9TYweanHZnuHXvTpD4v4Go4mE4c",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "api.nativebtc.org",
+   "network": "eip155:480",
+   "asset": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1",
+   "payTo": "0x0300E73759B357ceeE5A248d1801eCb8abf7A1d4",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 38245429,
+    "listed_name": "USD Coin",
+    "listed_version": "2",
+    "token_name": "USDC",
+    "token_domain_separator": "0x936533d5f85622a8261854e20bb87f4e849dde486f429bc1fb66202b7cde09ec",
+    "listed_domain_separator": "0xbcb74b8c8506a3621bd5cd975356328a6bb1f2888981eaefd611390c29a854e4"
+   }
+  },
+  {
+   "host": "api.you.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GBQ2FrH49gvKXu1zg7tguoLwaofn5S4NnuMs5JSYQ5GX",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5JvUkuRXrepcb5iigssg1TarRisuGXb7ATVZdMcZ2UB3",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "arn-x402-payguard-payment-security.rajdeep-dutta-in.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5vX2u7mkwhxpvQYNA7SqmauJjkcfnxETQ6tKVZphzKyM",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Eb7qjQdvgEs5ok38kNCVZgSTbv4QmFJuGAnGr5LwaMfn",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "base64encode.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "certify.sarnai.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "38Fmaf3MWTR6AWPWrtrdXoqn6iqfVcUBHMFRhiUAEjFb",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "ADwmCyC1QbB5AaXGvVFd1wDpns78vPaLMKSJfARunYWC",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "chain-tools.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "clinical-trials.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "code-toll-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "crypto.penguindriver.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "DiBRhfjnY6BmnwPpAUK6UYS5mtS7ME9HKUYDVeHfQ9qW",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "EYCENTyiTVzke5JDeqiqq41cT1BJgwDeVVWC9pQ2hv9K",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "dependency-risk.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "earthquakes.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "ebay.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "email-auth.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "exchange.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "furigana.agentic-jp.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2BTzdCAcCLaNA2SSZ1YjJvTtscNCpUMUEjLY3LyBpNMk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Gst6arjnR6FD6SSnYWtQqEkDyjwpjjXRHNAT29Nm8jmq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "headers.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "houjin.agentic-jp.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2BTzdCAcCLaNA2SSZ1YjJvTtscNCpUMUEjLY3LyBpNMk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Gst6arjnR6FD6SSnYWtQqEkDyjwpjjXRHNAT29Nm8jmq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "hyperliquid-predict.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "imgopt.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "law-mcp.toulaw.workers.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "FehC2Hu4ocQnxNWhpePQNV4kwPA2v6oHaaLnuXJXUwtn",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "6wtwuKVWJvLXHydXRpC11smPBFwNSnG9xVSsTn6gceN7",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "mcp-snowy-dew-9447.fly.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "HZAqXffHYUPp7KLFGwx3ziHbeTYrxN5Wc5GNyrorSqcW",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "A6bUJC1oDrNR3Pam8o6a76z3xsbzCVZJttynp3Rsp3DH",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "mysticapi.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "PFhAMHQ6xPADiH63sjpC28RfyVChoXqgHFjbX1tkU6R",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {
+    "name": "USD Coin",
+    "version": "2"
+   },
+   "evidence": {
+    "associated_token_account": "7z5gmgP1CrML6eKwzSGcPhJCfgU6obuEt7CkYGbJvFbV",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "offersignal.io",
+   "network": "solana",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "Akjhnpms294ZiQEWdpZEaHVGx5Ft457bfG3cczAt43kc",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "FvymATTfHQPvsCRnY9BLhKcT2Bxnz5jsiitRLd3YcLgh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "ownsite-aeo.logout3login-a74.workers.dev",
+   "network": "eip155:8453",
+   "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+   "payTo": "0xB7f4D61320de4CF5F22330407a3A683304AC914d",
+   "reason": "signing_domain_mismatch",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {
+    "name": "USDC",
+    "version": "2"
+   },
+   "evidence": {
+    "block": 63180660,
+    "listed_name": "USDC",
+    "listed_version": "2",
+    "token_name": "USD Coin",
+    "token_domain_separator": "0x02fa7265e7c5d81118673727957699e4d68f74cd74b7db77da710fe8a2c7834f",
+    "listed_domain_separator": "0xe824be45ff6ee69e5f9486cef877c2a7f3c987b25b91038a372bb1c70646a3d7"
+   }
+  },
+  {
+   "host": "papers.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "remarkable-light-production-0cb8.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "router-production-ab89.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "7F9nMqE3Bipa7RAgYykxWETRCrixWJLyDHKbZNdv9XEK",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "GCAigETR14rt8d1zWhJ4t48XmU7f2qsyohqT2887gSMx",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "score.sarnai.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "38Fmaf3MWTR6AWPWrtrdXoqn6iqfVcUBHMFRhiUAEjFb",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "ADwmCyC1QbB5AaXGvVFd1wDpns78vPaLMKSJfARunYWC",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "scribe.vimabrosta.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "So11111111111111111111111111111111111111112",
+   "payTo": "AC3BtRaGzvyEVZnx6z4qMDNxD5dmnoyPTz5EWW3Pn2tg",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "AMZeqHwYu12c4VRddc2EkLzffxpRATVsVvMw9qcMqmtC",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "sec.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "space-weather.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "spotify.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "ssl.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "stablejobs.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "DTsX7PxG2Qya5m2Ysfjq4eEYXmmYrmt5MHgJQ7bEQsNT",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "2QesXgtwNnfW2xYsmNJa2TP4u1iwzBCU4fx5AMjpqssq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "summarize-toll-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "token-oracle.fly.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "HZAqXffHYUPp7KLFGwx3ziHbeTYrxN5Wc5GNyrorSqcW",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "A6bUJC1oDrNR3Pam8o6a76z3xsbzCVZJttynp3Rsp3DH",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "translate-toll-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "trending-topics.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "unwrap.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "url-intel-api-production.up.railway.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GKbRLTJrYTUQzJp8AcoGjunRCMuSo392jea4W7e8G7iP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "H7diCnYGL9qYw4DTPa4PaNkXC1PT2iMhbF2GSLBktF4p",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "url-oracle.fly.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "HZAqXffHYUPp7KLFGwx3ziHbeTYrxN5Wc5GNyrorSqcW",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "A6bUJC1oDrNR3Pam8o6a76z3xsbzCVZJttynp3Rsp3DH",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "us-bank-financials.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "us-debt.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "us-rates.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "us-regulations.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "utilsforagents.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "GXTcDuC5mPnmbWSza92FcX9zSmp8QuPpFh6n1ad9c9zM",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "CuajykGkj4a4VgUFMBFWwTTg45SmVp4KooqG8iuGfHrX",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "uuid.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "wallet-intelligence-three.vercel.app",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "86BziewkBJ56rwYyivpNzQ3GyhKLfwPky17geqEuFGZr",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "3vdN9bqNyxFZUzyKp4qtsvNn72xA9ZJ2ztVkEPbbPN2M",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "weather.agentic-jp.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "2BTzdCAcCLaNA2SSZ1YjJvTtscNCpUMUEjLY3LyBpNMk",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "Gst6arjnR6FD6SSnYWtQqEkDyjwpjjXRHNAT29Nm8jmq",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "wikidata.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "www.carsonbot402.dev",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "J6a6TRKm51VH4TCwEVsoAkFwKAS33rTLS2PM1uWydQ3A",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "8BSFQcFJzfLJ2YrgRzVapomKsAWB4NQqaMTfUkvUNQZc",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "www.ioi.md",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "75dLWGN7zVazt69V2DWKo41uizxxAN5erEZdt4UTdvTF",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "4s4nxfAHVoyn1C8bLZhwKeoMy1TmUP3NXRUT7WovkRdW",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402-stall-l3bb.onrender.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "32HB1su4wEwq12iPWpi4yeFLYunFwvFmQhrLNCs1WXoP",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "HYSPrnKov9FXPPm9gQn7utTLLXfotb26WeM3RDb9BbKF",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402.monpham.work",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5vM2TYpN4Kk3cDFpgJtrm33F8iB3frU8KaDsMaacVbd2",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "5cbi2Vnd85fxiy5f9T64D4LGDo5ycgMT4LL3BJrTrpuS",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "x402.yodeler.xyz",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "9sUhwEGxT8twLPTerJtNjsAbcMHiL8WL6LfcEkrdntiz",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "9tXa5Fdf7LcA1o7r2kHeUePJmavsLMp643J5EB4KhWss",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "xmedia.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "youtube.use.x402atlas.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "3nXsChcZGke6xebDPmndNMCt8L3yi6xyN4Pd6q5cQrgv",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "41mJ6CMrVEqx6t9jTpK2aezwkYujzH7uqqBieQTzc5Qh",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "zero-daydynamics.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "5npF3eedHdbRjKZ7WRGv3bjyn3RwSpWGHiGDeFjuLayc",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "HoSxjXRMbvfhscB6528w74vUcU3ayv5tPkRjizWo7Xyn",
+    "slot": 474755669
+   }
+  },
+  {
+   "host": "zeuskb.com",
+   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+   "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+   "payTo": "BxaZd1pxVfpMYdns6eedACfSaTo3TzofUhow8BtpdTA9",
+   "reason": "no_token_account",
+   "scheme": "exact",
+   "options": 1,
+   "resources": 1,
+   "listed_extra": {},
+   "evidence": {
+    "associated_token_account": "7ZFrXfCjTEuKFAjxUtxfwTfQPh8PjbgUvw31jEqBTD81",
+    "slot": 474755669
+   }
+  }
+ ],
+ "definitions": {
+  "RECEIVABLE": "passed every check this script runs; not proof a payment would settle",
+  "UNRECEIVABLE": "failed a check that means a payment built from the listing cannot reach the payTo",
+  "UNCHECKED": "outside what this script can judge; the reason says why",
+  "stranded_resource": "a resource with at least one unreceivable option and no receivable one (it may still have unchecked options)"
+ }
+}
